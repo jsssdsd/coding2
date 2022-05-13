@@ -1,0 +1,60 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>
+타이틀부분
+</title>
+</head>
+<body>
+<pre>
+HTML 레이아웃:구성 요소들의 배치
+1. div를 이용한 레이아웃
+2. HTML5 레이아웃 : 시멘틱 태그
+	header / nav / article / aside / footer
+	header : HTML 문서의 머리글
+	nav : HTML문서의 탐색 링크 모음
+	section : HTML 문서의 본문
+	article : 본문 내 하나의 글
+	aside : HTML 문서에서 본문 부분 이외의 컨텐츠
+	footer : 바닥글
+3. table 요소를 이용한 레이아웃
+</pre>
+
+<div>
+1번 div
+</div>
+<div>
+2번 div
+</div>
+<div>
+3번 div
+</div>
+
+<header>머리</header>
+<nav>메뉴</nav>
+<section>본문</section>
+<footer>바닥</footer>
+
+<table width="100%" style="text-align:center;border:none">
+<tr>
+<td colspan="2" style="background-color:lightgrey">
+HEADER 영역
+</td>
+</tr>
+<tr>
+<td style="background-color:green">
+NAV영역
+</td>
+<td style="height:400px; text-align:left;background-color:grey">
+SECTION영역
+</td>
+</tr>
+<tr>
+<td colspan="2" style="background-color:yellow">
+FOOTER영역
+</td>
+<tr>
+</table>
+</body>
+</html>

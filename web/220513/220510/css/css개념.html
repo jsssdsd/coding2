@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>
+css개념 
+</title>
+<! link type= "text/css" rel ="stylesheet" href="st.css"> 링크로 불러오기
+
+<style>
+@import  url(st.css); 임폴트로 불러오기.
+
+
+!Hr{border:3px solid green;}  /*대소문자 구분 없음*/
+!body{color:bollume}
+!p,div{margin: 100px}
+!.a{color:blue}
+!*{color:green}
+
+p.div1{color:red}
+!p.a{color:blue}
+ul#list1{color:pink;}
+li.item2{color:rgb(56,102,166);}
+input[type=text]{color:green}
+
+!strong{color:white}
+!div>p{color:white}
+!.a.a{color:blue}
+!p>.a.b{color:rgb(126,102,166);}
+
+
+div strong{color:red}
+!div,strong{color:blue}
+p stong{color:green}
+</style>
+
+</head>
+<body>
+<pre>
+
+#
+웹 프론트엔드 개발
+HTML5+CSS3+JS
+
+문서에 색, 모양 , 위치등 외관을 꾸미는 언어
+
+1. 색상
+2. 배경
+3. 폰트
+4. 박스모델
+5. 비주얼 효과
+CSS3스타일 시트의 형태
+셀렉터  속성명:속성값 ; 속성명:속성값
+셀렉터: 스타일 시트의 이름이나 규칙
+
+#
+CSS3스타일 적용방법
+1. 헤드 부분에 style태그 내부에 스타일 시트 작성
+2.HTML 태그 속성으로 스타일 시트 적용	
+3. 외부 스타일 시트 파일을 따로 생성하는 방법 link나 import로 불러옴
+
+#
+외부스타일 시트 만드는 방법
+확장자가 .css인 파일을 만든다
+.css파일 내부에 스타일 시트 내용 작성
+불러오는 방식 2가지 ( link, @import )
+
+#
+CSS3스타일 시트의 상속 
+HTML구조에서 부모(parent element)에게 적용된 스타일 시트는 
+자식요소에게 전부 동일하게 적용이 된다.
+HTML페이지 전체에 적용하고 싶으면 body에 적용하면 된다.
+
+
+#
+1. 모든 태그마다 브라우저에서 기본적으로 적용되는 스타일이 존재
+2. .css 외부 스타일 시트 파일
+3. HTML 내부 스타일 시트
+4. 태그의 style속성에 작성된 스타일
+
+4가지  스타일 요소 사이의 우선순위.
+오버라이딩은 덮어쓰기로 동일한 CSS3 프로퍼티에 각 다른값이 
+설정되면 우선수위가 높은 스타일을 적용하게 된다.
+
+#
+셀렉터 CSS3스타일을 적용할 대상물
+id: 고유한 이름(중복x)
+class: 중복가능한이름
+태그명: HTML 태그명 
+
+
+1)태그이름 셀렉터
+태그명 자체가 셀렉터가 되는 방식
+같은태그로 구성된 모든 요소에 스타일이 반영된다.
+
+2)class이름 셀렉터
+셀렉터이름 앞에 . 을 쓴다.
+HTML태그의 class명 속성으로 지정하는 방식
+태그명. 클래스명 속성으로 지정하는 방식
+해당 클래스명을 가진요소에만 적용가능
+셀렉터는 조합이 가능하다.
+
+3) ID이름 셀렉터
+셀렉터 이름앞에 #을 쓴다.
+HTML태그의 ID명 속성으로 지정하는 방식
+HTML 태그의 ID명 속성은 고유하게 설정한다.(중복 불가)
+
+4)전체 셀렉터*
+셀렉터 이름 없이 *을 쓴다
+문서에 포함되어 있는 모든 HTML요소에 공통으로 적용한다.
+
+5)type셀렉터
+HTML 태그의 특정 속성에 대해 일치하는 태그에만 스타일을 적용하는 방식
+
+6) 조합 셀렉터
+
+자식셀렉터 '>'
+자식 셀렉터는 부모 자식 관계인 두 셀렉터를 
+>기호로 조합한다.
+
+자손 셀렉터'' 
+공백으로 자손 셀렉터 조합이 가능하다.
+2세대 이상 자식 관계는 자손 셀렉터 사용한다. 
+
+
+
+
+</pre>
+<!div style= "background-color:red;color:white" id= "x" class= "div1";strong: 단락3-1> !블록형태 div</div>
+<!div style= id= "x" class= "div1"> 블록형태 div  </div>
+<p id="xx" class="m">단락</p>
+<p class='a'>단락2     <strong class="a" >단락S</strong> </p>
+<p class='a'>단락2     <strong class="b" >단락S</strong> </p>
+<div><p class="div1">단락3</p></div>
+
+<ul id= "list1">
+<li>리스트항목1</li>
+<li class="item2">리스트항목2</li>
+<li>리스트항목3</li>
+</ul>
+
+<input type= "text" value="ID입력하세요."><br>
+
+<input type= "password" value="비번입력하세요.">
+
+
+<hr>
+<hr>
+</body>
+</html>
