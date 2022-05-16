@@ -11,7 +11,7 @@ PPpath = os.getcwd()
 #로그인
 loglist = []
 
-pS.filecheck("구인게시글목록")
+pS.filecheck("구인게시글목록") 
 pS.filecheck("구직게시글목록")
 def login():
     if not os.path.isfile("회원정보.txt") == True:
