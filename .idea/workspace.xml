@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51cafdc5-b3aa-4dfb-ab6f-f0f69359a0d9" name="변경" comment="" />
+    <list default="true" id="51cafdc5-b3aa-4dfb-ab6f-f0f69359a0d9" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/.idea/220516.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/6조 팀프로젝트(합본)/Pet_Platfrom_UI.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/6조 팀프로젝트(합본)/caution.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/6조 팀프로젝트(합본)/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/6조 팀프로젝트(합본)/magnifying-glass-g6807ed0f7_640.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/6조 팀프로젝트(합본)/map.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/6조 팀프로젝트(합본)/petSitter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/6조 팀프로젝트(합본)/puppy_commodities1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/6조 팀프로젝트(합본)/puppy_paw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/6조 팀프로젝트(합본)/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/6조 팀프로젝트(합본)/seleniummodul.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/6조 팀프로젝트(합본)/vet4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/6조 팀프로젝트(합본)/walking_dog1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/6조 팀프로젝트(합본)/애완견 플랫폼 메뉴얼.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/notITelligence.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/sel2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/selstd1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/selstde.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/selw1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/selw2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/220516 (2)/sewerror.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -20,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.selw2">
     <configuration name="UI_Finished" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="coding" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -42,8 +74,74 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="errorhandler" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="coding" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="C:/python/Lib/site-packages/selenium/webdriver/remote" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:/python/Lib/site-packages/selenium/webdriver/remote/errorhandler.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sel2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="coding" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/midlec/220516 (2)" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/midlec/220516 (2)/sel2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="selw2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="coding" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/midlec/220516 (2)" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/midlec/220516 (2)/selw2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.selw2" />
+        <item itemvalue="Python.sel2" />
+        <item itemvalue="Python.errorhandler" />
         <item itemvalue="Python.UI_Finished" />
       </list>
     </recent_temporary>

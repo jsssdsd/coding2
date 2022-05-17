@@ -1,0 +1,22 @@
+파이썬 꿀팁
+
+현재 디렉토리의 파일 확인.
+import os
+print(os.listdir(os.getcwd()))
+
+
+
+import os
+print("before: %s"%os.getcwd())
+os.chdir("/home/js/test/")
+print("after: %s"%os.getcwd())
+
+
+
+2. readline()을 보면 앞서 사용했던 read() 함수에 의해서 파일 커서의 위치가 1로 변경된걸 알 수 있습니다. 그 상태에서 readline() 함수를 이용하니
+"write write write" 문자열에서 1개 이동한 위치에서 읽어오기 때문에 "rite write write" 를 읽어온걸 알 수 있습니다.
+
+3. realines() 를 보면 앞서 사용했던 realine 때문에 파일 커서의 위치가 바뀐걸 볼 수 있습니다. 그 상태에서 파일의 끝까지 문자들을 읽어오고, 개행까지 포함해서 리스트로 변경해주는걸 볼 수 있습니다.
+
+4. seek(0) 함수를 이용해서 파일 커서의 위치를 맨 앞으로 옮기고 readline() 함수를 이용해서 한 라인의 문자열을 읽어 들였습니다. "write write write" 문자열을 읽어온것을 확인 할 수 있습니다.
+
