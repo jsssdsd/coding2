@@ -28,7 +28,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.mecrosel_mod2">
+  <component name="RunManager" selected="Python.220518sw">
     <configuration name="220518 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="coding" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,8 +136,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.mecrosel_mod2" />
         <item itemvalue="Python.220518sw" />
+        <item itemvalue="Python.mecrosel_mod2" />
         <item itemvalue="Python.220518T" />
         <item itemvalue="Python.220518sw (1)" />
         <item itemvalue="Python.220518 (1)" />
