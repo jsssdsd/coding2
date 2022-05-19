@@ -1,0 +1,43 @@
+2205 18 std1
+
+전역적  함수 끝 webend
+
+
+
+https://translate.google.co.kr/?hl=ko&tab=TT
+
+https://www.naver.com/
+
+https://news.naver.com/
+
+
+
+
+
+네이버뉴스 경제
+https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1=101
+
+/html/body/div[2]/table/tbody/tr/td[3]/div/div[4]/div/ul[1]/li[1]/a
+/html/body/div[2]/table/tbody/tr/td[3]/div/div[4]/div/ul[1]/li[5]/a
+
+멜론> 순위차트> 검색> 데이터
+https://www.melon.com/index.htm
+
+/html/body/div/div[2]/div/div[2]/ul[1]/li[1]/a/span[2]
+/html/body/div[2]/div[2]/div/div[2]/ul[1]/li[1]/a/span[2]
+/html/body/div[2]/div[2]/div/div[1]/fieldset/input[1]       검색 
+
+/html/body/div[2]/div[3]/div/div[1]/div[4]/div/form[1]/div/table/tbody/tr[1]/td[3]/div/div/a[2]
+/html/body/div[2]/div[3]/div/div[1]/div[4]/div/form[1]/div/table/tbody/tr[2]/td[3]/div/div/a[2]
+   
+
+
+리스트 박스는 queue 형태다ㅣ LIFO의 반대 First in first  out !!!
+
+
+
+
+
+
+
+

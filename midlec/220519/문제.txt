@@ -1,0 +1,17 @@
+사람인 접속
+메인검색창 
+"개발자" 키워드 입력
+검색버튼
+통합검색/ 채용정보/ 기업정보 중 채용정보 버튼 클릭
+1페이지부터 15페이지까지 중간에 다음버튼 누르는 것 포함
+600개의 채용정보에서 지역/경력/학력/계약or정규
+
+
+
+
+
+https://www.saramin.co.kr/zf_user/search/recrui?searchType=search&searchword=%EA%B0%9C%EB%B0%9C%EC%9E%90&company_cd=0%2C1%2C2%2C3%2C4%2C5%2C6%2C7%2C9%2C10&panel_type=&search_optional_item=y&search_done=y&panel_count=y&abType=b&recruitPage=16&recruitSort=relation&recruitPageCount=40&inner_com_type=&show_applied=&quick_apply=&except_read=&ai_head_hunting=&mainSearch=n
+
+/html/body/div[5]/div/div[1]/section[1]/div[3]/div[1]/div[1]/div[2]/div[3]
+
+/html/body/div[5]/div/div[1]/section[1]/div[3]/div[1]/div[2]/div[2]/div[3]

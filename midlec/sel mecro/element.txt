@@ -1,6 +1,0 @@
-기록시각: 2022-05-19 01:14:17url값: https://www.naver.com/
-element값: input값: 데이터값: 
-
-기록시각: 2022-05-19 01:15:51 url값: https://www.naver.com/
- element값:  input값:  데이터값: 
-
