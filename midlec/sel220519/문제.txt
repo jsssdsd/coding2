@@ -1,0 +1,31 @@
+사람인 접속
+메인검색창 
+"개발자" 키워드 입력
+검색버튼
+통합검색/ 채용정보/ 기업정보 중 채용정보 버튼 클릭
+1페이지부터 15페이지까지 중간에 다음버튼 누르는 것 포함
+600개의 채용정보에서 지역/경력/학력/계약or정규
+
+사람인
+https://www.saramin.co.kr/zf_user/	url
+//*[@id="sri_header"]/div[1]/div[1]/div[1]/ul/li[1]/a	채용정보
+//*[@id="depth1_btn_101000"]/button	서울
+//*[@id="sp_main_wrapper"]/div[2]/ul/li[3]/button	검색어클릭
+//*[@id="sp_main_wrapper"]/div[2]/ul/li[3]/button/span[1]	검색XPATH
+//*[@id="total_ipt_keyword"]
+/html/body/div[5]/div[1]/div/div[2]/form/fieldset/div/div[2]/div/div[3]/div/div[1]/input	
+개발자
+	스크롤 내리기 
+/html/body/div[5]/div[1]/div/div[4]/div/div[2]/section/div[2]/div[1]/div[2]		데이터 크롤
+/html/body/div[5]/div[1]/div/div[4]/div/div[2]/section/div[2]/div[2]/div[2]
+
+끝
+
+
+서울 강남 경력 고졸 정규 5000
+
+
+
+
+
+
