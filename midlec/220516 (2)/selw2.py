@@ -36,9 +36,9 @@ t.sleep(1)
 
 
 element = x.find_element(By.ID,"aside_coin")  #webdriver.ActionChains.scroll()
-# x.switch_to.window(element)
-# x.execute_script("scrollbot.scrollTo(0, document.body.scrollHeight);") #끝까지내리기
-webdriver.ActionChains(x).scroll(0, 0, 0,100000000 , origin=element).perform()
+x.switch_to.window(element)
+x.execute_script("scrollbot.scrollTo(0, document.body.scrollHeight);") #끝까지내리기
+webdriver.ActionChains(x).scroll(0, 0, 0,100000000 , origin=element).perform()  #맨아래내리기
 
 
 #모든 코인 시세 확인
