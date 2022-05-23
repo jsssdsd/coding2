@@ -87,6 +87,7 @@ import datetime
 def doScrollDown(whileSeconds):
     start = datetime.datetime.now()
     end = start + datetime.timedelta(seconds=whileSeconds)
+    print(end)
     while True:
         crolD.execute_script('window.scrollTo(0, document.body.scrollHeight);')
         t.sleep(1)
@@ -456,16 +457,17 @@ def final():
                 global d5
                 global Ldc
 
-                last_height = crolD.execute_script("return document.body.scrollHeight")
+                last_height = crolD.execute_script("return document.body.scrollHeight") #스크롤 높이측정
                 crolD.execute_script('window.scrollTo(0, document.body.scrollHeight);') #끝까지 내리기
-                doScrollDown(2)
                 # webdriver.ActionChains(crolD).scroll(0, 0, 0, 100000000, origin=url).perform()
                 print("스크롤높이", last_height)
+                doScrollDown(2)
                 t.sleep(1)
                 # t.sleep(SCROLL_PAUSE_SEC)
                 # 스크롤 다운 후 스크롤 높이 다시 가져옴
-                new_height = crolD.execute_script("return document.body.scrollHeight")
-                print(new_height)
+                new_height = crolD.execute_script("return document.body.scrollHeight")  #window 창1개의 전체창 스크롤높이
+                # print("스크롤높이", last_height)
+                print("new_height높이",new_height)
                 if new_height == last_height:
                     break
                 last_height = new_height

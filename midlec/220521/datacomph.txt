@@ -3,7 +3,7 @@ url
 https://www.saramin.co.kr/zf_user/jobs/list/domestic?page=1&loc_mcd=101000&searchType=search&searchword=%EA%B0%9C%EB%B0%9C%EC%9E%90&search_optional_item=y&search_done=y&panel_count=y&isAjaxRequest=0&page_count=50&sort=RL&type=domestic&is_param=1&isSearchResultEmpty=1&isSectionHome=0&searchParamCount=2#searchTitle
 
 
-/html/body/div[4]/div[1]/div/div[4]/div[2]/div[2]/section/div[2]/div[1]/div[2]/a	
+/html/body/div[4]/div[1]/div/div[4]/div[2]/div[2]/section/div[2]/div[1]/div[2]/a
 /html/body/div[4]/div[1]/div/div[4]/div[2]/div[2]/section/div[2]/div[2]/div[2]/a
 
 
@@ -15,6 +15,9 @@ https://www.saramin.co.kr/zf_user/jobs/list/domestic?page=1&loc_mcd=101000&searc
 #10수집2
 /html/body/div[4]/div[1]/div/div[4]/div/div/section/div[2]/div[1]/div[2]/a
 /html/body/div[4]/div[1]/div/div[4]/div/div/section/div[2]/div[2]/div[2]/a
+
+
+
 
 /html/body/div[5]/div[1]/div/div[4]/div/div/section/div[2]/div[1]/div[2]
 /html/body/div[5]/div[1]/div/div[4]/div/div/section/div[2]/div[2]/div[2]

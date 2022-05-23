@@ -5,47 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51cafdc5-b3aa-4dfb-ab6f-f0f69359a0d9" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/midlec/220521/220521err.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/220516 (2)/selw2.py" beforeDir="false" afterPath="$PROJECT_DIR$/midlec/220516 (2)/selw2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/220519.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/220519/220519prac1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/220519/220519r1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/220519/220519s1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/220519/css색상명.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/220519/hw to mk2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/220519/matplotlib/220519matplot1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/220519/matplotlib/220519w1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/220519/문제.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/eunlecture/220407/220407m1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/eunlecture/220407/b220404.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/eunlecture/220407/classModule.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/eunlecture/220407/근로소득세.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/eunlecture/220411/f1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/eunlecture/220411/f2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/eunlecture/220411/newfunt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/eunlecture/220412/account.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/eunlecture/220412/classT1ac.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/eunlecture/220412/classtest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/eunlecture/220412/makerule.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/eunlecture/220412/newfunt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/eunlecture/220412/randorntm/confomclas.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/eunlecture/220412/randorntm/makerule.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/eunlecture/220412/randorntm/sample.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/sel mecro2/220517 (5).py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/sel mecro2/220517 (6).py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/sel mecro2/220517 (7).py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/sel mecro2/220517tip1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/sel mecro2/220518 stack queue.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/sel mecro2/220518.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/sel mecro2/220518std.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/sel mecro2/220518sw.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/sel mecro2/220518t2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/sel mecro2/220519.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/sel mecro2/cannumber.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/sel mecro2/element.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/sel mecro2/mecrosel_mod1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/midlec/sel mecro2/mecrosel_mod2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midlec/220521.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midlec/220521/11.py" beforeDir="false" afterPath="$PROJECT_DIR$/midlec/220521/11.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midlec/220521/datacomph.txt" beforeDir="false" afterPath="$PROJECT_DIR$/midlec/220521/datacomph.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midlec/220521/문제.txt" beforeDir="false" afterPath="$PROJECT_DIR$/midlec/220521/문제.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

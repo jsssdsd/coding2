@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+변수 선언
+</title>
+<script>
+let x;
+function f() {
+let y;
+x=10;
+y=20;
+z=30;
+if(y==20){
+let b =40;
+b++;
+document.write("if블록 내 블록변수 b=" +b+"<br>");
+}
+
+documet.wirte("함수 f() 내 지역변수 y = " +y+"<br>");
+}
+f();
+document.write("전역변수 x=" +x+"<br>");
+document.write("전역변수 z=" +z);
+//이곳에서는 변수x 와 z만 접근가능,  지역변수y와 블록변수 b는 접근불가
+
+</script>
+</body>
+</html>
+
+</script>
+</head>
+<body>
+
+<h3>CSS 포지션 속성</h3>
+<hr>
+
+
+
+</body>
+</html>

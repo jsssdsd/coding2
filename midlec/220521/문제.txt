@@ -30,7 +30,6 @@ https://www.saramin.co.kr/zf_user/	url#1
 //*[@id="default_list_wrap"]/div[4]/a[1]
 
 
-
 #10수집2
 
 /html/body/div[4]/div[1]/div/div[4]/div/div/section/div[2]/div[1]/div[2]/a
