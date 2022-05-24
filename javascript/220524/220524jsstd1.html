@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+java220524
+</title>
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+<pre>
+#자바스크립트 조건문
+
+
+if조건식
+{
+	수행문
+
+	수행문
+
+	if 조건식
+
+{
+수행문
+
+}
+
+}
+else if (조건식)
+{
+}
+else
+{
+}
+
+
+#switch 문
+여러 경우에 따라 다른 코드를 실행하고 싶을 때
+switch(식)
+{
+	case 값1:
+		수행문;
+		break;
+	case 값2:
+		수행문;
+		break;
+	case 값3:
+		수행문;
+		break;
+}
+
+
+모든 case에 수행문과 break를 넣어야함
+switch 괄호 안에 있는 식의 결과가
+case 뒤에 값과 일치하는 실행 문장으로 진입한다.
+case안에 실행문 실행 후 break를 읽고 switch를 탈출한다.
+case 중에서 일치하는 값이 없으면 default로 진입.
+
+#case의 값으로 배치될 수 있는 값 종류
+case1
+case 1.5
+case "hello"
+case true
+case 2+3 (=5) case 5와 동일
+
+
+
+
+사용할 수 없는 값의 종류
+
+case x 변수 사용 불가
+case x >10 조건식 사용 불가
+
+
+
+
+#반복문 for문
+for (i=1; i<10; i++)
+{	
+console.log("123");
+}
+
+
+
+반복문 while문
+
+while(조건식)
+{
+수행
+}
+
+while 문은 반복 회수를 알수 없는 경우 이ㅛㅇㅇ
+
+
+
+
+#do - while문
+처음 한바퀴는 조건없이 실행
+
+do 
+{
+수행문
+} while(조건식)
+
+
+#함수 
+function  함수이름 (매개변수, 매개변수2, 매개변수3)
+
+{
+함수 실행 문장
+return 리턴할 대상
+
+}
+
+파이썬 ex def 함수이름 (매개변수):
+	수행문
+	return 리턴대상
+}
+
+
+
+#
+eval() : 문자열 수식을 숫자로 연산한 결과 리턴
+parseInt(): 문자열을 숫자데이터로 변환
+.to String(): 숫자를 문자로 변환 
+isNaN(): not a number 구분함수
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+
+var city=prompt("입력");
+switch (city)
+{	
+
+
+	case "Seoul";
+		console.log("서울");
+		break;
+	case"Newyork";
+		console.log("뉴욕");
+		break;	
+	case"Paris";
+		console.log("파리");
+		break;
+	default
+		console.log("해당사항없음X");
+		break;
+
+}
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
