@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+CSS position
+</title>
+
+</head>
+<body>
+
+<h3>일요일은 pink, 다른요일 gold배경 </h3>
+<hr>
+
+
+
+
+<script>
+
+
+// let day = new Date(2022, 6-1 ,26);
+ let day = new Date();
+ const WEEKDAY = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+ let week = WEEKDAY[day.getDay()];
+console.log( day);
+console.log( week);
+
+if (week=='MON' || week=="TUE" || week=="WED" || week=="T오후 12:11 2022-05-27HU" || week=="FRI" ||
+ week=="SAT") {
+	document.body.style.backgroundColor = "gold";
+}
+else if (week="SUN")
+	{
+	document.body.style.backgroundColor = "pink";
+}
+
+document.write(day)
+
+
+</script>
+
+
+</body>
+</html>
