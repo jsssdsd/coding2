@@ -1,0 +1,25 @@
+for  ( x=0; x<11; x++);
+{	
+	<button onclick = "change(this , '30px', 'red')">
+	<img src = "x.jpg">버튼 </button>	
+}
+
+
+.icon_{i}{
+    background-position:0 (i * -10px);
+	.btn{i} {
+
+
+
+
+
+}function Rd(){ 
+var x = Math.floor(Math.random()*10);
+
+for (var i=0;i< 11;i++){
+  
+ <button class="1ps";  "w3-btn w3-border w3-xxlarge" onclick = "Rd()"; style="with: 30px" 
+	  시작>
+  }
+
+}
