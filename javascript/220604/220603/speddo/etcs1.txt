@@ -1,0 +1,187 @@
+
+function showImage()
+{
+var imgNum=Math.round(Math.random()*9);
+var objImg=document.getElementById("introImg");
+objImg.src=imgArray[imgNum];
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg1");
+objImg1.src=imgArray[imgNum];
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg2");
+objImg1.src=imgArray[imgNum];
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg3");
+objImg1.src=imgArray[imgNum];
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg4");
+objImg1.src=imgArray[imgNum];
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg5");
+objImg1.src=imgArray[imgNum];
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg6");
+objImg1.src=imgArray[imgNum];
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg7");
+objImg1.src=imgArray[imgNum];
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg8");
+objImg1.src=imgArray[imgNum];
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg9");
+objImg1.src=imgArray[imgNum];
+
+
+
+
+
+
+
+
+	<div class="wall" onclick="Remove(this, 'none')" style="top:23%; left:230px">111</div>
+	<div class="wall" onclick="Remove(this, 'none')" style="top:180px; left:300px"></div>
+	<div class="wall2" onclick="Remove(this, 'none')" style="top:180px; left:370px"></div>	
+	<div class="wall" onclick="Remove(this, 'none')" style="top:240px; left:230px"></div>
+	<div class="wall" onclick="Remove(this, 'none')" style="top:240px; left:300px"></div>
+	<div class="wall2" onclick="Remove(this, 'none')" style="top:240px; left:370px"></div>
+	<div class="wall" onclick="Remove(this, 'none')" style="top:300px; left:230px"></div>
+	<div class="wall" onclick="Remove(this, 'none')" style="top:300px; left:300px"></div>
+	<div class="wall2" onclick="Remove(this, 'none')" style="top:300px; left:370px"></div>
+	<div class="wall" onclick="Remove(this, 'none')" style="top:360px; left:230px"></div>
+	<div class="wall" onclick="Remove(this, 'none')" style="top:360px; left:300px"></div>
+	<div class="wall2" onclick="Remove(this, 'none')" style="top:360px; left:370px"></div>
+	<div class="wall" onclick="Remove(this, 'none')" style="top:420px; left:230px"></div>
+	<div class="wall" onclick="Remove(this, 'none')" style="top:420px; left:300px"></div>
+	<div class="wall2" onclick="Remove(this, 'none')" style="top:420px; left:370px"></div>
+
+
+
+
+
+
+
+
+
+<img id="e1" src="era.png">
+
+style= "width:15%; height:15%" 
+
+
+
+
+
+
+
+
+function mult(){
+	
+var S= prompt("복권 몇개를 사시겠습니까 ? 0~10장");
+	for (var i=0; i<S ; i++){
+	 
+	this.MainL= ".ALOT"
+	documet.write("this");
+	}
+}
+
+mult()
+
+
+
+showImage();
+showmoney();
+
+
+
+
+
+
+ parseInt(
+
+
+함수 
+
+function showImage()	{
+
+var imgNum=Math.round(Math.random()*9);
+var objImg=document.getElementById("introImg");
+console.log(" objImg");
+objImg.src= imgArray[imgNum] ;
+
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg1");
+objImg1.src=imgArray[imgNum];
+
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg2");
+objImg1.src=imgArray[imgNum];
+
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg3");
+objImg1.src=imgArray[imgNum];
+
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg4");
+objImg1.src=imgArray[imgNum];
+
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg5");
+objImg1.src=imgArray[imgNum];
+
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg6");
+objImg1.src=imgArray[imgNum];
+
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg7");
+objImg1.src=imgArray[imgNum];
+
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg8");
+objImg1.src=imgArray[imgNum];
+
+var imgNum=Math.round(Math.random()*9);
+var objImg1=document.getElementById("introImg9");
+objImg1.src=imgArray[imgNum];
+
+}
+
+
+function showmoney() {
+var imgNum=Math.round(Math.random()*6);
+var objmig1= document.getElementById("introImg10");
+objmig1.src=moneyArray[imgNum];
+console.log( imgNum);
+
+var imgNum=Math.round(Math.random()*6);
+var objmig1= document.getElementById("introImg11");
+objmig1.src=moneyArray[imgNum];
+
+var imgNum=Math.round(Math.random()*6);
+var objmig1= document.getElementById("introImg12");
+objmig1.src=moneyArray[imgNum];
+
+var imgNum=Math.round(Math.random()*6);
+var objmig1= document.getElementById("introImg13");
+objmig1.src=moneyArray[imgNum];
+
+var imgNum=Math.round(Math.random()*6);
+var objmig1= document.getElementById("introImg14");
+objmig1.src=moneyArray[imgNum];
+}
+
+
+
+
+function Remove(obj, display) {
+obj.style.display= display;
+}
+
+
+
+
+
+
+
+
+
