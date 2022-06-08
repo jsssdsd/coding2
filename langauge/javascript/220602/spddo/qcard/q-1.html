@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>
+this 활용
+</title>
+
+<script>
+var card = ["0","1", "2", "3","4","5","6","7","8","9"];
+
+var card1 = ["가","다", "나", "라"];
+ 
+
+function RdA(){ 
+
+var y = Math.floor(Math.random()*card.length);
+var y1 = Math.floor(Math.random()*card.length);
+var y2 = Math.floor(Math.random()*card.length);
+var y3 = Math.floor(Math.random()*card.length);
+var y4 = Math.floor(Math.random()*card.length);
+
+var r =card[y];
+var r1 =card[y1];
+var r2 =card[y2];
+var r3 =card[y3];
+var r4 =card[y4];
+
+var y1 = Math.floor(Math.random()*card1.length);
+//var r1=card1[y1];
+ 
+console.log(r);
+console.log(r1);
+console.log(r2);
+console.log(r3);
+console.log(r4);
+
+q1.src = r +".jpg";
+q2.src = r1+".jpg";
+q3.src = r2+".jpg";
+q4.src = r3+".jpg";
+q5.src = r4+".jpg";
+
+}
+
+//objImg.src=imgArray[imgNum];
+
+
+var w1 =document.getElementById("abc");
+
+
+
+
+
+function change( obj, size, color)	{ 
+	obj.style.color = color;
+	obj.style.fontSize = size;
+}
+
+
+ var x = Math.floor(Math.random()*11);
+console.log(x)
+</script>
+</head>
+<body>
+
+<h3>p365 this 활용</h3>
+<hr>
+<div id="Rc1"; inlign-block> 
+    &nbsp;  &nbsp;  &nbsp;  &nbsp;
+  <button class="w3-btn w3-border w3-xxlarge" onclick = "RdA()";  style="with: 30px" >
+	  시작</button>
+
+
+<br>
+<br>
+
+<button onclick = "RdA()">
+	<img id="q1">버튼 </button>
+<button onclick = "change(this , '30px', 'blue')">
+	<img id="q2">버튼 </button>
+<button onclick = "change(this , '30px', 'red')">
+	<img id="q3">버튼 </button>
+<button onclick = "change(this , '30px', 'blue')">
+	<img id="q4" >버튼 </button>
+<button onclick = "change(this , '30px', 'red')">
+	<img id="q5">버튼 </button>
+<br>
+<button onclick = "change(this , '30px', 'blue')">
+	버튼 </button>
+<button onclick = "change(this , '30px', 'red')">
+
+</div>
+</body>
+</html>

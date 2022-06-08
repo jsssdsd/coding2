@@ -1,1 +1,0 @@
-document.body.style.backgroundColor = "rgb("+x+","+y+","+z+")";

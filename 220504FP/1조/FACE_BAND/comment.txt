@@ -1,3 +1,0 @@
-post_num	comment_num	아이디	닉네임	시간	내용
-po_12	co_1	a1	wfefeefsefsfsdfsfsdfsdfdsfdsfdsffdsfsdfsd sdsdsdfdsf	1651649587.1746244	fewfwe
-po_12	co_2	a1	wfefeefsefsfsdfsfsdfsdfdsfdsfdsffdsfsdfsd sdsdsdfdsf	1651649588.2488587	fwefwe

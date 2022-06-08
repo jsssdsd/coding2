@@ -1,0 +1,131 @@
+<div id ="main">
+<div class="contents">
+<div id="a21" style="display:inline-block">
+<div style="border: 1px solid silver;text-align:left;padding:10px;margin: 15px 15px 15px 15px;">
+<div style="border: 1px solid gainsboro;margin:0px 0px 10px 0px">
+<div style="display:inline-block;vertical-align:top;margin:15px 0px 0px 0px;border-right:2px solid black;padding:0px;height:55">
+<a href=https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%82%AC%EB%9E%91%EB%B0%A9""><img src="사랑방.png" width="60" height="55" alt="img"/></a>
+</div>
+<div style="display:inline-block;padding:5px;margin:0px 0px 0px 0px">
+<p>
+<font size="4"><strong><a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%82%AC%EB%9E%91%EB%B0%A9">사랑방</a></strong><br><font size="2">다른 분들과 의견을 교환해봐요!</font>
+</p>
+</div>
+</div>
+<div style="border: 1px solid gainsboro;margin:10px 0px 10px 0px">
+<div style="display:inline-block;vertical-align:top;margin:15px 0px 0px 0px;border-right:2px solid black;padding:0px;height:55">
+<a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%A7%88%EB%AC%B8%EB%B0%A9"><img src="질문방.png" width="60" height="55" alt="img"/></a>
+</div>
+<div style="display:inline-block;padding:5px;margin:0px 0px 0px 0px">
+<p>
+<font size="4"><strong><a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%A7%88%EB%AC%B8%EB%B0%A9">질문방</a></strong><br><font size="2">지침으로 해소되지 않는 의문을 풀어봐요!</font>
+</p>
+</div>
+</div>
+<div style="border: 1px solid gainsboro;margin:10px 0px 10px 0px">
+<div style="display:inline-block;vertical-align:top;margin:15px 0px 0px 0px;border-right:2px solid black;padding:0px;height:55">
+<a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%82%AC%EC%9A%A9%EC%9E%90_%EB%AA%A8%EC%9E%84"><img src="사용자모임.png" width="60" height="55" alt="img"/></a>
+</div>
+<div style="display:inline-block;padding:5px;margin:0px 0px 0px 0px">
+<p>
+<font size="4"><strong><a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%82%AC%EC%9A%A9%EC%9E%90_%EB%AA%A8%EC%9E%84">사용자 모임</a></strong><br><font size="2">커뮤니티 포털에 방문해 보세요!</font>
+</p>
+</div>
+</div>
+<div style="border: 1px solid gainsboro;margin:10px 0px 0px 0px">
+<div style="display:inline-block;vertical-align:top;margin:15px 0px 0px 0px;border-right:2px solid black;padding:0px;height:55">
+<a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%A0%95%EC%B1%85%EA%B3%BC_%EC%A7%80%EC%B9%A8"><img src="정책과지침.png" width="60" height="55" alt="img"/></a>
+</div>
+<div style="display:inline-block;padding:5px;margin:0px 0px 0px 0px">
+<p>
+<font size="4"><strong><a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%A0%95%EC%B1%85%EA%B3%BC_%EC%A7%80%EC%B9%A8">정책과 지침</a></strong><br><font size="2">편집하시기 전에 한번 읽어주세요!</font>
+</p>
+</div>
+</div>
+</div>
+<div style="border: 1px solid silver;text-align:left;padding:0px;margin: 15px 15px 15px 15px;">
+<div style="width: 100%; font-size: 1.1em;">
+<span style="display: inline-block; height:37px; line-height: 35px; padding: 0 20px 0 10px;margin-top:10px;border-radius: 0 50px 50px 0;background-color:#EBEBEB;"><a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC%EC%97%90_%EC%B0%B8%EC%97%AC%ED%95%98%EA%B8%B0"><strong>위키백과 참여하기</strong></a>
+</span>
+</div>
+<div style="border: 1px solid gainsboro;margin:25px 10px 10px 10px">
+<div style="display:inline-block;vertical-align:top;margin:15px 0px 0px 0px;border-right:2px solid black;padding:0px;height:70">
+<a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4"><img src="환영합니다.png" width="60" height="70" alt="img"/></a>
+</div>
+<div style="display:inline-block;padding:5px;margin:0px 0px 0px 0px">
+<p>
+<font size="4"><strong><a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4">환영합니다!</a></strong><br><font size="2">위키백과는 여러분을 환영합니다.<br>이것부터 시작해 볼까요?</font>
+</p>
+</div>
+</div>
+<div style="border: 1px solid gainsboro;margin:10px 10px 10px 10px">
+<div style="display:inline-block;vertical-align:top;margin:15px 0px 0px 0px;border-right:2px solid black;padding:0px;height:55">
+<a href="https://ko.wikipedia.org/wiki/%EB%8F%84%EC%9B%80%EB%A7%90:%EC%83%88_%EB%AC%B8%EC%84%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0"><img src="새문서만들기도움말.png" width="60" height="65" alt="img"/></a>
+</div>
+<div style="display:inline-block;padding:5px;margin:0px 0px 0px 0px">
+<p>
+<font size="4"><strong><a href="https://ko.wikipedia.org/wiki/%EB%8F%84%EC%9B%80%EB%A7%90:%EC%83%88_%EB%AC%B8%EC%84%9C_%EB%A7%8C%EB%93%A4%EA%B8%B0">새 문서 만들기 도움말</a></strong><br><font size="2">새 문서를 만드는 방법에 대해 안내합니다.</font>
+</p>
+</div>
+</div>
+<div style="border: 1px solid gainsboro;margin:10px 10px 10px 10px">
+<div style="display:inline-block;vertical-align:top;margin:15px 0px 0px 0px;border-right:2px solid black;padding:0px;height:55">
+<a href="https://ko.wikipedia.org/wiki/%EB%8F%84%EC%9B%80%EB%A7%90:%EB%AC%B8%EC%84%9C_%ED%8E%B8%EC%A7%91%ED%95%98%EA%B8%B0"><img src="문서편집도움말.png" width="60" height="65" alt="img"/></a>
+</div>
+<div style="display:inline-block;padding:5px;margin:0px 0px 0px 0px">
+<p>
+<font size="4"><strong><a href="https://ko.wikipedia.org/wiki/%EB%8F%84%EC%9B%80%EB%A7%90:%EB%AC%B8%EC%84%9C_%ED%8E%B8%EC%A7%91%ED%95%98%EA%B8%B0">문서 편집 도움말</a></strong><br><font size="2">문서를 편집하는 방법에 대해 안내합니다.</font>
+</p>
+</div>
+</div>
+<div style="border: 1px solid gainsboro;margin:10px 10px 10px 10px">
+<div style="display:inline-block;vertical-align:top;margin:15px 0px 0px 0px;border-right:2px solid black;padding:0px;height:55">
+<a href="https://ko.wikipedia.org/wiki/%EB%8F%84%EC%9B%80%EB%A7%90:%EA%B7%B8%EB%A6%BC_%EC%98%AC%EB%A6%AC%EA%B8%B0"><img src="그림올리기도움말.png" width="60" height="70" alt="img"/></a>
+</div>
+<div style="display:inline-block;padding:5px;margin:0px 0px 0px 0px">
+<p>
+<font size="4"><strong><a href="https://ko.wikipedia.org/wiki/%EB%8F%84%EC%9B%80%EB%A7%90:%EA%B7%B8%EB%A6%BC_%EC%98%AC%EB%A6%AC%EA%B8%B0">그림 올리기 도움말</a></strong><br><font size="2">그림을 올리는 방법에 대해 안내합니다.</font>
+</p>
+</div>
+</div>
+<div style="border: 1px solid gainsboro;margin:10px 10px 10px 10px">
+<div style="display:inline-block;vertical-align:top;margin:15px 0px 0px 0px;border-right:2px solid black;padding:0px;height:55">
+<a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%A7%80%EC%9B%90_%EB%8B%A8%EC%B2%B4"><img src="지원단체.png" width="60" height="65" alt="img"/></a>
+</div>
+<div style="display:inline-block;padding:5px;margin:0px 0px 0px 0px">
+<p>
+<font size="4"><strong><a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%A7%80%EC%9B%90_%EB%8B%A8%EC%B2%B4">지원 단체</a></strong><br><font size="2">위키백과 커뮤니티를 지원하는 단체는?</font>
+</p>
+</div>
+</div>
+</div>
+<div style="border: 1px solid silver;text-align:left;margin: 15px 15px 15px 15px;">
+<div style="width: 100%; font-size: 1.1em;">
+<span style="display: inline-block; height:37px; line-height: 35px; padding: 0 20px 0 10px;margin-top:10px;border-radius: 0 50px 50px 0;background-color:#EBEBEB;"><a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%86%8C%EA%B0%9C"><strong>위키백과 소개</strong></a>
+</span>
+</div>
+<div style=margin:30px 30px 30px 30px;>
+<strong><a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%86%8C%EA%B0%9C">위키백과</a></strong>는 
+<a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4">위키</a>를 이용하여 전 세계 사람들이 함께 만들어가는 
+<a href="https://ko.wikipedia.org/wiki/%EC%9B%94%EB%93%9C_%EC%99%80%EC%9D%B4%EB%93%9C_%EC%9B%B9">웹 기반</a>의 다언어 
+<a href="https://ko.wikipedia.org/wiki/%EB%B0%B1%EA%B3%BC%EC%82%AC%EC%A0%84">백과사전</a>입니다.
+위키백과는 <a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%A4%91%EB%A6%BD%EC%A0%81_%EC%8B%9C%EA%B0%81">중립적</a>이고 
+<a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%ED%99%95%EC%9D%B8_%EA%B0%80%EB%8A%A5">검증 가능</a>한 
+<a href="https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0_%EC%A0%80%EC%9E%91%EB%AC%BC">자유 콘텐츠</a> 백과사전의 제공을 목적으로 하는 프로젝트로, 누구나 참여하여 문서를 수정하고 발전시킬 수 있습니다.<br><br>
+위키백과는 <a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EB%8B%A4%EC%84%AF_%EC%9B%90%EC%B9%99">다섯 가지 기본 원칙</a>에 따라 운영됩니다. 모든 문서는 
+<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.ko">크리에이티브 커먼즈 저작자표시-동일조건변경허락 3.0</a>에 따라 사용할 수 있으며, 복사, 수정과 배포가 자유롭고 상업적 목적의 사용도 가능합니다.
+</div>
+</div>
+<div style="border: 1px solid silver;text-align:left;margin: 15px 15px 15px 15px;">
+<div style="width: 100%; font-size: 1.1em;">
+<span style="display: inline-block; height:37px; line-height: 35px; padding: 0 20px 0 10px;margin-top:10px;border-radius: 0 50px 50px 0;background-color:#EBEBEB;"><a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%98%A4%EB%8A%98%EC%9D%98_%EA%B7%B8%EB%A6%BC"><strong>오늘의 그림</strong></a>
+</span>
+</div>
+<div style="text-align:center;">
+<img src="오늘의그림.png" style="margin-bottom:10px"><br>
+위 그림은 <a href="https://commons.wikimedia.org/wiki/%EC%98%A4%EB%8A%98%EC%9D%98_%EA%B7%B8%EB%A6%BC">위키미디어 공용</a>에서 가져왔습니다.<br>
+<p style="text-align:right;margin-right:20px"><a href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%98%A4%EB%8A%98%EC%9D%98_%EA%B7%B8%EB%A6%BC/%EC%97%AD%EC%82%AC">더 보기...</a></p>
+</div>
+</div>
+</div>
+</div>

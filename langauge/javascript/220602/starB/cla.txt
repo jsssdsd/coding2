@@ -1,0 +1,82 @@
+    line-height: 1;
+
+    font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: #f6f5ef;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 2px solid #000;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 99;
+
+
+
+
+  font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+    line-height: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    vertical-align: baseline;
+    background: transparent;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+
+    line-height: 1;
+    width: 100%;
+    background: #f6f5ef;
+    z-index: 110;
+    position: absolute;
+
+
+
+
+style=";left:0px;background-color:#f6f5ef; position:fixed; width:100%;z-index:500"
+
+
+
+<div class= "M1"  style="margin-top:-330px; margin-right:270px">
+
+
+
+
+
+dm2
+	 font: normal 13px Avenir, Arial, georgia;
+   	 text-align: center;
+	margin-left: 250px;	
+ line-height: 20px;
+    padding-top: 10px;
+ 
+	list-style: none;
+   
+ list-style: none;
+ 
+    text-decoration: none;
+    vertical-align: baseline;
+    background: transparent;
+   
+    color: #333;
+    display: block;
+
+
+
+
+
+left: calc(80%-20px)  # 식가능
+
+
+
+"margin-right:100px"
+

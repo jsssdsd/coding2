@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+CSS position
+</title>
+</head>
+<body>
+
+<pre>
+
+<h4>CSS 포지션 속성</h4>
+
+HTML 태그가 웹에 출력되는 형태는 항상 box model이다
+
+HTML태그를 작성한 순서대로 출력된다.
+블록태그 : p div ul ol 왼쪽끝부터 오른쪽 끝까지, 새로운 줄 
+인라인 태그: span a img 포함하고 있는 컨텐츠부분만
+
+#박스 유형 변경
+속성명:display
+속성값: 블록박스/인라인박스/인라인블록박스
+1.블록박스 : block
+	1.1항상 새라인에서시작 단
+	1.2블록 박스 내에서 배치 단
+	1.3옆에 다른 요소 배치 불가 단
+	1.4width height 사용가능 장
+	1.5 padding margin border 크기 조절가능 장
+
+2.인라인박스:inline
+	2.1 새라인 시작 아님 장
+	2.2 모든 박스 내 배치가능  장
+	2.3 옆에 다른 요소 배치 가능  장
+	2.4width height 조절불가  단
+	2.5margin-top, bottom 조절불가 단
+	
+
+3.인라인블록박스:inline-block    장점 합침 1+2
+	3.1 새라인 시작 아님  
+	3.2 모든 박스 내 배치가능
+	3.3 옆에 다른 요소 배치 가능
+	3.4width height 조절 가능
+	3.5padding margin border 조절가능
+
+
+
+
+#박스의 배치
+속성명:position
+속성값:static
+
+1.정적배치: static(디폴트) 태그 작성 순서대로
+	태그 작성 순서대로
+	노멀플로우 방식
+
+
+2.상대배치: relative
+	노멀 플로우 배치를 기준으로 HTML 태그 작성
+	순서에 따른 배치를 기준으로 상대위치를 결정한다.
+	left right top bottom값을 줄 수 있다.
+	left right top bottom속성 적용시 static위치의 벽을 기준으로 움직인다.
+	top과 bottom이 동시에 지정되면 bottom속성은 무시된다.
+	left와 right가 동시에 지정되면 right속성은 무시된다.
+
+
+
+3.절대배치: absolute
+	left right top bottom 값으로 위치 조정
+	부모태그안에서의 상대좌표이다
+	부모 태그가 relative속성 설정해야함
+
+4.고정배치: fixed
+	스크롤,ㅂ 브라우저 크기 변경해도 HTML 문서의 특정위치에
+	고정할때 쓰는 속성 fixed는 절대 배치와 다르게 viewport(브라우저의 보이는 영역)에 고정된다.
+	==> 브라우저에 항상 보인다. 
+
+
+
+
+
+5.유동배치
+	속성명 float
+	속성값 left right
+
+
+
+#z-index
+	속성명 z-index
+	속성값 : value 숫자 (음수~양수)
+	기본 레이어 값:0
+	position
+
+
+#visibility
+	속성명 : visibility
+	속성 값 : visible or hidden
+	visibility:hidden = 태그가 원래 위치에 존재하고 보이지만 않는다.
+	display: none= 태그가 html문서 구조에서 사라진다.
+
+
+#overflow
+	속성명: overflow
+	속성값:
+		hidden: 콘텐츠를 태그 크기로 잘라서 넘어가는 내용은 안보임
+		visible: 디폴트 값이며
+		scroll: 스크롤바를 생성하여 컨테츠 출력
+		auto
+
+
+	
+</pre>
+
+
+<div>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+</div>
+
+
+<div>
+<span style="width:100px">4</span>
+<span>5</span>
+<span>6</span>
+</div>
+
+
+<ul>    <!새로리스트를 가로로 바꾸는법 div로 리스트 묶는다.>
+
+<li style="display:inline-block">x</li>
+<li style="display:inline-block">y</li>
+<li style="display:inline-block">z</li>
+</ul>
+
+<div style= "background:orange;position:relative;overflow:scroll">
+<p style="display:inline-block;font-size:30px;margin:200px">p1</p>
+<p style="display:inline-block;margin:20px;position:relative;top:300px;background:red;">p2</p> 
+<!벽을기준 왼쪽으로 30px민다.>
+<p style="display:inline-block;position:absolute;left:2px;margin:1px;">p3</p>
+<span style= "vertical-align:top">s4</span>
+<
+<div style:"height:200px;overflow:scroll;width:100px">
+divdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdiv
+divdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdiv
+divdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdiv
+</div>
+<div style:"height:200px;overflow:auto;width:100pxl">
+divdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdivdiv
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>

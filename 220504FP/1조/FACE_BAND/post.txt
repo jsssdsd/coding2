@@ -1,8 +1,0 @@
-post_num	ID	제목	시간	비밀글여부	닉네임
-po_7	wta34	뭘봐	1651648482.5187194	yes	s
-po_8	wta34	비밀	1651648502.845023	yes	s
-po_9	wta3	하이1	1651648684.6313076	yes	rfwe
-po_10	wta3	하이	1651648689.7703106	no	rfwe
-po_11	wta34	오늘은 어떤 생각을 하셨나요?fsdsd	1651649312.9688106	yes	s
-po_12	wta34	220504일기  	1651649360.5968168	no	s
-po_1	a1	오늘은 어떤 생각을 하셨나요?	1651649815.7742646	no	wfefeefsefsfsdfsfsdfsdfdsfdsfdsffdsfsdfsd sdsdsdfdsf

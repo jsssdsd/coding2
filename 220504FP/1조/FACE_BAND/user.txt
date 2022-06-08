@@ -1,2 +1,0 @@
-아이디	패스워드	이름	닉네임	생년월일	성별	이메일	코인보유량
-a1	4646st	w	wfefeefsefsfsdfsfsdfsdfdsfdsfdsffdsfsdfsd sdsdsdfdsf	123333	남자	1@1.1	24

@@ -1,0 +1,22 @@
+1. 도메인
+
+2. element = x.find_element(By.ID,"aside_coin")
+
+
+3. 클릭 
+
+4.	a= element = x.find_element(By.ID,"aside_coin") 
+	a.text
+
+5.  메모장 복붙
+6. 
+
+
+
+
+요소확인 모듈
+
+1. 메모장이없는지 확인 (if)
+2. 없으면 생성  
+3. 그안에 마우스 클릭한 요소 복붙후 메모장에 입력
+4. 불러오기로 메모장 기록된 요소 실행 

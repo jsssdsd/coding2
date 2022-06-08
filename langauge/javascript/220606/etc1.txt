@@ -1,0 +1,27 @@
+	var moneyArray = new Array();
+		moneyArray[0]="이천원.png"
+		moneyArray[1]="사천원.png"
+		moneyArray[2]="이만원.png"
+		moneyArray[3]="일십만원.png"
+		moneyArray[4]="일천일백만원.png"
+		moneyArray[5]="일억원.png"
+		moneyArray[6]="일십억.png"
+
+
+
+	var imgArray= new Array();
+		imgArray[0]="access.png";  //사진
+		imgArray[1]="anonymous.png"; //사진
+		imgArray[2]="account.png";    //사진
+		imgArray[3]="blockchain.png";    //사진
+		imgArray[4]="cloud-mining.png";  //사진
+		imgArray[5]="confidential.png"; //사진
+		imgArray[6]="decentralization.png";    //사진
+		imgArray[7]="encrypted.png";    //사진
+		imgArray[8]="idea.png";  //사진
+		imgArray[9]="technology.png"; //사진
+	
+
+
+		showImage();
+		showmoney();	

@@ -1,0 +1,53 @@
+width:33%; height:22%
+
+
+imgArray .png{
+	width:180%; 
+	height:46%;
+	
+	
+	}
+	
+
+
+		var imgNum1=Math.round(Math.random()*6);
+		var imgNum2=Math.round(Math.random()*6);
+		var imgNum3=Math.round(Math.random()*6);
+		var imgNum4=Math.round(Math.random()*6);
+		var imgNum5=Math.round(Math.random()*6);
+
+
+
+		var imgNum1=Math.round(Math.random()*6);
+		var imgNum2=Math.round(Math.random()*6);
+		var imgNum3=Math.round(Math.random()*6);
+		var imgNum4=Math.round(Math.random()*6);
+		var imgNum5=Math.round(Math.random()*6);
+
+
+
+
+
+
+
+function showmoney(){
+			var imgNum5=Math.round(Math.random()*6);
+			var objmig= document.getElementById("introImg10");
+			objmig.src=moneyArray[imgNum5];
+			
+			var imgNum1=Math.round(Math.random()*6);
+			var objmig1= document.getElementById("introImg11");
+			objmig1.src=moneyArray[imgNum1];
+			
+			var imgNum2=Math.round(Math.random()*6);
+			var objmig1= document.getElementById("introImg12");
+			objmig1.src=moneyArray[imgNum2];
+			
+			var imgNum3=Math.round(Math.random()*6);
+			var objmig1= document.getElementById("introImg13");
+			objmig1.src=moneyArray[imgNum2];
+			
+			var imgNum4=Math.round(Math.random()*6);
+			var objmig1= document.getElementById("introImg14");
+			objmig1.src=moneyArray[imgNum4];
+			}

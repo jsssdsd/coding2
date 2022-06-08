@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+업다운
+</title>
+
+<script>
+
+function star(){
+	var a1= new Array();  
+	var c= 0;
+	a1.push(x);
+	document.write(a1,"<br>");
+	var w=0;
+
+	var x = Math.floor(Math.random()*100);
+	var q=0;
+	
+	while(w==0) {
+		var i = prompt("1~100값을 입력하세요");
+
+		if (isNaN(i)==false){
+	 	document.write("숫자 잘입력했음");
+			
+
+			while(x<100){
+			q=q+1
+
+			if (i<x){
+			document.write("업,");
+			var i = prompt("1~100값을 입력하세요","업");
+			continue;
+			}
+	
+	
+			else if(i >x){
+			document.write("다운,");
+			var i = prompt("1~100값을 입력하세요","다운");	
+			continue;
+	
+			}
+	
+			else if (i==x){
+			document.write("<br>같다 정답입니다!");
+			w=w+1;
+			break;
+		
+			}
+	
+			}
+		}
+	
+		
+
+		if (w>=1) {
+		document.write("같다 정답입니다!  ");
+		document.write("<br>시도한 횟수",q,"번입니다!");
+		break
+		
+		}
+		else{
+		c+=1;
+	 	document.write("오류:",c,"번","오류내용" +i,"숫자를 입력하세요<br>");
+			
+		}
+	
+
+	}	
+
+
+
+
+}
+
+
+</script>
+</head>
+<body>
+  <p>  document.write("<td>",a1**2 ,"</td>") ; 이처럼 documentwrite 에  문자를 변수를 넣으려면 " ", 사이에 첨가한다,  document.write("<td>",a1**2 ,"</td>") 한 쌍따음표에 써넣으면 다 문자열 print취급 </p>
+
+<! fdsfsdfsdfds >
+
+<!!p> math.floor() 
+math 객체의 메서드 floor()
+소숫점 날리기
+Math.floor ( 5675/10)=> 567
+string문자열의 length index사용X </p>
+
+
+<h3> 업다운 </h3>
+<hr>
+
+
+  <button id="countBtn" onclick="star()">start</button>
+</body>
+</html>

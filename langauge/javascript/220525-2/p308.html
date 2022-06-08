@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+p.308q3-2
+</title>
+
+<script>
+function star(){
+	
+	var a, a1,a2,a3,a4,a5,a6,a7,a8,a9
+ 	a='n';
+	a1=1;
+	a2=2;	
+	a3=3;
+a4=4;
+a5=5;
+a6=6;
+a7=7;
+a8=8;
+a9=9;
+
+	document.write("<table border='1'>");
+
+	document.write("<tr>" );
+	document.write("<td>",a, "</td>");
+	document.write("<td>",a1, "</td>");
+	document.write("<td>",a2, "</td>");
+	document.write("<td>",a3, "</td>");
+	document.write("<td>",a4, "</td>");
+	document.write("<td>",a5, "</td>");
+	document.write("<td>",a6, "</td>");
+	document.write("<td>",a7, "</td>");
+	document.write("<td>",a8, "</td>");
+	document.write("<td>",a9, "</td>");
+	
+	document.write("</tr>" );
+
+
+	document.write("<tr>" );
+	document.write("<td >n<sup>2</sup></td>"); 
+
+	document.write("<td>",a1**2,"</td>");
+	document.write("<td>",a2 **2  ,"</td>" );
+	document.write("<td>",a3 **2  ,"</td>" );
+	document.write("<td>",a4 **2  ,"</td>" );
+	document.write("<td>",a5 **2  ,"</td>" );
+	document.write("<td>",a6 **2  ,"</td>" );
+	document.write("<td>",a7 **2  ,"</td>" );
+	document.write("<td>",a8 **2  ,"</td>" );
+	document.write("<td>",a9 **2  ,"</td>" );
+	
+	
+	document.write("</tr>" );
+
+
+	document.write("</table >" );
+
+
+	var x = prompt("별 개수 입력하세요" );
+
+	if (isNaN(x))
+	 document.write("입력오류입니다.");
+	for (i=0; i<=x; i++){	
+			document.write( '*'.repeat (i)+" <br>");
+	}
+	
+}
+
+
+</script>
+</head>
+<body>
+<p!  document.write("<td>",a1**2 ,"</td>") ; 이처럼 documentwrite 에  문자를 변수를 넣으려면 " ", 사이에 첨가한다,  document.write("<td>",a1**2 ,"</td>") 한 쌍따음표에 써넣으면 다 문자열 print취급 >
+ 
+<h3> document.write()로 표만들기 </h3>
+<hr>
+
+<script>
+	star()
+</script>
+</body>
+</html>

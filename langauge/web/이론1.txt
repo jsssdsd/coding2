@@ -1,0 +1,24 @@
+
+
+<<<<HTML>>>> 220506 입문.
+
+www. world wide web 
+URL  : uniform resource locator
+프로토컬     서버주소  TCP /IP  포트번호  경로명	웹페이지 파일이름
+
+
+들여쓰기
+html 부모 기초
+	head 헤드는 html의자식
+		title title은 head의 자식......
+	body
+
+html
+
+
+
+
+
+
+
+

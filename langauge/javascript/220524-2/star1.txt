@@ -1,0 +1,7 @@
+function printStar() {
+   var number = prompt("정수를 입력하세요.");
+   if(isNaN(number))
+      document.write("입력 오류입니다.");
+   for (i=0;i<=number;i+=1) {
+      document.write("*".repeat(i) + "<br>");
+   }

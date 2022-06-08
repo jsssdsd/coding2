@@ -1,0 +1,397 @@
+<DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="utf-8">
+	<title>
+	스피또233
+	
+	
+	</title>
+	<style>
+	.sampleimg {
+	width:50px;
+	height:37px;
+	position:absolute;
+	z-index:1;
+	}
+	
+	
+	.ALOT{
+	position:relative;
+	width:75%;
+	 height:70%;
+	}
+	
+	.wall {
+	background-color:gray;
+	width:25%;
+	height:17%;
+	z-index:15;
+	position:absolute;
+	border-color:brack;
+	border: 2px dotted ;
+	
+	}
+	
+	
+	.wall2 {
+	position:absolute;
+	width:25%;
+	height:17%;
+
+	background-color:gray;
+	z-index:15;
+	border: 2px dotted ;
+	
+	}
+	
+	#bacGray
+	{
+	}
+	
+	.im1{
+	position:absolute;
+	width:180%; 
+	height:46%;
+	}
+
+
+	
+	.m1{
+	position:absolute;
+	width:15%; 
+	height:7%
+ 	top:5%;
+	border: 2px solid ;
+}
+
+
+	.aw{
+	position:absolute;
+	 top:-5%;
+	 left:-25%;
+	width:131%; 
+	height:121%
+	}
+
+	.winm{
+	font-size: 25px;
+}
+	</style>
+	
+	<body>
+	<script>
+var cp1 =0;
+var n =0;
+var m =0;
+	var imgArray= new Array();	
+			imgArray[0]="access.png";  //사진
+			imgArray[1]="anonymous.png"; //사진
+			imgArray[2]="account.png";    //사진
+			imgArray[3]="blockchain.png";    //사진
+			imgArray[4]="cloud-mining.png";  //사진
+			imgArray[5]="confidential.png"; //사진
+			imgArray[6]="decentralization.png";    //사진
+			imgArray[7]="encrypted.png";    //사진
+			imgArray[8]="idea.png";  //사진
+			imgArray[9]="technology.png"; //사진
+		
+	var moneyArray = new Array();
+			moneyArray[0]="이천원.png"
+			moneyArray[1]="사천원.png"
+			moneyArray[2]="이만원.png"
+			moneyArray[3]="일십만원.png"
+			moneyArray[4]="일천일백만원.png"
+			moneyArray[5]="일억원.png"
+			moneyArray[6]="일십억.png"
+
+	var moneyArrayR = [ ["이천원.png",2000] , ["사천원.png",4000] , ["이만원.png",20000], ["일십만원.png",100000]
+			, ["일천일백만원.png",11000000],  ["일억원.png",100000000], ["일십억.png",1000000000]]
+	
+	console.log(moneyArray);	
+	console.log(moneyArrayR);
+	function Remove(obj, display) {
+			obj.style.display= display;
+			}
+		
+		function showImage()
+			{
+			var imgNum=Math.round(Math.random()*9);
+			var objImg=document.getElementById("introImg");
+			objImg.src=imgArray[imgNum];
+			
+			var imgNum=Math.round(Math.random()*9);
+			var objImg1=document.getElementById("introImg1");
+			objImg1.src=imgArray[imgNum];
+			
+			var imgNum=Math.round(Math.random()*9);
+			var objImg1=document.getElementById("introImg2");
+			objImg1.src=imgArray[imgNum];
+			
+			var imgNum=Math.round(Math.random()*9);
+			var objImg1=document.getElementById("introImg3");
+			objImg1.src=imgArray[imgNum];
+			
+			var imgNum=Math.round(Math.random()*9);
+			var objImg1=document.getElementById("introImg4");
+			objImg1.src=imgArray[imgNum];
+			
+			var imgNum=Math.round(Math.random()*9);
+			var objImg1=document.getElementById("introImg5");
+			objImg1.src=imgArray[imgNum];
+			
+			var imgNum=Math.round(Math.random()*9);
+			var objImg1=document.getElementById("introImg6");
+			objImg1.src=imgArray[imgNum];
+			
+			var imgNum=Math.round(Math.random()*9);
+			var objImg1=document.getElementById("introImg7");
+			objImg1.src=imgArray[imgNum];
+			
+			var imgNum=Math.round(Math.random()*9);
+			var objImg1=document.getElementById("introImg8");
+			objImg1.src=imgArray[imgNum];
+			
+			var imgNum=Math.round(Math.random()*9);
+			var objImg1=document.getElementById("introImg9");
+			objImg1.src=imgArray[imgNum];
+			
+			}
+		
+		
+			
+		function showmoney(){
+			var imgNum5=Math.round(Math.random()*6);
+			var objmig= document.getElementById("introImg10");
+		
+			
+			var imgNum1=Math.round(Math.random()*6);
+			var objmig1= document.getElementById("introImg11");
+		
+			var imgNum2=Math.round(Math.random()*6);
+			var objmig1= document.getElementById("introImg12");
+	
+			
+			var imgNum3=Math.round(Math.random()*6);
+			var objmig1= document.getElementById("introImg13");
+	
+			
+			var imgNum4=Math.round(Math.random()*6);
+			var objmig1= document.getElementById("introImg14");
+		
+			}
+
+		function showI(x)
+			{
+				var imgNum= imgNum;
+				var imgNum=Math.round(Math.random()*9);
+				var objImg1=document.getElementById("introImg"+x);
+			}
+		
+		function showM(y)
+			{
+				var imgNum= imgNum;
+				var imgNum=Math.round(Math.random()*6);
+				var objmig1= document.getElementById("introImg"+y);
+			}
+
+
+ // 마크가 맞았을때 돈출력해서 한번에 확인
+		function matM(){
+ 
+
+			introImg == introImg1;
+			introImg2 ==introImg3;
+			introImg4==introImg5;
+			introImg6==introImg7;
+			introImg8==introImg9;
+		}
+
+
+
+	var S=prompt("복권 몇개를 사시겠습니까 ? 0~10장");
+	
+
+	
+
+
+	if (parseInt(S)< 11) {
+
+	function Remove(obj, display) {
+	obj.style.display= display;
+	}
+		
+	d=0;
+	while(d < parseInt(S)){
+		
+		
+
+		
+		document.write("<div class='ALOT'>");
+		document.write("<div>");
+		document.write("<img class='im1'  src='https://m.dhlottery.co.kr/img/lotwork/printlotto/1593495255472.JPG' style='position:absolute; width:80%;  height:100%;'>");
+		
+
+		
+		document.write("<div id= 'bacGray' style='background-color:#a4becc; position:absolute; z-index:2; width:35%; height:61%; top:32%; left:30%'>");
+		
+		var imgNum=Math.round(Math.random()*9);
+		document.write("<img id='introImg' class='m1' src= '"+imgArray[imgNum]+"' class='sampleimg' border='0' style='top:1%; left:18%'>");
+		var imgNum=Math.round(Math.random()*9);
+		showI(1);
+		document.write("<img id='introImg1' class='m1' src= '"+imgArray[imgNum]+"' class='sampleimg' border='0' style='top:1%; left:44%'>");
+		showI(2);
+		var imgNum=Math.round(Math.random()*9);
+		document.write("<img id='introImg2' class='m1' src= '"+imgArray[imgNum]+"' class='sampleimg' border='0' style='top:21%; left:18%'>");
+		showI(2);
+		var imgNum=Math.round(Math.random()*9);
+		document.write("<img id='introImg3' class='m1' src= '"+imgArray[imgNum]+"' class='sampleimg' border='0' style='top:21%; left:44%'>");
+		showI(2);
+		var imgNum=Math.round(Math.random()*9);
+		document.write("<img id='introImg4' class='m1' src= '"+imgArray[imgNum]+"' class='sampleimg' border='0' style='top:40%; left:18%'>");
+		showI(2);
+		var imgNum=Math.round(Math.random()*9);
+		document.write("<img id='introImg5' class='m1' src= '"+imgArray[imgNum]+"' class='sampleimg' border='0' style='top:40%; left:44%'>");
+		showI(2);
+		var imgNum=Math.round(Math.random()*9);
+		document.write("<img id='introImg6' class='m1' src= '"+imgArray[imgNum]+"' class='sampleimg' border='0' style='top:60%; left:18%'>");
+		showI(2);
+		var imgNum=Math.round(Math.random()*9);
+		document.write("<img id='introImg7' class='m1' src= '"+imgArray[imgNum]+"' class='sampleimg' border='0' style='top:60%; left:44%'>");
+		showI(2);
+		var imgNum=Math.round(Math.random()*9);
+		document.write("<img id='introImg8' class='m1' src= '"+imgArray[imgNum]+"' class='sampleimg' border='0' style='top:79%; left:18%'>");
+		showI(2);
+		var imgNum=Math.round(Math.random()*9);
+		document.write("<img id='introImg9' class='m1' src= '"+imgArray[imgNum]+"' class='sampleimg' border='0' style='top:79%; left:44%'>");
+		
+
+				
+		
+
+		var imgNum5=Math.round(Math.random()*6);
+		var imgNum1=Math.round(Math.random()*6);
+		var imgNum2=Math.round(Math.random()*6);
+		var imgNum3=Math.round(Math.random()*6);
+		var imgNum4=Math.round(Math.random()*6);
+		
+
+		
+		
+
+		while(n==0) {
+
+		if (imgNum5 != imgNum1 && imgNum5 != imgNum2 && imgNum5 != imgNum3 &&  imgNum5 != imgNum4 &&  imgNum1 != imgNum2 
+	&& imgNum1 != imgNum3 && imgNum1 != imgNum4 && imgNum2 != imgNum3 && imgNum2 != imgNum4 && imgNum3 != imgNum4) {
+		
+		
+		document.write("<img id='introImg10' class='m1' src= '"+moneyArray[imgNum5]+"' class='sampleimg' border='0' style='top:1%;  left:70%'>");
+
+		document.write("<img id='introImg11' class='m1' src= '"+moneyArray[imgNum1]+"' class='sampleimg' border='0' style='top:21%; left:70%'>");
+
+		document.write("<img id='introImg12' class='m1' src= '"+moneyArray[imgNum2]+"' class='sampleimg' border='0' style='top:42%; left:70%;'>");
+
+		document.write("<img id='introImg13' class='m1' src= '"+moneyArray[imgNum3]+"' class='sampleimg' border='0' style='top:60%; left:70%;'>");
+
+		document.write("<img id='introImg14' class='m1' src= '"+moneyArray[imgNum4]+"' class='sampleimg' border='0' style='top:81%; left:70%;'>");
+		
+		n=n+1;
+		
+		}
+	
+	
+		else {
+		
+
+		showmoney();
+		console.log(imgNum5, imgNum1,imgNum2,imgNum3,imgNum4);
+		m=m+1;
+		console.log(m);
+		}
+
+		}
+
+
+		var  imgNump;
+
+		if(imgNump=Math.round(Math.random()*5000000) ==1);{
+		}
+
+
+		if( introImg == introImg1) {
+			introImg10= cp1;
+			document.getElementById('name').innerHTML="이순신"
+
+		}
+		 
+		else if( introImg2 == introImg3) {
+		introImg11= cp1;
+		}
+		else if( introImg4 == introImg5) {
+		introImg12= cp1;
+		}
+		else if( introImg6 == introImg7) {
+		introImg13= cp1;
+		}
+		else if( introImg8 == introImg9) {
+		introImg14= cp1;
+		}
+		//else if( introImg3 == introImg4) {
+		//introImg10= cp1;
+		//}
+		//else if( introImg3 == introImg4) {
+		//introImg10= cp1;}
+		
+		
+		document.write("<div class ='aw'>");
+		document.write("<div class='wall' onclick=" + "Remove(this"+","+"'none')" + " style='top:1%; left:18%'></div>");
+		document.write("<div class='wall' onclick=" + "Remove(this"+","+"'none')" + " style='top:1%; left:44%'></div>");
+		document.write("<div class='wall2' onclick=" + "Remove(this"+","+"'none')" + " style='top:17%; left:18%'></div>");
+		document.write("<div class='wall' onclick=" + "Remove(this"+","+"'none')" + " style='top:17%; left:44%'></div>");
+		document.write("<div class='wall' onclick=" + "Remove(this"+","+"'none')" + " style='top:33%; left:18%'></div>");
+		document.write("<div class='wall2' onclick=" + "Remove(this"+","+"'none')" + " style='top:33%; left:44%'></div>");
+		document.write("<div class='wall' onclick=" + "Remove(this"+","+"'none')" + " style='top:49%; left:18%'></div>");
+		document.write("<div class='wall' onclick=" + "Remove(this"+","+"'none')" + " style='top:49%; left:44%'></div>");
+		document.write("<div class='wall2' onclick=" + "Remove(this"+","+"'none')" + " style='top:65%; left:18%'></div>");
+		document.write("<div class='wall' onclick=" + "Remove(this"+","+"'none')" + " style='top:65%; left:44%'></div>");
+		document.write("<div class='wall' onclick=" + "Remove(this"+","+"'none')" + " style='top:1%;  left:70%'></div>");
+		document.write("<div class='wall2' onclick=" + "Remove(this"+","+"'none')" + " style='top:17%; left:70%'>232 </div>");
+		document.write("<div class='wall' onclick=" + "Remove(this"+","+"'none')" + " style='top:33%; left:70%;'></div>");
+		document.write("<div class='wall' onclick=" + "Remove(this"+","+"'none')" + " style='top:49%; left:70%;'></div>");
+		document.write("<div class='wall2' onclick=" + "Remove(this"+","+"'none')" + " style='top:65%; left:70%;'></div>");
+		document.write("</div>");
+
+		
+
+
+		document.write("</div>");
+		document.write("<div class ='winm'><pre style='top:55%; left:83%; position:absolute  '>당첨 액= "+cp1+" (원)<pre>");
+
+		document.write("</div>");
+		document.write("</div>");
+		document.write("</div>");
+		document.write("</div>");
+		
+	
+		d+=1;
+		 
+
+		n=0
+
+	}
+
+		
+}
+
+	else 
+	{
+	
+	document.write("잘못입력함");
+	}
+	
+
+	
+</script>
+</body>
+</html>
+
