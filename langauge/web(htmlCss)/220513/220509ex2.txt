@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>초간단 테이블</title>
+</head>
+<body>
+    <table border="1px solid black">
+<tr>
+	<td>1</td>
+	<td>2</td>
+	<td>3</td>
+</tr>
+	<td rowspan="2"> 4</td>
+	<td>5</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>7</td>
+	<td>8</td>	
+</tr>
+
+    </table>
+</body>
+</html>

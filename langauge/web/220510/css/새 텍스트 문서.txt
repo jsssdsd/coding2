@@ -1,3 +1,0 @@
-
-body{background-color:mistyrose;/*주석처리*/}
-div{color:purple;background-color:mistyrose;margin:30px}

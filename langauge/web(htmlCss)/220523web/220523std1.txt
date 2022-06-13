@@ -1,0 +1,106 @@
+css<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+q1
+</title>
+<style>
+
+</style>
+</head>
+<body>
+<pre>
+#표 (table) 꾸미기
+1. 표 테두리 border
+border-collapse:collapse
+테두리 중복 제거
+
+2.테이블 셀
+td
+td width/ height
+th
+width/ height
+
+
+
+
+
+
+#CSS 3 스타일 시트로 동적 변화 만들기
+동적인 요소는 JS구현
+
+1. 애니메이션
+시간별 애니
+@keyframes을 작성
+시간 별로 html태그에 다른 CSS3효과가 적용된다. 
+
+@keyframes{ 시간비율{} 시간비율{} 시간비율{	}
+
+@keyframes textColorAnimation
+{
+0%{color:blue}
+30%{color:green}
+100%{color:red}
+
+}정의부분
+
+div{
+	animation-neme: textColorAnimation //애니이름
+	animation-duration: 5s; //초
+	animation-interation-count: infinite; //숫자
+
+}사용부분
+
+
+표기방법 : 숫자%로 구간설정가능
+표기방법2: from to 표현으로 설정가능 
+
+2.전환
+transition
+CSS3프로퍼티의 값 변화를 서서히 진행시켜 애니효과를 내는것
+1회만 작동 
+
+전환 프로퍼티, 전환 시간
+transition : 전환 프로퍼티 전환 시간
+
+div{ transition: font:size 5s;}
+
+div: hover{font-size:500%}
+전환 프로퍼티에 전환이 발생하면 transition에 지정해 놓은 전환 프로퍼티와 
+일치할 때 지정해 놓은 시간이 적용된다. 
+
+3.변환 
+transform
+트랜스폼 변환 효과에는 함수가 붙는다. 
+angle에는 deg를 넣는다.
+사용 예: rotate(20deg)
+
+div{	transform : rotate(20deg);
+} ///20도 회전후 폭을 3배로 확대한다.
+다중변환은transform에 여러함수 적용 
+
+
+
+좌에서 우로 생성된 메뉴를 
+fixed로 브라우저 상단에 고정
+home espresso cappuccino latte faq 리스트 메뉴 생성 
+CSS3 애니메이션 효과 적용해서 특정 li 항목에 hober되면
+텍스트 색상 변경 및 사이즈 120%로 확대
+클릭하면 또 다른 색상 적용 
+
+inline block 적용 
+
+
+</pre>
+
+
+
+
+<h3>CSS 포지션 속성</h3>
+
+</pre>
+<div> </div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+자료 구조
+
+stack  vs  quee  
+lifo	fifo
+
+이진트리 binary tree	
+
+외쪽   오른쪽 
+외쪾이 크면 ~~	오른이 크면~~

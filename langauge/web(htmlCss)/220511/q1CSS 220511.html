@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>
+CSS개념
+</title>
+<style type="text/css">
+table{border-collapse:collapse}
+
+thead:hover tr{background : yellowgreen;font-weight : bold}
+tbody:hover tr{background : yellowgreen;font-weight : bold}
+tfoot:hover tr{background : yellowgreen;font-weight : bold}
+tr:hover td{border: 1px solid red}
+#test1:hover{color:red}
+#test1>#test2:hover{color:orange}
+#test1 #test3:hover{color:yellow}
+#test1 #test4:hover{color:green}
+
+</style>
+</head>
+<body>
+/*th에 놓으면 배경색 바뀌고 볼드체로 바뀌게*/
+/*td에 놓으면 해당 라인만 테두리 바뀌게*/
+<table border=1px id="report1" class="table">
+<thead>
+<tr>
+<th class="A" rowspan="8">22-05-12(목)</th>
+<td class="a">1</td>
+<td class="a">09:10~10:00</td>
+<td class="a">UI 화면 구현</td>
+<td class="a">[2001020255_19v5]화면 구현</td>
+</tr>
+<tr class="x">
+<td>2</td>
+<td>10:10~11:00</td>
+<td>UI 화면 구현</td>
+<td>[2001020255_19v5]화면 구현</td>
+</tr>
+<tr>
+<td>3</td>
+<td>11:10~12:00</td>
+<td>UI 화면 구현</td>
+<td>[2001020255_19v5]화면 구현</td>
+</tr>
+<tr>
+<td>4</td>
+<td>12:10~13:00</td>
+<td>UI 화면 구현</td>
+<td>[2001020255_19v5]화면 구현</td>
+</tr>
+<tr>
+<td>5</td>
+<td>14:00~14:50</td>
+<td>UI 화면 구현</td>
+<td>[2001020255_19v5]화면 구현</td>
+</tr>
+<tr>
+<td>6</td>
+<td>15:00~15:50</td>
+<td>UI 화면 구현</td>
+<td>[2001020255_19v5]화면 구현</td>
+</tr>
+<tr>
+<td>7</td>
+<td>16:00~16:50</td>
+<td>UI 화면 구현</td>
+<td>[2001020255_19v5]화면 구현</td>
+</tr>
+<tr>
+<td>8</td>
+<td>17:00~18:00</td>
+<td>UI 화면 구현</td>
+<td>[2001020255_19v5]화면 구현</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="B" rowspan="8">22-05-13(금)</th>
+<td class="b">1</td>
+<td class="b">09:10~10:00</td>
+<td class="b">UI 화면 구현</td>
+<td class="b">[2001020255_19v5]화면 구현</td>
+</tr>
+<tr>
+<td>2</td>
+<td>10:10~11:00</td>
+<td>UI 화면 구현</td>
+<td>[2001020255_19v5]화면 구현</td>
+</tr>
+<tr>
+<td>3</td>
+<td>11:10~12:00</td>
+<td>UI 화면 구현</td>
+<td>[2001020255_19v5]화면 구현</td>
+</tr>
+<tr>
+<td>4</td>
+<td>12:10~13:00</td>
+<td>UI 화면 구현</td>
+<td>[2001020255_19v5]화면 구현</td>
+</tr>
+<tr>
+<td>5</td>
+<td>14:00~14:50</td>
+<td>UI 화면 구현</td>
+<td>[2001020255_19v5]화면 구현</td>
+</tr>
+<tr>
+<td>6</td>
+<td>15:00~15:50</td>
+<td>UI 화면 구현</td>
+<td>[2001020255_19v5]화면 구현</td>
+</tr>
+<tr>
+<td>7</td>
+<td>16:00~16:50</td>
+<td>UI 화면 구현</td>
+<td>[2001020255_19v5]화면 구현</td>
+</tr>
+<tr>
+<td>8</td>
+<td>17:00~18:00</td>
+<td>UI 화면 구현</td>
+<td>[2001020255_19v5]화면 구현</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<th rowspan="8">22-05-16(월)</th>
+<td>1</td>
+<td>09:10~10:00</td>
+<td>빅데이터 분석</td>
+<td>[2001010510_19v3]분석용 데이터 구축</td>
+</tr>
+<tr>
+<td>2</td>
+<td>10:10~11:00</td>
+<td>빅데이터 분석</td>
+<td>[2001010510_19v3]분석용 데이터 구축</td>
+</tr>
+<tr>
+<td>3</td>
+<td>11:10~12:00</td>
+<td>빅데이터 분석</td>
+<td>[2001010510_19v3]분석용 데이터 구축</td>
+</tr>
+<tr>
+<td>4</td>
+<td>12:10~13:00</td>
+<td>빅데이터 분석</td>
+<td>[2001010510_19v3]분석용 데이터 구축</td>
+</tr>
+<tr>
+<td>5</td>
+<td>14:00~14:50</td>
+<td>빅데이터 분석</td>
+<td>[2001010510_19v3]분석용 데이터 구축</td>
+</tr>
+<tr>
+<td>6</td>
+<td>15:00~15:50</td>
+<td>빅데이터 분석</td>
+<td>[2001010510_19v3]분석용 데이터 구축</td>
+</tr>
+<tr>
+<td>7</td>
+<td>16:00~16:50</td>
+<td>빅데이터 분석</td>
+<td>[2001010510_19v3]분석용 데이터 구축</td>
+</tr>
+<tr>
+<td>8</td>
+<td>17:00~18:00</td>
+<td>빅데이터 분석</td>
+<td>[2001010510_19v3]분석용 데이터 구축</td>
+</tr>
+</tfoot>
+</table>
+
+<div id="test1">
+<p id="test2">div</p>
+<ol id="test3">list<li>1</li><li id="test4">2</li>
+</ol>
+</div>
+</body>
+</html>
