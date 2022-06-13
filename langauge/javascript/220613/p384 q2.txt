@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> 자바스크립트 연습 < /title>
+</hea>
+<body>
+<h3>자바스크립트란 
+	<button> border</button>
+<button> p</button>
+</h3>
+<hr>
+
+<p>자바스크릡트는 웹프로그래밍 언어로서 홈페이지를 동적변경시킬수 있다.<p>
+
+<p><span id ="mySpan">자바스크릡트는 웹프로그래밍 언어로서 홈페이지를 동적변경시킬수 있다.<p>v
+
+<p>자바스크릡트는 웹프로그래밍 언어로서 홈페이지를 동적변경시킬수 있다.<p>
+</body>
+</html>

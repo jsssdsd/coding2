@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head id = "myhead">
+<meta charset = "utf-8">
+<title>문서 동적 구성</title>
+<script>
+
+function al1(){
+
+//alert("HTML텍스트 혹은 그냥 텍스트를 입력하세요");
+
+let pm1=prompt("HTML텍스트 혹은 그냥 텍스트를 입력하세요");
+let obj= document.getElementById("p1");
+
+obj.innerHTML=pm1;
+
+
+}
+
+
+</script>
+</head>
+<body id = "parent">
+
+<h3>innerHTML </h3>
+
+
+<hr>
+<p id="p1" onclick=al1()> 이번 여름에는 어디로 여행을 갈까요?
+</p>
+</body>
+</html>
+

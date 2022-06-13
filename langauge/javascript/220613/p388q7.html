@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head id = "myhead">
+<meta charset = "utf-8">
+<title>문서 동적 구성</title>
+
+<style>
+
+
+
+
+#mq { 
+
+position:absolute;
+	 top:5%;
+	 left:25%;
+	width:131%; 
+	height:51%
+}
+</style>
+
+<script>
+
+
+function al1(){
+
+//alert("HTML텍스트 혹은 그냥 텍스트를 입력하세요");
+
+let pm1=prompt("HTML텍스트 혹은 그냥 텍스트를 입력하세요");
+let obj= document.getElementById("p1");
+
+obj.innerHTML=pm1;
+
+}
+
+function t1(){
+let obj1= document.getElementById("m1");
+obj1.style.tradsform="rotate(90deg)";
+}
+
+function wind() {
+obj = document.getElementById("mq");
+obj.style.transform="rotate(90deg)";
+obj.addEventListener("click",
+function () {
+if (obj.style.transform=="rotate(90deg)") {
+obj.style.transform="rotate(180deg)";
+}
+else if (obj.style.transform=="rotate(180deg)") {
+obj.style.transform="rotate(270deg)";
+}
+else if (obj.style.transform=="rotate(270deg)") {
+obj.style.transform="rotate(360deg)";
+}
+else if (obj.style.transform=="rotate(360deg)") {
+obj.style.transform="rotate(90deg)";
+}
+});
+}
+
+
+</script>
+</head>
+
+
+<body id = "parent">
+
+<h3>클릭하면 회전합니다. </h3>
+
+<hr>
+<img onclick= wind(); id= "mq"   src="1.png"; 
+style= "width:20%;heitht:30%";>
+</p>	
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> 자바스크립트 연습 </title>
+</head>
+
+<script>
+
+function btn1() {
+	let obj= document.getElementById("mySpan");
+	let newDIV = document.createElement("div");
+	obj.style.border="2px dotted violet";
+
+}
+function btn2() {
+	
+	let obj= document.getElementsByTagName("p");
+	for( let i =0; i<obj.length; i++){
+	let p1 = obj[i];
+	p2=obj.length;
+	}
+	
+	alert("<p>태그의 개수는"+ p2);
+
+}
+</script>
+<body>
+<h3>자바스크립트란 
+	<button onclick="btn1()"> border</button>
+	<button onclick="btn2()"> p</button>
+</h3>
+<hr>
+
+<p id ="accountp">자바스크릡트는 웹프로그래밍 언어로서 홈페이지를 동적변경시킬수 있다.</p>
+
+<p id ="accountp"><span id ="mySpan">C언어</span>를 아는 사용자는 빠르게 학습할 수 있다.</p>
+
+<p id ="accountp">이벤트 등 GUI 프로그래밍에 필요한 요소들이 있어 학스벵 약간의 어려움이 있다.</p>
+
+</body>
+</html>

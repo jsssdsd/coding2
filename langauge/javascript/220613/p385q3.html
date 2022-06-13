@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> 자바스크립트 연습 </title>
+</head>
+<style>
+
+
+
+#sq{
+color:blue;
+visibility:hidden;
+}
+
+
+</style>
+
+
+<script>
+
+
+
+//obj1.setAttribute("style","color:white;background-color:red;");
+
+
+
+
+function btn1() {
+	//let obj= document.getElementById("mySpan");
+	let obj1= document.getElementsByTagName("span");	
+	for(var i = 0; i<obj1.length; i++) {
+	obj1[i].style.visibility = "visible";
+	obj1[i].style.color = "red";
+	}
+	
+	//obj1.style.border="2px dotted violet";
+
+}
+
+
+
+</script>
+<body>
+<h3>다음 빈 곳에 숨은 단어?
+	<button onclick="btn1()">show/hide</button>
+</h3>
+<hr>
+
+<li>i (<span id="sq">love</span>) you.</li>
+<li>CSS is cascading (<span  id="sq">Style</span>) Sheet.</li>
+<li>응답하라(<span  id="sq">1988</span>).</li>
+
+</body>
+</html>

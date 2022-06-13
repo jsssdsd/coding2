@@ -1,0 +1,357 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>
+javascript 220613
+</title>
+<style>
+/*
+#3
+span { visibility : hidden; }
+#5
+div { position : absolute; }
+img { position : absolute; }
+*/
+</style>
+<script>
+/*
+let text = "문서 로딩 중일 때 readyState = " + document.readyState + "\n";
+
+function change() {
+	let spanArray = document.getElementsByTagName("span");
+	for(let i=0; i<spanArray.length; i++) {
+		let span = spanArray[i];
+		span.style.color = "orchid";
+		span.style.fontSize = "20px";
+	}
+}
+
+function viewPlace() {
+let tagArray = document.getElementsByClassName("place");
+for (let i=0; i<tagArray.length; i++) {
+let tag = tagArray[i];
+tag.style.color = "orchid";
+tag.style.fontSize = "20px";
+tag.style.textDecoration = "underline";
+}
+}
+function viewFood() {
+let tagArray = document.getElementsByClassName("food");
+for (let i=0; i<tagArray.length; i++) {
+var tag = tagArray[i];
+tag.style.color = "darkcyan";
+}
+}
+
+function createDIV() {
+let obj = document.getElementById("parent");
+let newDIV = document.createElement("div");
+newDIV.innerHTML = "새로 생성된 DIV입니다.";
+newDIV.setAttribute("id","myDiv");
+newDIV.style.backgroundColor = "yellow";
+newDIV.addEventListener("click",
+	function () {
+		let p = this.parentElement;
+		p.removeChild(this);
+	});
+obj.appendChild(newDIV);
+}
+
+#2
+function change() {
+let span = document.getElementById("mySpan");
+span.style.border = "2px dotted violet";
+}
+function viewP() { 
+let pArray= document.getElementsByTagName("p");
+text = "<p> 태그의 개수는 " + pArray.length;
+alert(text);
+}
+#3
+function change() {
+spanArray = document.getElementsByTagName("span");
+let obj = document.getElementById("target");
+for(let i=0; i<spanArray.length; i++) {
+span = spanArray[i];
+span.style.visibility="visible"
+obj.addEventListener("click",
+function () {
+if (span.style.visibility=="visible") {
+spanArray[0].style.visibility="hidden";
+spanArray[1].style.visibility="hidden";
+spanArray[2].style.visibility="hidden";
+}
+else if (span.style.visibility=="hidden") {
+spanArray[0].style.visibility="visible";
+spanArray[1].style.visibility="visible";
+spanArray[2].style.visibility="visible";
+}
+});
+}
+}
+#10
+*/
+function addAnswer(obj, text) {
+let newDIV = document.createElement("div");
+newDIV.innerHTML = text;
+}
+
+</script>
+</head>
+<body> <!--id="parent" style="background-color:yellow; color:blue; direction:rtl" onload="printProperties()"-->
+<pre>
+#document는 DOM 트리 구조의 최상위 객체
+#브라우저는 HTML 문서를 로드하기 전에 document 객체를 먼저 만든다.
+#document 객체는 DOM트리의 ROOT
+#모든 DOM 객체 접근 경로의 시작점이다.
+#document는 DOM 객체는 아니지만 document 객체이다.
+#document 객체로서 프로퍼티와 속성을 지니고 있다.
+#document 객체는 메서드와 컬렉션 프로퍼티가 있다.
+#간단한 예로 document.write 메서드
+#document 객체를 통해 현재 출력된 문서에 대한 정보를 전반적으로 알아낼 수 있다.
+#document는 window의 지식이다.
+#따라서 window.document와 document는 같은 표현이다.
+#모든 DOM 객체는 HTML 태그로 구성되어 있고 style 객체에 접근이 가능하다.
+#document객체는 style 객체가 없다.
+
+<h3>document객체의 프로퍼티</h3>
+1.location : 현재 문서의 URL 정보
+2.domain : 서버의 도메인 이름
+3.readyState : 문서의 로딩 상태 표시, loading -> interactive -> complete 순으로 해결
+4.title 문서의 제목
+5.body : 문서의 바디 객체
+6.head : 문서의 헤드 객체
+7.activeElement : 문서에서 현재 포커스를 받는 객체
+8.URL : URL 주소
+
+<h3>document 컬렉션</h3>
+1.images : 문서 내의 모든 이미지를 배열로
+2.links : 문서 내 모든 링크를 배열로
+3.forms : 폼을 묶어 배열로
+
+<h3>document 메서드</h3>
+1.getElementByTagName() => 결과가 배열 =>인덱싱으로 접근
+2.getElementByClassName() => 결과가 배열 =>인덱싱으로 접근
+3.getElementByName() => 결과가 배열 =>인덱싱으로 접근
+4.getElemnetById() => 결과가 단일 값
+5.addEventListner() : document 객체에 이벤트 리스너 등록
+6.close() : document 객체에 있는 HTML 컨텐츠를 브라우저에 출력하고, 더 이상 쓰기를 받지 않는다.
+7.open() : document 객체에 담긴 컨텐츠를 모두 지우고, 새로운 HTML을 쓸 수 있는 상태로 열기
+8.removeEventListner() : 등록되어 있는 이벤트 리스너를 삭제
+9.write() : document.에 HTML 컨텐츠 삽입
+
+<h3>HTML 문서의 동적 구성</h3>
+HTML 문서가 로드 완료 후에 document에 새로운 HTML 추가 방법.
+DOM객체를 로드 후에 만들어서 추가 가능
+createElement로 객체를 생성한다.
+생성한다고 출력되는 것은 아니다.
+생성 후 DOM 트리 구조에 추가해야 출력이 된다.
+
+#document.creatElement("div"); 함수를 호출하면 이미 로드 된 문서에 div 객체가 생성된다.
+
+#setAttribute("속성명","속성값); 으로 동적으로 생성된 dom 객체에 대한 속성을 추가
+
+#innerHTML로 동적으로 생성한 dom객체에 대한 컨텐츠 추가
+
+후에 트리에 넣어줘야 함
+
+#부모.appendChild(객체);
+
+<h3>DOM객체의 삭제</h3>
+removeChild()메서드를 활용하여 DOM객체를 삭제할 수 있다.
+부모 removeChild(삭제하고자하는 자식객체)
+
+
+
+<div id="xxx">
+345
+</div>
+</pre>
+<!--
+<h3>document의 주요 프로퍼티</h3>
+<hr>
+<a href="http://www.naver.com">네이버 홈페이지</a>
+<div>이곳은 div 영역입니다.</div>
+<input id="input" type="text" value="여기 포커스가 있습니다">
+
+<h3>내가 좋아하는 과일<button onclick="change()">누르세요</button>
+<hr>
+저는 빨간 <span>사과</span>를 좋아해서 아침마다 한 개씩 먹고 있어요.
+운동할 때는 중간 중간에 <span>바나나</span>를  먹지요. 탄수화물 섭취가 빨라 힘이 납니다.
+또한 달콤한 향기를 품은 <span>체리</span>와 여름 냄새 물씬 나는 <span>자두</span>를 좋아합니다.
+
+<h3>가고 싶은 곳 먹고 싶은 것</h3><br>
+<button onclick="viewPlace()">가고 싶은 곳</button>
+<button onclick="viewFood()">먹고 싶은 것</button>
+</h3>
+<hr>
+<p><span class="place">제주도</span>에 가서 <span class="food">흑돼지</span>를 먹고 싶고요.
+<span class="place">독도</span>에 가서 <span class="food">독도새우</span>도 먹고 싶어요.
+제일 가고 싶은 곳 <span class="place">부산 자갈치 시장</span>에서 <span class="food">꼼장어 구이</span>도
+먹고 싶어요</p>
+
+<h3>DIV 객체를 동적으로 생성, 삽입, 삭제하는 예제</h3>
+<hr>
+<p>DOM 트리에 동적으로 객체를 삽입할 수 있습니다.
+createElement(), appendChild(), removeChild() 메소드를 이용하여 새로운 객체를 생성, 삽입, 삭제하는 예제입니다.</p>
+<a href = "javascript:createDIV()">DIV 생성</a><p><p>
+
+#2
+html	->head->title
+	->body->h3->button
+	          ->hr
+	          ->p->span
+
+<h3>자바스크립트란?
+<button onclick="change()">border</button>
+<button onclick="viewP()">p</button>
+</h3>
+<hr>
+<p>자바스크립트는 웹 프로그래밍 언어로서 웹 페이지를 동적 변경시킬 수 있다.</p>
+<p><span id="mySpan">C 언어</span>를 아는 사용자는 빠르게 학습할 수 있다.</p>
+<p>이벤트 등 GUI 프로그래밍에 필요한 요소들이 있어 학습에 약간의 어려움이 있다.</p>
+#3
+<h3>다음 빈 곳에 숨은 단어?
+<button id="target" onclick="change()">show/hide</button>
+</h3>
+<hr>
+<ul>
+<li>I (<span>love</span>) you.
+<li>CSS is Cascading (<span>Style</span>) Sheet.
+<li>응답하라 (<span>1988</span>).
+</ul>
+#4
+<h3>계산해봅시다</h3>
+<hr>
+<p>2 + 4 = <span onclick="this.innerHTML = eval(2+4)">답</span><p>
+<p>4 * 20 + 64 = <span onclick="this.innerHTML = eval(4 * 20 + 64)">답</span><p>
+<p>20/5-8*2 = <span onclick="this.innerHTML = 20/5-8*2">답</span><p>
+#5
+<h3>z-index 스타일 프로퍼티</h3>
+<hr>
+<div id="target">
+<img id="target1" src="https://media.istockphoto.com/photos/playing-card-ace-of-spades-picture-id184394869?s=612x612" width="100" height="140" alt="스페이드A" onclick="Card()" style="z-index:1000;">
+<img id="target2" src="https://media.istockphoto.com/photos/old-playing-card-isolated-picture-id182083354?s=612x612" width="100" height="140" alt="스페이드2" onclick="Card()" style="z-index:1000;">
+<img id="target3" src="https://media.istockphoto.com/photos/old-playing-card-isolated-picture-id182083093?s=612x612" width="100" height="140" alt="스페이드3" onclick="Card()" style="z-index:1000;">
+<img id="target4" src="https://media.istockphoto.com/photos/playing-card-picture-id182083086?s=612x612" width="100" height="140" alt="스페이드7" onclick="Card()" style="z-index:1000;">
+</div>
+#6
+<h3>innerHTML</h3>
+<hr>
+<p><span id="lalala" onclick="Write()">이번 여름에는 어디로 여행을 갈까요?</span></p>
+#7,#8
+<h3>클릭하면 90도 회전합니다.</h3>
+<hr>
+<img id="lalala" src="https://img2.sbs.co.kr/img/sbs_cms/CH/2017/04/28/CH33108141_w666_h968.jpg" width="100" height="140" onclick="wind()">
+#10
+-->
+<h3>정답의 동적 삽입</h3>
+<hr>
+<div><p>Q. 거울아 거울아 세상에서 누가 제일 예쁘니?</p>
+<button id="lalala" onclick="addAnswer(this, '백설공주')">답보기</button>
+</div>
+<div><p>Q. 죽느냐 사느냐 어떤 것이 문제인가?</p>
+<button id="lalala" onclick="addAnswer(this, '둘다')">답보기</button>
+</div>
+<script>
+/*
+function printProperties() {
+document.getElementById("input").focus();
+
+text += "1. location = " + document.location + "\n";
+text += "2. URL = " + document.URL + "\n";
+text += "3. title = " + document.title + "\n";
+text += "4. head의 id = " + document.head.id + "\n";
+text += "5. body color = " + document.body.style.color + "\n";
+text += "6. domain = " + document.domain + "\n";
+text += "7. lastModified = " + document.lastModified + "\n";
+text += "8. defaultView = " + document.defaultView + "\n";
+text += "9. 문서의 로드 완료 후 readyState = " + document.readyState + "\n";
+text += "10. referrer = " + document.referrer + "\n";
+text += "11. activeElement = " + document.activeElement.value + "\n";
+text += "12. documentElement의 태그 이름 = " + document.documentElement.tagName + "\n";
+alert(text);
+}
+
+var newdiv = document.createElement("div");
+newdiv.innerHTML="123";
+newdiv.setAttribute("id","xx");
+newdiv.style.backgroundColor="red";
+
+var xxx=document.getElementById("xxx");
+xxx.appendChild(newdiv)
+
+var pd=newdiv.parentElement
+pd.removeChild(newdiv);
+
+newdiv.parentElement.removeChild(newdiv);
+console.log(xxx.innerHTML);
+
+function() {
+let p = this.parentElement;
+p.removeChild(this)
+}
+#5
+function Card() {
+var Index = document.getElementsByTagName("img")
+obj1 = document.getElementById("target1");
+obj2 = document.getElementById("target2");
+obj3 = document.getElementById("target3");
+obj4 = document.getElementById("target4");
+obj1.addEventListener("click",
+function () {
+obj1.style.zIndex = obj1.style.zIndex-1;
+});
+obj2.addEventListener("click",
+function () {
+obj2.style.zIndex = obj2.style.zIndex-1;
+});
+obj3.addEventListener("click",
+function () {
+obj3.style.zIndex = obj3.style.zIndex-1;
+});
+obj4.addEventListener("click",
+function () {
+obj4.style.zIndex = obj4.style.zIndex-1;
+});
+}
+#6
+function Write() {
+var Prom = prompt("HTML 텍스트 혹은 그냥 텍스트를 입력하세");
+obj = document.getElementById("lalala");
+obj.innerHTML = Prom;
+}
+#7
+function wind() {
+obj = document.getElementById("lalala");
+obj.style.transform="rotate(90deg)";
+obj.addEventListener("click",
+function () {
+if (obj.style.transform=="rotate(90deg)") {
+obj.style.transform="rotate(180deg)";
+}
+else if (obj.style.transform=="rotate(180deg)") {
+obj.style.transform="rotate(270deg)";
+}
+else if (obj.style.transform=="rotate(270deg)") {
+obj.style.transform="rotate(360deg)";
+}
+else if (obj.style.transform=="rotate(360deg)") {
+obj.style.transform="rotate(90deg)";
+}
+});
+}
+#8.
+d=2
+function wind() {
+obj = document.getElementById("lalala");
+console.log(d);
+obj.style.transform="scale(" + d + ",1)";
+d+=1
+}
+*/
+
+</script>
+</body>
+</html>
