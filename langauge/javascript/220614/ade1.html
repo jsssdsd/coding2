@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+adidas cop
+</title>
+<style>
+
+
+div{	
+	background : skyblue;
+	width : 250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.target {
+  position: relative;
+  width: 700px;
+  height: 600px;
+  margin: 0 auto;
+}
+.photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform .5s ease-out;
+}
+
+.h1{
+position: absolute;
+border : 3px solid;
+}
+
+</style>
+
+<body>
+<img onmousemove= "where(event)" id= "im1" class="target" src="1.png" data-zoom="3" />
+
+<div id = "div"></div>
+	
+<script src="http://code.jquery.com/jquery-latest.js"></script> 
+
+
+
+
+<script>
+
+
+function hov() {
+ho1= documentElementById("im1");
+ho1 
+}
+
+
+function magnify(e) {
+ 
+        // 마우스 위치에서 .magnify의 위치를 차감해 컨테이너에 대한 마우스 좌표를 얻는다.
+        var mouseX = e.pageX - $(this).offset().left;
+        var mouseY = e.pageY - $(this).offset().top;
+ 
+        // 컨테이너 밖으로 마우스가 벗어나면 돋보기를 없앤다.
+        if (mouseX < $(this).width() && mouseY < $(this).height() && mouseX > 0 && mouseY > 0) {
+            magnifier.fadeIn(100);
+        } else {
+            magnifier.fadeOut(100);
+        }
+ 
+        //돋보기가 존재할 때
+        if (magnifier.is(":visible")) {
+	
+
+ }
+}
+
+
+let div = document.getElementById("div");
+
+
+
+function where(e) {
+	let text= "버튼" + e.button + "<br>";
+	text+= "(screeX, screeY)=" +
+		e.screenX+ "," + e.screenY + "<br>";
+	text+= "(clientX, clientY)=" +
+		e.clientX+ "," + e.clientY + "<br>";
+	text+= "(offsetX, offsetY)=" +
+		e.offsetX+ "," + e.offsetY + "<br>";
+	text+= "(screeX, screeY)=" +
+		e.screenX+ "," + e.screenY + "<br>";
+	
+	text+= "(x, y)=" +e.x +"," + e.y+ "\n";
+
+	div. innerHTML = text;
+
+}
+
+</script>
+</div>
+</body>
+</html>
