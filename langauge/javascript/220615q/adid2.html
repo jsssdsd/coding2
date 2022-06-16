@@ -59,23 +59,29 @@ border : 3px solid;
   height: 70%;
 overflow: hidden;
 margin: 1px;
-
+	z-index: 2 ;
 }
 
 .target {
-   position: relative;
+   position: absolute;
   width: 100%;
   height: 100%;
   margin: 0 auto;
+z-index: 3 ;
 
+top: 0%;
+  left: 0;
 }
 
 #div1{	
-	position: relative;
-	 top: 115%;
-  	left: 0%;
+	position:absolute;
+ 	 width: auto;
+ 	 height:auto;
+	  top: 72%;
 	background : skyblue;
-	z-index: 2332 ;
+	z-index: 4 ;
+
+	
 }
 
 
@@ -88,25 +94,27 @@ margin: 1px;
 <body>
 <script src="http://code.jquery.com/jquery-latest.js"></script> 
 
-
-
 <div id = "imP">
-<img hover="CIg()" ; onmousemove="where(event)" ; id= "im1" class="target" src="1.jpg" data-zoom="3" />
 
-<div id = "div1"></div>
+<img  onmouseenter="where(event), CIg()" ; id= "im1" class="target" src="1.jpg" data-zoom="3" >
 </div>
 
+<div id = "div1"> 버튼=  <br>
+	screenX + e.screenY = <br>
+	clientX, clientY = <br>
 	
-
+	offsetX, offsetY= <br>
+	
+	screeX, screeY= <br>
+	
+	x, y=<br></div>
 
 
 <script>
 
-
 function hov() {
 ho1= documentElementById("im1");
 }
-
 
 function where(e) {
 	let text= "버튼" + e.button + "<br>";
@@ -121,12 +129,11 @@ function where(e) {
 	
 	text+= "(x, y)=" +e.x +"," + e.y+ "\n";
 	
-	div1. innerHTML = text;
+	div1. innerHTML= text;
 	x= e.screenX;
 	y =e.screenY;
 	console.log(x);
 	console.log(y);
-	
 }
 
 
@@ -137,12 +144,10 @@ let aiT= 0;
 
 
 function CIg() {
-
 obj = document.getElementById("im1");
 obj.style.transform="scale(1)"
 obj2 = document.getElementById("imP");
 		
-
 
 obj.addEventListener("mousemove",
 	function (a) {
@@ -154,15 +159,15 @@ obj.addEventListener("mousemove",
 	
 	x= a.screenX;
 	y =a.screenY;
-	aiL= obj.width;
-	aiT= obj.height;
+	aiL= obj.width;  //그림의 폭값 대입
+	aiT= obj.height; // 그림 높이 대입
 
 	console.log('aiL값'+ aiL);	
 	console.log('aiT값'+ aiT);
 
 	obj = document.getElementById("im1");
 	obj.style.left= -(2.1*x)+ aiL + 'px';  
-	obj.style.top= -(2.1*y)+ aiT+ 'px';
+	obj.style.top= -(1.8*y)+ aiT+ 'px';
 	obj.style.transform="scale(2)"
 	
 	
@@ -194,7 +199,7 @@ function OIg() {
 
 //im1.addEventListener('onmouseclick', CIg());
 
-im1.addEventListener(CIg());
+im1.addEventListener('onmousemove',CIg());
 
 im1.addEventListener('onmouseover',OvIg());
 

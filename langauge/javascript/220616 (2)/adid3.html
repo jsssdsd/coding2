@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+adidas cop
+</title>
+<style>
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+
+
+
+
+.Tarr {
+  position: relative;
+  width: 200x;
+  height: 400px;
+  margin: 0 auto;
+}
+.photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform .5s ease-out;
+
+}
+
+.h1{
+position: absolute;
+border : 3px solid;
+}
+
+
+
+#imP{
+ position: absolute;
+ width: 60%;
+  height: 70%;
+top: 0%;
+overflow: hidden;
+margin: 1px;
+	z-index: 2 ;
+}
+
+.target {
+   position: relative;
+
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+	z-index: 3 ;
+top: 0%;
+left: 0;
+}
+
+#div1{	
+	position:absolute;
+ 	 width: auto;
+ 	 height:auto;
+	  top: 72%;
+	background : skyblue;
+	z-index: 4 ;
+
+	
+}
+
+
+
+
+
+
+</style>
+
+<body>
+<script src="http://code.jquery.com/jquery-latest.js"></script> 
+
+<div id = "imP">
+
+<img  onmousemove="where(event)"  ; id= "im1" class="target" src="1.jpg" data-zoom="3" >
+</div>
+
+<div id = "div1"> 버튼=  <br>
+	screenX + e.screenY = <br>
+	clientX, clientY = <br>
+	
+	offsetX, offsetY= <br>
+	
+	screeX, screeY= <br>
+	
+	x, y=<br></div>
+
+
+<script>
+
+let x= 0;
+let y =0;
+let x1= 0;
+let y1 =0;
+
+
+function hov() {
+ho1= documentElementById("im1");
+}
+
+
+function where(e) {
+	let text= "버튼" + e.button + "<br>";
+	text+= "(screenX, screenY)=" +
+		e.screenX+ "," + e.screenY + "<br>";
+	text+= "(clientX, clientY)=" +
+		e.clientX+ "," + e.clientY + "<br>";
+	text+= "(offsetX, offsetY)=" +
+		e.offsetX+ "," + e.offsetY + "<br>";
+	text+= "(screeX, screeY)=" +
+		e.screenX+ "," + e.screenY + "<br>";
+	
+	text+= "(x, y)=" +e.x +"," + e.y+ "\n";
+	
+	div1. innerHTML= text;
+	x= e.screenX;
+	y =e.screenY;
+	
+
+	//x1= e.offsetX;
+	//y1 =e.offsetY;
+	//console.log(x1);
+	//console.log(y1);
+}
+
+
+let aiL= 0;
+let aiT= 0;
+let wv= 0;
+
+let diff1=0;
+let posx=0;
+let long1=0;
+
+let diff2=0;
+let posy=0;
+let long2=0;
+let mu= 0;
+let wd= 0;
+
+function CIg() {
+obj = document.getElementById("im1");
+
+obj2 = document.getElementById("imP");
+
+		
+obj.addEventListener("mousemove",
+	function (a) {
+	//x=null;
+	//y=null;
+		//rate 배율
+	obj.style.transform="scale(5)"
+	m1= parseInt(5);
+	mu= 5;
+	//[pos * (ori- long)] + diff= (ori* rate-ori)/2
+	//  [pos * (ori-long)] +  (long-ori)/2   
+	//x= a.screenX;   
+	//y =a.screenY; 
+	x1= a.clientX;
+	y1 =a.clientY;
+
+	aiL= obj.width;  //그림의 폭값 대입 ori  ori * rate
+	aiT= obj.height; // 그림 높이 대입   
+
+	long1 = parseInt(aiL)*mu;	
+	diff1 = aiL*mu-aiL;  //(ori* rate-ori)/2
+	posx = (x1 / aiL).toFixed(3);
+	// left밀기값 최종식 (posx*(aiL-long1)+(long1-aiL)/2)
+
+	long2 = parseInt(aiT)*mu;	
+	diff2 = aiT*mu-aiT/2;     //(ori* rate-ori)/2 
+	posy = (y1/aiT).toFixed(3);
+	// top밀기값 최종식 (posy*(aiT-long2)+(long2-aiT)/2)
+
+	
+	console.log('aiL값'+ aiL);	
+	console.log('aiT값'+ aiT);
+	console.log('aiT값, long1,long2, posx, posy' +'    ' + aiT+'     '+long1+'   '+long2+'  '+posx+'  '+posy);
+	obj = document.getElementById("im1");
+	
+	//obj.style.left= -(2.1*x)+ aiL + 'px';  
+	//obj.style.top= -(1.8*y)+ aiT+ 'px';	
+	console.log(posx*(aiL-long1) + ((long1-aiL)/2));
+
+	obj.style.left=(posx*(aiL-long1) + ((long1-aiL)/2))+ 'px'; 
+	obj.style.top= (posy*(aiT-long2)) +((long2-aiT)/2)+ 'px'; 
+	
+
+	console.log('mu값'+ mu);
+	console.log(x1);
+	console.log(y1);
+
+
+	
+	obj.addEventListener("wheel",
+		function (a) {
+		//x=null;
+		//y=null;
+	
+		wd= a.wheelDelta;
+		console.log(' wd 값'+ wd);
+
+		mu= 5+0.01*wd ;
+		m1= parseInt(5+0.01*wd);
+		obj.style.transform="scale(5)"	
+
+		//wd2= a.originalEvent.wheelDelta;
+		//console.log(' wd2 값'+ wd2);
+	
+
+		if (wd==120) {
+		wv1= wv++;
+
+		mu= 5+0.01*wd ;
+		m1= parseInt(5+0.01*wd);
+	
+	
+		 scale = Math.min(Math.max(.125, mu), 4);
+		 obj.style.transform = `scale(${scale})`;
+	
+		console.log(' wv1 값'+ wv1);
+		}
+ 	
+		else if (wd==-120){
+		wv1= wv--;
+		
+		mu= 5+0.01*wd ;
+		m1= parseInt(5+0.01*wd);
+	
+	
+		 scale = Math.min(Math.max(.125, mu), 4);
+		 obj.style.transform = `scale(${scale})`;
+	
+		//obj.style.transform="scale(5)"
+		console.log(' wv1 값'+ wv1);
+		}	
+
+			});
+	});
+
+obj2.addEventListener("mouseleave",
+	function () {
+	obj.style.left=0;  
+	obj.style.top= 0;
+	obj.style.transform="scale(1)" 
+	});
+
+}
+
+
+
+
+
+
+
+
+
+
+
+function OvIg() {
+//document.write("<div id ="OR" >22 </div>");
+
+}
+
+
+
+function OIg() {
+
+}
+
+
+
+//im1.addEventListener('onmouseclick', CIg());
+
+im1.addEventListener('onmousedown',CIg());
+
+im1.addEventListener('onmouseover',OvIg());
+
+im1.addEventListener('onmouseout',OIg());
+
+//im1.addEventListener('onwheel',wheel());
+
+//p.addEventListener('mouseover',func1); 작성 event예시
+
+</script>
+</div>
+</body>
+</html>

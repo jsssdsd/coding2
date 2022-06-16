@@ -1,0 +1,54 @@
+
+		if( e.wheelDelta < 0) {
+			wv--;
+				//if(wv < 0)
+			//wv = 0; 
+			console.log("wheelD값"+wv);
+		}
+
+
+		else
+		wv ++;
+		//obj.style.borderStyle ="ridge";
+		//obj.style.borderWidth =wv + "px";		
+		console.log("wheelD값"+wv);
+		});
+
+
+
+
+
+
+obj.addEventListener("wheel",
+		
+		function wheel(e, obj) { 
+			wv = e.wheelDelta;
+			console.log("wheelD값"+wv);
+		obj.style.borderWidth =width + "px";
+			wv++;
+		
+		});
+
+
+
+
+if (a.originalEvent.wheelDelta > 0 || a.originalEvent.detail < 0) {
+        	// scroll up
+        	console.log("스크롤 위로");
+    		}
+    	else {
+        	// scroll down
+	        console.log("스크롤 아래로");
+	
+	}
+
+
+
+
+
+
+
+
+
+
+

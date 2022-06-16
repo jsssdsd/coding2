@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+타이틀
+</title>
+<style>
+
+
+
+*{margin:0;padding:0}
+
+#d1{position: relative;border:1px solid black; display:inline-block; width:400px; height:400px; overflow:hidden}
+img{position: relative; vertical-align:bottom;display:inline-block; width:100%; height:100%}
+
+
+
+/*div{display:inline-block}*/
+span{display:block}
+
+
+
+
+</style>
+</head>
+<body>
+
+<div id= "d1"> 
+<img id="im1" onwheel ="scr(event)" onclick= "scaleUp(this,event)"  oncontextmenu="scaleDown(this,event)" onmousemove ="mm(event)" src= "개.png">
+</div>
+
+<script>
+
+obj = document.getElementById("im1");
+let x1= 0;
+let y1=0;
+let oriW=0;
+let oriH=0;
+
+
+function mm(e)	{
+	oriW=e.target.parentElement.style.width;
+	oriH=e.target.parentElement.style.height;
+	oriW=parseInt(oriW.replace("px",""));
+	oriH=parseInt(oriH.replace("px",""));
+	posX=e.offsetX/oriW;
+	posY=e.offsetY/oriH;
+	if(e.target.style.transform>"scale(2, 2)")
+	{
+		e.target.style.left=(((oriW * rate)-oriW)/2) + (posX*(oriW-(oriW*rate))) + "px";
+		e.target.style.top=(((oriH * rate)-oriH)/2) + (posY*(oriH-(oriH*rate))) + "px";		
+	}
+	else
+	{
+		console.log("X");
+	}
+}
+
+
+
+function scaleUp(e)
+{	
+
+
+	obj = document.getElementById("im1");
+	obj1 = document.getElementById("d1");
+	img.style.transform ="scale(2,2)"
+	x1= e.clientX;
+	y1= e.clientY;
+	console.log('첫좌클릭이벤',x1,y1);
+
+	e.target.parentElement.style.height;
+	oriW=obj.height;  // div폭
+	oriH=obj.height;
+
+	oriW1=e.target.parentElement.style.width; //div높이
+	oriH1=e.target.parentElement.style.height; 
+	oriW1=parselnt(oriW1.replace("px",""));
+	oriH1=palselnt(oriH1.replace("px",""));
+
+	console.log('oriW, oriH값 ',oriW,oriH);
+	console.log('oriW1, oriH1값 ',oriW1,oriH1);
+	//obj.addEventListener("mousemove",  //이벤트 추가 필수 암기!!!!!
+	//function (a) {
+	//x1= a.clientX;
+	//y1= a.clientY;
+
+
+	//obj.style.left= 300+'px'  ;
+	//obj.style.top= 300+'px'  ;
+
+	//console.log('첫좌클릭이벤',x1,y1);
+	//})
+
+}
+
+function scaleDown(img,e)
+{	
+	
+	event.preventDefault()
+	img.style.transform ="scale(1,1)"
+	x1= e.clientX;
+	y1= e.clientY;
+	console.log('2우클릭이벤',x1,y1);
+	obj.style.left= 300+'px'  ;
+	obj.style.top= 300+'px'  ;
+}	
+	
+function src(e)
+{
+}
+
+</script>
+
+
+</body>
+</html>

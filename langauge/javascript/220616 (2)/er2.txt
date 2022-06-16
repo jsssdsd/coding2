@@ -1,0 +1,38 @@
+
+div{position:relative
+
+
+
+function saleUp(img)
+
+
+
+
+
+
+	oriW = e.target.parentElement.style.width;
+	oriH= e.target.parentElement.style.height;
+	oriW=parselInt(oriW.replace("px",""));
+	oriH=parselInt(oriH.replace("px","");
+	posX=e.offsetX/oriW;
+	posY=e.offsetY/oriH;
+	if(e.target.style.transform === "scale(2,2)")
+	{	
+		e.target.style.left=(((oriW *rate)-oriW)/2)+ (posX*(oriW-(oriW*rate))) + "px)
+		e.target.style.left=(((oriH *rate)-oriH)/2)+ (posX*(oriH-(oriH*rate))) + "px";
+
+	}
+
+	else
+{
+	console.log("X");	
+}
+}
+
+
+
+
+
+
+
+

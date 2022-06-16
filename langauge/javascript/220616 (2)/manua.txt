@@ -1,0 +1,50 @@
+ 1번 
+
+rate 2배
+ori 200
+long 400
+diff 100 => (ori* rate-ori)/2
+pos 0/0.5/1
+0~200/ori
+ 
+0   0.5   1
+왼  가운 오
+마우스 가운데 : ps 0.5: left 0
+마우스가 박스 왼쪽 끝 : pos 0 : left 100
+마우스가 박스 오른쪽 끝 : pos 1: left -100
+
+(pos * -200) +100   0 0.5  1 로 딱떨어짐..
+
+[pos * (shot- long)] + diff
+
+
+2번
+
+rate 4배 => x
+ori 200  => obj.style.width
+
+long 800  => ori * rate
+diff 300   => (ori* rate-ori)/2
+
+pos 0/0.5/1  => 현재 e.x/ ori
+0~200/ori   
+
+마우스 가운데 : ps 0.5: left 0
+마우스가 박스 왼쪽 끝 : pos 0 : left 300
+마우스가 박스 오른쪽 끝 : pos 1: left -300
+(pos * -600) +300
+
+최종식 : [pos * (ori- long)] +  (ori*rate-ori)/2
+	 [pos * (ori- long)] +  (long-ori)/2
+
+
+parse int  
+
+
+
+
+
+
+
+
+

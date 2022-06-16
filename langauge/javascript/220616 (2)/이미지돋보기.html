@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>
+타이틀부분
+</title>
+</head>
+<body>
+<style>
+*{margin:0;padding:0;}
+div{position:relative;border:1px solid black;display:inline-block;overflow:hidden;}
+img{position:relative;vertical-align:bottom;width:100%;height:100%}
+</style>
+<div id="div" style="width:800px;height:800px;"><img onwheel="scrr(event);" onmousemove="move(event)" onclick="scaleUp(this)" oncontextmenu="scaleDown(this,event)" src="개.png"></div>
+<script>
+
+
+
+let rate=2;
+
+
+
+function scrr(e)
+{
+	console.log("11111111111");
+	console.log(e.wheelDelta);
+	if(e.wheelDelta>0)
+	{
+		rate+=0.2;
+		console.log(rate);
+		scaleUp(e.target);
+	}
+	else
+	{	if(rate>=2.2)
+		rate-=0.2;
+		console.log(rate);	
+		scaleUp(e.target);
+		
+	}	
+}
+
+
+
+function scaleUp(img)
+{
+	img.style.transform="scale("+rate+","+rate+")";	
+}
+function scaleDown(img,e)
+{
+	
+	e.preventDefault();	
+	img.style.transform="scale(1,1)"
+	img.style.left=0;
+	img.style.top=0;	
+	rate=2;
+}
+
+function move(e)
+{
+	oriW=e.target.parentElement.style.width;
+	oriH=e.target.parentElement.style.height;
+	oriW=parseInt(oriW.replace("px",""));
+	oriH=parseInt(oriH.replace("px",""));
+	posX=e.offsetX/oriW;
+	posY=e.offsetY/oriH;
+	if(e.target.style.transform>"scale(2, 2)")
+	{
+		e.target.style.left=(((oriW * rate)-oriW)/2) + (posX*(oriW-(oriW*rate))) + "px";
+		e.target.style.top=(((oriH * rate)-oriH)/2) + (posY*(oriH-(oriH*rate))) + "px";		
+	}
+	else
+	{
+		console.log("X");
+	}
+}
+
+
+
+
+
+</script>
+</body>
+</html>
