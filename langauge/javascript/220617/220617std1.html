@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+onload로 이미지 크기 출력
+</title>
+</head
+</body>
+<pre>
+
+<h3>onload 이벤트리스너 </h3>
+window.onload = "함수호출"
+body onload = "함수호출"
+문서의 로딩 완료 시점을 알수있다.
+<h3> 이미지 onload이벤트리스너</h3>
+이미지의 로딩이 완료된 시점을 onload로 알수있다.
+
+
+
+<!-- <img id "myImg" src="1.png">
+
+<script>
+var img=document.getElementById ("myImg");
+img.src="1.png"
+var w= img.width;
+console.log(w);
+
+img.onload= function() {console.log(img.width);} -->
+
+<h3>라디오 버튼과 체크박스 객체</h3>
+
+라디오 버튼에서 선택된 항목은 checked 프로퍼티로 알아낸다.
+
+
+</pre>
+<form>
+    <input type="radio" name="city1" value="seoul">서울
+    <input type="radio" name="city1" value="busan">부산
+    <input type="radio" name="city1" value="daejeon">대전
+</form>
+
+document.getElementByName("city")
+<select>
+<option value="1">가방1</option>
+<option value="2">가방1</option>
+<option value="3">가방1</option>
+
+select는 selectedIndex로 선택된 요소를 알아낼수 있다.
+selectedIndex값이 음수면 아무것도 선택되지 않은 상태를 표현
+
+onchange 이벤트 리스너 select내에 option 항목이 변하는 것을 알 수 있다.
+
+select객체의 프로퍼티
+1.length. 옵션 몇개?
+2.selectedIndex : 선택된 옵션이 인덱스 번호 몇번?
+3.size : 콤보 박스에 보여지는 옵션의 개수 
+
+option 객체의 프로퍼티 
+1. selected 옵션이 선택 상태이면 true 아니면 false
+2.text 옵션의 문자열
+3. value value 속성의 문자열 
+
+라디오 버튼 과 결합하는것  >>>> check box  슬라이드쇼처럼
+
+#onreset 이벤트 리스너 : input type = "reset"태그가 클릭되었을때
+#onsubmit 이벤트 리스너 : input type ="submit"태그가 클릭
+
+
+#키보드관련 E리스너
+1. onkeydown : 키보드가 눌러질때
+2.onkeyup : 눌러진 키가 떼어지는 순간 호출
+3. onkeypress : 문자키에 대해서만 키가 눌러지는 순간 호출
+<br>
+<input type= "text" onkeydown= "k (event)">
+
+<img id = "myImg" src= "개.png">
+<script>
+
+
+function k(e)
+
+{
+console.log(e);
+}
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

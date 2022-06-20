@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+423
+</title>
+
+<script>
+   
+let sum= 0;
+
+ function calc(cBox) {
+	if(cBox.checked)
+	sum += parseInt(cBox.value);
+
+	else
+	sum -= parseInt(cBox.value);
+	document.getElementById("sumtext").value = sum;
+}
+
+</script>
+</head>
+<body>
+
+
+<h3>버튼을 클릭하면 선택된 라디오 버튼의 value를 출력</h3>
+<hr>
+
+<form>
+    <input type="checkbox" name="hap"   value="10000" 
+ onclick="calc(this)">모자 1만원
+ <input type="checkbox" name="shoose"   value="30000" 
+ onclick="calc(this)"> 구두 3만
+ <input type="checkbox" name="bag"   value="80000" 
+ onclick="calc(this)">가방 8만 <br>
+
+지불하실 금액 <input type = "text" id ="sumtext" value= "0">
+    
+</form>
+</body>
+</html>

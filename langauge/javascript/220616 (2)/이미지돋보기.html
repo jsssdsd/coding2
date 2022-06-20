@@ -12,7 +12,11 @@
 div{position:relative;border:1px solid black;display:inline-block;overflow:hidden;}
 img{position:relative;vertical-align:bottom;width:100%;height:100%}
 </style>
-<div id="div" style="width:800px;height:800px;"><img onwheel="scrr(event);" onmousemove="move(event)" onclick="scaleUp(this)" oncontextmenu="scaleDown(this,event)" src="개.png"></div>
+
+<div id="div" style="width:800px;height:800px;"><img onwheel="scrr(event);" onmousemove="move(event)" onclick="scaleUp(this)" oncontextmenu="scaleDown(this,event)" src="1.jpg"></div>
+
+
+
 <script>
 
 
@@ -62,6 +66,7 @@ function move(e)
 	oriH=e.target.parentElement.style.height;
 	oriW=parseInt(oriW.replace("px",""));
 	oriH=parseInt(oriH.replace("px",""));
+	console.log("oriW ,  oriH"+oriW+oriH);
 	posX=e.offsetX/oriW;
 	posY=e.offsetY/oriH;
 	if(e.target.style.transform>"scale(2, 2)")

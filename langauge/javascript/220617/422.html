@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+422
+</title>
+
+
+<h3>CSS 포지션 속성</h3>
+
+<script>
+    function findChecked()   {
+       let found = null;
+       let kcity = document.getElementsByName("city");
+       for(let i =0; i<kcity.length ; i++){
+        if(kcity[i].checked == true)
+            found = kcity[i];
+        
+
+       }
+       if(found !=null)
+        alert(found.value + "이선택되었음");
+       else
+        alert("선택된 것이 없음");
+
+    } 
+    </script>
+
+
+</head>
+<body>
+<h3>버튼을 클릭하면 선택된 라디오 버튼의 value를 출력</h3>
+<hr>
+
+<form>
+    <input type="radio" name="city" value="seoul" checked>서울
+    <input type="radio" name="city" value="busan">부산
+    <input type="radio" name="city" value="chunchen">순천
+    <input type="button" value="find Checked" onclick="findChecked()">
+
+
+</form>
+<input type="checkbox" name="bag1" value="80000">
+<input type="checkbox" name="bag2" value="10000">
+<input type="checkbox" name="bag3" value="30000">
+let a=document.getElementByName("city")
+
+
+</body>
+</html>

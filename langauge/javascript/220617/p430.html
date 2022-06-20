@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+p430
+</title>
+
+
+<h3>CSS 포지션 속성</h3>
+
+<style>
+td { width: 50px; height: 50px; border: 1px solid orchid;	}
+</style>
+
+<script>
+let tds;
+let prevIndex=0; index=0;
+window.onload = function()	{
+	tds = document.getElementsByTagName("td");
+	tds[index].style.backgroundColor = "orchid";
+
+}
+window.onkeydown = function (e) {
+   switch(e.key) {
+	 case "ArrowDown" :
+		if(index/10 >= 9) return;
+	index +=10;
+	break;
+
+	 case "ArrowUp" :
+		if(index/10 < 1) return;
+	index -= 10;
+	break;
+
+	case "ArrowLeft" :
+		if(index%10 == 0) return;
+	index --;
+	break;
+
+	case "ArrowRight" :
+		if(index%10 == 9) return;
+	index ++;
+	break;
+
+}
+tds[index].style.backgroundColor= "orchid";
+tds[prevIndex].style.backgroundColor= "white";
+prevIndex = index;
+}
+
+
+function ta1(){
+
+let t= "<tr><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td></tr>"
+for (i;i<10;i++)
+{
+	document.write("t");
+}
+
+
+}
+
+
+       
+    </script></head>
+
+
+<body>
+<h3>마우스 클릭연습</h3><hr>
+<table>
+
+<tr><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+
+<table>
+<p onload="ta1()">1</p>
+</table>
+
+</body>
+</html>

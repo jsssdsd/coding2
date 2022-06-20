@@ -1,0 +1,7 @@
+mu= 5+0.01*wd ;
+		m1= parseInt(5+0.01*wd);
+		obj.style.transform="scale(5)"	
+
+		//wd2= a.originalEvent.wheelDelta;
+		//console.log(' wd2 값'+ wd2);
+	

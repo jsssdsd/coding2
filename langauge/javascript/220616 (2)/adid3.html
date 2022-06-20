@@ -96,9 +96,11 @@ left: 0;
 <script src="http://code.jquery.com/jquery-latest.js"></script> 
 
 <div id = "imP">
-
 <img  onmousemove="where(event)"  ; id= "im1" class="target" src="1.jpg" data-zoom="3" >
 </div>
+
+
+
 
 <div id = "div1"> 버튼=  <br>
 	screenX + e.screenY = <br>
@@ -171,12 +173,12 @@ obj2 = document.getElementById("imP");
 		
 obj.addEventListener("mousemove",
 	function (a) {
+	mu= 5;
 	//x=null;
 	//y=null;
 		//rate 배율
-	obj.style.transform="scale(5)"
-	m1= parseInt(5);
-	mu= 5;
+	obj.style.transform="scale("+mu+","+mu+")";
+	
 	//[pos * (ori- long)] + diff= (ori* rate-ori)/2
 	//  [pos * (ori-long)] +  (long-ori)/2   
 	//x= a.screenX;   
@@ -187,6 +189,9 @@ obj.addEventListener("mousemove",
 	aiL= obj.width;  //그림의 폭값 대입 ori  ori * rate
 	aiT= obj.height; // 그림 높이 대입   
 
+
+	if(obj.style.transform>"scale(4.9,4.9)"){
+
 	long1 = parseInt(aiL)*mu;	
 	diff1 = aiL*mu-aiL;  //(ori* rate-ori)/2
 	posx = (x1 / aiL).toFixed(3);
@@ -196,72 +201,65 @@ obj.addEventListener("mousemove",
 	diff2 = aiT*mu-aiT/2;     //(ori* rate-ori)/2 
 	posy = (y1/aiT).toFixed(3);
 	// top밀기값 최종식 (posy*(aiT-long2)+(long2-aiT)/2)
-
+	
 	
 	console.log('aiL값'+ aiL);	
 	console.log('aiT값'+ aiT);
-	console.log('aiT값, long1,long2, posx, posy' +'    ' + aiT+'     '+long1+'   '+long2+'  '+posx+'  '+posy);
+	console.log('aiT값, long1,long2, posx, posy' +'    ' + aiT+'     	'+long1+'   '+long2+'  '+posx+'  	'+posy);
 	obj = document.getElementById("im1");
 	
 	//obj.style.left= -(2.1*x)+ aiL + 'px';  
 	//obj.style.top= -(1.8*y)+ aiT+ 'px';	
+	
 	console.log(posx*(aiL-long1) + ((long1-aiL)/2));
 
 	obj.style.left=(posx*(aiL-long1) + ((long1-aiL)/2))+ 'px'; 
 	obj.style.top= (posy*(aiT-long2)) +((long2-aiT)/2)+ 'px'; 
-	
-
+	}
+	else
+	{
 	console.log('mu값'+ mu);
 	console.log(x1);
 	console.log(y1);
-
-
+	}
 	
-	obj.addEventListener("wheel",
+	
+	
+	});
+
+obj.addEventListener("wheel",
 		function (a) {
-		//x=null;
-		//y=null;
+		
 	
 		wd= a.wheelDelta;
 		console.log(' wd 값'+ wd);
 
-		mu= 5+0.01*wd ;
-		m1= parseInt(5+0.01*wd);
-		obj.style.transform="scale(5)"	
+		if (wd>0) {
+		mu+= 0.2;
 
-		//wd2= a.originalEvent.wheelDelta;
-		//console.log(' wd2 값'+ wd2);
+		//mu= 5+0.01*wd ;
+		//m1= parseInt(5+0.01*wd);
 	
-
-		if (wd==120) {
-		wv1= wv++;
-
-		mu= 5+0.01*wd ;
-		m1= parseInt(5+0.01*wd);
+		console.log(' mu 값'+ mu);
+		
 	
-	
-		 scale = Math.min(Math.max(.125, mu), 4);
-		 obj.style.transform = `scale(${scale})`;
-	
-		console.log(' wv1 값'+ wv1);
 		}
  	
-		else if (wd==-120){
-		wv1= wv--;
-		
-		mu= 5+0.01*wd ;
-		m1= parseInt(5+0.01*wd);
+		else if (wd<0){
+		mu-= 0.2;
+		 
+		//mu= 5+0.01*wd ;
+		//m1= parseInt(5+0.01*wd);
 	
 	
-		 scale = Math.min(Math.max(.125, mu), 4);
-		 obj.style.transform = `scale(${scale})`;
+		 //scale = Math.min(Math.max(.125, mu), 4);
+		// obj.style.transform = `scale(${scale})`;
 	
 		//obj.style.transform="scale(5)"
-		console.log(' wv1 값'+ wv1);
+		console.log(' mu 값'+ mu);
 		}	
 
 			});
-	});
 
 obj2.addEventListener("mouseleave",
 	function () {
