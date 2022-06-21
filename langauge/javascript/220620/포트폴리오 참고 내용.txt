@@ -1,0 +1,17 @@
+modal image
+collapse sidebar
+password validation
+lightbox
+full screen overlay navigation
+menu icon
+animate buttons
+sticky image
+sticky navbar
+loading buttons
+google charts
+user rating
+range sliders
+css loader
+skill bar
+animate search form
+notification buttons

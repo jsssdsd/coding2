@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ask jsm</title>
+<style>
+.myAsk {
+	position : relative; 
+}
+</style>
+</head>
+<body>
+<h1>jsm </h1>
+<hr>
+<div id="full">
+<div class="myAsk">
+<h4>1. 나의 favorite 만화</h4>
+<form>
+	<input type="radio" name="no0"> 원피스<br>
+	<input type="radio" name="no0"> 죠죠의기묘한모험<br>
+	<input type="radio" name="no0"> 디지몬어드벤처
+	<br><span onclick="getNext()">다음</span>
+</form>
+</div>
+
+<div class="myAsk">
+<h4>2.  나는 꿈이뭔가?</h4>	
+<form>
+	<input type="radio" name="no1"> CEO.<br>
+	<input type="radio" name="no1"> 블록체인전문가.<br>
+	<input type="radio" name="no1"> VR전문가
+	<br><span onclick="getNext()">다음</span>
+</form>
+</div>
+<div class="myAsk">
+<h4>3. pc방에 가장 오래한 시간은? (혼자서)</h4>
+<form>
+	<input type="radio" name="no2"> 8시간<br>
+	<input type="radio" name="no2"> 12시간<br>
+	<input type="radio" name="no2"> 24시간
+	<br><span onclick="getNext()">다음</span>
+</form>
+</div>
+<div class="myAsk">
+<h4>4. 나의 군보직은? ?</h4>
+<form>
+	<input type="radio" name="no3"> 예비군조교<br>
+	<input type="radio" name="no3"> 레이더 통신병<br>
+	<input type="radio" name="no3"> 스나이퍼
+	<br><span onclick="getNext()">다음</span>
+</form>
+</div>
+<div class="myAsk">
+<h4>5. 나의 풀컨디션  키는 ?</h4>
+<form>
+	<input type="radio" name="no4"> 175cm<br>
+	<input type="radio" name="no4"> 172.7cmkg<br>
+	<input type="radio" name="no4"> 168cm
+	<br><span onclick="getNext()">다음</span>
+</form>
+</div>
+<div class="myAsk">
+<h4>6. 내 롤 최고티어는?</h4>
+<form>
+	<input type="radio" name="no5"> 플레 3<br>
+	<input type="radio" name="no5"> 마스터<br>
+	<input type="radio" name="no5"> 다이아3 
+	<br><span onclick="getNext()">다음</span>
+</form>
+</div>
+<div class="myAsk">
+<h4>7. 나는 형제자매가 있을까요?</h4>
+<form>
+	<input type="radio" name="no6"> 누나<br>
+	<input type="radio" name="no6"> 남동생<br>
+	<input type="radio" name="no6"> 형
+	<br><span onclick="getNext()">다음</span>
+</form>
+</div>
+<div class="myAsk">
+<h4>8. 내가 좋아하는 책분야?</h4>
+<form>
+	<input type="radio" name="no7"> 과학지식<br>
+	<input type="radio" name="no7"> 철학<br>
+	<input type="radio" name="no7"> 소설
+	<br><span onclick="getNext()">다음</span>
+</form>
+</div>
+<div class="myAsk">
+<h4>9. 나의 화를 다스리는법</h4>
+<form>
+	<input type="radio" name="no8"> 명상<br>
+	<input type="radio" name="no8"> 우선순위 정하기<br>
+	<input type="radio" name="no8"> 과거회상후 배우기
+	<br><span onclick="getNext()">다음</span>
+</form>
+</div>
+<div class="myAsk">
+<h4>10. 내가 가장 좋아하는 음식</h4>
+<form>
+	<input type="radio" name="no9"> 라멘<br>
+	<input type="radio" name="no9"> 회<br>
+	<input type="radio" name="no9"> 스테이크
+	<br><span onclick="getResult()">결과 보기~</span>
+</form>
+</div>
+</div>
+
+<div id="piechart"></div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="scr2.js"></script>
+</body></html>

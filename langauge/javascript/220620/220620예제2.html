@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>
+</title>
+<style>
+div{
+visibility:hidden;
+position:absolute;
+background-color:lightblue;
+width:100px;
+height:130px;
+}
+
+</style>
+</head>
+<body>
+<h3>아이템에 마우스를 올리면 설명 출력</h3>
+여름 방학때 하고 싶은 것들
+<ul>
+<li onmouseover='over(event)' onmouseout='out(event)'>자전거로 대한민국 일주<div class='d'>rmakskdlaskdlkaskdlakdklaskldklasklda</div></li>
+<li onmouseover='over(event)' onmouseout='out(event)'>책100권 읽기<div class='d'>빨간 자전거를 타고 서울 대전 대구 부산 찍고 목포 인천을 거처 달린다.</div></li>
+<li onmouseover='over(event)' onmouseout='out(event)'>철인 3종 경기 준비<div class='d'>책책ㅊ개채갳ㄱ책책채ㅐ책채개채</div></li>
+<li onmouseover='over(event)' onmouseout='out(event)'>자바스크립트 정<div class='d'>스크립트 그만하고 싶어요 이제 그만</div></li>
+</ul>
+<script>
+function over (e) {
+let x=e.target.lastChild;
+x.style.visibility='visible';
+x.style.position='absolute';
+x.style.backgroundColor='skyblue';
+x.style.left=e.x+50+'px';
+}
+
+function out (e) {
+let x=e.target.lastChild;
+x.style.visibility='hidden';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+p453
+</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<h3>이미지에 마우스 올리고 5초간 그대로있으면  사이트이동</h3>
+
+<hr>
+<img id ="img" src="1.png"
+	onmouseover="startTimer(5000)"
+	onmouseout= "cancelTimer()">
+
+
+
+<script>
+let timerID= null;
+function startTimer(time) {
+
+	timerID = setTimeout("load('http://www.naver.com')", time);
+
+	document.getElementById("img").title = "타이머 작동 시작...";  //마우스 갖다대면 뜨는 안내창
+	console.log("누적time은?",timerID);
+}
+
+function cancelTimer(){
+	if(timerID != null)
+	clearTimeout(timerID);
+
+}
+function load(url){	
+	window.location = url;
+
+}
+
+</script>
+</body>
+</html>

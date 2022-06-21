@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>
+</title>
+<style>
+*{
+cursor:none;
+}
+
+div {
+display:inline-block;
+position:absolute;
+}
+
+img{
+width:30px;
+height:30px;
+}
+</style>
+</head>
+<body>
+<div id='div1'>
+<img src="스피또/뚱이.jpg" id='img1'>
+</div>
+<div onmouseover='aa(event)' onmouseout='out(event)'>
+<h3>이미지 커서 만들기</h3>
+<p>마우스를 움직이면 이미지로 만든 커서가 마우스를 따라다닙니다.</p>
+</div>
+<script>
+var div=document.getElementById("div1");
+var img=document.getElementById("img1");
+window.onmousemove=function(e){
+var x=e.clientX;
+var y=e.clientY;
+div.style.left=x+'px';
+div.style.top=y+'px';
+}
+
+function aa(e){
+img.src='스피또/스펀지밥.png';
+}
+
+function out(e){
+img.src="스피또/뚱이.jpg";
+}
+</script>
+</body>
+</html>

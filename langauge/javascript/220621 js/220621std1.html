@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+BOM
+</title>
+
+
+<style>
+<script>
+</style>
+
+</script>
+
+
+
+
+</head>
+<body>
+
+<pre> 
+
+<h3> BOM 브라우저 객체 </h3>
+BOM : 브라우저 오브젝트 모델
+BOM은 윈도우와 관련된URL, 브라우저 관련 기능 제어 담당
+BOM에 속한 객체들은 HTML 페이지의 내용과 전혀 무관
+
+BOM객체 종류 
+1. window
+2.navigatior
+3.history
+4. location
+5.screen
+
+
+<h3>window 객체 </h3>
+윈도우 창 하나를 window 객체 하나라고 생각.
+1. 브라우저가 새로운 웹 페이지를 로드 할 때 새로운 window 객체
+2.iframe
+3.자바스크립트 코드로 새로운 window객체 생성
+
+page X
+page Y
+scroll X
+scroll Y
+
+setInterval()
+clear i
+setTimeout()
+moveBy()
+moveTo()
+scrollBy()
+scrollTo()
+
+window.open의 1번째 매개변수 : url
+window.open의 2번째 매개변수 : 윈도우 이름
+window.open의 3번째 매개변수: 윈도우 속성
+
+윈도우 이름위치에 
+_blank: 새창 
+_parent: 나의부모
+_self: 자신
+_top: 최상위 브라우저 우니도우
+
+iframe 객체를 만들면 메인 window가 부모 윈도우가 된다.
+
+<h3>타임아웃과 인터벌</h3>
+
+타임아웃: 단1회만 실행 setTimeout clearTimeout()
+인터벌: 반복주기로 실행 setInterval clearInterval()
+이 메서드를 호출할 때 window표시는 생략 가능
+
+이메서드를 호출할 때 window 표시는 생략 가능. 
+
+setTimeout 메서드의 매개변수 : 밀리초 단위 시간 값
+1.호출하는 함수 ""
+2.밀리초 단위 시간값(숫자.
+
+
+clearTimeout 메서드용도
+setTimeout으로 실행 예약해놓은 작업을 취소할 수있다.
+clearTimeout의 매개변수 : setTimeout 객체명
+
+setInterval(): 시간 주기로 무한 반복
+
+setInterval("함수()", 1000);
+clearInterval(취소할인터벌객체명);
+
+
+
+
+
+</pre> 
+
+<iframe> 111</iframe>
+<div onclick= "c()">
+새창
+</div>
+
+<div onclick= "clo()">
+창닫기
+</div>
+
+
+<script>
+function to(t)
+{
+	console.log(t, "초 타임아웃실행");
+}
+var clock=setTimeout("to(5)",5000);  //  (난 알람)는콘솔에 형태값 > 빈값이면 노출력   ,5000 ms  
+
+//clearTimeout(clock);  //clearTimeout으로 중지가능 setTime을 
+setTimeout("window.alert(1+'n초')", 1000);
+
+
+
+
+
+var newWin=0;
+function c(){
+//window.open("220621s1.html","mm","menubar=yes")
+	newWin= window.open("http://www.naver.com", "_blank", "left=100, top=100, width= 150")
+
+
+}
+function clo(){ 
+	if(newWin==null || newWin.closed)
+		return;
+	else
+		newWin.close();
+	
+}
+
+</script>
+</body>
+</html>

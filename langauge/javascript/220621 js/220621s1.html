@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset = "utf-8">
+<title>이벤트 객체의 target</title>
+<script> 
+
+
+let tl;
+
+window.onmouseover = function(e) {
+
+
+console.log(e.target.tagName);
+tl =e.target.tagName;
+ //e.target.parentElement.style.width
+//tl= e.target.document.getElementByTagName("SPAN") ;
+
+
+if (e.target.tagName=="SPAN"){
+e.target.style.textDecorationLine= "underline";
+
+//tl.style.textDecorationLine= "underline";
+
+
+//SPAN.text-decoration-line = underline;
+}
+}
+
+window.onmouseout = function(e){
+}
+
+</script>
+</head>
+<body>
+<h3>span 태그에만 onmouse over/ onmouseout</h3>
+
+<hr>
+<p>span 태그에 대해서만 <span>마우스 </span>가
+올라올 때 밑줄이 그어지고 <span> 마우스 </span>
+가 내려갈 때 밑줄 사라지도록
+<span> 자바 코드 </span> 작성
+</p>
+</body> </html>

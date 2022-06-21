@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+adidas cop
+</title>
+<style>
+
+
+
+
+*{margin:0;padding:0;}
+
+#div1{	
+	position:absolute;
+ 	width: 100%;
+	height: 100%;
+	background : yellow;
+	border:1px solid black;
+display:inline-block;
+overflow:hidden;
+	z-index: 4 ;
+}
+
+#im1 {
+   position: relative;
+  width: 100%;
+  height: 100%;
+  vertical-align:bottom;
+  margin: 0 auto;
+	z-index: 3 ;
+}
+
+
+#div2{
+position:absolute;
+background : skyblue;
+z-index: 5 ;
+display:inline-block;
+top : 86%;
+}
+
+
+</style>
+<body>
+<!script src="http://code.jquery.com/jquery-latest.js"   j quary 호출></script> 
+<div id = "div1" style="width:1200px;height:800px;">
+<img id="im1" onmouseenter="up(im1,event);" onmousemove="where(event); move(im1,event);" onwheel="mwh(im1,event);" onmouseout ="mlea(im1,event)" src="1.jpg">
+//함수 두개 소환  onmousemove="where(event); move(im1,event);" 그냥 띄어서 써라 
+
+</div>
+
+<div id = "div2"> 버튼=  <br>
+	screenX + e.screenY = <br>
+	clientX, clientY = <br>
+	
+	offsetX, offsetY= <br>
+	screeX, screeY= <br>
+
+	x, y=<br></div>
+<script>
+
+let aiL= 0;
+let aiT= 0;
+let wv= 0;
+let diff1=0;
+let posx=0;
+let long1=0;
+let diff2=0;
+let posy=0;
+let long2=0;
+
+let wd= 0;
+
+let mu=5;
+
+
+
+
+
+
+
+function up(im1,e){	
+im1.style.transform="scale(5)";	
+}
+
+
+
+function where(e){
+	let text= "버튼" + e.button + "<br>";
+	text+= "(screenX, screenY)=" +
+		e.screenX+ "," + e.screenY + "<br>";
+	text+= "(clientX, clientY)=" +
+		e.clientX+ "," + e.clientY + "<br>";
+	text+= "(offsetX, offsetY)=" +
+		e.offsetX+ "," + e.offsetY + "<br>";
+	text+= "(screeX, screeY)=" +
+		e.screenX+ "," + e.screenY + "<br>";
+	
+	text+= "(x, y)=" +e.x +"," + e.y+ "\n";
+	
+	div2.innerHTML= text;
+	x= e.offsetX;
+	y =e.offsetY;
+	//x1= e.offsetX;
+	//y1 =e.offsetY;
+	//console.log(x);
+	//console.log(y);
+}
+
+
+
+//im1.style.transform= "scale("+mu+","+mu+")";
+
+function move (im1,e) {
+	
+	//x=null;
+	//y=null;
+	//[pos * (ori- long)] + diff= (ori* rate-ori)/2
+	//  [pos * (ori-long)] +  (long-ori)/2   
+	//x= e.screenX;   
+	//y =e.screenY; 
+	x1= e.offsetX;
+	y1 =e.offsetY;
+	console.log('x값'+x1);	
+	console.log('y값'+ y1);
+	aiL =im1.width;
+	aiT= im1.height;
+	//aiL= e.target.parentElement.style.width;  //그림의 폭값 대입 ori  ori * rate
+	//aiT= e.target.parentElement.style.height; // 그림 높이 대입   
+	//aiL=parseInt(aiL.replace("px",""));
+	//aiT=parseInt(aiT.replace("px",""));
+
+	//pw();
+	im1.style.transform= "scale("+mu+","+mu+")";
+	if( mu>="1"){
+
+	
+	long1 = ((aiL)*mu).toFixed(2);	
+	diff1 = aiL*mu-aiL;  //(ori* rate-ori)/2
+	posx = (x1 / aiL).toFixed(5);
+	// left밀기값 최종식 (posx*(aiL-long1)+(long1-aiL)/2)
+
+	long2 = ((aiT)*mu).toFixed(2);	
+	diff2 = aiT*mu-aiT/2;     //(ori* rate-ori)/2 
+	posy = (y1/aiT).toFixed(5);
+	// top밀기값 최종식 (posy*(aiT-long2)+(long2-aiT)/2)
+	
+	console.log('aiL값'+ aiL);	
+	console.log('aiT값'+ aiT);
+	console.log('aiT값, long1,long2, posx, posy' +'    ' + aiT+'     	'+long1+'   '+long2+'  '+posx+'  	'+posy);
+		console.log(posx*(aiL-long1) + ((long1-aiL)/2));
+
+	im1.style.left=(posx*(aiL-long1) + ((long1-aiL)/2))+ 'px'; 
+	im1.style.top= (posy*(aiT-long2)) +((long2-aiT)/2)+ 'px'; 
+	}
+
+	else{
+	console.log(posx*(aiL-long1) + ((long1-aiL)/2));
+	}
+	
+	
+}
+
+
+function pw(){
+
+im1.style.transform="scale("+mu+","+mu+")";
+
+}
+
+function mwh (im1,e) {
+	
+	wd= e.wheelDelta;
+	console.log(' wd 값'+ wd);
+	
+	if (wd>0) {
+	 mu+= 0.2;
+	
+	move(im1,e.target)
+	//im1.style.transform="scale("+mu+","+mu+")";
+
+	console.log(' mu 값'+ mu);
+	
+	}
+ 	
+	else if (wd<0){
+
+	if (mu>1)
+	mu-= 0.2;
+	//im1.style.transform="scale("+mu+","+mu+")";
+
+	console.log(' mu 값'+ mu);
+	//move(im1,e.target)
+	}	
+		
+}
+
+
+function mlea (e) {
+	
+	
+	im1.style.left=0+ 'px';   
+	im1.style.top= 0+ 'px'; 
+	mu=5;	
+	im1.style.transform="scale(1)";	
+	//im1.style.left=(posx*(aiL-long1) + ((long1-aiL)/2))+ 'px'; 
+	//im1.style.top= (posy*(aiT-long2)) +((long2-aiT)/2)+ 'px'; 
+
+}
+
+
+		
+	
+	
+
+function min (a) {
+		 mu=5;
+	}
+
+
+
+
+
+
+function OvIg() {
+//document.write("<div id ="OR" >22 </div>");
+
+}
+
+
+function OIg() {
+//document.write("<div id ="OR" >22 </div>");
+}
+
+
+
+//div1.addEventListener('onmouseclick', CIg());
+
+//div1.addEventListener('onmousedown',CIg());
+
+//div1.addEventListener('onmouseover',OvIg());
+
+//div1.addEventListener('onmouseout',OIg());
+
+//im1.addEventListener('onwheel',wheel());
+
+//p.addEventListener('mouseover',func1); 작성 event예시
+
+</script>
+</body>
+</html>
