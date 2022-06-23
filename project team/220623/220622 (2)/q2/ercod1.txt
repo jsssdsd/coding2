@@ -1,0 +1,19 @@
+//let Can1= document.getElementById("myCanvas");
+//Can1.addEventListener('mouseenter', init);
+
+
+
+
+
+function Ccol() { 
+
+Nc = document.getElementById("1")
+
+Mc=  document.getElementById("1")
+
+}
+
+
+
+
+startX-curX ,startX- curY

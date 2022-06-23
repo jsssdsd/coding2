@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+CSS position
+</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<h3>CSS 포지션 속성</h3>
+<hr>
+
+
+<div> </div>
+
+<canvas id="myCanvas" style="background-color: aliceblue" width="1200" height="900">
+</canvas>
+<script>
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+ctx.beginPath();
+ctx.rect(20, 40, 50, 50);
+ctx.fillStyle = "#FF0000";
+ctx.fill();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.arc(240, 160, 20, 0, Math.PI*2, false);
+ctx.fillStyle = "green";
+ctx.fill();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.rect(160, 10, 100, 40);
+ctx.strokeStyle = "rgba(0, 0, 255, 0.5)";
+ctx.stroke();
+ctx.closePath();
+
+//-------------------------------------SB start.
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var x = canvas.width/2;
+var y = canvas.height-30;
+var dx = 3;
+var dy = -9;
+var ballRadius = 10;
+
+
+function ball(){
+  ctx.beginPath();
+ ctx.arc(x, y, ballRadius, 0, Math.PI*2);
+ ctx.fillStyle = "#0095DD";
+ ctx.fill();
+ ctx.closePath();
+ drawpad();
+}
+
+function draw() {
+
+
+
+ ctx.clearRect(0, 0, canvas.width, canvas.height);
+ ball();
+
+    x += dx;
+    y += dy;
+
+	
+	if(x + dx> canvas.width-ballRadius || x + dx<ballRadius) {
+	dx = -dx;
+	}
+
+
+	if(y + dy > canvas.height-ballRadius || y+dy <ballRadius){
+	dy = -dy;
+	}
+
+	if(rightPressed && padX< canvas.width-padwd){
+	padX +=7 ;
+	}
+	else if (leftPressed && padX>0) {
+	padX -= 7;
+	}
+
+    // drawing code
+}
+
+var padhg= 10;
+var padwd= 75;
+var padX = (canvas.width-padwd)/2;
+
+function drawpad() {
+	ctx.beginPath();
+	ctx.rect(padX, canvas.height-padhg, padwd, padhg);
+	ctx.fillStyle = "#0095DD";
+	ctx.fill();
+	ctx.closePath();
+}
+
+
+var rightPressed = false;
+var leftPressed = false;
+
+function keyDownHandler(e) {
+    if(e.keyCode == 39) {
+        rightPressed = true;
+    }
+    else if(e.keyCode == 37) {
+        leftPressed = true;
+    }
+}
+
+function keyUpHandler(e) {
+    if(e.keyCode == 39) {
+        rightPressed = false;
+    }
+    else if(e.keyCode == 37) {
+        leftPressed = false;
+    }
+}
+
+
+
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+
+
+
+
+setInterval(draw, 10);
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
+

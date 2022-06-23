@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+p505 마우스스케칭
+</title>
+<style>
+
+</style>
+</head>
+<body>
+
+<h3>마우스드래깅</h3>
+<hr>
+
+선굵기 입력<input id="Fs" type="number" value="0"> 
+색선택<input type="color" id="favcolor" name="favcolor" value="#F00000"><br>
+
+<button id="Lm">선 생성 </button>
+<button id="Tm">삼각형 생성 </button> 
+<button id="RTm">사각형 생성 </button>  <button id="Rm">원 생성 </button>
+
+
+<canvas id="myCanvas" style="background-color: aliceblue" width="1200" height="900">
+</canvas>
+
+
+
+<script>
+
+let start1X=0, start1Y=0;
+
+let cur1X =0, cur1Y=0 ;
+
+let startRTX=0, startRTY=0;
+let curRTX =0, curYRT=0 ;
+
+let startRX=0, startRY=0;
+let curRX =0, curRY=0 ;
+
+let dragging= false;
+
+let Nc = document.getElementById("favcolor");  //색지정
+
+Nc.addEventListener('mousedown',chC);
+function chC()
+{
+console.log(Nc.value);
+console.log(favcolor.value);
+}
+
+
+let Fs1 = document.getElementById("Fs");  //굵기 지정
+
+Fs1.addEventListener('keyup',FsC);
+
+function FsC()
+{
+console.log(Fs1.value);
+console.log(Fs.value);
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------------
+
+
+let Tm1 = document.getElementById("Tm");  //삼각형
+
+Tm1.addEventListener('click',Tm2);
+
+function Tm2(){
+
+	canvas = document.getElementById("myCanvas");
+	context= canvas.getContext("2d");
+
+	context.lineWidth= Fs1.value;
+	context.strokeStyle =favcolor.value;
+
+	//canvas.addEventListener("mousemove", function (e) { Tmove(e) }, false);  //M움직일때
+	canvas.addEventListener("mousedown", 	function (e) { Tclk(e) }, false);   //M 클릭할때
+	canvas.addEventListener("mouseup", 	function (e) { Tup(e) }, false);	  //M 클릭땔때
+	canvas.addEventListener("mouseout", 	function (e) { out(e) }, false);
+	canvas.addEventListener("contextmenu", 	function (e) { riC(e) }, false);
+
+}
+
+function Tmove(e){
+	if(!dragging) return;
+	let curX = e.offsetX, curY = e.offsetY;
+	draw1(curX, curY);
+	startX1 =curX; 
+	startY1= curY;
+
+}
+
+
+function Tclk(e){
+	
+	start1X= e.offsetX; 
+	start1Y = e.offsetY; 
+	dragging = false;
+	context.beginPath();
+	context.moveTo(start1X, start1Y);
+	console.log(start1X, start1Y);
+
+}
+
+
+function Tup(e) {
+	cur1X =e.offsetX; 
+	cur1Y =e.offsetY; 
+	console.log(cur1X, cur1Y);
+	context.lineTo(cur1X, cur1Y);
+	context.lineTo(cur1X, start1Y);
+	context.lineTo(start1X, start1Y);
+	context.stroke();
+}
+
+function draw1(curX1, curY1) {
+	
+	 curX1 = e.offsetX,
+	  curY1 = e.offsetY;
+
+}
+
+//------------------------------------------------------------------
+
+
+
+
+
+let RTm1 = document.getElementById("RTm");  //사각형	
+
+RTm1.addEventListener('click',RTm2);
+
+
+function RTm2(){
+	canvas = document.getElementById("myCanvas");
+	context= canvas.getContext("2d");
+
+	context.lineWidth= Fs1.value;
+	context.strokeStyle =favcolor.value;
+
+	//canvas.addEventListener("mousemove", function (e) { RTmove(e) }, false);  //M움직일때
+	canvas.addEventListener("mousedown", 	function (e) { RTclk(e) }, false);   //M 클릭할때
+	canvas.addEventListener("mouseup", 	function (e) { RTup(e) }, false);	  //M 클릭땔때
+	canvas.addEventListener("mouseout", 	function (e) { out(e) }, false);
+	canvas.addEventListener("contextmenu", 	function (e) { riC(e) }, false);
+}
+
+function RTmove(e){
+	if(!dragging) return;
+	let curRTX = e.offsetX, curY = e.offsetY;
+	draw1(curX, curY);
+	startRTX =curX; 
+	startRTY= curY;
+
+}
+
+
+
+function RTclk(e){
+	
+	startRTX= e.offsetX; 
+	startRTY = e.offsetY; 
+	dragging = false;
+	context.beginPath();
+	
+	console.log(startRTX, startRTY);
+
+}
+
+
+function RTup(e) {
+	curRTX =e.offsetX; 
+	curRTY =e.offsetY; 
+	console.log(curRTX, curRTY);
+
+	context.moveTo(startRTX, startRTY);
+	context.lineTo(curRTX, startRTX);
+	context.lineTo(curRTX, startRTY);
+	context.lineTo(startRTX, startRTY);
+	context.stroke();
+}
+
+function draw1(curX1, curY1) {
+	
+	 curX1 = e.offsetX,
+	  curY1 = e.offsetY;
+
+}
+
+
+
+let Rm1 = document.getElementById("Rm"); // 원
+
+Rm1.addEventListener('click',Rm2);
+
+function Rm2(){
+
+}
+
+
+
+
+
+
+
+
+
+
+//-----------------------------------------------------------------------------------------------------------------------
+
+
+
+let canvas, context;
+
+let Lm1= document.getElementById("Lm");
+Lm1.addEventListener('click',init);
+
+
+
+
+
+function init() {
+	canvas = document.getElementById("myCanvas");
+	context= canvas.getContext("2d");
+
+	context.lineWidth= Fs1.value;
+	context.strokeStyle =favcolor.value;
+
+	canvas.addEventListener("mousemove", function (e) { move(e) }, false);
+	canvas.addEventListener("mousedown", 	function (e) { down(e) }, false);
+	canvas.addEventListener("mouseup", 	function (e) { up(e) }, false);
+	canvas.addEventListener("mouseout", 	function (e) { out(e) }, false);
+	canvas.addEventListener("contextmenu", 	function (e) { riC(e) }, false);
+}
+
+
+function riC(e) {
+	
+ dragging = false
+context.delete;
+context.clearRect(0, 0, canvas.width, canvas.height);
+};
+
+
+function draw(curX, curY) {
+	context.beginPath();
+	context.moveTo(startX, startY);
+	context.lineTo(curX, curY);
+	context.stroke();
+
+}
+
+function down(e) {
+	startX= e.offsetX; 
+	startY = e.offsetY; 
+	dragging = true;
+}
+
+
+function up(e) {dragging = false; }
+
+function move(e) {
+	if(!dragging) return;
+	let curX = e.offsetX, curY = e.offsetY;
+
+	draw(curX, curY);
+	startX =curX; 
+	startY= curY;
+}
+
+	
+function out(e) { dragging = false
+//context.clearRect(0, 0, canvas.width, canvas.height)   캔버스 내용 올삭제하기 
+;};
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

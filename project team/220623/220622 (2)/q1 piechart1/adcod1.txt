@@ -1,0 +1,40 @@
+add code pichart 
+
+
+
+
+
+
+let ctx = document.querySelector("canvas").getContext("2d");
+	//context= ctx.getContext("2d");
+
+
+
+
+
+for (let moodValue of results) {
+        //calculating the angle the slice (portion) will take in the chart
+        let portionAngle = (moodValue.total / totalNumberOfPeople) * 2 * Math.PI;
+        //drawing an arc and a line to the center to differentiate the slice from the rest
+        ctx.beginPath();
+        ctx.arc(100, 100, 100, currentAngle, currentAngle + portionAngle);
+        currentAngle += portionAngle;
+        ctx.lineTo(100, 100);
+        //filling the slices with the corresponding mood's color
+        ctx.fillStyle = moodValue.shade;
+        ctx.fill();
+
+
+
+const results = [
+	{학생A: "pointA", total: a1.value, shade: "#0a9627"},
+	{학생B: "pointB", total: b1.value, shade: "#960A2C"},
+	{학생C: "pointC", total: c1.value, shade: "#332E2E"},
+	{학생D: "pointD", total: d1.value, shade: "#F73809"},
+	{학생F: "pointF", total: f1.value, shade: "#A73B09"}
+    ];
+
+
+   let sum = 0;
+    let totalNumberOfPeople = results.reduce((sum, {total}) => sum + total, 0);
+   // let currentAngle = 0;
