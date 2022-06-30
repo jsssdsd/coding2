@@ -1,0 +1,115 @@
+const canvas = document.getElementById("canvas");
+const img = new Image();
+const ctx = canvas.getContext("2d");
+const canvasMonster = document.getElementById("canvasMonster");
+const ctxMonster = canvasMonster.getContext("2d");
+img.src="background.png";
+
+img.src="배경.png";
+img.onload = function() {
+	// (이미지객체, 이미지객체 내 x 좌표, 이미지객체 내 y좌표, 표현되는 너비, 표현되는 높이, 캔버스 x좌표, 캔버스 y좌표)
+	ctx.drawImage(img, img.width/2-canvas.width/2, img.height/2, canvas.width, canvas.height, 0, 0, canvas.width, canvas.height)
+}
+
+var monsterimgArray1 = ["https://www.monsterhunter.com/rise/assets/images/site-nav-wyvern-riding_img.png",
+"https://cdn.gamemeca.com/data_center/226/800/20210325172934.jpg",
+"https://post-phinf.pstatic.net/MjAxODA1MDNfMTM5/MDAxNTI1MzU1MzM1MDky.UarAGYjbkuwmvZTMmJK7F5E-ajtTFszpDEw-88Vaabsg.AP4Or_bLXNrdMEb0B-_UwvtRpWKxEpQ46koeV_ukUpgg.PNG/4-4.png?type=w1200",
+"https://t1.daumcdn.net/cfile/tistory/993DF53D5C74D2370B"]
+
+var monsterimgArray2 = ["https://post-phinf.pstatic.net/MjAxODA0MTFfMTky/MDAxNTIzNDQ2OTc3NjA0.quV6LcNNSWUN34_Gt-j5txJJWGb2Sa2SEiH1KGfsk4og.CP2hS4pKKX_MA9HsJjFUap_C2tc6Q7uk_ZHaL858wyUg.PNG/1-1.png?type=w1200",
+"https://static.wikia.nocookie.net/monsterhunters/images/b/b3/MH4_%EB%A6%AC%EC%98%A4%EB%A0%88%EC%9D%B4%EC%95%84.png/revision/latest?cb=20140120170727&path-prefix=ko"]
+
+
+class Monster {
+constructor (monsterType, monsterHp, monsterX, monsterY, monsterSp, monsterAtk) {
+	//프로퍼티
+	this.monsterType = monsterType	//몬스터 타입
+	this.monsterHp = monsterHp; 	//몬스터 체력
+	this.monsterX = monsterX;		//몬스터 x좌표
+	this.monsterY = monsterY;		//몬스터 y좌표
+	this.monsterSp = monsterSp;	    //몬스터 속도
+	this.monsterAtk = monsterAtk;	    //몬스터 공격
+	this.normalUrl = "frames/";
+	this.walkUrl = "normal.gif";
+	this.attackUrl = "attack.gif";
+	this.deadUrl = "die.gif";
+
+	this.inquiry = function () {return this.monsterX;}
+	this.newX = function() { 
+		this.monsterX += 10; 
+	}
+	this.newX2 = function() { 
+		this.monsterX -= 10; 
+	}
+ }
+ 
+ MX() {
+	return Number(this.monsterX)
+ }
+ MY() {
+	return Number(this.monsterY)
+ }
+
+}
+
+var xArray = [-3300,3300]
+function createMonster() {
+	// (몬스터이름, 몬스터체력, 몬스터x좌표, 몬스터y좌표, 몬스터스피드, 몬스터공격력)
+    makeMonster1 = new Monster('landmonsterN1', '20', xArray[Math.floor(Math.random() * xArray.length)], '-720','20', '10'); //HTML
+    makeMonster2 = new Monster('landmonsterN2', '20', xArray[Math.floor(Math.random() * xArray.length)], '-720','20', '10'); //CSS
+    makeMonster3 = new Monster('landmonsterS1', '30', xArray[Math.floor(Math.random() * xArray.length)], '-720','10', '30'); //C#
+    makeMonster4 = new Monster('landmonsterS2', '30', xArray[Math.floor(Math.random() * xArray.length)], '-720','10', '30'); //C	
+
+	let imgmon1=new Image();
+	imgmon1.onload = function() {
+		// (이미지명, 이미지생성x좌표위치, 이미지생성y좌표위치, 이미지가로길이, 이미지세로길이)
+		ctxMonster.drawImage(imgmon1, makeMonster1.MX(), makeMonster1.MY(), 100, 100);
+	}	
+	imgmon1.src=monsterimgArray1[0]
+
+	let imgmon2=new Image();
+	imgmon2.onload = function() {
+		ctxMonster.drawImage(imgmon2, makeMonster2.MX(), makeMonster2.MY(), 100, 100);
+	}
+	imgmon2.src=monsterimgArray1[1]
+
+	let imgmon3=new Image();
+	imgmon3.onload = function() {
+		ctxMonster.drawImage(imgmon3, makeMonster3.MX(), makeMonster3.MY(), 100, 100);
+	}
+	imgmon3.src=monsterimgArray1[2]
+
+	let imgmon4=new Image();
+	imgmon4.onload = function() {
+		ctxMonster.drawImage(imgmon4, makeMonster4.MX(), makeMonster4.MY(), 100, 100);
+	}
+	imgmon4.src=monsterimgArray1[3]
+	console.log(makeMonster1.MX())
+	console.log(makeMonster2.MX())
+	console.log(makeMonster3.MX())
+	console.log(makeMonster4.MX())
+}
+function createMonster2() {
+    makeMonster5 = new Monster('skymonster1', '10', xArray[Math.floor(Math.random() * xArray.length)], Math.floor((Math.random() *(720-(-720)))+(-720)), '30', '10'); //JS
+    makeMonster6 = new Monster('skymonster2', '10', xArray[Math.floor(Math.random() * xArray.length)], Math.floor((Math.random() *(720-(-720)))+(-720)), '30', '10'); //PY
+
+    let imgmon5=new Image();
+	imgmon5.onload = function() {
+		ctxMonster.drawImage(imgmon5, makeMonster5.MX(), makeMonster5.MY(), 100, 100);
+	}	
+	imgmon5.src=monsterimgArray2[0]
+	let imgmon6=new Image();
+	imgmon6.onload = function() {
+		ctxMonster.drawImage(imgmon6, makeMonster6.MX(), makeMonster6.MY(), 100, 100);
+	}	
+	imgmon6.src=monsterimgArray2[1]
+	console.log(makeMonster5.MX())
+	console.log(makeMonster5.MY())
+	console.log(makeMonster6.MX())
+	console.log(makeMonster6.MY())
+}
+
+setInterval(createMonster, 500);
+setTimeout(function() { setInterval(createMonster2, 500) },10000);
+
+

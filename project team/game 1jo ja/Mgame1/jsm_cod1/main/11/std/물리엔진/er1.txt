@@ -1,0 +1,17 @@
+
+var img  = new Image();
+img.onload = function() {
+	context.drawImage(img,20,20);
+}
+img.src= "파일명.png";
+
+
+
+var Chrimg = new Image();
+chrimg.onload=function() {
+
+	ctx.drawImage(BGimg, 0, 0, 600,900);
+	
+	}
+Chrimg.src = "Chr1.png";
+BGimg.src = "BGImg1.jpg";

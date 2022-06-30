@@ -1,0 +1,23 @@
+npx create-react-app D:\pycharm\coding\react
+
+깃추가
+
+1.
+git init
+
+
+2.
+git remote add origin https://github.com/jsssdsd/clone-twitter-by-React-firebase.git   경로설정
+
+3. git add .    add  후 띄어슴
+
+4. git commit -m "제목"  커밋 등록
+
+5. git push origin master  	끝 업뎃
+
+
+
+브랜치 변경법  요즘은 main을 쓴다고함
+
+
+git branch -m master

@@ -1,0 +1,18 @@
+
+let Lm1= document.getElementById("Lm");  //라인
+Lm1.addEventListener('click',init);
+
+
+let RTm1 = document.getElementById("RTm");  //사각형	
+RTm1.addEventListener('click',RTm2);
+
+
+	startRTX = null;
+	startRTY = null;
+	curRTX =null; 
+	curRTY =null; 
+	
+	startX = null;
+	startY = null;
+	curX = null;
+	curY = null;

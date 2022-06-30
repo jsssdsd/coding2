@@ -1,0 +1,11 @@
+	유저 속성값	
+		this.life = life;
+		this.x = X;
+		this.y = Y;
+		this.normalUrl = "Chick/Chick/";
+		this.walkUrl = "Chick/Chick-walk/";
+		this.attackUrl = "Chick/Chick-attack/";
+		this.deadUrl = "Chick/Chick-dead/";
+		this.arrow = "left";
+		this.speed = 10;
+		this.damage = 1;

@@ -1,0 +1,39 @@
+var module = (function (){
+    // private code   c=0;
+    projtil_array=null;
+    ctx_projtil.clearRect(0, 0, canvas.width, canvas.height);
+    // fx=cx+25;
+    // fy=cy+25;   
+    ctx_projtil.beginPath();
+    ctx_projtil.arc(fx, fy, 20, 0, Math.PI*2);
+    ctx_projtil.fillStyle = "#0095DD";
+    ctx_projtil.fill();
+    ctx_projtil.closePath();
+  
+    // cx += dx;
+    // cy += dy;
+    return {
+     
+
+        // public property or method
+    }
+  })();
+
+
+   
+즉시함수 !!
+(function (params){
+    // 실행코드
+})(args);
+ 
+
+그리고 이것을 응용한 모듈 패턴은 다음과 같습니다.
+
+ 
+
+var module = (function (){
+  // private code
+  return {
+  	// public property or method
+  }
+})();

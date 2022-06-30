@@ -1,0 +1,44 @@
+{ "skeleton": { "images": "C:/Users/User/Desktop/Monster6/images/" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "Wings2", "bone": "root", "attachment": "Wings2" },
+	{ "name": "tail", "bone": "root", "attachment": "tail" },
+	{ "name": "Leg2", "bone": "root", "attachment": "Leg2" },
+	{ "name": "Leg1", "bone": "root", "attachment": "Leg1" },
+	{ "name": "body", "bone": "root", "attachment": "body" },
+	{ "name": "Wings1", "bone": "root", "attachment": "Wings1" },
+	{ "name": "Eyegloss2", "bone": "root", "attachment": "Eyegloss2" },
+	{ "name": "Eyegloss1", "bone": "root", "attachment": "Eyegloss1" }
+],
+"skins": {
+	"default": {
+		"Wings2": {
+			"Wings2": { "x": 130, "y": -232.5, "width": 202, "height": 267 }
+		},
+		"tail": {
+			"tail": { "x": 398, "y": -476, "width": 212, "height": 194 }
+		},
+		"Leg2": {
+			"Leg2": { "x": 241, "y": -471, "width": 82, "height": 116 }
+		},
+		"Leg1": {
+			"Leg1": { "x": 362.5, "y": -467, "width": 73, "height": 122 }
+		},
+		"body": {
+			"body": { "x": 278.5, "y": -253.5, "width": 281, "height": 411 }
+		},
+		"Wings1": {
+			"Wings1": { "x": 436, "y": -183, "width": 224, "height": 358 }
+		},
+		"Eyegloss2": {
+			"Eyegloss2": { "x": 256, "y": -176, "width": 130, "height": 156 }
+		},
+		"Eyegloss1": {
+			"Eyegloss1": { "x": 304, "y": -176, "width": 102, "height": 148 }
+		}
+	}
+},
+"animations": { "animation": {} }
+}

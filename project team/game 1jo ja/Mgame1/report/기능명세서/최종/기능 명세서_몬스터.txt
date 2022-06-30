@@ -1,0 +1,72 @@
+2. 몬스터
+
+전체 캔버스 크기 6400x1440 (오락화면의 가로 5배, 세로 2배)
+오락화면 크기 1280x720
+
+2-1. 생성
+
+○ 지상 몬스터
+- 속도 : 유저속도의 1 배 부여
+	function landMonsterSpeed() {
+		return 유저속도*1
+	}
+- 매 0.5초마다 생성
+	let makeMonster = setInterval(createMonster,500);
+- 1분 추가시마다 생성주기 10%씩 감소
+	'1분후'
+	makeMonster = setInterval(createMonster,500*0.9);
+	'2분후'
+	makeMonster = setInterval(createMonster,500*0.9*0.9);
+	'3분후'
+	makeMonster = setInterval(createMonster,500*0.9*0.9*0.9);
+- 생성위치
+	-3300 == x or x == 3300 (배경 이미지의 밖에오후 3:45 2022-06-27서 생성된다.)
+	y == -720 ( 땅 레벨에 맞춰 조정)
+
+○ 공중 몬스터
+- 속도 : 유저속도의 1.5 배 부여
+	function skyMonsterSpeed() {
+		return 유저속도*1.5
+	}
+- 맵에 표시되는 실시간 생존시간 데이터를 받는다.
+- 1분 이후 매 0.5초마다 생성. x좌표 아래 보기중 랜덤.
+	let makeMonster2 = setInterval(createMonster2,500);
+	setInterval을 1분 이후에 적용하는 기능 자체를 createMonster2에 추가
+- 2분부터 1분 추가시마다 생성주기 10%씩 감소.
+	'2분후'
+	makeMonster = setInterval(createMonster2,500*0.9);
+	'3분후'
+	makeMonster = setInterval(createMonster2,500*0.9*0.9);
+	'4분후'
+	makeMonster = setInterval(createMonster2,500*0.9*0.9*0.9);
+- 생성위치
+	-3300 == x or x == 3300 (배경 이미지의 밖에서 생성된다.)
+	y == backgroundImage.height 범위 중 랜덤
+
+2-2. 이동
+- 유저좌표를 향해 속도만큼 이동
+- 유저와 좌표가 같아질 시 유저 HP 감소 함수 작동
+- 투사체와 좌표가 같아질 시 몬스터 HP 감소 함수 작동
+- 몬스터 HP 감소함수를 통해 최종 HP 0에 도달 시 사망효과 적용
+
+	몬스터 떨림효과
+<style>
+	몬스터클래스 {
+	animation : ddd .1s infinite;
+	}
+	@keyframes ddd {
+		from { left:-2px; }
+		to { left:2px; }
+	}
+</style>
+
+	몬스터 사라지는효과
+<style>
+	몬스터클래스 {
+	animation : fadeout 3s;
+	}
+	@keyframes fadeout {
+		from { opacity:1; }
+		to { opacity:0; }
+	}
+</style>

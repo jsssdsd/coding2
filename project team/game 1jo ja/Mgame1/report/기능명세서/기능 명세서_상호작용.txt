@@ -1,0 +1,59 @@
+상호작용 기능 
+
+1. 캐릭터와 몬스터의 피격 과 타격 기능
+
+캐릭터와 몬스터의 x,y 좌표가 같아지면 몬스터의 공격력에 맞춰
+유저 속성(HP) 변화 ( 감소)한다.  캐릭터가 
+opacity가 떨리면서 흐려진다.
+
+default= this.userHp =100,  
+if this.userX,Y == this.monsterX,Y{
+	this.userHp= this.userHp - this.	monsterStr(공격력or 남은체력)
+	this.userStat=this.userStat.hitted;   맞는 모션추가함수
+}
+
+투사체와 몬스터의 x,y 좌표가 같아지면 몬스터의 속성(HP) 변화 ( 감소)한다.
+몬스터HP는 시간에 따라 비례해서 증가하거나 몬스터별로 다르게 적용한다. 
+
+default= this.userweap =sword1,  (무기이름 =sword1, 무기별로 공격력이 다르고, 캐릭터의 힘에 따라 달라진다. 적용미정)
+if this.userweapX,Y == this.monsterX,Y{
+	this.monsterHp= this.monsterHp - this.userweap.Str(무기공격력)  몬스터의 체력감소함수
+}
+
+
+투사체와 몬스터의 x,y 좌표가 같아지면 몬스터의 속성(HP) 변화( 감소)하면
+잠시 몬스터의 투명도(opacity)가  옅어지고 이미지가 흔들린다. 체력이 0 이하가 된다면 
+이미지가 투명해지다가 대각 우측쪽으로 fade out되 없어진다.
+
+if this.monsterX,Y == this.userweapX,Y{
+	this.monster.Hp=this.monster.Hp - this.userweap.Str ; 피감소
+	this.monster.stat= this.monster.hitted  몬스터의 상태를 피격상태로 바꿔준다.
+}
+
+if this.monster.Hp == 0 {
+	this.monster.stat= this.monster.dead  몬스터의 상태를 죽음상태로 바꿔준다.
+}
+
+
+
+2. 지형과 캐릭터들의 상호관계
+캐릭터의 x, y좌표가 지형 x,y 좌표와 만나면 캐릭터의 위치좌표를 지형의 x,y,좌표에 올라설수 있게 설정
+
+default= this.userXY =canvas.centor (화면 중심에 캐릭 배치)
+
+if this.userX,Y == this.strucXY{  //지형과 XY같을시
+	this.userY== this.strucY;
+	this.userX= this.strucleftX<=this.userX <=this.strucrightX ; //지형의  왼쪽 끝x와 오른쪽 끝 x좌표까지만 이동가능
+}
+
+지상몬스터의 x,y 좌표가  지형과 만나면 몬스터의 x,y좌표가 지형 xy좌표에 상관없이 움직인다.
+공중몬스터도 x,y 좌표가  지형과 만나면 몬스터의 x,y좌표가 지형
+ xy좌표에 상관없이 움직인다. (반대로 막는아이템 생성가능)
+
+this.monster(groud,Fling)X,Y = this.canvasX,Y<= this.monsterX,Y<=this.canvasX,Y   
+
+
+
+3.구현시 문제점 . 
+ 몬스터의 좌표의 겹침 해제 방법.
+ 투사체의 단일 타겟의 겹침 오류 

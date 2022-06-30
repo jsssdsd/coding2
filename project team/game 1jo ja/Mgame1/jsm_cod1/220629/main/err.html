@@ -1,0 +1,42 @@
+document.getElementById("textId").addEventListener("keydown", myFunction);
+        function myFunction() {
+        switch (event.key)
+        
+        {   case 'ArrowRight':
+                console.log('굿'+user_key1);
+                break;
+            case "ArrowLeft":
+                console.log('왼쪽'+user_key1);
+                break;
+            default:
+                console.log(event.key, event.keyCode);
+                return; 
+        }
+       
+        event.preventDefault();
+
+
+
+        // ?=()=> {
+
+
+
+            function drawBall1() {
+
+    
+                //    var img1 = new Image (); //이미지 객체 생성
+                // img1.src = "1.png" ;
+                //     img1.onload = function () //이미지 로딩 완료시 실행되는 함수
+                // {
+                // //(20,20)을 중심으로 100*100의 사이즈로 이미지를 그림 context. drawImage (img,20,20,100,100)
+                // context. drawImage (img1,fx,fy,100,100)
+                // }
+                    
+                    ctx_projtil.beginPath();
+                    ctx_projtil.arc(fx, fy, 20, 0, Math.PI*2);
+                    ctx_projtil.fillStyle = "#0095DD";
+                    ctx_projtil.fill();
+                    ctx_projtil.closePath();
+                    
+                    
+                    }

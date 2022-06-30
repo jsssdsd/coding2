@@ -1,0 +1,23 @@
+기능명세서 (유저)
+1-1. 이동과 관련된 기능	1) 왼쪽 방향키를 누르면 x 값을 유저의 속도만큼 감소시킨다. moveX(left) { userX -= userSpeed; }
+			2) 오른쪽 방향키를 누르면 x 값을 유저의 속도만큼 증가시킨다. moveX(right) { userX += userSpeed; }
+			3) 위 방향키를 누르면 y 값을 유저의 점프력만큼 증가시켰다가 0까지 감소시킨다.
+				clearInterval(gravity) 일시정지
+				function jump() { userY += jumpSpeed; }
+				function moveY(jump) { let JP = setInterval(jump,100);  setTimeOut(clearInterval(JP), 1)}
+				// 1초동안만 유저객체의 y값을 증가시킨다. // 점프는 한번에 540px 만큼 올라간다.
+				// 해당하는 1초동안 스페이스바의 기능을 멈추기 위해 이벤트를 제거하고 1초 후 다시 생성한다.
+				setInterval(gravity,100) 실행
+			4) 지형 좌표위에 유저 객체좌표가 중첩되면 gravity() 함수 일시정지.
+				if (UserXY == ObjXY) { clearInterval(gravity) }
+			5) 아래 방향키를 누르면 현재 있는 지형의 y값 밑으로 이동시킨다.
+			6) 만약 지형에 해당하는 좌표 혹은 점프키를 입력했을 때는 0으로 감소하는 함수를 멈춘다.
+			7) 아래 방향키를 누르거나 지형좌표에서 벗어나면 y값을 0으로 감소시키는 함수를 실행한다.
+			8) y를 0으로 감소하는 함수명 : gravity()
+
+1-2. 투척(공격)		1) 키(spacebar) 입력과 동시에 투척객체 생성. 생성 시점의 유저객체 좌표가 투척객체 시작좌표.
+			2) userD 변수에 유저가 마지막에 입력한 좌 or 우 방향키 값을 저장하여
+			해당하는 방향을 투척객체 속성에 저장.
+			3) 투척객체에 생성된 방향, 속도, 시작좌표값을 바탕으로 투척객체 일직선으로 이동.
+			4) 몬스터 객체의 좌표와 만나게되면 투척객체를 제거하며, 몬스터 객체의 속성(hp)값을 변경시킨다.
+				if (attackXY==monsterXY) { monster.HP -= User.attack; }
