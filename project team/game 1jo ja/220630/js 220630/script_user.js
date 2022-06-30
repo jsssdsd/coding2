@@ -301,28 +301,22 @@ class projectil_Sh{
 		if(user.x <= 3200-640 && user.x >= -3200+640)
 		{
 		ctx_projtil.arc(canvas.width/2+this.fx1-user.x, canvas.height-126-(this.fy+user.y+10), 20, 0, Math.PI*2);
-		projtil_array.push(canvas.width/2+this.fx1-user.x);
-		projtil_array_x.push(canvas.width/2+this.fx1-user.x);
-		projtil_array.push(canvas.height-126-(this.fy+user.y+10));
-		}	
-
+		}
 		else
 		{
 		if (user.x > 3200-640)
 		{
 			ctx_projtil.arc(canvas.width/2+this.fx1-3200+640, canvas.height-126-(this.fy+user.y+10), 20, 0, Math.PI*2);
-			projtil_array.push(canvas.width/2+this.fx1-3200+640);
-			projtil_array_x.push(canvas.width/2+this.fx1-3200+640);
-			projtil_array.push(canvas.height-126-(this.fy+user.y+10));
 		}
 		else if (user.x < -3200+640)
 		{
 			ctx_projtil.arc(canvas.width/2+this.fx1+3200-640, canvas.height-126-(this.fy+user.y+10), 20, 0, Math.PI*2);
-			projtil_array.push(canvas.width/2+this.fx1+3200-640);
-			projtil_array_x.push(canvas.width/2+this.fx1+3200-640);
-			projtil_array.push(canvas.height-126-(this.fy+user.y+10));
-			
+		
 		}
+		projtil_array.push(canvas.width/2+this.fx1-user.x);
+		projtil_array_x.push(canvas.width/2+this.fx1-user.x);
+		projtil_array.push(canvas.height-126-(this.fy+user.y+10));
+
 		}
 		ctx_projtil.fillStyle = "#0095DD";
 		ctx_projtil.fill();
@@ -444,16 +438,19 @@ function moveUserKeyDown(e) {
 
 	// space (투사체 )
 	if( space==false && e.code=="Space" )
-	{
+	{ 
+		
+		
+		
 		space = true;
 		user.shoot();
 		projectil_1.projtil_shting();
 
-		eval("prjA"+i+"= new projectil_Sh("+projtil_array_x[i]+", "+projtil_array_y[i]+")")
+		eval("prjA"+cp1+"= new projectil_Sh("+projtil_array_x[i]+", "+projtil_array_y[i]+")")
 		prjA1[i] = eval("prjA"+i);
 		console.log("prjA1값="+prjA1)
+		cp1+=1;
 
-		
 		// for (let i = 0; i<projtil_array_x.length; i++)
 		// {
 		// 	//let cat;
