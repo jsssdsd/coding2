@@ -1,0 +1,15 @@
+	if(user.x <= 3200-640 && user.x >= -3200+640)
+		{
+			ctxGround.drawImage(this.groundImg, canvas.width/2+this.x1-user.x , canvas.height-126-(this.y-user.y));
+			//,canvas.width/2-60,canvas.height-126-65
+		}
+		else
+		{
+			if (user.x > 3200-640)
+			{
+				ctxGround.drawImage(this.groundImg, canvas.width/2+this.x1-3200+640, canvas.height-126-(this.y-user.y));
+			}
+			else if (user.x < -3200+640)
+			{
+				ctxGround.drawImage(this.groundImg, canvas.width/2+this.x1+3200-640, canvas.height-126-(this.y-user.y));
+			}

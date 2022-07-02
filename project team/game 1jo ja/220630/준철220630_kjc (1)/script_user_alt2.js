@@ -11,7 +11,7 @@ img.src="background/순수배경.png";
 
 // 변수 선언
 let imgCenterX;
-let imgCenterY;
+let imgCenterY;	
 
 // 유저 클래스 객체 정의
 class User

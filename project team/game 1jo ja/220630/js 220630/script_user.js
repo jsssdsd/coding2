@@ -197,7 +197,7 @@ class User
 }
 
 let c=1;
-
+let pt1=0;
 
 class projectil_Sh{
 	// constructor(fx,fy,project_n,prot_Rmoving,prot_upmoving,isFired,isHitted,missilePower,prot_Lmoving){
@@ -206,7 +206,7 @@ class projectil_Sh{
 	this.fy=fy;
 	// this.isFired=isFired;
 	this.fx1= fx;
-	this.fy1= 50;
+	this.fy1= fy+50;
 	// this.isHitted=isHitted;
 	// this.missilePower=missilePower;
 	// // this.PSinterval= PSinterval;
@@ -244,30 +244,30 @@ class projectil_Sh{
 				// ctx_projtil.arc(user.x+500, -user.y+600, 20, 0, Math.PI*2);
 				if(user.x <= 3200-640 && user.x >= -3200+640)
 				{
-				ctx_projtil.arc(canvas.width/2+this.fx1-user.x, canvas.height-126-(this.fy+user.y+10), 20, 0, Math.PI*2);
-				projtil_array.push(canvas.width/2+this.fx1-user.x);
-				projtil_array_x.push(canvas.width/2+this.fx1-user.x);
-				projtil_array.push(canvas.height-126-(this.fy+user.y+10));
+				ctx_projtil.arc(canvas.width/2+this.fx1-user.x, canvas.height-126-(this.fy1+user.y+10), 20, 0, Math.PI*2);
+			
 				}	
 
 				else
 				{
 				if (user.x > 3200-640)
 				{
-					ctx_projtil.arc(canvas.width/2+this.fx1-3200+640, canvas.height-126-(this.fy+user.y+10), 20, 0, Math.PI*2);
-					projtil_array.push(canvas.width/2+this.fx1-3200+640);
-					projtil_array_x.push(canvas.width/2+this.fx1-3200+640);
-					projtil_array.push(canvas.height-126-(this.fy+user.y+10));
+					ctx_projtil.arc(canvas.width/2+this.fx1-32200+640+user.x , canvas.height-126-(this.fy1+user.y+10), 20, 0, Math.PI*2);
+				
 				}
 				else if (user.x < -3200+640)
 				{
-					ctx_projtil.arc(canvas.width/2+this.fx1+3200-640, canvas.height-126-(this.fy+user.y+10), 20, 0, Math.PI*2);
-					projtil_array.push(canvas.width/2+this.fx1+3200-640);
-					projtil_array_x.push(canvas.width/2+this.fx1+3200-640);
-					projtil_array.push(canvas.height-126-(this.fy+user.y+10));
+					ctx_projtil.arc(canvas.width/2+this.fx1+3200-640+32200+640+user.x, canvas.height-126-(this.fy1+user.y+10), 20, 0, Math.PI*2);
+				
 					
 				}
+
 				}
+				projtil_array.push(canvas.width/2+this.fx1-user.x);
+				projtil_array_x.push(canvas.width/2+this.fx1-user.x);
+				projtil_array_y.push(canvas.height-126-(this.fy1+user.y+10));
+
+				
 				ctx_projtil.fillStyle = "#0095DD";
 				ctx_projtil.fill();
 				ctx_projtil.closePath();
@@ -280,58 +280,55 @@ class projectil_Sh{
 		
 			}
 			
-				console.log('projtil_array값'+projtil_array);
+				// console.log('projtil_array값'+projtil_array);
 				console.log('projtil_arrayx값'+projtil_array_x);
+				console.log('projtil_arrayy값'+projtil_array_y);
 	
 	}
 
-
+	projtil_shting1(){
 	
-	drawLPrjt(){
-	for (let i=0;i<c; i++){
-		//for (let i=0; i<1;i+=i) {
-		// c=0;	
-		// projtil_array=;
-		// fx1=user.x;
-		console.log(user.x);
-		// fy1=user.y;
-		// ctxUser.clearRect(0, 0, canvas.width, canvas.height);
-		ctx_projtil.beginPath();
-		// ctx_projtil.arc(user.x+500, -user.y+600, 20, 0, Math.PI*2);
-		if(user.x <= 3200-640 && user.x >= -3200+640)
-		{
-		ctx_projtil.arc(canvas.width/2+this.fx1-user.x, canvas.height-126-(this.fy+user.y+10), 20, 0, Math.PI*2);
-		}
-		else
-		{
-		if (user.x > 3200-640)
-		{
-			ctx_projtil.arc(canvas.width/2+this.fx1-3200+640, canvas.height-126-(this.fy+user.y+10), 20, 0, Math.PI*2);
-		}
-		else if (user.x < -3200+640)
-		{
-			ctx_projtil.arc(canvas.width/2+this.fx1+3200-640, canvas.height-126-(this.fy+user.y+10), 20, 0, Math.PI*2);
-		
-		}
-		projtil_array.push(canvas.width/2+this.fx1-user.x);
-		projtil_array_x.push(canvas.width/2+this.fx1-user.x);
-		projtil_array.push(canvas.height-126-(this.fy+user.y+10));
 
-		}
-		ctx_projtil.fillStyle = "#0095DD";
-		ctx_projtil.fill();
-		ctx_projtil.closePath();
+				pt1+= 1;
+				console.log(user.x);
+				// fy1=user.y;
+				// ctxUser.clearRect(0, 0, canvas.width, canvas.height);
+				ctx_projtil.beginPath();
+				// ctx_projtil.arc(user.x+500, -user.y+600, 20, 0, Math.PI*2);
+				if(user.x <= 3200-640 && user.x >= -3200+640)
+				{
+					ctx_projtil.arc(canvas.width/2-this.fx1+650-user.x , canvas.height+126+(+this.fy1-user.y-900), 20, 0, Math.PI*2);
+					
+				// ctx_projtil.arc(canvas.width/2+this.fx1-user.x, canvas.height-126-(this.fy+user.y+10), 20, 0, Math.PI*2);
+				}	
+																			
+				
+				else
+				{
+				if (user.x > 3200-640)
+				{
+					ctx_projtil.arc(canvas.width/2+this.fx1-3200+640, canvas.height-126-(this.fy1+user.y+10), 20, 0, Math.PI*2);
+					// ctx_projtil.arc(canvas.width/2+this.fx1-3200+640, canvas.height-126-(this.fy+user.y+10), 20, 0, Math.PI*2);
+				
+				}
+				else if (user.x < -3200+640)
+				{
+					ctx_projtil.arc(canvas.width/2+this.fx1+3200-640, canvas.height-126-(this.fy1+user.y+10), 20, 0, Math.PI*2);
+					// ctx_projtil.arc(canvas.width/2+this.fx1+3200-640, canvas.height-126-(this.fy+user.y+10), 20, 0, Math.PI*2);
+			
+				}
+				}
+				ctx_projtil.fillStyle = "#0095DD";
+				ctx_projtil.fill();
+				ctx_projtil.closePath();
+				
+
+				pt1= 0;
+				// console.log('pt1값'+pt1);
+	
 	}
-		// projtil_array.push(this.fx1-user.x);
-		
-		// cx += dx;
-		// cy += dy;
+
 	
-
-	}
-	
-
-
 
 }
 
@@ -358,6 +355,7 @@ let fx1=0;
 let fy1=0;
 let projectil_1 =new projectil_Sh(fx1,fy1);
 
+console.log('projectil_1의값',projectil_1);
 
 // 유저 객체 생성=============================
 const user= new User(10,  0 , 0);
@@ -375,7 +373,7 @@ img.onload = function() {
 function setting() {
 	makeGround();
 	makeProjecTT();
-	//makeprojectil();
+	
 	user.draw("normal");
 }
 
@@ -391,6 +389,7 @@ let arrowDown = false;
 let toggleDown = false;
 let space = false;
 let modX;
+let cp1 =0;
 
 // 키 다운 함수 호출
 function moveUserKeyDown(e) {
@@ -439,16 +438,35 @@ function moveUserKeyDown(e) {
 	// space (투사체 )
 	if( space==false && e.code=="Space" )
 	{ 
-		
-		
-		
+	
 		space = true;
 		user.shoot();
 		projectil_1.projtil_shting();
+		
 
-		eval("prjA"+cp1+"= new projectil_Sh("+projtil_array_x[i]+", "+projtil_array_y[i]+")")
-		prjA1[i] = eval("prjA"+i);
-		console.log("prjA1값="+prjA1)
+		for ( let i = 0; i< projtil_array_x.length; i++ ){
+
+		eval("prjA"+i+"= new projectil_Sh("+projtil_array_x[i]+","+projtil_array_y[i]+")");
+		// prjA = eval("prjA"+i);
+		
+		console.log("prjA0값=" ,prjA0);
+		prjA.push(prjA0);
+
+		}
+
+
+		for (let m=0; m< prjA.length; m++){
+		eval("prjB"+m+"= new projectil_Sh("+prjA[m].fx1+","+prjA[m].fy1+")");
+		prjB[m] = eval("prjB"+m);
+		// console.log("prjB[m]값=" ,prjB[m]);
+	
+		}
+
+		console.log("prjB값=" ,prjB);
+		console.log("prjA길이값="+prjA.length);
+		projtil_array_x= [];
+		projtil_array_y= [];
+
 		cp1+=1;
 
 		// for (let i = 0; i<projtil_array_x.length; i++)
@@ -515,6 +533,9 @@ function moveCanvas() {
 // 이미지 url 배열
 const imgGroundArr = ["background/눈기둥(지형).png","background/사막기둥(지형).png","background/풀기둥(지형).png"];
 // 지형 클래스
+
+
+
 class Ground
 {
 	constructor(X,url)
@@ -591,6 +612,8 @@ const ctxGround = canvasGround.getContext("2d");
 // 지형 클래스 객체 배열
 let groundArr = [];
 let cloudArr = [];
+
+
 // 지형 클래스 객체 생성 및 최초 출력
 function makeGround() {
 	// 지형 몇 개 생성 // 4개로 지정
@@ -672,8 +695,10 @@ function makeGround() {
 	// let pojtxArr = [];
 	// let prjA1 = [];
 
-let prjA1 = [];
-let prjA2 = [];
+let prjA = [];
+let prjB = [];
+
+
 function makeProjecTT() {
 	while(true)
 	{
@@ -684,14 +709,15 @@ function makeProjecTT() {
 	// }  생성이니까 난이미 쏠때 생성할꺼라 저장함.
 	// let projtil_array
 
-	for(let i=0; i<projtil_array_x.length; i++)
+	for(let i=0; i<prjB.length; i++)  //projtil_array_x
 	{
-		for(let m=0; m<projtil_array_x.length-i; m++)
+		for(let m=0; m<prjB.length-i; m++)
 		{
-			if (i == (projtil_array_x.length - m - 1))
-			{
+			if (i == (prjB.length - m - 1))
+			{ 
 			}
-			else if((projtil_array_x[i] - projtil_array_x[projtil_array_x.length-m-1]) < 400+410 && (projtil_array_x[i] - projtil_array_x[projtil_array_x.length-m-1]) > -400-410 )
+			// else if((projtil_array_x[i] - projtil_array_x[prjA.length-m-1]) < 400+410 && (prjA[i] - prjA[prjA.length-m-1]) > -400-410 ) 원본
+			else if((prjB[i] - prjB[prjB.length-m-1]) < prjB.fx1+prjB.fx1+10 && (prjB[i] - prjB[prjB.length-m-1]) > -prjB.fx1-prjB.fx1+200 )
 			{
 				t=false;
 			}
@@ -712,22 +738,22 @@ function makeProjecTT() {
 // });
 
 
-	for (let i = 0; i<projtil_array_x.length; i++)
-	{
-		//let cat;
+// 	for (let i = 0; i<projtil_array_x.length; i++)
+// 	{
+// 		//let cat;
 		
-		eval("prjA"+i+"= new projectil_Sh("+projtil_array_x[i]+", "+projtil_array_y[i]+")")
-		prjA1[i] = eval("prjA"+i);
+// 		eval("prjA"+i+"= new projectil_Sh("+projtil_array_x[i]+", "+projtil_array_y[i]+")")
+// 		prjA1[i] = eval("prjA"+i);
 		
 		
-		console.log("prjA1값="+prjA1)
-		// eval("prjR"+i+"= new projectil_Sh("+projtil_array_x[i]+", "+projtil_array_y[i]+")")
-		// prjA1[i] = eval("prjR"+i);
-		// console.log("prjA1값="+prjA1)
-}
+// 		console.log("prjA1값="+prjA1)
+// 		// eval("prjR"+i+"= new projectil_Sh("+projtil_array_x[i]+", "+projtil_array_y[i]+")")
+// 		// prjA1[i] = eval("prjR"+i);
+// 		// console.log("prjA1값="+prjA1)
+// }
 	
 	
-
+// prjA0.projtil_shting1();
 
 
 
@@ -739,6 +765,7 @@ function moveGround(){
 	for (let i=0; i<groundArr.length;i++)
 	{
 		groundArr[i].draw();
+		// console.log(groundArr[i]);
 	}
 	for (let i=0; i<cloudArr.length;i++)
 	{
@@ -746,18 +773,33 @@ function moveGround(){
 	}
 }
 
+// function move_projtil(){
+
+// 	// ctx_projtil.clearRect(0,0,canvas.width,canvas.height);
+// 	for (let i=0; i<prjA.length;i++)
+// 	{
+// 		console.log('prjA값=' ,prjA);
+
+// 		prjA[i].projtil_shting1();
+// 		// projectil_1.projtil_shting();
+// 	}
+	
+// }
+
 function move_projtil(){
 
-	// ctx_projtil.clearRect(0,0,canvas.width,canvas.height);
-	for (let i=0; i<prjA1.length;i++)
+	 ctx_projtil.clearRect(0,0,canvas.width,canvas.height);	
+	for (let i=0; i<prjB.length;i++)
 	{
-		console.log('prjA1[i]값='+prjA1);
-		prjA1[i].projtil_shting();
+		console.log('prjB값=' ,prjB);
+
+		prjB[i].projtil_shting1();
 		// projectil_1.projtil_shting();
+		
 	}
-	
+
 }
-// groundArr,cloudArr x1 x2 y
+
 function gravity() {
 // 	for (let i=0; i<groundArr.length;i++)
 // 	{
