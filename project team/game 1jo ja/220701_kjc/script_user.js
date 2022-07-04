@@ -137,7 +137,7 @@ class User
 					{
 						countFrame=0;
 					}
-					window.requestAnimationFrame(function(){ animatedUser })
+					window.requestAnimationFrame(function(){ animatedUser() })
 				}
 				else
 				{
@@ -148,7 +148,7 @@ class User
 				{
 					countFrame=0;
 				}
-				window.requestAnimationFrame(function(){ animatedUser })
+				window.requestAnimationFrame(function(){ animatedUser() })
 				}
 			}
 			else
@@ -176,12 +176,12 @@ class User
 				{
 					countFrame=0;
 				}
-				window.requestAnimationFrame(function(){ animatedUser })
+				window.requestAnimationFrame(function(){ animatedUser() })
 			}
 			
 		}
 
-		window.requestAnimationFrame(function(){ animatedUser })
+		window.requestAnimationFrame(function(){ animatedUser() })
 
 	}
 	// 점프 함수

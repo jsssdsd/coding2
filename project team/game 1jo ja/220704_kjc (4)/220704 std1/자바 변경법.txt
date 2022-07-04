@@ -1,0 +1,11 @@
+print('hello world')
+
+
+let a1= document.getElementsById("hp1" 아이디값 html의 body안의  그 변수지정값의 아이디) 
+
+a1.innerHTML = "나는 자바로인해 변경됐다.";
+
+이런식으로 자바에서HTML값을 변경가능하다.
+
+
+hpD2.innerHTML -="1"

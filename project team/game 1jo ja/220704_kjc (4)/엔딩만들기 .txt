@@ -1,0 +1,3 @@
+
+버튼에 html 불러오기 
+<button id='button1'onclick="location.href='ending1.html'">끝</button>

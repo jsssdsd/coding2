@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>코딩촌</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="canvasDiv" style="width: 1280px;height: 720px;" tabindex="1">
+    <canvas style="position: absolute;top:10px;left:10px" id="canvas" width="1280" height="720"></canvas>
+    <canvas style="position: absolute;top:10px;left:10px" id="canvasGround" width="1280" height="720"></canvas>
+    <canvas style="position: absolute;top:10px;left:10px" id="canvasMonster" width="1280" height="720"></canvas>
+    <canvas style="position: absolute;top:10px;left:10px" id="canvasUser" width="1280" height="720"></canvas>
+    <canvas style="position: absolute;top:10px;left:10px" id="canvasBall" width="1280" height="720"></canvas>
+    <canvas style="position: absolute;top:10px;left:10px" id="canvasTimeScore" width="1280" height="720"></canvas>
+    <progress id="hp1" max= "100"; value="100"></progress>
+</div>
+
+<button id='button'>중지</button>
+<button id='button1' onclick="location.href='ending1.html'">끝</button>
+<div id ='life'>
+<!-- 
+<button id="S" type="button" class="btn btn-primary mt-5 S">체력바</button>
+<Br>
+<a>HP</a>
+<button id="A" type="button" class="btn btn-primary mt-5 S1">+</button>
+<button id="B" type="button" class="btn btn-primary mt-5 S2">+</button>
+<button id="C" type="button" class="btn btn-primary mt-5 S3">+</button> -->
+</div>
+        
+<input type='text' id='input' placeholder="console.log('hello world')">
+<img src='코딩촌 이미지.png' id='img'>
+
+<script src="script.js"></script>
+</body></html>
