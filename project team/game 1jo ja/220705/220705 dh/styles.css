@@ -1,0 +1,49 @@
+button {
+  position: absolute;
+  z-index: 10;
+  width: 80px;
+  height: 40px;
+  font-size: 24px;
+  top: 680px;
+  left: 20px;
+  display: none;
+}
+
+#screen-blur {
+  position: absolute;
+  z-index: 1;
+  width: 1280px;
+  height: 720px;
+  opacity: 0.5;
+  display: none;
+  background-color: black;
+  top: 10px;
+  left: 10px;
+}
+
+
+input {
+  position: absolute;
+  z-index: 2;
+  top: 375px;
+  left: 495px;
+  width: 285px;
+  text-align: center;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 10px;
+  border: none;
+  background-color: gainsboro;
+}
+
+#img {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 320px;
+  width: 640px;
+}
+
+#ending-credit {
+  display: none;
+}
