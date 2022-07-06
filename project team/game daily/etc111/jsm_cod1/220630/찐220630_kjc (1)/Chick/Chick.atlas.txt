@@ -1,0 +1,69 @@
+
+Chick.png
+size: 1986,1311
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Hair
+  rotate: true
+  xy: 1732, 449
+  size: 275, 226
+  orig: 275, 226
+  offset: 0, 0
+  index: -1
+LeftHand
+  rotate: true
+  xy: 1732, 726
+  size: 257, 252
+  orig: 257, 252
+  offset: 0, 0
+  index: -1
+LeftLeg
+  rotate: true
+  xy: 1732, 173
+  size: 140, 165
+  orig: 140, 165
+  offset: 0, 0
+  index: -1
+RightHand
+  rotate: false
+  xy: 1732, 315
+  size: 182, 132
+  orig: 182, 132
+  offset: 0, 0
+  index: -1
+RigjtLeg
+  rotate: true
+  xy: 1732, 48
+  size: 123, 122
+  orig: 123, 122
+  offset: 0, 0
+  index: -1
+body
+  rotate: true
+  xy: 2, 16
+  size: 1293, 1126
+  orig: 1293, 1126
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 1130, 985
+  size: 748, 324
+  orig: 748, 324
+  offset: 0, 0
+  index: -1
+eyeboll
+  rotate: true
+  xy: 1130, 2
+  size: 981, 600
+  orig: 981, 600
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: true
+  xy: 1880, 1127
+  size: 182, 92
+  orig: 182, 92
+  offset: 0, 0
+  index: -1
