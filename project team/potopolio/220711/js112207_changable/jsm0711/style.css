@@ -1,0 +1,748 @@
+
+/* 폰트설정 */
+@font-face {
+    font-family: 'MICEMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEMyungjo.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: 'MICEMyungjo';
+}
+
+/* 기본설정 */
+body {
+    
+    width: 100%;
+    height:  100%;
+}
+
+section {
+    position: relative;
+    margin-top: 8%;
+    /* margin-left: 3%; */
+   margin-right: auto;
+    width: 100%;
+    height:  100%;
+    right: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+}
+
+/* 상단 네비게이션 설정들 */
+.level2 li{
+    margin-left: 3%;
+}
+.level3 li {
+    margin-left: 3%;
+}
+.level1 {
+    margin-left: 5%;
+    
+    padding: 0;
+    list-style: none;
+}
+
+/* 1단바 설정 */
+#headNav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding-top: 30px;
+    transition: all 0.5s;
+}
+/* 밑줄긋기 */
+#headNav li::after {
+    position: absolute;
+    content:"";
+    display: block;
+    border-bottom: 3px solid white;
+    transition: width 250ms ease-out;
+    left: auto;
+    right: 0;
+    width: 0;
+}
+#headNav li:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+/* 2단바 설정값 */
+ul li:hover .level2 {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    background-color: rgb(82, 81, 81);
+    color: white;
+    font-size: small;
+}
+/* 1단바 검정 배경 */
+#headNav:hover{
+    background-color: black;
+    color: white;
+    
+}
+/* 3단바 설정값 */
+ul li .level2 li:hover .level3 {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    background-color: rgba(150, 150, 150,50);
+    color: white;
+ }
+
+ /* 로고 */
+ #logo {
+    position:absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+ }
+ /* 이미지 */
+ #logo img {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    height: 40px;
+ }
+ /* CJ */
+ #logo_1 {
+    position: relative;
+    top: 5px;
+    left: 35px;
+    font-size: larger;
+ }
+ /* 문화재단 */
+ #logo_2 {
+    position: relative;
+    top: 5px;
+    left: 25px;
+    font-size: larger;
+ }
+ #headNav:hover + #logo {
+    color: white;
+ }
+
+/* 우측 개인정보 */
+#myInfo {
+    position:absolute;
+    top: 0;
+    right: 0;
+    padding-top: 30px;
+    padding-right: 30px;;
+    transition: all 0.5s;
+}
+#headNav:hover ~ #myInfo {
+    filter: invert(100%);
+ }
+.info {
+    position: relative;
+    height: 20px;
+    margin-left: 10px;
+}
+.movingLine {
+    
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 정성민  */
+
+#s1div {
+    position: relative;
+    width: 100% ;
+    height: 618px;
+    
+
+    
+
+}
+
+#t1bt1{
+    
+    
+    position: absolute;
+    display: inline-block;
+    height: 10%;
+    width: 2%;
+    top: 50%;
+    z-index: 33;
+    /* bottom:  50%; */
+    
+
+}
+
+#t1bt2{
+    
+    position: absolute;
+    display: inline-block;
+    height: 10%;
+    width: 2%;
+    top: 50%;
+    left: 96%;
+    z-index: 33;
+  }
+
+
+
+.jdiv1{
+    position: absolute;
+    /* margin: 0; */
+    /* padding: 0; */
+    
+    background-image: url("https://www.cjazit.org/image/site/index/featured/qk171552330ie.jpg");
+    background-position: center;
+    visibility: inherit;
+    opacity: 1;
+    height: 100%;
+    width: 90% ;
+    left: 5%;
+    display: inline-block;
+    /* display: block; */
+    
+}
+
+.jdiv2{
+    
+   
+    position: absolute;
+    background-image: url("file:///La photof/js112207_반응형웹/jsm0711/img_src/music-1.jpg");
+    background-position: center;
+    visibility: inherit;
+    opacity: 1;
+    height: 100%;
+    width: 88% ;
+    left: 5%;
+    /* display: inline-block; */
+    display: none;
+
+
+}
+
+
+#h21{
+
+
+-webkit-text-size-adjust: 100%;
+font-family: "CJ OnlyOne", sans-serif;
+user-select: none;
+-webkit-tap-highlight-color: transparent;
+text-align: center;
+
+font-weight: normal;
+line-height: 1.3;
+
+font-size: 30px;
+color: white;
+}
+
+#h22{
+
+
+    /* -webkit-text-size-adjust: 100%;
+    font-family: "CJ OnlyOne", sans-serif; */
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+    
+    font-weight: normal;
+    line-height: 1.3;
+    
+    font-size: 30px;
+    color: white;
+    }
+
+
+    #jd1{
+
+        position: relative;
+        background-image: url("https://www.cjazit.org/image/site/index/featured/qk171552330ie.jpg");
+        background-position: center;
+        visibility: inherit;
+        opacity: 1;
+        height: 100%;
+        width: 88% ;
+        left: 5%;
+        /* display: inline-block; */
+        display: block;
+    
+    
+    }
+    
+    #jd2{
+        position: relative;
+        background-image: url("maxresdefault.webp");
+        background-position: center;
+        visibility: inherit;
+        opacity: 1;
+        height: 100%;
+        width: 88% ;
+        left: 5%;
+        /* display: inline-block; */
+        display: none;
+    
+    
+        
+    }
+
+
+
+
+    .main-section-cell{
+        -webkit-text-size-adjust: 100%;
+        margin: 0;
+        min-height: 100%;
+        font-size: 1em;
+        line-height: 1.5;
+        font-family: "CJ OnlyOne", sans-serif;
+        color: #4c4c4c;
+        min-width: 320px;
+        overflow: hidden;
+        height: 100%;
+    
+    
+    }
+    
+
+
+
+
+    /* page 2 */
+
+
+
+
+.main-2{
+    
+    position: relative;
+
+    
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+#p2d11{  
+    position: relative;
+    height: 100%;
+    
+
+}
+
+#p2d22{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden ;
+}
+
+
+
+
+#d1h2{
+
+    position: relative;
+    display: inline-block;
+    left: 12%;
+}
+
+#t1bt3{
+    position: relative;
+    left: 80%;
+    display: inline-block;
+}
+
+#t1bt4{
+    position: relative;
+    left: 83%;
+    display: inline-block;
+}
+
+
+
+
+
+#jdd1{
+    position: relative;
+    background-image: url("D:/pycpha//popol//La photof//js112207_changable//jsm0711//img_src//music-1.jpg");
+    background-position: center;
+    background-size: cover;
+    visibility: inherit;
+    opacity: 1;
+ 
+    left: 25%;
+    /* display: inline-block; */
+    display: inline-block;
+    max-width: 100%;
+    width: 20%;
+    height: 500px;    
+
+
+    
+}
+
+
+#jdd2{
+    position: relative;
+    background-image: url("D:/pycpha//popol//La photof//js112207_changable//jsm0711//img_src//music-2.jpg");
+    background-position: center;
+    background-size: cover;
+    visibility: inherit;
+    opacity: 1;
+    height:521px;
+    max-height: 550px;
+    max-width: 100%;
+    width: 20% ;
+    left: 25%;
+    bottom: -11px;
+    /* display: inline-block; */
+    display: inline-block;
+   
+}
+
+/* #jdd2 img {
+    position: absolute; top:0; left: 0;
+    width: 100%;
+    height: 100%;
+    
+} */
+
+#jdd3{
+    position: relative;
+    background-image: url("D:/pycpha//popol//La photof//js112207_changable//jsm0711//img_src//music-3.jpg");
+    background-position: center;
+    background-size: cover;
+    visibility: inherit;
+    opacity: 1;
+    height: 500px;
+    width: 20% ;
+    left: 25%;
+    /* display: inline-block; */
+    display: inline-block;
+    overflow: visible;
+
+    
+}
+
+
+#jdd4{
+    position: relative;
+    background-image: url("D:/pycpha//popol//La photof//js112207_changable//jsm0711//img_src//music-4.jpg");
+    background-position: center;
+    background-size: cover;
+    visibility: inherit;
+    opacity: 1;
+    height: 500px;
+    width: 20% ;
+    left: 25%;
+    /* display: inline-block; */
+    display: inline-block;
+    overflow: visible;
+
+    
+}
+
+
+
+
+
+
+
+
+ /* page 3 */
+
+ #EMPTY1{
+    position: relative;
+    display: inline-block;
+    height: 400px;
+
+ }
+ 
+
+
+
+
+
+ .main-3{
+    
+    position: relative;
+    display: inline-block;
+    
+    width: 100%;
+    height: 200%;
+}
+
+
+#p2d33{
+
+    position: relative;
+    height: 20%;
+    width: auto;
+    overflow: hidden;
+
+}
+
+#t1bt5{
+    position: relative;
+    left: 80%;
+    display: inline-block;
+}
+
+#t1bt6{
+    position: relative;
+    left: 83%;
+    display: inline-block;
+}
+
+
+#mainsc{
+    position:relative;
+
+}
+
+
+#sw1{
+    position:relative;
+    
+    
+}
+#sw2{
+    position:relative;
+    
+}
+
+#sw3{
+    position:relative;
+
+}
+
+
+
+
+/*자동슬라이드  */
+
+
+
+
+
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    position: relative;
+    width:22%;
+    height: 20%;
+
+    list-style-type: none;
+}
+/* 보여줄 구간의 높이와 넓이 설정 */
+#slideShow {
+
+
+    position: relative;
+    width: 500px;
+    height: 900px;
+    margin: 50px auto;
+    overflow: hidden;
+    /*리스트 형식으로 이미지를 일렬로 정렬할 것이기 때문에, 500px 밖으로 튀어 나간 이미지들은 hidden으로 숨겨줘야됨*/
+}
+.slides {
+    position: relative;
+    left: 0;
+    top: 400px;
+    width: 500px; /* 슬라이드할 사진과 마진 총 넓이 */
+    height: 500px; 
+    transition: 0.5s ease-out;
+    display: block;
+    
+    /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
+}
+
+
+
+
+
+
+/* 첫 번째 슬라이드 가운데에 정렬하기위해 첫번째 슬라이드만 margin-left조정 */
+.slides li:first-child {
+    margin-left: 100px;
+}
+/* 슬라이드들 옆으로 정렬 */
+.slides li:not(:last-child) {
+    float: left;
+    margin-right: 100px;
+}
+.slides li {
+    float: left;
+   
+    display: block;
+}
+.controller span {
+    position: absolute;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 50%;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+/* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+.controller span:hover {
+    background-color: rgba(128, 128, 128, 0.11);
+}
+.prev {
+    left: 10px;
+}
+/* 이전 화살표에 마우스 커서가 올라가 있을때 이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
+.prev:hover {
+    transform: translateX(-10px);
+}
+.next {
+    right: 10px;
+}
+/* 다음 화살표에 마우스 커서가 올라가 있을때 이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
+.next:hover {
+    transform: translateX(10px);
+}
+
+
+#jsi1{
+
+    position: relative;
+    
+    background-position: center;
+    background-size: cover;
+    visibility: inherit;
+    opacity: 1;
+    width: 100%;
+    height:95%;
+    max-height: 550px;
+    max-width: 100%;
+    left: 25%;
+    bottom: -11px;
+    /* display: inline-block; */
+    display: inline-block;
+    
+
+
+}
+#jsi2{
+
+    position: relative;
+    
+    background-position: center;
+    background-size: cover;
+    visibility: inherit;
+    opacity: 1;
+    max-height: 550px;
+    max-width: 100%;
+    width: 100%;
+    height:95%;
+    bottom: -11px;
+    /* display: inline-block; */
+    display: inline-block;
+
+
+
+}
+#jsi3{
+
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    visibility: inherit;
+    opacity: 1;
+    width: 100%;
+    height:95%;
+    max-height: 550px;
+    max-width: 100%;
+   
+    left: 25%;
+    bottom: -11px;
+    /* display: inline-block; */
+    display: inline-block;
+ 
+
+}
+
+
+#jsi4{
+
+    position: relative;
+    background-position: center;
+    
+    visibility: inherit;
+    opacity: 1;
+    width: 100%;
+    height:95%;
+    max-height: 550px;
+    max-width: 100%;
+
+    left: 25%;
+    bottom: -11px;
+    /* display: inline-block; */
+    display: inline-block;
+  
+
+
+}
+
+li img{
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    /* background-size: cover; */
+    object-fit: fill;
+}
+
+/* #jsi1{
+    src: "im1/1.jpg" 
+
+  
+}
+
+#jsi1{
+    src: "D:/pycpha/popol/La photof/js112207_changable/jsm0711/im1/1.jpg" 
+
+
+}
+
+#jsi1{
+    src: "images/study.png" 
+
+
+}
+
+#jsi1{
+    src: "images/study.png" 
+
+
+} */
+  /* D:\pycpha\popol\La photof\js112207_changable\jsm0711\im1\1.jpg */

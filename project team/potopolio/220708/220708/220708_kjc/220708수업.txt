@@ -1,0 +1,21 @@
+
+
+<body>
+	<h1 id="title" class="base">클래스 추가 삭제 토글</h1>
+	<script>
+		let h=document.getElementById("title");
+		h.addEventListener("click",changeClass);
+		function changeClass () {
+			h.classList.toggle("clicked");
+		}
+	</script>
+</body>
+
+
+객체명.classList.add("추가할클래스명");
+객체명.classList.remove("삭제할클래스명");
+객체명.classList.toggle("추가하고삭제하고반족하려는클래스명")
+객체명.classList.contains("클래스명")
+true false 로 리턴돈다.
+
+h.classList.contains("clicked");

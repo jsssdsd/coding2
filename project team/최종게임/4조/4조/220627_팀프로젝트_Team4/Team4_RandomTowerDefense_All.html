@@ -1,0 +1,3087 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Random Tower Defense</title>
+
+<style>
+
+#GameOpeningScreen
+   {
+   text-align : center ;
+   font-family : Galmuri11, serif ;
+   background-color: white;
+
+   position:absolute ;
+   left : 8px ;
+   top : 8px ;
+   z-index : 100 ;
+
+   display:inline-block ;
+
+   border : 5px solid black ;
+   border-radius : 0.8% ;
+
+   width:1400px ;
+   height:800px ;
+   line-height : 800px ;
+
+   overflow : hidden ;
+
+   font-size: 30px;
+   }
+
+#intScreen
+	{
+	text-align : center ;
+
+	position:relative ;
+	display:inline-block ;
+
+	border : 5px solid black ;
+	border-radius : 0.8% ;
+
+	width:1400px ;
+	height:800px ;
+
+	overflow : hidden ;
+	}
+
+.TITLE
+	{
+	position : absolute ;
+	display : inline-block ;
+
+	transition : all 3s
+	}
+
+#Back1
+	{
+	left : -975px ;
+	top : -1575px ;
+
+	z-index : 0 ;
+	}
+
+#Back1 img
+	{
+	width : 3600px ;
+	height : 3600px ;
+	}
+
+#EF1
+	{
+	left : 100px ;
+	top : 100px ;
+
+	z-index : 0 ;
+	}
+
+#EF2
+	{
+	left : 350px ;
+	top : 200px ;
+
+	z-index : 0 ;
+	}
+
+#EF3
+	{
+	left : 380px ;
+	top : 100px ;
+
+	z-index : 0 ;
+	}
+
+#Title
+	{
+	left : 430px ;
+	top : 150px ;
+
+	z-index : 0 ;
+	}
+
+#Title img
+	{
+	width : 900px ;
+	}
+
+
+#TitleLine
+	{
+	left : 200px ;
+	top : 200px ;
+	display : none ;
+	}
+
+
+.mainBtn
+	{
+	position : absolute ;
+	font-family : Galmuri11, serif ;
+	text-align : center ;
+	font-size : 24px ;
+
+	width : 180px ;
+	height : 90px ;
+
+	border-radius : 25px ;
+
+	transition : all 0.5s ;
+	}
+
+#playBtn
+	{
+	left : 1150px ;
+	top : 290px ;
+
+	background : white ;
+	color : white ;
+
+	border : 5px solid white ;
+
+	z-index : 1 ;
+	}
+
+#playBtn:hover
+	{
+	color : #7FC95B ;
+
+	background : #7FC95B ;
+
+	border-radius : 50px ;
+	border : 10px solid #7FC95B ;
+
+	box-shadow : 0px 0px 30px #7FC95B ;
+
+	cursor : pointer ;
+
+	transition : all 0.5s ;
+	}
+
+#exptnBtn
+	{
+	left : 1150px ;
+	top : 170px ;
+
+	background : white ;
+	color : black ;
+
+	border : 5px solid white ;
+
+	z-index : 1 ;
+	}
+
+#exptnBtn:hover
+	{
+	color : red ;
+
+	background : #fbfbe9ff ;
+
+	border-radius : 50px ;
+	border : 10px solid #98C8FF ;
+
+	box-shadow : 0px 0px 30px #98C8FF ;
+
+	cursor : pointer ;
+
+	transition : all 0.5s ;
+	}
+
+#book_01
+	{
+	left : 1150px ;
+	top : 60px ;
+
+	background : white ;
+	color : black ;
+
+	border : 5px solid white ;
+
+	z-index : 10 ;
+	}
+
+#book_01:hover
+	{
+	color : red ;
+
+	background : #fbfbe9ff ;
+
+	border-radius : 50px ;
+	border : 10px solid #F7BFC6 ;
+
+	box-shadow : 0px 0px 30px #F7BFC6 ;
+
+	cursor : pointer ;
+
+	transition : all 0.5s ;
+	}
+
+
+/*인트로 도감*/
+#int_book
+	{
+	position : absolute ;
+	left : 200px ;
+	top : 100px ;
+	z-index : 100 ;
+	display : inline-block ;
+	width : 1000px ;
+	height : 600px ;
+	border : 5px solid black ;
+	border-radius : 50px ;
+	background-color : rgba(1, 1, 1, 0.1) ;
+	visibility : hidden ;
+	}
+
+#int_booktitle
+	{
+	position : absolute ;
+	left : 65px ;
+	top : 30px ;
+	display : inline-block ;
+	width : 800px ;
+	height : 40px ;
+	line-height : 40px ;
+	border : 1px solid black ;
+	border-radius : 5px ;
+	background-color : #BDBDBD ;
+	}
+
+#int_booksC
+	{
+	position : absolute ;
+	left : 560px ;
+	top : 110px ;
+
+	display : inline-block ;
+	width : 380px ;
+	height : 448px ;
+
+	border : 1px solid black ;
+	border-radius : 15px ;
+
+	background-color : #BDBDBD ;
+	}
+
+#int_booksC_A
+	{
+	position : absolute ;
+	left : 0px ;
+	top : 0px ;
+
+	display : inline-block ;
+	width : 380px ;
+	height : 448px ;
+
+	border : 1px solid black ;
+	border-radius : 15px ;
+
+	background-color : #BDBDBD ;
+
+	display : none ;
+	}
+
+#int_bookcancel
+	{
+	position : absolute ;
+	left : 900px ;
+	top : 30px ;
+	display : inline-block ;
+	width : 40px ;
+	height : 40px ;
+	line-height : 40px ;
+	border : 1px solid black ;
+	border-radius : 5px ;
+	background-color : #BDBDBD ;
+	}
+
+#int_books
+	{
+	position : absolute ;
+	left : 60px ;
+	top : 100px ;
+	border-spacing : 10px ;
+	}
+
+#int_books td
+	{
+	border : 1px solid black ;
+	border-radius : 10px ;
+	width : 60px ;
+	height : 60px ;
+	padding : 10px ;
+	background-color : #BDBDBD ;
+	}
+
+#maker
+	{
+	font-family : Galmuri11, serif ;
+	font-size : 18px ;
+
+	color : #fbfbe9ff ;
+
+	text-shadow : 1px 1px black ;
+
+	position : absolute;
+	left : 600px;
+	top : 750px;
+	z-index : -1 ;
+
+	width:1000px;
+	}
+
+/*슬라이드 쇼 컨테이너*/
+#exptn_container
+	{
+	left : 200px ;
+	top : 100px ;
+	z-index : 100 ;
+	text-align:center;
+	position:relative;
+	width:1000px;
+	height:600px;
+	border: 5px solid black;
+	border-radius : 50px ;
+	background-color : rgba(1, 1, 1, 0.1) ;
+	overflow: hidden;
+	visibility: hidden;
+	}
+
+#pageBtn
+	{
+	position:absolute;
+	top:550px;
+	}
+
+
+.prev, .next
+	{
+	cursor: pointer;
+	color:black;
+	position: relative;
+	font-weight: bold;
+	font-size: 40px;
+	}
+
+.prev
+	{
+	padding-right:300px ;
+	}
+
+.next
+	{
+	padding-left:300px ;
+	}
+
+.exptn_img
+	{
+	width:1000px;
+	height:600px;
+	}
+
+#exptn_cancel
+	{
+	position : absolute ;
+	left : 900px ;
+	top : 30px ;
+	display : inline-block ;
+	width : 40px ;
+	height : 40px ;
+	line-height : 40px ;
+	border : 1px solid black ;
+	border-radius : 5px ;
+	background-color : #BDBDBD ;
+	}
+
+
+#MainScreen
+	{
+	text-align : center ;
+
+	position : relative ;
+	display : inline-block ;
+
+	border : 5px solid black ;
+	border-radius : 0.8% ;
+
+	width : 1400px ;
+	height : 800px ;
+
+	display : none ;
+	}
+
+#canvas
+	{
+	position: absolute ;
+	background-color:white ;
+	z-index: 0 ;
+
+	border : 3px solid black ;
+	border-radius : 1% ;
+
+	box-shadow : 0px 0px 30px #FFCF52 ;
+
+	display : inline-block ;
+	width : 1000px ;
+	height : 600px ;
+
+	left : 50px ;
+	top : 150px ;
+	}
+
+#canvas2
+	{
+	position: absolute ;
+	background-color:none ;
+	z-index: 5 ;
+
+	border : 3px solid black ;
+	border-radius : 1% ;
+
+	display : inline-block ;
+	width : 1000px ;
+	height : 600px ;
+
+	left : 50px ;
+	top : 150px ;
+	}
+
+.composition
+	{
+	position : absolute ;
+	font-family : Galmuri11, serif ;
+	font-size : 30px ;
+	text-align : center ;
+	display : inline-block ;
+	z-index : 10 ;
+	}
+
+#round
+	{
+	color : white ;
+
+	font-size : 42px ;
+
+
+	left : 500px ;
+	top : 15px ;
+	}
+
+#life
+	{
+	font-size : 42px ;
+
+	display : inline-block ;
+	width : 200px ;
+	height : 75px ;
+	line-height : 75px ;
+
+	border : 10px solid #FFCF52 ;
+	border-radius : 50px ;
+
+	box-shadow : 3px 3px 10px black ;
+	text-shadow : 0px 0px 15px #FFCF52 ;
+
+	color : red ;
+
+	left : 30px ;
+	top : 30px ;
+	}
+
+#bar1
+	{
+	display : inline-block ;
+	width : 10px ;
+	height : 30px ;
+
+	position : absolute ;
+	left : 80px ;
+	top : 0px ;
+
+	z-index : 10 ;
+
+	background-color : #FFCF52 ;
+	}
+
+#bar2
+	{
+	display : inline-block ;
+	width : 10px ;
+	height : 30px ;
+
+	position : absolute ;
+	left : 190px ;
+	top : 0px ;
+
+	z-index : 10 ;
+
+	background-color : #FFCF52 ;
+	}
+
+#count
+	{
+	left : 1000px ;
+	top : 110px ;
+
+	color : white ;
+	}
+
+.inter
+	{
+	position : absolute ;
+	left : 1100px ;
+
+	font-family : Galmuri11, serif ;
+
+	display : inline-block ;
+
+	width : 260px ;
+
+	border : 3px solid black ;
+	border-radius : 50px ;
+
+	box-shadow: 8px 8px 20px black ;
+	}
+
+#menubar
+	{
+
+	background-color : #559BD9 ;
+
+	top : 15px ;
+	height : 50px ;
+	}
+
+.menuImage
+	{
+	width : 50px ;
+	height : 50px ;
+
+	position : absolute ;
+	z-index : 10 ;
+	}
+
+#pause
+	{
+	left : 140px ;
+	}
+
+#play
+	{
+	left : 140px ;
+	visibility : hidden ;
+	}
+
+#setting
+	{
+	left : 200px ;
+	}
+
+#timebox
+	{
+	background-color : #559BD9 ;
+
+	top : 80px ;
+	height : 50px ;
+	}
+
+#timer
+	{
+	display : inline-block ;
+
+	font-size : 30px ;
+
+	position : absolute ;
+	left : 35px ;
+	top : 5px ;
+	}
+
+#noskip
+	{
+	position : absolute ;
+	left : 135px ;
+	top : 3px ;
+
+	font-family : Galmuri11, serif ;
+
+	border-radius: 4px ;
+	background-color: #559BD9 ;
+	border: none ;
+	color: gray ;
+	font-size: 28px ;
+
+	width: 100px ;
+	transition: all 0.5s ;
+	}
+
+#skip
+	{
+	position : absolute ;
+	left : 135px ;
+	top : 3px ;
+
+	font-family : Galmuri11, serif ;
+
+	border-radius: 4px ;
+	background-color : #559BD9 ;
+	border: none ;
+	color: black ;
+	font-size: 28px ;
+
+	width: 100px ;
+	transition: all 0.5s ;
+	cursor: pointer ;
+	}
+
+#skip:active
+	{
+	transition: 0s ;
+	text-shadow : 5px 5px black ;
+	}
+
+#skip span
+	{
+	cursor: pointer ;
+	display: inline-block ;
+	position: relative ;
+	transition: 0.5s ;
+	}
+
+#skip span:after
+	{
+	content: '\00bb' ;
+	position: absolute ;
+	opacity: 0 ;
+	top: 0 ;
+	right: -20px ;
+	transition: 0.5s ;
+	}
+
+#skip:hover span
+	{
+	padding-right: 25px ;
+
+	color: red ;
+	}
+
+#skip:hover span:after
+	{
+	opacity: 1 ;
+	right: 0 ;
+
+	color: red ;
+	}
+
+#towerinfo
+	{
+	top : 150px ;
+	height : 450px ;
+	background-color : #0E7A0D ;
+
+	transition : all 0.5s ;
+	}
+
+#towerinfo:hover
+	{
+	left : 1098px ;
+	top : 148px ;
+
+	border : 5px solid red ;
+	box-shadow: 0px 0px 25px red ;
+
+	border-radius : 25px ;
+
+	transition : all 0.5s ;
+	}
+
+#setinfo
+	{
+	top : 150px ;
+	height : 450px ;
+	background-color : #0E7A0D ;
+
+	color : white ;
+
+	font-size : 32px ;
+
+	transition : all 0.5s ;
+	}
+
+#setinfo:hover
+	{
+	left : 1098px ;
+	top : 148px ;
+
+	border : 5px solid red ;
+	box-shadow: 0px 0px 25px red ;
+
+	border-radius : 25px ;
+
+	transition : all 0.5s ;
+	}
+
+#setinfo li
+	{
+	transition : all, 2s ;
+	}
+
+#setinfo li:hover
+	{
+	color : red ;
+	text-decoration : underline ;
+
+	cursor : pointer ;
+
+	transition : all, 0.5s ;
+	}
+
+#baseinfo
+	{
+	top : 150px ;
+	height : 450px ;
+	line-height : 450px ;
+	background-color : #0E7A0D ;
+
+	font-size : 40px ;
+	color : white ;
+
+	transition : all 0.5s ;
+	}
+
+#baseinfo:hover
+	{
+	left : 1098px ;
+	top : 148px ;
+
+	border : 5px solid red ;
+	box-shadow: 0px 0px 25px red ;
+
+	border-radius : 25px ;
+
+	transition : all 0.5s ;
+	}
+
+#userskill
+	{
+	top : 630px ;
+	height : 50px ;
+
+	overflow : hidden ;
+
+	transition : all 0.5s ;
+	}
+
+#userskill:hover
+	{
+	left : 1098px ;
+	top : 628px ;
+
+	border : 5px solid red ;
+	box-shadow: 0px 0px 25px red ;
+
+	border-radius : 25px ;
+
+	cursor : pointer ;
+
+	transition : all 0.5s ;
+	}
+
+#userskill button
+	{
+	position : absolute ;
+	left : -10px ;
+	top : -10px ;
+	z-index : 0 ;
+
+	text-align : center ;
+
+	font-family : Galmuri11, serif ;
+	font-size : 24px ;
+	color : black ;
+
+	display : inline-block ;
+	width : 300px ;
+	height : 70px ;
+	line-height : 65px ;
+
+	background-color : #FFCF52 ;
+
+	transition : all 2s ;
+	}
+
+#userskill button:hover
+	{
+	color : red ;
+
+	cursor : pointer ;
+
+	transition : all 0.5s ;
+	}
+
+#skill
+	{
+	position:absolute ;
+	left : 50px ;
+	top : 150px ;
+
+	width : 1000px ;
+	height : 600px ;
+
+	overflow:hidden ;
+	}
+
+#carImg
+	{
+	position: absolute;
+	top:200px;
+	right:1000px;
+
+	width:500px;
+	height:150px;
+
+	}
+
+#goldbox
+	{
+	top : 700px ;
+	height : 50px ;
+
+	overflow : hidden ;
+
+	}
+
+#trade
+	{
+	width: 100% ;
+	height: 100% ;
+	background-color: #FFCF52 ;
+	}
+
+#Buy
+	{
+	font-family : Galmuri11, serif ;
+	font-size : 24px ;
+
+	position: absolute ;
+	left : 150px ;
+	top : 5px ;
+
+	display : inline-block ;
+	width: 100px ;
+	height: 40px ;
+
+	background-color : white ;
+
+	border : 3px solid black ;
+	border-radius : 25px ;
+
+	transition : all 0.5s ;
+	}
+
+
+
+#Buy:hover
+	{
+	border : 3px solid red ;
+	background-color : red ;
+	color : white ;
+
+	transition : all 0.5s ;
+	}
+
+#Buy:active
+	{
+	color : black ;
+	border : 3px solid black ;
+
+	transition : all 0.5s ;
+	}
+
+#Gold
+	{
+	position: absolute ;
+	left: 7% ;
+	color: black ;
+	padding: 10px 0 ;
+
+	font-size : 25px ;
+	}
+
+#field
+	{
+	position : absolute ;
+	left : 50px ;
+	top : 150px ;
+
+	display : inline-block ;
+	width : 1000px ;
+	height : 600px ;
+
+	background-color : green ;
+	border : 3px solid black ;
+	border-radius : 1% ;
+	z-index : 10 ;
+	}
+
+#book
+	{
+	position : absolute ;
+	left : 250px ;
+	top : 100px ;
+
+	z-index : 100 ;
+
+	display : inline-block ;
+	width : 1000px ;
+	height : 600px ;
+
+	border : 5px solid black ;
+	border-radius : 50px ;
+	background-color : rgba(1, 1, 1, 0.1) ;
+
+	visibility : hidden ;
+	}
+
+.BOOK
+	{
+	font-family : Galmuri11, serif ;
+	font-size : 22px ;
+	}
+
+#booktitle
+	{
+	position : absolute ;
+	left : 65px ;
+	top : 30px ;
+
+	display : inline-block ;
+	width : 800px ;
+	height : 40px ;
+	line-height : 40px ;
+
+	border : 1px solid black ;
+	border-radius : 5px ;
+
+	background-color : #BDBDBD ;
+	}
+
+#books
+	{
+	position : absolute ; 
+	left : 60px ;
+	top : 100px ;
+	border-spacing : 10px ;
+	}
+
+#booksC
+	{
+	position : absolute ;
+	left : 560px ;
+	top : 110px ;
+
+	display : inline-block ;
+	width : 380px ;
+	height : 448px ;
+
+	border : 1px solid black ;
+	border-radius : 15px ;
+
+	background-color : #BDBDBD ;
+	}
+
+#booksC_A
+	{
+	position : absolute ;
+	left : 0px ;
+	top : 0px ;
+
+	display : inline-block ;
+	width : 380px ;
+	height : 448px ;
+
+	border : 1px solid black ;
+	border-radius : 15px ;
+
+	background-color : #BDBDBD ;
+
+	display : none ;
+	}
+
+#bookcancel
+	{
+	position : absolute ;
+	left : 900px ;
+	top : 30px ;
+
+	display : inline-block ;
+	width : 40px ;
+	height : 40px ;
+	line-height : 40px ;
+
+	border : 1px solid black ;
+	border-radius : 5px ;
+
+	background-color : #BDBDBD ;
+	}
+
+#books td
+	{
+	border : 1px solid black ; 
+	border-radius : 10px ; 
+	
+	width : 60px ; 
+	height : 60px ; 
+
+	padding : 10px ; 
+
+	background-color : #BDBDBD ; 
+	}
+
+.Tower
+	{
+	width : 50px ;
+	height : 50px ;
+	border-radius : 50% ;
+
+	overflow : hidden ;
+	}
+
+.TowerIMG
+	{
+	width : 50px ;
+	height : 50px ;
+	}
+
+#GameOutScreen
+	{
+	text-align : center ;
+	font-family : Galmuri11, serif ;
+
+	position:absolute ;
+	left : 8px ;
+	top : 8px ;
+	z-index : 100 ;
+
+	display:inline-block ;
+
+	border : 5px solid black ;
+	border-radius : 0.8% ;
+
+	width:1400px ;
+	height:800px ;
+	line-height : 800px ;
+
+	overflow : hidden ;
+
+	display : none ;
+	}
+
+#ending
+	{
+	position:absolute;
+	top:8px; left:10px;
+	width:1400px;
+	height:800px;
+	border: 5px solid black;
+	background-color:black;
+
+	text-align:center;
+	overflow:hidden;
+	display:none;
+	}
+
+#endingMove
+	{
+	position:absolute;
+	width: 600px;
+	height: 2000px;
+	right: 400px;
+	top: 1400px;
+	}
+
+.endFont
+	{
+	font-family: Galmuri11, serif ;
+	color: white;
+	font-size: 50px;
+
+	}
+
+.endFont1
+	{
+	font-family: Galmuri11, serif ;
+	color: white;
+	font-size: 35px;
+	}
+
+.endFont2
+	{
+	font-family: Galmuri11, serif ;
+	color: white;
+	font-size: 25px;
+	}
+
+#font_en
+   {
+   font-size:70px;
+   color:white;
+   font-family: Galmuri11, serif;
+   }
+
+#font_en:hover
+   {
+   color: #FFCF52 ;
+   cursor: pointer ;
+   text-decoration: underline ;
+   }
+
+</style>
+
+</head>
+<body>
+
+<div id="BODY">
+	<div id="GameOpeningScreen">
+	</div>
+	<div id="intScreen">
+
+		<div id="Back1" class="TITLE""><img src="Backimg.png"></div>
+		<div id="EF1" class="TITLE""><img src="Effect1.png"></div>
+		<div id="EF2" class="TITLE"><img src="Effect1.png"></div>
+		<div id="EF3" class="TITLE"><img src="Effect2.png"></div>
+		<div id="Title" class="TITLE"><img src="Title.png"></div>
+		<div id="TitleLine" class="TITLE"><img src="TitleLine.png"></div>
+
+		<button id="playBtn" class="mainBtn" onclick="PlayBtn()">게임시작</button>
+		<button id="exptnBtn" class="mainBtn" onclick="ExptnBtn(this)">게임설명</button>
+		<button id="book_01" class="mainBtn" onclick="int_bookDU(this)">도감</button>
+
+		<div id="topBtn">
+			<div id="maker">
+				MAKER : Jay Kim / Yi Gyeung Goo / Cho Seung Hee
+			</div>
+		</div>
+
+		<div id="int_book">
+         <div id="int_booktitle" class="BOOK">타워도감</div>
+
+         <div id="int_booksC" class="BOOK"><br><br><br><br><br>이미지를 클릭하면<br><br>해당 타워의 정보를<br><br>확인 할 수 있습니다.
+            <div id="int_booksC_A">
+               <ul style="list-style : none ; text-align : left ; ">
+                  <br>
+                  <li id="int_Name"></li>
+                  <br>
+                  <li id="int_Attack"></li>
+                  <br>
+                  <li id="int_Speed"></li>
+                  <br>
+                  <li id="int_Range"></li>
+                  <br>
+                  <li id="int_Text"></li>
+               </ul>
+            </div>
+         </div>
+         <div id="int_bookcancel" class="BOOK" onclick="int_bookDU(this)">X</div>
+         <table id="int_books">
+            <tr>
+               <td><button class="Tower" onclick="int_TowerInfo(0)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(1)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(2)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(3)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(4)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+            </tr>
+            <tr>
+               <td><button class="Tower" onclick="int_TowerInfo(5)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(6)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(7)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(8)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(9)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+            </tr>
+            <tr>
+               <td><button class="Tower" onclick="int_TowerInfo(10)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(11)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(12)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(13)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(14)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+            </tr>
+            <tr>
+               <td><button class="Tower" onclick="int_TowerInfo(15)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(16)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(17)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(18)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(19)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+            </tr>
+            <tr>
+               <td><button class="Tower" onclick="int_TowerInfo(20)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(21)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(22)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(23)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+               <td><button class="Tower" onclick="int_TowerInfo(24)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+            </tr>
+         </table>
+      </div>
+
+		<div id="exptn_container">
+
+			<div id="exptn_cancel" class="exptn_cancelC" onclick="ExptnBtn(this)">X</div>
+
+			<div class="exptn_slide fade">
+				<img class="exptn_img" src="extn01.png" style="width:100%" alt="설명1">
+         	</div>
+
+			<div class="exptn_slide fade">
+				<img class="exptn_img" src="extn02.png" style="width:100%" alt="설명1">
+			</div>
+
+			<div class="exptn_slide fade">
+				<img class="exptn_img" src="extn03.png" style="width:100%" alt="설명1">
+		 	</div>
+
+			 <div class="exptn_slide fade">
+				<img class="exptn_img" src="extn04.png" style="width:100%" alt="설명1">
+			 </div>
+
+		 	<div class="exptn_slide fade">
+				<img class="exptn_img" src="extn05.png" style="width:100%" alt="설명1">
+		 	</div>
+
+		 	<div class="exptn_slide fade">
+				<img class="exptn_img" src="extn06.png" style="width:100%" alt="설명1">
+		 	</div>
+
+		 	<div class="exptn_slide fade">
+				<img class="exptn_img" src="extn07.png" style="width:100%" alt="설명1">
+		 	</div>
+
+		 	<div class="exptn_slide fade">
+				<img class="exptn_img" src="extn08.png" style="width:100%" alt="설명1">
+		 	</div>
+
+		 	<div class="exptn_slide fade">
+				<img class="exptn_img" src="extn09.png" style="width:100%" alt="설명1">
+		 	</div>
+
+			<div id="pageBtn" style="width:1000px; height: 50px;">
+				<a class="prev" onclick="plusSlides(-1)"> < </a>
+				<a class="next" onclick="plusSlides(1)"> > </a>
+			</div>
+		</div>
+
+   </div>
+
+
+	<div id="MainScreen">
+
+		<img src="MainBack.png" style="position : absolute ; left : 0px ; top : 0px ; z-index : 0 ; ">
+
+		<div id="fieldDIV" style="width: 1000px; height: 600px; left: 50px; top: 150px">
+			<canvas id="canvas" width="1000" height="600" style="left: 50px; top: 150px"></canvas>
+			<canvas id="canvas2" width="1000" height="600" style="left: 50px; top: 150px"></canvas>
+		</div>
+		<div id="life" class="composition"></div>
+		<div id="bar1"></div>
+		<div id="bar2"></div>
+		<div id="round" class="composition">ROUND - 0</div>
+		<div id="count" class="composition">00</div>
+		<div class="inter"  id="menubar">
+			<img id="pause" class="menuImage" src="Pause.png" alt="0" onclick="menuimage(this)">
+			<img id="play" class="menuImage" src="Play.png" alt="1" onclick="menuimage(this)">
+			<img id="setting" class="menuImage" src="Setting.png" alt="2" onclick="menuimage(this)">
+		</div>
+		<div class="inter"  id="timebox"><div id="timer">00:00</div><button id="skip" onclick="TimerSkip()" name="skip"><span>SKIP </span></button></div>
+		<div class="inter"  id="towerinfo">포탑정보가 보이는 창</div>
+		<div class="inter"  id="setinfo">
+			<ul id="setinfoList">
+				<br>
+				<br>
+				<br>
+				<li id="bookup" onclick="bookDU(this)">도감</li>
+				<br>
+				<li id="gameout" onclick="exitBtn()">나가기</li>
+			</ul>
+		</div>
+		<div class="inter"  id="baseinfo">O O O O</div>
+		<div class="inter"  id="userskill">
+			<button id="skillBtn" class="inGameBtn" onclick="Skill()">Special Skill</button>
+		</div>
+		<div id="skill">
+         <img id="carImg" src="porsche.png">
+      </div>
+		<div class="inter"  id="goldbox">
+			<div id="trade"><div id="Gold">G 0000</div><button type="button" id="Buy"><span id="BuyT">BUY</span></button></div>
+		</div>
+
+
+		<div id="book" >
+			<div id="booktitle" class="BOOK">타워도감</div>
+			<div id="booksC" class="BOOK"><br><br><br><br><br>이미지를 클릭하면<br><br>해당 타워의 정보를<br><br>확인 할 수 있습니다.
+				<div id="booksC_A">
+					<ul style="list-style : none ; text-align : left ; ">
+						<br>
+						<li id="Name"></li>
+						<br>
+						<li id="Attack"></li>
+						<br>
+						<li id="Speed"></li>
+						<br>
+						<li id="Range"></li>
+						<br>
+						<li id="Text"></li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="bookcancel" class="BOOK" onclick="bookDU(this)">X</div>
+			<table id="books">
+				<tr>
+					<td><button class="Tower" onclick="TowerInfo(0)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(1)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(2)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(3)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(4)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+				</tr>
+				<tr>
+					<td><button class="Tower" onclick="TowerInfo(5)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(6)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(7)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(8)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(9)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+				</tr>
+				<tr>
+					<td><button class="Tower" onclick="TowerInfo(10)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(11)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(12)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(13)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(14)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+				</tr>
+				<tr>
+					<td><button class="Tower" onclick="TowerInfo(15)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(16)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(17)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(18)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(19)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+				</tr>
+				<tr>
+					<td><button class="Tower" onclick="TowerInfo(20)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(21)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(22)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(23)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+					<td><button class="Tower" onclick="TowerInfo(24)"><img class="TowerIMG" src="Image_py_Logo.png"></button></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div id="GameOutScreen">
+	</div>
+
+	<div id="ending" class="ending_c">
+		<div id="endingMove">
+			<br><br>
+			<div class="endFont">랜덤 타워 디펜스</div>
+			<br><br><br>
+			<div class="endFont1">만든이</div>
+			<br>
+			<div class="endFont2">팀원 : 이 경 구(Pants CEO)</div>
+			<br>
+			<div class="endFont2">팀원 : 조 승 희(Talk Box)</div>
+			<br>
+			<div class="endFont2">조장 : 김 형 준(Only One, Best Of Best, Slave)</div>
+			<br><br><br>
+			<div class="endFont1">** 익 명 후 기 **</div>
+			<br>
+			<div class="endFont2">팀원A : 힘들다구요 ? 어차피 내일도 힘들어요.</div>
+			<br>
+			<div class="endFont2">팀원B : 오류가 늘 발생합니다...(feat.살려줘)</div>
+			<br>
+			<div class="endFont2">팀원C : HTML / CSS / JS 그만 하고 싶어요.</div>
+			<br><br><br>
+			<div class="endFont1">후 원</div>
+			<br>
+			<div class="endFont2">제작사 : Eun Class Team 4</div>
+			<br>
+			<div class="endFont2">Made in Korea</div>
+			<br>
+			<br>
+			<div class="endFont2">* 전 리 품 *</div>
+			<br>
+			<br>
+			<div class="endFont2">생각치도 못한 3천줄 분량의 코드</div>
+			<br>
+			<div class="endFont2">큰 고통</div>
+			<br>
+			<div class="endFont2">전두엽의 충격</div>
+			<br>
+			<div class="endFont2">숙면을 취하기 전 최고의 상태</div>
+			<br><br><br>
+			<div class="endFont1">Thanks To</div>
+			<br>
+			<div class="endFont2">Team 1 김 준 철</div>
+			<br>
+			<div class="endFont2">Team 2 최 수 정</div>
+			<br>
+			<div class="endFont2">Team 2 <p style="display : inline-block ; color : yellow ; padding : 0 ; margin : 0 ; ">장</p> 동 진</div>
+			<br>
+			<div class="endFont2">Team 3 윤 성 찬</div>
+			<br>
+			<div class="endFont2">큰 도움은 아니었던 W3</div>
+			<br>
+			<div class="endFont2">G O D G O O G L E</div>
+			<br>
+			<br>
+			<div class="endFont2">* Ending Code *</div>
+			<br>
+			<br>
+			<div class="endFont2">print("Bye Bye")</div>
+			<br>
+			<div class="endFont2">Heart.innerHTML = "Pain" ; </div>
+			<br>
+			<div class="endFont2">position : MyHome ; </div>
+			<br>
+			<br>
+			<div class="endFont2">! THANK YOU !</div>
+			<br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br>
+			<div id="font_en" onclick="endClose()">"은 지 원 선생님"</div>
+			<br><br><br>
+		</div>
+	</div>
+	<button onclick="Ending()" style="position : absolute ; left : 160px ; top : 830px ; z-index : 100 ; ">end</button>
+
+</div>
+
+<button onclick="LifeCost()" style="position : absolute ; left : 100px ; top : 830px ; z-index : 100 ; ">Life - </button>
+<script type="text/javascript">
+
+let ef1T ;
+let ef2T ;
+let Ti1T ;
+let Ti2T ;
+let Ba1T ;
+let Pl1T ;
+
+
+/*오프닝 화면*/
+setTimeout(() => Opening(), 1000);
+function Opening()
+    {
+    let GOS = document.getElementById("GameOpeningScreen") ;
+    GOS.style.display = "inline-block" ;
+    GOS.style.background = "white";
+
+    let GOS_C = 0 ;
+
+    let GOS_A = setInterval(function()
+        {
+        if (GOS_C < 100)
+        {
+        GOS_C++ ;
+
+        let W = Math.floor(Math.random()*200+101) ;
+        let H = Math.floor(Math.random()*200+101) ;
+
+        let L = Math.floor(Math.random()*1400) ;
+        let T = Math.floor(Math.random()*800) ;
+
+        let R = Math.floor(Math.random()*256) ;
+        let G = Math.floor(Math.random()*256) ;
+        let B = Math.floor(Math.random()*256) ;
+
+        let Ndiv = document.createElement("div")
+        Ndiv.setAttribute("class", "OpnClass")
+
+        Ndiv.style.display = "inline-block" ;
+
+        Ndiv.style.position = "absolute" ;
+        Ndiv.style.left = L + "px" ;
+        Ndiv.style.top = T + "px" ;
+
+        Ndiv.style.zIndex = GOS_C ;
+        Ndiv.style.boxShadow = "10px 10px 50px 3px black";
+
+        Ndiv.style.width = W + "px" ;
+        Ndiv.style.height = H + "px" ;
+
+		let colorArr=
+			[
+			'#0064CD', '#0A6ECD', '#1478CD', '#1E82CD', '#288CD2', '#3296D7', '#3CA0E1', '#46AAEB', '#50B4F5', '#5ABEF5',
+			'#87CEFA', '#91D8FA', '#A5D8FA', '#AFDDFA', '#B9E2FA', '#C3E7FA', '#CDECFA', '#D7F1FA', '#E1F6FA', '#EBFBFF',
+			'#000069', '#1E3269', '#323C73', '#3C467D', '#3C5087', '#3C5A91', '#46649B', '#506EA5', '#5A78AF', '#6482B9',
+			'#55EE94', '#5FEE9E', '#69EEA8', '#73EEB2', '#7DEEBC', '#87EEC6', '#91F8D0', '#9BFFDA', '#A5FFE4', '#AFFFEE'
+			];
+
+		let RC = colorArr[Math.floor(Math.random()*colorArr.length)]
+
+        Ndiv.style.backgroundColor = RC ;
+
+        document.querySelector("#GameOpeningScreen").append(Ndiv);
+		}
+
+        else if (GOS_C >= 99 )
+            {
+			GOS.style.background = "none";
+            GOS_C++ ;
+
+            let OpnClass =document.getElementsByClassName("OpnClass");
+        	OpnClass[OpnClass.length-1].remove();
+
+
+			if (OpnClass.length <= 0)
+				{
+				clearInterval(GOS_A) ;
+				console.log(1);
+				GOS.style.display = "none";
+				Effect() ;
+				}
+
+            }
+        },10) ;
+   }
+
+function Effect()
+	{
+	let ef1 = 0 ;
+	ef1T = setInterval(function ()
+		{
+		let EF1 = document.getElementById("EF1") ;
+
+		if (ef1 == 0)
+			{
+			EF1.style.top = "125px" ;
+			ef1 = 1 ;
+			}
+		else if (ef1 == 1)
+			{
+			EF1.style.top = "75px" ;
+			ef1 = 0 ;
+			}
+		}, 800) ;
+
+	let ef2 = 0 ;
+	ef2T = setInterval(function ()
+		{
+		let EF2 = document.getElementById("EF2") ;
+
+		if (ef2 == 0)
+			{
+			EF2.style.top = "175px" ;
+			ef2 = 1 ;
+			}
+		else if (ef2 == 1)
+			{
+			EF2.style.top = "225px" ;
+			ef2 = 0 ;
+			}
+		}, 800) ;
+
+	let Ti1 = 0 ;
+	Ti1T = setInterval(function ()
+		{
+		let TI1 = document.getElementById("Title") ;
+
+		Ti1++ ;
+		if (Ti1 === 0 || Ti1 === 2 || Ti1 === 4)
+			{
+			TI1.style.display = "none" ;
+			}
+		else if (Ti1 === 1 || Ti1 === 3 || Ti1 === 5)
+			{
+			TI1.style.display = "inline-block" ;
+			}
+		else if (Ti1 == 50)
+			{
+			Ti1 = 0 ;
+			}
+		}, 100) ;
+
+	let Ti2 = 0 ;
+	Ti2T = setInterval(function ()
+		{
+		let TI2 = document.getElementById("Title") ;
+
+		if (Ti2 === 0)
+			{
+			TI2.style.left = "440px" ;
+			Ti2 = 1 ;
+			}
+		else if (Ti2 === 1)
+			{
+			TI2.style.left = "430px" ;
+			Ti2 = 0 ;
+			}
+		}, 1200) ;
+	let Ba1 = 0 ;
+	Ba1T = setInterval(function ()
+		{
+		let BA1 = document.getElementById("Back1") ;
+
+		if (Ba1 === 0)
+			{
+			BA1.style.left = "-1175px" ;
+			BA1.style.top = "-1375px" ;
+			Ba1 = 1 ;
+			}
+		else if (Ba1 === 1)
+			{
+			BA1.style.left = "-775px" ;
+			BA1.style.top = "-1775px" ;
+			Ba1 = 0 ;
+			}
+		}, 2200) ;
+
+	let pl1 = 0 ;
+	pl1T = setInterval(function ()
+		{
+		let PL1 = document.getElementById("playBtn") ;
+
+		pl1++ ;
+		if (pl1 === 0 || pl1 === 2 || pl1 === 4)
+			{
+			PL1.style.background = "red" ;
+			}
+		else if (pl1 === 1 || pl1 === 3 || pl1 === 5)
+			{
+			PL1.style.background = "white" ;
+			}
+		else if (pl1 == 17)
+			{
+			pl1 = 0 ;
+			}
+		}, 200) ;
+	}
+
+function CollectionOver(obj)
+	{
+	obj.innerHTML = "도감" ;
+	}
+
+
+/*게임 설명 버튼*/
+function ExptnBtn(obj){
+
+   if (obj.id === "exptnBtn"){
+      let exptn_d = document.getElementById("exptn_container") ;
+      let book = document.getElementById("int_book") ;
+      exptn_d.style.visibility = "visible" ;
+      book.style.visibility = "hidden" ;
+   }
+
+   else if (obj.id === "exptn_cancel"){
+      let exptn_d = document.getElementById("exptn_container") ;
+      exptn_d.style.visibility = "hidden" ;
+   }
+}
+
+/*도감*/
+function int_bookDU(obj){
+
+   if (obj.id === "book_01"){
+      let book = document.getElementById("int_book") ;
+      let exptn_C = document.getElementById("exptn_container") ;
+      book.style.visibility = "visible" ;
+      exptn_C.style.visibility = "hidden" ;
+   }
+
+   else if (obj.id === "int_bookcancel"){
+      let book = document.getElementById("int_book") ;
+      book.style.visibility = "hidden" ;
+   }
+}
+
+
+function int_TowerInfo(x)
+   {
+   if (x >= 0 && x <= 14)
+      {
+      let int_booksC_A = document.getElementById("int_booksC_A") ;
+      int_booksC_A.style.display = "inline-block" ;
+
+      let int_Name = document.getElementById("int_Name") ;
+      int_Name.innerHTML = "타워이름 : " + Object.values(TowerList[x][0])[0].Name ;
+
+      let int_Attack = document.getElementById("int_Attack") ;
+      int_Attack.innerHTML = "공 격 력 : " + Object.values(TowerList[x][0])[0].Attack ;
+
+      let int_Speed = document.getElementById("int_Speed") ;
+      int_Speed.innerHTML = "공격속도 : " + Object.values(TowerList[x][0])[0].Speed ;
+
+      let int_Range = document.getElementById("int_Range") ;
+      int_Range.innerHTML = "공격거리 : " + Object.values(TowerList[x][0])[0].Range ;
+
+      let int_Text = document.getElementById("int_Text") ;
+      int_Text.innerHTML = "타워설명 : " + Object.values(TowerList[x][0])[0].Text ;
+      }
+   else if (x > 14)
+      {
+      let int_booksC_A = document.getElementById("int_booksC_A") ;
+      int_booksC_A.style.display = "inline-block" ;
+
+      let int_Name = document.getElementById("int_Name") ;
+      int_Name.innerHTML = "타워이름 : - " ;
+
+      let int_Attack = document.getElementById("int_Attack") ;
+      int_Attack.innerHTML = "공 격 력 : - " ;
+
+      let int_Speed = document.getElementById("int_Speed") ;
+      int_Speed.innerHTML = "공격속도 : - " ;
+
+      let int_Range = document.getElementById("int_Range") ;
+      int_Range.innerHTML = "공격거리 : - " ;
+
+      let int_Text = document.getElementById("int_Text") ;
+      int_Text.innerHTML = "타워설명 : Coming Soon " ;
+      }
+   }
+
+
+
+
+/*슬라이드 쇼*/
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n)
+	{
+	showSlides(slideIndex += n);
+	}
+
+function currentSlide(n)
+	{
+	showSlides(slideIndex = n);
+	}
+
+function showSlides(n)
+	{
+	let i;
+    	let slides = document.getElementsByClassName("exptn_slide");
+
+    	if (n > slides.length)
+		{
+		slideIndex = 1
+		}
+
+    	if (n < 1)
+		{
+		slideIndex = slides.length
+		}
+
+    	for (i = 0; i < slides.length; i++)
+		{
+       		slides[i].style.display = "none";
+    		}
+    	slides[slideIndex-1].style.display = "Block";
+}
+
+
+let LifeCo = 30 ;
+
+let Life = document.getElementById("life") ;
+Life.innerHTML = "<div style='font-size : 50px ; display : inline-block ; '>❤</div>" +  " X " + LifeCo ;
+
+function LifeCost()
+	{
+	LifeCo = (LifeCo - 1) ;
+	Life.innerHTML = "<div style='font-size : 50px ; display : inline-block ; '>❤</div>" +  " X " + LifeCo ;
+	console.log(LifeCo) ;
+	if (LifeCo === 0)
+		{
+		GameOver() ;
+		}
+	}
+
+
+function TowerInfo(x)
+	{
+	if (x >= 0 && x <= 14)
+		{
+		let booksC_A = document.getElementById("booksC_A") ;
+		booksC_A.style.display = "inline-block" ;
+
+		let Name = document.getElementById("Name") ;
+		Name.innerHTML = "타워이름 : " + Object.values(TowerList[x][0])[0].Name ;
+
+		let Attack = document.getElementById("Attack") ;
+		Attack.innerHTML = "공 격 력 : " + Object.values(TowerList[x][0])[0].Attack ;
+
+		let Speed = document.getElementById("Speed") ;
+		Speed.innerHTML = "공격속도 : " + Object.values(TowerList[x][0])[0].Speed ;
+
+		let Range = document.getElementById("Range") ;
+		Range.innerHTML = "공격거리 : " + Object.values(TowerList[x][0])[0].Range ;
+
+		let Text = document.getElementById("Text") ;
+		Text.innerHTML = "타워설명 : " + Object.values(TowerList[x][0])[0].Text ;
+		}
+	else if (x > 14)
+		{
+		let booksC_A = document.getElementById("booksC_A") ;
+		booksC_A.style.display = "inline-block" ;
+
+		let Name = document.getElementById("Name") ;
+		Name.innerHTML = "타워이름 : - " ;
+
+		let Attack = document.getElementById("Attack") ;
+		Attack.innerHTML = "공 격 력 : - " ;
+
+		let Speed = document.getElementById("Speed") ;
+		Speed.innerHTML = "공격속도 : - " ;
+
+		let Range = document.getElementById("Range") ;
+		Range.innerHTML = "공격거리 : - " ;
+
+		let Text = document.getElementById("Text") ;
+		Text.innerHTML = "타워설명 : Coming Soon " ;
+		}
+	}
+
+
+// 경구형 코드
+function PlayBtn()
+   {
+   clearInterval(ef1T) ;
+   clearInterval(ef2T) ;
+   clearInterval(Ti1T) ;
+   clearInterval(Ti2T) ;
+   clearInterval(Ba1T) ;
+   clearInterval(Pl1T) ;
+
+   let intScreen = document.getElementById("intScreen") ;
+   intScreen.style.display = "none" ;
+
+   let MainScreen = document.getElementById("MainScreen") ;
+   MainScreen.style.display = "inline-block" ;
+
+   let exptn_d = document.getElementById("exptn_container") ;
+   exptn_d.style.visibility = "hidden" ;
+
+   let book = document.getElementById("int_book") ;
+   book.style.visibility = "hidden" ;
+
+
+   Timer(this) ;
+   }
+
+var id = null;
+function Skill()
+	{
+	//움직이는 스킬 이미지
+	var elem = document.getElementById("carImg");
+	var pos = -500;
+	clearInterval(id);
+	id = setInterval(frame, 0.1);
+
+	function frame()
+		{
+		if (pos == 1000)
+			{
+			clearInterval(id);
+			}
+		else
+			{
+			pos+=10;
+			elem.style.right = pos + 'px';
+			}
+		}
+
+	var time = 600;
+	var sec = "";
+	var skillBtn = document.getElementById("skillBtn")
+
+	var x = setInterval(function()
+		{
+		let sec = time%49 ;
+		document.getElementById("skillBtn").innerHTML =  sec + " / Sec" ;
+		document.getElementById("skillBtn").style.color =  "gray" ;
+		time--;
+
+		//타임아웃 시
+		if (sec ==0)
+			{
+			clearInterval(x); //setInterval() 실행을 끝냄
+			skillBtn.innerHTML = "Special Skill" ;
+			skillBtn.style.color = "black" ;
+
+			skillBtn.addEventListener('mouseover', SbOver) ;
+			skillBtn.addEventListener('mouseout', SbOut) ;
+			clickOn();
+			}
+		else if (sec <= 2)
+			{
+			skillBtn.style.transition = "all 3s" ;
+			skillBtn.style.color = "#FFCF52" ;
+			}
+		else if (sec >0)
+			{
+			clickNot();
+			}
+		}, 1000);
+	}
+
+function SbOver()
+	{
+	var skillBtn = document.getElementById("skillBtn")
+	skillBtn.style.color = "red" ;
+	skillBtn.style.cursor = "pointer" ;
+	}
+
+function SbOut()
+	{
+	var skillBtn = document.getElementById("skillBtn")
+	skillBtn.style.color = "black" ;
+	}
+
+function clickOn()
+	{
+	skillBtn.disabled=false;
+	}
+
+function clickNot()
+	{
+	skillBtn.disabled=true;
+	}
+
+
+
+// 형준씨 코드
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var canvas2 = document.getElementById("canvas2");
+var ctx2 = canvas2.getContext("2d");
+var x = 0;
+var y = 450;
+var dx = 2;
+var dy = -2;
+var canvasLeft = document.getElementById("canvas2").style.left;
+canvasLeft = parseInt(canvasLeft.replace("px", ""));
+var canvasTop = document.getElementById("canvas2").style.top;
+canvasTop = parseInt(canvasTop.replace("px", ""));
+
+var monster_count = 20;
+
+let TowerList = [
+				[{tower1 : {Attack : 45, Range : 75, Speed : 3, Name : "A", Text : "1"}}],
+				[{tower2 : {Attack : 40, Range : 125, Speed : 3, Name : "B", Text : "2"}}],
+				[{tower3 : {Attack : 20, Range : 175, Speed : 2, Name : "C", Text : "3"}}],
+				[{tower4 : {Attack : 25, Range : 175, Speed : 2, Name : "D", Text : "4"}}],
+				[{tower5 : {Attack : 30, Range : 125, Speed : 2, Name : "E", Text : "5"}}],
+				[{tower6 : {Attack : 50, Range : 75, Speed : 3, Name : "F", Text : "6"}}],
+				[{tower7 : {Attack : 5, Range : 275, Speed : 1, Name : "G", Text : "7"}}],
+				[{tower8 : {Attack : 35, Range : 125, Speed : 3, Name : "H", Text : "8"}}],
+				[{tower9 : {Attack : 10, Range : 275, Speed : 1, Name : "I", Text : "9"}}],
+				[{tower10 : {Attack : 30, Range : 125, Speed : 2, Name : "J", Text : "10"}}],
+				[{tower11 : {Attack : 15, Range : 225, Speed : 1, Name : "K", Text : "11"}}],
+				[{tower12 : {Attack : 35, Range : 125, Speed : 2, Name : "L", Text : "12"}}],
+				[{tower13 : {Attack : 20, Range : 225, Speed : 1, Name : "M", Text : "13"}}],
+				[{tower14 : {Attack : 40, Range : 125, Speed : 3, Name : "N", Text : "14"}}],
+				[{tower15 : {Attack : 15, Range : 225, Speed : 1, Name : "O", Text : "15"}}]
+				] ;
+
+console.log(Object.keys(TowerList[0][0])) ;
+console.log(Object.values(TowerList[0][0])[0].Attack) ;
+console.log(Object.values(TowerList[1][0])[0].Attack) ;
+console.log(Object.values(TowerList[2][0])[0].Attack) ;
+
+var map_image1 = new Image();
+map_image1.src = "tile0.png";
+var map_image2 = new Image();
+map_image2.src = "tile1.png";
+tiles =[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+		1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+		1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,
+		1,1,0,0,0,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,
+		1,1,0,1,1,0,1,1,1,0,1,1,1,0,0,0,0,0,1,1,
+		1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,
+		1,1,0,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,1,
+		1,1,0,1,1,0,1,1,1,0,1,1,1,0,0,0,0,0,1,1,
+		1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,
+		0,0,0,1,1,0,1,1,1,0,1,1,1,1,1,1,1,0,1,1,
+		1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,0,1,1,
+		1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1];
+var mapW = 20, mapH = 12;
+var tileW = 50, tileH = 50;
+for(var y = 0; y < mapH; y++)
+    {
+        for(var x = 0; x < mapW; x++)
+        {
+            if(tiles[(y * mapW) + x] == 0)
+            {
+                tiles[(y * mapW) + x] = {x:0, y:0, val:0}
+            }
+            else
+            {
+                tiles[(y * mapW) + x] = {x:0, y:0, val:1}
+            }
+        }
+    }
+
+function mapTile()
+    {
+        map_image0 = new Image();
+        map_image0.src = "tile0.png";
+        map_image1 = new Image();
+        map_image1.src = "tile1.png";
+        ctx.globalAlpha = 0.5;
+        for(var y2 = 0; y2 < mapH; y2++)
+        {
+            for(var x2 = 0; x2 < mapW; x2++)
+            {
+                if(tiles[(y2 * mapW) + x2].val == 0)
+                {
+                    ctx.drawImage(map_image0, tileW * x2, tileH * y2)
+                }
+                else
+                {
+                    ctx.drawImage(map_image1, tileW * x2, tileH * y2)
+                }
+            }
+        }
+    }
+
+function fieldTile()
+    {
+        for(var y2 = 0; y2 < mapH; y2++)
+        {
+            for(var x2 = 0; x2 < mapW; x2++)
+            {
+                if(tiles[(y2 * mapW) + x2].val == 1)
+                {
+                    ctx2.strokeStyle = "black";
+                    ctx2.beginPath();
+                    ctx2.strokeRect(x2 * tileW, y2 * tileH, tileW, tileH);
+                    ctx2.stroke();
+                }
+                else{}
+            }
+        }
+    }
+window.onload = function()
+    {
+        mapTile();
+        fieldTile();
+    }
+
+let Buy = document.getElementById("Buy")
+Buy.addEventListener('click', function(e)
+    {
+    canvas2.addEventListener("click", function(e)
+        {
+        var cRect = canvas2.getBoundingClientRect();
+        var pos = mousePos(canvas2, e);
+
+        Tower(e);
+        }, {once: true})
+    });
+
+Buy.addEventListener('mouseover', function(e) {BuyOver(e)}, false) ;
+Buy.addEventListener('mouseout', function(e) {BuyOut(e)}, false) ;
+
+function BuyOver(e)
+	{
+	let BuyOver = document.getElementById("BuyT") ;
+	BuyOver.style.transition = "all 0.5s" ;
+	BuyOver.style.opacity = "0" ;
+	setTimeout(function ()
+		{
+		BuyOver.innerHTML = "-100G" ;
+		BuyOver.style.opacity = "1" ;
+		},400)
+	}
+
+function BuyOut(e)
+	{
+	let BuyOut = document.getElementById("BuyT") ;
+	BuyOut.style.transition = "all 0.5s" ;
+	BuyOut.style.opacity = "0" ;
+	setTimeout(function ()
+		{
+		BuyOut.innerHTML = "BUY" ;
+		BuyOut.style.opacity = "1" ;
+		},400)
+	}
+
+function Tower(e)
+    {
+    var pos = mousePos(canvas2, e);
+    var a = 0, b = 0;
+    var l = document.getElementById("fieldDIV").style.left
+    l = parseInt(l.replace("px", ""))
+    var t = document.getElementById("fieldDIV").style.top
+    t = parseInt(t.replace("px", ""))
+
+    var i = 0;
+    do
+        {
+        if(a < pos.x && pos.x <= a + 50)
+            {
+            console.log(a)
+            if(b < pos.y && pos.y <= b + 50)
+                {
+                let TN = Math.floor(Math.random()*15);
+                const newT = document.createElement("BUTTON");
+                newT.setAttribute("type", "button");
+                newT.setAttribute("name", "tower");
+                newT.setAttribute("value", Object.keys(TowerList[TN][0])[0]);
+                newT.onclick = TowerClick;
+                newT.innerHTML = TN;
+                newT.style.cssText = "position: absolute; left: " + (a + l + 15) + "px; top: " + (b + t + 15) + "px; width: 50px; height: 50px; border-radius: 50%; z-index: 5";
+                document.body.appendChild(newT);
+
+                ctx2.beginPath();
+				ctx2.arc(a + 25, b + 25, Object.values(TowerList[TN][0])[0].Range, 0, 2 * Math.PI);
+				ctx2.stroke();
+
+				newT.oncontextmenu = function(e)
+                    {
+					ctx2.globalAlpha = 1;
+					ctx2.beginPath();
+					ctx2.arc(a + 25, b + 25, Object.values(TowerList[TN][0])[0].Range, 0, 2 * Math.PI);
+					ctx2.stroke();
+                    }
+				break;
+                }
+			else {b += 50}
+            }
+		else {a += 50}
+		i++
+        }
+	while(i < 240)
+    }
+
+function TowerClick(e)
+    {
+	let towerName;
+	let towerInfo;
+	for(i = 0; i < TowerList.length; i++)
+        {
+		towerName = Object.keys(TowerList[i][0])[0]
+		towerInfo = Object.values(TowerList[i][0])[0]
+		if(e.target.value == towerName)
+            {
+            var infoText =
+			console.log("Attack:" + towerInfo.Attack + " Range:" + towerInfo.Range + " Speed:" + towerInfo.Speed)
+			InterFace(e.target.name)
+
+			document.getElementById("towerinfo").innerHTML = towerInfo.Name + ("<br>") +
+															 ("공격력: ") + towerInfo.Attack + ("<br>") +
+															 ("공격 속도: ") + towerInfo.Speed + ("<br>") +
+															 ("사거리: ") + towerInfo.Range + ("<br>") +
+															 ("설명: ") + towerInfo.Text
+			break;
+            }
+        }
+    }
+
+var monsters = [];
+    for(i = 0; i < monster_count; i++)
+    {
+        monsters[i] = {x: 0, y: 450, status: 1}
+    }
+
+    function Monster()
+    {
+        ctx2.beginPath();
+        for(i = 0; i < monsters.length; i++)
+        {
+            ctx2.rect(monsters[i].x, monsters[i].y, 50, 50);
+        }
+        ctx2.fillStyle = "red";
+        ctx2.fill()
+        ctx2.closePath()
+        for(i = 0; i < monsters.length; i++)
+        {
+            monsters[i].x += dx
+            for(var y2 = 0; y2 < mapH; y2++)
+            {
+                for(var x2 = 0; x2 < mapW; x2++)
+                {
+                    tileX = tiles[(y2 * mapW) + x2].x
+                    tileY = tiles[(y2 * mapW) + x2].y
+                    if(monsters[i].x + tileW == tileX || to)
+                    {
+
+                    }
+                }
+            }
+        }
+    }
+
+    function play()
+    {
+        ctx2.clearRect(0, 0, canvas.width, canvas.height);
+        fieldTile();
+        Monster();
+    }
+
+
+function Detection(circle, rect)
+    {
+	var distX=Math.abs(circle.x-(rect.x+rect.w/2));
+	var distY=Math.abs(circle.y-(rect.y+rect.h/2));
+
+	if( distX > circle.r+rect.w/2 ){ return(false); }
+	if( distY > circle.r+rect.h/2 ){ return(false); }
+
+	if( distX <= rect.w){ return(true) }
+	if( distY <= rect.h){ return(true)}
+
+	var distX=distX-rect.w;
+	var distY=distY-rect.h;
+	return(distX*distX+distY*distY<=circle.r*circle.r);
+    }
+
+function mousePos(canvas, e)
+    {
+	var rect = canvas.getBoundingClientRect();
+	scaleX = canvas.width / rect.width, scaleY = canvas.height / rect.height;
+	return {"x": (e.clientX - rect.left) * scaleX, "y": (e.clientY - rect.top) };
+    }
+
+
+// 승희씨 코드
+
+let SetC = 0 ;
+let TowerC = 0 ;
+
+function InterFace(obj)
+	{
+	if (obj==="2")
+		{
+		if (SetC==0)
+			{
+			let setinfo = document.getElementById("setinfo") ; 
+			setinfo.style.zIndex = "10" ; 	
+			baseinfo.style.zIndex = "1" ; 	
+			towerinfo.style.zIndex = "1" ;
+			SetC++ ; 
+			}
+		else if (SetC==1)
+			{
+			let baseinfo = document.getElementById("baseinfo") ; 
+			setinfo.style.zIndex = "1" ; 	
+			baseinfo.style.zIndex = "10" ; 	
+			towerinfo.style.zIndex = "1" ; 
+			SetC-- ; 
+			}
+		}
+	else if (obj==="tower")
+		{
+		if (TowerC==0)
+			{
+			let towerinfo = document.getElementById("towerinfo") ; 
+			setinfo.style.zIndex = "1" ; 	
+			baseinfo.style.zIndex = "1" ; 	
+			towerinfo.style.zIndex = "10" ; 	
+			TowerC++ ; 
+			}
+		else if (TowerC==1)
+			{
+			setinfo.style.zIndex = "1" ; 	
+			baseinfo.style.zIndex = "10" ; 	
+			towerinfo.style.zIndex = "1" ; 
+			TowerC-- ; 
+			}
+		}
+	}
+
+function menuimage(obj)
+	{
+	let x = obj.alt ; 
+	if (x==="0")
+		{
+		let play = document.getElementById("play") ; 
+		play.style.visibility = "visible" ; 
+		obj.style.visibility = "hidden" ; 
+		StopBtn() ; 
+		}
+	else if (x==="1")
+		{
+		let pause = document.getElementById("pause") ; 
+		pause.style.visibility = "visible" ; 
+		obj.style.visibility = "hidden" ; 
+		StartBtn() ; 
+		}
+	else if (x==="2")
+		{ 
+		InterFace(obj.alt) ; 
+		}
+	}
+
+function bookDU(obj)
+	{
+	if (obj.id === "bookup")
+		{
+		let book = document.getElementById("book") ;
+		book.style.visibility = "visible" ;
+		}
+
+	else if (obj.id === "bookcancel")
+		{
+		let book = document.getElementById("book") ;
+		book.style.visibility = "hidden" ;
+
+		let booksC_A = document.getElementById("booksC_A") ;
+		booksC_A.style.display = "none" ;
+		}
+	}
+
+let TimeCount = 30 ;
+let Time = TimeCount ;
+let T ;
+let R = 0 ;
+let S = 0 ;
+
+function exitBtn()
+	{
+	SetC = 1 ;
+	InterFace("2")
+
+	let intScreen = document.getElementById("intScreen") ;
+	intScreen.style.display = "inline-block" ;
+
+	let MainScreen = document.getElementById("MainScreen") ;
+	MainScreen.style.display = "none" ;
+
+	clearInterval(T) ;
+
+	Time = TimeCount ;
+
+	Effect() ;
+	}
+
+
+
+function Timer(obj)
+	{
+	T = setInterval(function ()
+		{
+		if (obj.name == "")
+			{
+			if (Time >= 10)
+				{
+				if (S == 1)
+					{
+					let Skip = document.getElementById("noskip") ;
+					Skip.disabled = false ;
+					document.querySelector('#noskip').setAttribute("id", "skip");
+					S = 0 ;
+					}
+				let timer = document.getElementById("timer") ;
+				timer.innerHTML = "00:" + Time ;
+				Time-- ;
+				}
+			else if (Time < 10 && Time > -1)
+				{
+				let timer = document.getElementById("timer") ;
+				timer.innerHTML = "00:0" + Time ;
+				Time-- ;
+				}
+			else if (Time == -1)
+				{
+				document.querySelector('#skip').setAttribute("id", "noskip");
+				S = 1 ;
+
+				let round = document.getElementById("round") ;
+				R++ ;
+				round.innerHTML = "ROUND - " + R ;
+				clearInterval(T) ;
+				Time = TimeCount ;
+
+				}
+			}
+		},1000) ;
+	}
+
+function TimerSkip()
+	{
+	console.log(Time) ;
+	clearInterval(T) ;
+	Time = 3 ;
+	Timer(this) ;
+
+	let Skip = document.getElementById("skip") ;
+	Skip.disabled = true ;
+	}
+
+function StopBtn()
+	{
+	let baseinfo = document.getElementById("baseinfo") ;
+	baseinfo.innerHTML = "일 시 정 지" ;
+	clearInterval(T) ;
+	console.log("게임이 멈춥니다.") ;
+	}
+
+function StartBtn()
+	{
+	let baseinfo = document.getElementById("baseinfo") ;
+	baseinfo.innerHTML = "O O O O" ;
+	Timer(this) ;
+	console.log("게임이 다시 시작합니다.") ;
+	}
+
+function GameOver()
+	{
+	let GOS = document.getElementById("GameOutScreen") ;
+	GOS.style.display = "inline-block" ;
+
+	let GOS_C = 0 ;
+
+	let GOS_A = setInterval(function()
+		{
+		if (GOS_C === 0)
+			{
+			GOS_C++ ;
+
+			let ND = document.createElement("div")
+			ND.setAttribute("class", "GOS")
+
+			ND.style.display = "inline-block" ;
+			ND.style.position = "absolute" ;
+			ND.style.left = "0px" ;
+			ND.style.top = "0px" ;
+
+			ND.style.width = "1400px" ;
+			ND.style.height = "800px" ;
+
+			ND.style.backgroundColor = "black" ;
+
+			document.querySelector("#GameOutScreen").append(ND);
+			}
+		else if (GOS_C === 1)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[0].remove() ;
+
+			GOS_C++ ;
+			}
+		else if (GOS_C == 2)
+			{
+			GOS_C++ ;
+
+			let ND = document.createElement("div")
+			ND.setAttribute("class", "GOS")
+
+			ND.style.display = "inline-block" ;
+			ND.style.position = "absolute" ;
+			ND.style.left = "0px" ;
+			ND.style.top = "0px" ;
+
+			ND.style.width = "1400px" ;
+			ND.style.height = "800px" ;
+
+			ND.style.backgroundColor = "black" ;
+
+			document.querySelector("#GameOutScreen").append(ND);
+			}
+		else if (GOS_C === 3)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[0].remove() ;
+
+			GOS_C++ ;
+			}
+		else if (GOS_C == 4)
+			{
+			GOS_C++ ;
+
+			let ND = document.createElement("div")
+			ND.setAttribute("class", "GOS")
+
+			ND.style.display = "inline-block" ;
+			ND.style.position = "absolute" ;
+			ND.style.left = "0px" ;
+			ND.style.top = "0px" ;
+
+			ND.style.width = "1400px" ;
+			ND.style.height = "800px" ;
+
+			ND.style.backgroundColor = "black" ;
+
+			document.querySelector("#GameOutScreen").append(ND);
+			}
+		else if (GOS_C === 5)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[0].remove() ;
+
+			GOS_C++ ;
+			}
+		else if (GOS_C == 6)
+			{
+			GOS_C++ ;
+
+			let ND = document.createElement("div")
+			ND.setAttribute("class", "GOS")
+
+			ND.style.display = "inline-block" ;
+			ND.style.position = "absolute" ;
+			ND.style.left = "0px" ;
+			ND.style.top = "0px" ;
+
+			ND.style.width = "1400px" ;
+			ND.style.height = "800px" ;
+
+			ND.style.backgroundColor = "black" ;
+
+			document.querySelector("#GameOutScreen").append(ND);
+			}
+		else if (GOS_C == 7)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[0].remove() ;
+
+			GOS_C++ ;
+
+			let ND = document.createElement("div")
+			ND.setAttribute("class", "GOS")
+
+			ND.style.display = "inline-block" ;
+			ND.style.position = "absolute" ;
+			ND.style.left = "0px" ;
+			ND.style.top = "0px" ;
+
+			ND.style.width = "1400px" ;
+			ND.style.height = "800px" ;
+
+			ND.style.backgroundColor = "black" ;
+			ND.style.color = "white" ;
+			ND.style.fontSize = "80px" ;
+
+			ND.innerHTML = "G" ;
+
+			document.querySelector("#GameOutScreen").append(ND);
+			}
+		else if (GOS_C == 8)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[0].remove() ;
+
+			GOS_C++ ;
+
+			let ND = document.createElement("div")
+			ND.setAttribute("class", "GOS")
+
+			ND.style.display = "inline-block" ;
+			ND.style.position = "absolute" ;
+			ND.style.left = "0px" ;
+			ND.style.top = "0px" ;
+
+			ND.style.width = "1400px" ;
+			ND.style.height = "800px" ;
+
+			ND.style.backgroundColor = "black" ;
+			ND.style.color = "white" ;
+			ND.style.fontSize = "80px" ;
+
+			ND.innerHTML = "GA" ;
+
+			document.querySelector("#GameOutScreen").append(ND);
+			}
+		else if (GOS_C == 9)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[0].remove() ;
+
+			GOS_C++ ;
+
+			let ND = document.createElement("div")
+			ND.setAttribute("class", "GOS")
+
+			ND.style.display = "inline-block" ;
+			ND.style.position = "absolute" ;
+			ND.style.left = "0px" ;
+			ND.style.top = "0px" ;
+
+			ND.style.width = "1400px" ;
+			ND.style.height = "800px" ;
+
+			ND.style.backgroundColor = "black" ;
+			ND.style.color = "white" ;
+			ND.style.fontSize = "80px" ;
+
+			ND.innerHTML = "GAM" ;
+
+			document.querySelector("#GameOutScreen").append(ND);
+			}
+		else if (GOS_C == 10)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[0].remove() ;
+
+			GOS_C++ ;
+
+			let ND = document.createElement("div")
+			ND.setAttribute("class", "GOS")
+
+			ND.style.display = "inline-block" ;
+			ND.style.position = "absolute" ;
+			ND.style.left = "0px" ;
+			ND.style.top = "0px" ;
+
+			ND.style.width = "1400px" ;
+			ND.style.height = "800px" ;
+
+			ND.style.backgroundColor = "black" ;
+			ND.style.color = "white" ;
+			ND.style.fontSize = "80px" ;
+
+			ND.innerHTML = "GAME" ;
+
+			document.querySelector("#GameOutScreen").append(ND);
+			}
+		else if (GOS_C == 11)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[0].remove() ;
+
+			GOS_C++ ;
+
+			let ND = document.createElement("div")
+			ND.setAttribute("class", "GOS")
+
+			ND.style.display = "inline-block" ;
+			ND.style.position = "absolute" ;
+			ND.style.left = "0px" ;
+			ND.style.top = "0px" ;
+
+			ND.style.width = "1400px" ;
+			ND.style.height = "800px" ;
+
+			ND.style.backgroundColor = "black" ;
+			ND.style.color = "white" ;
+			ND.style.fontSize = "80px" ;
+
+			ND.innerHTML = "GAME " ;
+
+			document.querySelector("#GameOutScreen").append(ND);
+			}
+		else if (GOS_C == 12)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[0].remove() ;
+
+			GOS_C++ ;
+
+			let ND = document.createElement("div")
+			ND.setAttribute("class", "GOS")
+
+			ND.style.display = "inline-block" ;
+			ND.style.position = "absolute" ;
+			ND.style.left = "0px" ;
+			ND.style.top = "0px" ;
+
+			ND.style.width = "1400px" ;
+			ND.style.height = "800px" ;
+
+			ND.style.backgroundColor = "black" ;
+			ND.style.color = "white" ;
+			ND.style.fontSize = "80px" ;
+
+			ND.innerHTML = "GAME O" ;
+
+			document.querySelector("#GameOutScreen").append(ND);
+			}
+		else if (GOS_C == 13)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[0].remove() ;
+
+			GOS_C++ ;
+
+			let ND = document.createElement("div")
+			ND.setAttribute("class", "GOS")
+
+			ND.style.display = "inline-block" ;
+			ND.style.position = "absolute" ;
+			ND.style.left = "0px" ;
+			ND.style.top = "0px" ;
+
+			ND.style.width = "1400px" ;
+			ND.style.height = "800px" ;
+
+			ND.style.backgroundColor = "black" ;
+			ND.style.color = "white" ;
+			ND.style.fontSize = "80px" ;
+
+			ND.innerHTML = "GAME OV" ;
+
+			document.querySelector("#GameOutScreen").append(ND);
+			}
+		else if (GOS_C == 14)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[0].remove() ;
+
+			GOS_C++ ;
+
+			let ND = document.createElement("div")
+			ND.setAttribute("class", "GOS")
+
+			ND.style.display = "inline-block" ;
+			ND.style.position = "absolute" ;
+			ND.style.left = "0px" ;
+			ND.style.top = "0px" ;
+
+			ND.style.width = "1400px" ;
+			ND.style.height = "800px" ;
+
+			ND.style.backgroundColor = "black" ;
+			ND.style.color = "white" ;
+			ND.style.fontSize = "80px" ;
+
+			ND.innerHTML = "GAME OVE" ;
+
+			document.querySelector("#GameOutScreen").append(ND);
+			}
+		else if (GOS_C == 15)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[0].remove() ;
+
+			GOS_C++ ;
+
+			let ND = document.createElement("div")
+			ND.setAttribute("class", "GOS")
+
+			ND.style.display = "inline-block" ;
+			ND.style.position = "absolute" ;
+			ND.style.left = "0px" ;
+			ND.style.top = "0px" ;
+
+			ND.style.width = "1400px" ;
+			ND.style.height = "800px" ;
+
+			ND.style.backgroundColor = "black" ;
+			ND.style.color = "white" ;
+			ND.style.fontSize = "80px" ;
+
+			ND.innerHTML = "GAME OVER" ;
+
+			document.querySelector("#GameOutScreen").append(ND);
+			}
+		else if (GOS_C == 16)
+			{
+			GOS_C++ ;
+
+			let N = document.createElement("div")
+			N.setAttribute("class", "GOS")
+
+			N.style.display = "inline-block" ;
+			N.style.position = "absolute" ;
+			N.style.left = "625px" ;
+			N.style.top = "100px" ;
+			N.style.zIndex = "1000" ;
+
+			N.style.width = "100px" ;
+			N.style.height = "50px" ;
+
+			N.style.backgroundColor = "black" ;
+			N.style.color = "white" ;
+			N.style.fontSize = "50px" ;
+
+			N.addEventListener("mouseover", function(e)
+				{
+				N.style.color = "red" ;
+				N.style.textDecoration = "underline" ;
+				N.style.cursor = "pointer" ;
+				}) ;
+
+			N.addEventListener("mouseout", function(e)
+				{
+				N.style.color = "white" ;
+				N.style.textDecoration = "none" ;
+				}) ;
+
+			N.addEventListener("mousedown", function(e)
+				{
+				N.style.textDecoration = "none" ;
+				}) ;
+			N.addEventListener("mouseup", function(e)
+				{
+				N.style.textDecoration = "underline" ;
+				}) ;
+
+			N.innerHTML = "C" ;
+
+			document.querySelector("#GameOutScreen").append(N);
+			}
+		else if (GOS_C == 17)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[1].remove() ;
+
+			GOS_C++ ;
+
+			let N = document.createElement("div")
+			N.setAttribute("class", "GOS")
+
+			N.style.display = "inline-block" ;
+			N.style.position = "absolute" ;
+			N.style.left = "625px" ;
+			N.style.top = "100px" ;
+			N.style.zIndex = "1000" ;
+
+			N.style.width = "100px" ;
+			N.style.height = "50px" ;
+
+			N.style.backgroundColor = "black" ;
+			N.style.color = "white" ;
+			N.style.fontSize = "50px" ;
+
+			N.addEventListener("mouseover", function(e)
+				{
+				N.style.color = "red" ;
+				N.style.textDecoration = "underline" ;
+				N.style.cursor = "pointer" ;
+				}) ;
+
+			N.addEventListener("mouseout", function(e)
+				{
+				N.style.color = "white" ;
+				N.style.textDecoration = "none" ;
+				}) ;
+
+			N.addEventListener("mousedown", function(e)
+				{
+				N.style.textDecoration = "none" ;
+				}) ;
+			N.addEventListener("mouseup", function(e)
+				{
+				N.style.textDecoration = "underline" ;
+				}) ;
+
+			N.innerHTML = "CL" ;
+
+			document.querySelector("#GameOutScreen").append(N);
+			}
+		else if (GOS_C == 18)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[1].remove() ;
+
+			GOS_C++ ;
+
+			let N = document.createElement("div")
+			N.setAttribute("class", "GOS")
+
+			N.style.display = "inline-block" ;
+			N.style.position = "absolute" ;
+			N.style.left = "625px" ;
+			N.style.top = "100px" ;
+			N.style.zIndex = "1000" ;
+
+			N.style.width = "100px" ;
+			N.style.height = "50px" ;
+
+			N.style.backgroundColor = "black" ;
+			N.style.color = "white" ;
+			N.style.fontSize = "50px" ;
+
+			N.addEventListener("mouseover", function(e)
+				{
+				N.style.color = "red" ;
+				N.style.textDecoration = "underline" ;
+				N.style.cursor = "pointer" ;
+				}) ;
+
+			N.addEventListener("mouseout", function(e)
+				{
+				N.style.color = "white" ;
+				N.style.textDecoration = "none" ;
+				}) ;
+
+			N.addEventListener("mousedown", function(e)
+				{
+				N.style.textDecoration = "none" ;
+				}) ;
+			N.addEventListener("mouseup", function(e)
+				{
+				N.style.textDecoration = "underline" ;
+				}) ;
+
+			N.innerHTML = "CLI" ;
+
+			document.querySelector("#GameOutScreen").append(N);
+			}
+		else if (GOS_C == 19)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[1].remove() ;
+
+			GOS_C++ ;
+
+			let N = document.createElement("div")
+			N.setAttribute("class", "GOS")
+
+			N.style.display = "inline-block" ;
+			N.style.position = "absolute" ;
+			N.style.left = "625px" ;
+			N.style.top = "100px" ;
+			N.style.zIndex = "1000" ;
+
+			N.style.width = "100px" ;
+			N.style.height = "50px" ;
+
+			N.style.backgroundColor = "black" ;
+			N.style.color = "white" ;
+			N.style.fontSize = "50px" ;
+
+			N.addEventListener("mouseover", function(e)
+				{
+				N.style.color = "red" ;
+				N.style.textDecoration = "underline" ;
+				N.style.cursor = "pointer" ;
+				}) ;
+
+			N.addEventListener("mouseout", function(e)
+				{
+				N.style.color = "white" ;
+				N.style.textDecoration = "none" ;
+				}) ;
+
+			N.addEventListener("mousedown", function(e)
+				{
+				N.style.textDecoration = "none" ;
+				}) ;
+			N.addEventListener("mouseup", function(e)
+				{
+				N.style.textDecoration = "underline" ;
+				}) ;
+
+			N.innerHTML = "CLIC" ;
+
+			document.querySelector("#GameOutScreen").append(N);
+			}
+		else if (GOS_C == 20)
+			{
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[1].remove() ;
+
+			GOS_C++ ;
+
+			let N = document.createElement("div")
+			N.setAttribute("class", "GOS")
+
+			N.style.display = "inline-block" ;
+			N.style.position = "absolute" ;
+			N.style.left = "625px" ;
+			N.style.top = "100px" ;
+			N.style.zIndex = "1000" ;
+
+			N.style.width = "100px" ;
+			N.style.height = "50px" ;
+
+			N.style.backgroundColor = "black" ;
+			N.style.color = "white" ;
+			N.style.fontSize = "50px" ;
+
+			N.addEventListener("mouseover", function(e)
+				{
+				N.style.color = "red" ;
+				N.style.textDecoration = "underline" ;
+				N.style.cursor = "pointer" ;
+				}) ;
+
+			N.addEventListener("mouseout", function(e)
+				{
+				N.style.color = "white" ;
+				N.style.textDecoration = "none" ;
+				}) ;
+
+			N.addEventListener("mousedown", function(e)
+				{
+				N.style.textDecoration = "none" ;
+				let GOS = document.getElementById("GameOutScreen") ;
+				GOS.style.display = "none" ;
+
+				clearInterval(GOS_A) ;
+				console.log(GOS_C) ;
+				GOS_C = 0 ;
+
+				let Main = document.getElementById("MainScreen") ;
+				Main.style.display = "none" ;
+
+				let int = document.getElementById("intScreen") ;
+				int.style.display = "inline-block" ;
+
+				Opening() ;
+				}) ;
+			N.addEventListener("mouseup", function(e)
+				{
+				N.style.textDecoration = "underline" ;
+				}) ;
+
+			N.innerHTML = "CLICK" ;
+
+			document.querySelector("#GameOutScreen").append(N);
+			}
+		else if ((GOS_C%2) == 1)
+			{
+			GOS_C++ ;
+
+			let ND = document.createElement("div")
+			ND.setAttribute("class", "GOS")
+
+			ND.style.display = "inline-block" ;
+			ND.style.position = "absolute" ;
+			ND.style.left = "790px" ;
+			ND.style.top = "478px" ;
+
+			ND.style.width = "15px" ;
+			ND.style.height = "50px" ;
+
+			ND.style.backgroundColor = "white" ;
+			ND.style.fontSize = "50px" ;
+
+			document.querySelector("#GameOutScreen").append(ND);
+
+			}
+		else if ((GOS_C%2) == 0)
+			{
+			GOS_C++ ;
+			let NDD = document.getElementsByClassName("GOS") ;
+			NDD[NDD.length - 1].remove() ;
+			}
+		},500) ;
+	}
+
+var id = null;
+function Ending()
+	{
+	var MainScreen = document.getElementById("MainScreen");
+	MainScreen.style.display = "none";
+
+	var ending = document.getElementById("ending");
+	ending.style.display = "Block";
+
+	var elem = document.getElementById("endingMove");
+	var pos = -800;
+	clearInterval(id);
+	id = setInterval(frame, 10);
+	function frame()
+		{
+		if (pos == 2150)
+			{
+			clearInterval(id);
+			}
+		else
+			{
+			pos++;
+			elem.style.top = -pos + 'px';
+			}
+		}
+	}
+
+function endClose()
+	{
+	let ending = document.getElementById("ending");
+	ending.style.display = "none";
+	Opening();
+	let int = document.getElementById("intScreen") ;
+	int.style.display = "inline-block" ;
+	}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>
+123 class추가
+</title>
+
+<style>
+.base{
+	color:red;
+	}
+
+.clicked
+{
+color:blue;
+}
+
+.dbc1
+{
+color:green;
+}
+
+
+</style>
+</head>
+<body>
+
+<h3>CSS 포지션 속성</h3>
+<hr>
+<h1 id ="title" class="base"> 클래스 추가 삭제 토글 </h1>
+<script>
+
+	var h = document.getElementById("title");
+	//h.addEventListener("click",changeClass)
+	
+	function changeClass(){
+	h.classList.add("clicked");
+	}
+
+
+	h.addEventListener("dblclick",changeClass2)
+	
+	function changeClass2(){
+	h.classList.toggle("dbc1");
+	}
+
+
+</script>
+</body>
+</html>
+
+
+
+
+clicked 클래스명 찾기
+
+객체명 .classList.add (추가할 클래스
+객체명.classList.remove(삭제할 클래스명)
+객체명.classList.toggle(추가하고 삭제하고 반복하려는 클래스명)
+객체명.classList>contains(클래스명) true false 로 리턴온다.
+h.classList.contains("clicked") ==true false 
+객체명.classList.replace(기존클래스명,바꿀클래스명);
+
+

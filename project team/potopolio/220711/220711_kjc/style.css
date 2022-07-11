@@ -1,0 +1,336 @@
+/* 폰트설정 */
+@font-face {
+    font-family: 'MICEMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEMyungjo.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+* {
+    font-family: 'MICEMyungjo';
+}
+
+/* 기본설정 */
+body {
+    margin: 0;
+}
+
+section {
+    position: relative;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+}
+
+/* 상단 네비게이션 설정들 */
+.level2 li{
+    margin-left: 3%;
+}
+.level3 li {
+    margin-left: 3%;
+}
+.level1 {
+    margin-left: 5%;
+    
+    padding: 0;
+    list-style: none;
+}
+
+
+/* 1단바 설정 */
+#headNav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding-top: 30px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+/* 밑줄긋기(li밑줄) */
+#headNav li::after {
+    position: relative;
+    content:"";
+    display: block;
+    border-bottom: 2px solid rgb(120, 120, 120);
+    transition: width 300ms ease-out;
+    left: auto;
+    right: 0;
+    width: 0;
+    top: 3px;
+}
+/* 밑줄호버(li밑줄) */
+#headNav li:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+/* 전체 밑줄(header밑줄) */
+#headNav::after {
+    position: absolute;
+    content:"";
+    display: block;
+    border-bottom: 1px solid rgb(55, 55, 55);
+    transition: width 300ms ease-out;
+    left: auto;
+    top: 80px;
+    right: 0;
+    width: 0;
+}
+#headNav:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+/* 2단바 설정값 */
+ul li:hover .level2 {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: small;
+}
+/* 1단바 검정 배경 */
+#headNav:hover{
+    background-color: black;
+    color: white;
+    
+}
+/* 3단바 설정값 */
+ul li .level2 li:hover .level3 {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0,0.6);
+    opacity: 50;
+    color: white;
+ }
+
+ /* 좌측 로고 */
+ #logo {
+    position:fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    z-index: 5;
+ }
+ /* 이미지 */
+ #logo img {
+    position: relative;
+    top: 20px;
+    left: 55px;
+    height: 40px;
+ }
+ /* CJ */
+ #logo_1 {
+    position: relative;
+    top: 5px;
+    left: 60px;
+    font-size: larger;
+ }
+ /* 문화재단 */
+ #logo_2 {
+    position: relative;
+    top: 5px;
+    left: 50px;
+    font-size: larger;
+ }
+ #headNav:hover + #logo {
+    color: white;
+ }
+
+/* 우측 개인정보 */
+#myInfo {
+    position:fixed;
+    top: 0;
+    right: 0;
+    padding-top: 30px;
+    padding-right: 60px;;
+    transition: all 0.5s;
+    z-index: 5;
+}
+#headNav:hover ~ #myInfo {
+    filter: invert(100%);
+ }
+.info {
+    position: relative;
+    height: 20px;
+    margin-left: 10px;
+}
+.movingLine {
+    margin: 0;
+    padding: 0;
+}
+/* 모바일에서만 보임 */
+.mobile_icon1 {
+    display: none;
+    
+}
+.mobile_icon2 {
+    display: inline-block;
+}
+/* 토글클래스토글클래스토글클래스토글클래스토글클래스토글클래스토글클래스토글클래스토글클래스토글클래스 */
+.none {
+    display: none;
+}
+.inline_block {
+    display: inline-block;
+}
+.flex {
+    display: flex;
+}
+
+/* 모바일 목차 섹션 */
+#mobileNav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    top: 80px;
+    width: 100%;
+    transition: all 0.5s;
+    overflow: hidden;
+    /* text-align: center; */
+}
+#mobileNav:nth-child(1){
+    border-top: 1px solid rgba(70, 70, 70,0.2);
+}
+.m_level1 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: large;
+    background-color: white;
+    border-bottom: 1px solid rgb(70, 70, 70,0.2);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: all  0.5s ease;
+
+}
+.pl1 {
+    position: absolute;
+    right: 60px;
+    top: 35px;
+    transition: all ease 1s;
+}
+.pl2 {
+    position: absolute;
+    right: 60px;
+    top: 35px;
+    transform: rotate(90deg);
+    transition: all ease 1s;
+}
+
+.m_level2 {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+    height: 0px;
+    top: 35px;
+    transition: all ease 1s;
+}
+.m_level2 > li {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: large;
+    border-bottom: 1px solid rgb(70, 70, 70,0.5);
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(184, 184, 184);
+}
+.m_level3 {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+    height: 0px;
+    top: 35px;
+    transition: all ease 1s;
+}
+.m_level3 > li {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: large;
+    border-bottom: 1px solid rgb(70, 70, 70,0.5);
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(124, 124, 124);
+}
+
+/* 0708 특이사항.
+section과의 관계를 고려하여
+헤더부분에 z-index 속성 5 설정
+#headNav, #logo, #myInfo */
+
+/* 미디어 쿼리 960px 모니터 -> 모바일 */
+@media screen and (max-width:960px){
+    #headNav {
+        display: none;
+    }
+    .mobile_icon1 {
+        display : inline-block;
+    }
+}
+/* 960px - 1440px 모바일 -> 모니터 */
+/* @media screen and (min-width:960px) and (max-width:1440px){
+    #headNav {
+        display: flex;
+    }
+    .mobile_icon1 {
+        display : none;
+    }
+    #mobile1 {
+        display: none;
+    }
+    #screen1 {
+        display: block;
+    }
+    .screen_icon1 {
+        display: inline-block;
+    }
+    .mobile_icon2 {
+        display: none;
+    }
+} */
+
+/* 준철 슬라이드 */
+#program_bg {
+    position: relative;
+    display: block;
+    background-color: brown;
+}

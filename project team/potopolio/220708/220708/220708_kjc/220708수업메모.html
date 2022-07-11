@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>타이틀</title>
+<style>
+.base {
+	color:red;
+}
+.clicked {
+	color:blue;
+}
+</style>
+</head>
+<body>
+
+	<h1 id="title" class="base">클래스 추가 삭제 토글</h1>
+	<script>
+		let h=document.getElementById("title");
+		h.addEventListener("click",changeClass);
+		function changeClass () {
+			h.classList.toggle("clicked");
+		}
+	</script> 
+<pre>
+객체명.classList.add("className")
+객체명.classList.remove("className")
+객체명.classList.toggle("className")
+객체명.classList.contains("className")
+객체명.classList.replace("className1", "className2")
+</pre>
+</body></html>
