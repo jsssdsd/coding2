@@ -4,18 +4,16 @@ let b1=document.getElementById("t1bt1")
 let b2=document.getElementById("t1bt2")
 
 
-
-
 let jdiv1= document.getElementById("jd1")
 let jdiv2= document.getElementById("jd2")
 
 
 b1.addEventListener('click',s1divf);
 
-// console.log(jdiv1.display)
+
 
 function s1divf(e)  {
-    // console.log(jdiv1.display)
+    
     jdiv1.style.display= "inline-block";
     jdiv2.style.display= "none";
     b1.style.display= "inline-block";
@@ -41,36 +39,8 @@ let jp2d22 =document.getElementById("p2d22")
 let jp2d33= document.getElementById("p2d33")
 
 
-
-
-
-
-// p2b2=document.getElementById("t1bt5").onclick= function (e){
-
-//     for( let i=0; i<jp2d33.children.length; i++)
-//     {
-//         setInterval( Mleft() ,16)
-//     }
-
-//  }
-
-// p2b1=document.getElementById("t1bt3").onclick= function(e) {
-    
-//     for( let i=0; i<jp2d33.children.length; i++)
-    
-//     {
-//         jp2d22.children[i].left-= jp2d22.children[i].clientWidth ;
-//         console.log(jdiv2)
-//         // setInterval( Mleft() ,16)
-//     }
-
-// }
-
-
-
-
 let p2b1=document.getElementById("t1bt3")
-// p2b1.addEventListener('click', Mleft);
+
 
 let p2b2=document.getElementById("t1bt5")
 // p2b2.addEventListener('click', Mleft);
@@ -153,7 +123,7 @@ let currentIdx = 0;
 var slideCount = slideImg.length;
 var prev = document.getElementById("prev1");
 var next = document.getElementById("next1");
-slideWidth = 1000;
+slideWidth = 500;
 slideMargin = 100;
 
 makeClone();
