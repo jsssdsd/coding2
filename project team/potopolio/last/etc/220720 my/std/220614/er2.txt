@@ -1,0 +1,3 @@
+
+var rx = -(mouseX / target.width() * target[0].naturalWidth - magnifier.width() / 2);
+var ry = -(mouseY / target.height() * target[0].naturalHeight - magnifier.height() / 2);

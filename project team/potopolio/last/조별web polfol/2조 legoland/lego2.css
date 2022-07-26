@@ -1,0 +1,63 @@
+/* 메인메뉴 */
+.menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    flex-direction: row-reverse;
+    background-color: yellow;
+  }
+  .menu li {
+    list-style: none;  
+  }
+  .menu li a {
+    padding: 1em;  
+    display: block;
+    color: black;
+    text-decoration: none;  
+  }
+  .menu li :hover {
+    color: #336699;
+    text-decoration: underline;
+  }
+  .mega-menu {
+    display: flex;    
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #eee; 
+    opacity: 0;  
+    visibility: hidden;  
+  }
+  .menu li:hover > .mega-menu {
+    opacity: 1;
+    overflow: visible;
+    visibility: visible;
+  }
+  .mega-menu .col {
+    padding: 1em;
+  }
+  .mega-menu .col ul {
+    margin: 0;
+    padding: 0;
+  }
+  .mega-menu .col li {
+   margin-bottom: 0.75em;
+  }
+  .mega-menu .col h4 {
+    text-transform: uppercase; 
+    margin: 0 0 1em 0;
+  }
+  .mega-menu .col a {
+    padding: 0;
+  }
+  .mega-menu .col img {
+    display: block;
+  }
+  .mega-menu .col p {
+    margin-bottom: 0;
+  }
+  .mega-menu .col strong {
+    text-transform: uppercase; 
+  }

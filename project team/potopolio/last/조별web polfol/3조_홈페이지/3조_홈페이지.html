@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>대전드림아레나</title>
+<style>
+/*기본 틀*/
+@font-face{
+    font-family:'NEXON';
+    src:url('NEXON Lv2 Gothic.woff') format('woff');
+}
+
+*{
+margin:0;
+padding:0;
+outline: 0 !important;
+box-sizing: border-box;
+font-family:'NEXON',sans-serif;
+transition: 1s;
+}
+
+html{
+  background-color: rgb(0,2,10);
+}
+
+ul, li{
+list-style: none;
+}
+
+a{
+text-decoration:none;
+}
+</style>
+
+<style>
+/*--------------------------------------------------------------------내비바(default)---------------------------------------------------------*/
+@media (max-width: 992px){
+#myNav_m{
+position: fixed;
+width: 100%;
+height:84px;
+z-index: 1000000;
+background: #00020a;
+border-bottom:1px solid #464646;
+}
+
+#mainLogo_m{
+position:absolute;
+padding:20px 24px;
+}
+
+.nav__open{
+position:absolute;
+top:30px;
+right:24px;
+transition:0.3s;
+}
+
+.nav__open path:hover{
+fill:#0582f6;
+transition:0.3s;
+}
+
+.nav__close{
+position:relative;
+height:70px;
+}
+
+.menu_m>a{
+height:50px;
+border-bottom:1px solid #464646;
+text-align: center;
+line-height: 34px;
+}
+
+.nav__close a.closebtn{
+position: absolute;
+top:-5px;
+left:10px;
+}
+
+.overlay .closebtn:hover{
+background-color: inherit;
+cursor:default;
+transition:0.3s;
+}
+
+.sns{
+position:absolute;
+left:40px;
+height:50px;
+line-height: 34px;
+}
+
+.sns a:hover, .sns path:hover{
+fill:#00ef58;
+transition:0.3s;
+background-color: none;
+}
+
+.sns svg, .sns path{
+text-align: center;
+vertical-align: middle;
+box-sizing: border-box;
+}
+
+.sns a{
+position:relative;
+float:left;
+}
+
+.overlay {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+right: 0;
+background-color: rgba(0,0,0,0.9);
+overflow-x: hidden;
+border:1px solid #464646;
+}
+
+.overlay-content {
+background-color: rgb(0,0,0);
+position: relative;
+width: 100%;
+text-align: center;
+margin:auto;
+}
+
+.overlay a {
+padding: 8px;
+text-decoration: none;
+font-size: 16px;
+color:#e9e9e9;
+display: block;
+transition: 0.3s;
+}
+
+.overlay a:hover {
+color:#00ef58;
+transition: 0.3s;
+}
+
+.overlay .closebtn {
+position: absolute;
+top: 20px;
+left: 45px;
+font-size: 60px;
+}
+
+.dropdown-container{
+display: none;
+}
+
+.dropdown-container a{
+text-align: left;
+border:none;
+height:50px;
+vertical-align: middle;
+box-sizing: border-box;
+padding:8px 30px 8px 30px;
+line-height: 34px;
+margin:auto;
+transition:0.3s;
+}
+
+.menu_m:hover{
+background-color: rgb(3,11,37);
+transition: 0.3s;
+}
+
+#myNav{display: none;}
+} 
+
+/*내비바(pc)*/
+@media (min-width: 993px){
+#myNav{
+position: fixed;
+width: 100%;
+height:100px;
+z-index: 1000000;
+background: #00020a;
+}
+
+#menuBar{
+height:100px;
+border-bottom:1px solid #464646;
+margin-left:50px;
+margin-right:50px;
+}
+
+#menuBar:hover .dropdown-container_pc{
+   display: block;
+}
+
+#mainLogo{
+position:absolute;
+padding-top:24px;
+}
+
+.sns{
+height:50px;
+}
+
+.sns a:hover, .sns path:hover{
+fill:#00ef58;
+transition:0.3s;
+background-color: none;
+}
+
+.sns svg, .sns path{
+text-align: center;
+vertical-align: middle;
+box-sizing: border-box;
+}
+
+li.menu{
+position:relative;
+float:left;
+margin: 0px 20px 0px 20px;
+padding: 0px 5px 0px 5px;
+}
+
+#navMenu{
+position: absolute;
+right:50px;
+top:40px;
+}
+
+li.menu a{
+color:#e9e9e9;
+font-size:16px;
+}
+
+li.menu a:hover{
+color:#00ef58;
+transition:0.3s;
+}
+
+.dropdown-container_pc{
+width: 100%;
+position:relative;
+top:100px;
+border-bottom:1px solid #464646;
+background-color: rgba(0,2,10,0.9);
+height:200px;
+margin-right:-50px;
+display: none;
+}
+
+#dropdown_pc{
+position: absolute;
+right:175px;
+top:10px;
+}
+
+.dropdown-container_pc:hover+.dropdown-container_pc{
+display: block;
+}
+
+.dropdown-container_pc li{
+position:relative;
+float: left;
+text-align:center;
+line-height: 40px;
+}
+
+.dropdown-container_pc a{
+font-size:14px;
+color:#e9e9e9;
+}
+
+.dropdown-container_pc a:hover{
+color:#00ef58;
+transition:0.3s;
+}
+
+.sns svg:hover, .sns path:hover{
+fill:#00ef58;
+transition:0.3s;
+}
+
+#myNav_m{display:none;}
+}
+
+/*내비바(큰 모니터)*/
+@media (min-width: 1220px){
+li.menu a {font-size:20px;}
+.dropdown-container_pc a{font-size:17px;}
+#myNav_m{display:none;}
+}
+/*------------------------------------------------------------네비바 끝-----------------------------------------------------------------*/
+</style>
+
+<style>
+/*--------------------------------------------------------------윤성찬--------------------------------------------------------------------*/
+a:link { color:white; }
+a:visited { color:white; }
+a:hover { color:white; }
+a:active { color:white; }
+a{text-decoration:none}
+@media (max-width: 2000px) {
+	#inBodyMenuDiv{
+    padding-left: 10%;
+		margin:0;
+    width: 90%;
+		background:#000000;
+	}
+	#inBodyMenuList{
+		background:#000000;
+		padding:0px;
+	}
+	.inBodyMenu img{
+		padding:0px;
+		margin:0px;
+		height:50%;
+		position:relative;
+		top:30px;
+	}
+	.inBodyMenu{
+		background:#f0f0f0;
+		display:inline-block;
+		height:150px;
+		float:left;
+	}
+	.inBodyMenu span{
+		background:#000000;
+		color:white;
+		display:inline-block;
+		position:relative;
+		width:100%;
+		height:50%;
+		text-align:center;
+		line-height:50px;
+		padding:0px;
+		margin:0px;
+		float:left;
+	}
+	#inBodyMenu1{
+		width:20%;
+	}
+	#inBodyMenu2{
+		width:20%;
+	}
+	#inBodyMenu3{
+		width:20%;
+	}
+		#inBodyMenu4{
+		width:20%;
+	}
+	#inBodyMenu5{
+		width:20%;
+	}
+	#inBodyScheduleDiv{
+		display:inline-block;
+		width:100%;
+		background:url('https://dje.dicia.or.kr/images/main_row03_bg.png');
+	}
+	#schedule{
+		background:black; position:relative; display:block; height:300px;
+	}
+}	
+@media (max-width: 1219px) {
+	#inBodyMenuDiv{
+		margin:0;
+		background:#000000;
+	}
+	#inBodyMenuList{
+		background:#000000;
+		padding:0px;
+	}
+	.inBodyMenu img{
+		padding:0px;
+		margin:0px;
+		height:50%;
+		position:relative;
+		top:20px;
+	}
+	.inBodyMenu{
+		background:#f0f0f0;
+		display:inline-block;
+		height:150px;
+		float:left;
+	}
+	.inBodyMenu span{
+		background:#000000;
+		color:white;
+		display:inline-block;
+		position:relative;
+		width:100%;
+		height:50%;
+		text-align:center;
+		line-height:50px;
+		padding:0px;
+		margin:0px;
+		float:left;
+	}
+	#inBodyMenu1{
+		width:20%;
+	}
+	#inBodyMenu2{
+		width:20%;
+	}
+	#inBodyMenu3{
+		width:20%;
+	}
+		#inBodyMenu4{
+		width:20%;
+	}
+	#inBodyMenu5{
+		width:20%;
+	}
+	#inBodyScheduleDiv{
+		display:inline-block;
+		width:100%;
+		background:url('https://dje.dicia.or.kr/images/main_row03_bg.png');
+	}
+	#schedule{
+		background:black; position:relative; display:block; height:300px;
+	}
+}
+@media (max-width: 1000px) {
+  #inBodyMenuDiv {width:100%; padding: 0;}
+}
+@media (max-width: 767px) {
+	#inBodyMenuDiv{
+		margin:0;
+		background:#000000;
+		width:50%;
+	}
+	#inBodyMenuList{
+		background:#000000;
+		padding:0px;
+	}
+	.inBodyMenu img{
+		padding:0px;
+		margin:0px;
+		height:50%;
+		position:relative;
+		top:30px;
+	}
+	.inBodyMenu{
+		background:#f0f0f0;
+		display:inline-block;
+		height:150px;
+		float:left;
+	}
+	.inBodyMenu span{
+		background:#000000;
+		color:white;
+		display:inline-block;
+		position:relative;
+		width:100%;
+		height:50%;
+		text-align:center;
+		line-height:50px;
+		padding:0px;
+		margin:0px;
+		float:left;
+	}
+	#inBodyMenu1{
+		width:33.3%;
+	}
+	#inBodyMenu2{
+		width:33.3%;
+	}
+	#inBodyMenu3{
+		width:33.3%;
+	}
+		#inBodyMenu4{
+		width:50%;
+	}
+	#inBodyMenu5{
+		width:50%;
+	}
+	#inBodyScheduleDiv{
+		display:inline-block;
+		width:50%;
+		background:url('https://dje.dicia.or.kr/images/main_row03_bg.png');
+	}
+	#schedule{
+		background:black; position:relative; bottom:3px; display:block; height:300px;
+	}
+}
+.mySlides {
+	display: none;
+	justify-content:center;
+	align-items:center;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.pointPN {
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 14.5%;
+}
+.next {
+  right: 14.5%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.numberimg {
+  width: auto;
+  height: 900px;
+}
+
+#dotsum {
+  width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+<style>
+/*---------------------------------------------------------------정현식----------------------------------------------------------*/
+#blank {
+	width: 100%;
+	height: 100px;
+	display: block;
+}
+.playerVideo {
+  position: relative;
+  width: 95%;
+  margin-left: 2.5%;
+  z-index: 2;
+}
+#serobar {
+	width: 140px;
+	height: 425px;
+	position:fixed;
+	right: 24px;
+	top: 25%;
+	z-index: 1;
+}
+#serote {
+	width: 97.275%;
+	height: 99%;
+}
+#serobar, #serote {
+	border-radius: 15px;
+}
+.rowWrap {
+	display: block;
+}
+.rowWrapUl {
+	padding-top: 2px;
+	padding-left: 3px;
+}
+.rowWrapLi {
+	display: flex;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+.rowWrapDiv {
+	padding: 18px 3px 17px 3px;
+	border-radius: 6px;
+}
+.rowWrapA {
+	border-radius: 6px;
+	background-color: black;
+	border: 3px solid #efefef;
+	font-size: 15px;
+	color: white;
+	box-shadow: 0 3px 6px 0 rgb(0 0 0 / 45%);
+	text-shadow: 0 0 4px rgb(0 0 0 / 30%), 0 0 8px rgb(0 0 0 / 30%);
+	}
+#rapa1 {
+	
+	padding: 12px 17px;
+}
+#rapa2 {
+	
+	padding: 12px 24px;
+}
+#rapa3 {
+	
+	padding: 12px 24px;
+}
+#rapa4 {
+	
+	padding: 12px 18.5px;
+}
+#rapa5 {
+	
+	padding: 12px 24px;
+}
+.rowWrapA:hover {text-shadow: 10px 3px 1000px rgb(0 0 0 / 100%);}
+
+#topbottom {
+	display: none;
+	width: 80px;
+	height: 135px;
+	border-radius: 30px;
+	position: fixed;
+	bottom: 40px;
+	right: 70px;
+	z-index: 1;
+}
+#top, #bottom {
+	border-radius: 50em;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: 7.5px;
+}
+#top {top: 8px;}
+#bottom {bottom: 7px;}
+.toTB {
+	display: inline-block;
+	color: #fff;
+	width: 60px;
+	height: 60px;
+	transition: all 0.5s;
+}
+#top:hover, #bottom:hover {background-color: yellowgreen;}
+
+#toT {
+	background: url(https://cdn-icons-png.flaticon.com/128/7766/7766723.png);
+	background-size: cover;
+}
+#toB {
+	background: url(https://cdn-icons-png.flaticon.com/512/7766/7766720.png);
+	background-size: cover;
+}
+/* 화면 너비 0 ~ 1440px */
+@media (max-width: 1440px) {
+	#serobar {width: 120px;   right:20px;}
+	.rowWrapA {font-size: 15px;}
+	#rapa1 {padding: 12px 7px;}
+	#rapa2 {padding: 12px 13.5px;}
+	#rapa3 {padding: 12px 13.5px;}
+	#rapa4 {padding: 12px 7.5px;}
+	#rapa5 {padding: 12px 13.5px;}
+	#topbottom {width: 100px; height: 170px; right: 35px;} 
+  .toTB, #top, #bottom {width: 75px; height: 75px;}
+}
+/* 화면 너비 0 ~ 1000px */
+@media (max-width: 1000px) {
+	.playerVideo {
+    width: 100%;   
+    margin: 0;
+	padding: 0;
+  }
+	#serobar {display: none;}
+  .prev {left: 10px;}
+  .next {right: 10px;}
+  .numberimg {height: 500px;}
+	#dotsum {width: 100%;}
+  #topbottom {right: 5px;} 
+}
+@media (max-width: 767px) {
+	#blank{height: 84px;}
+}
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 480px) {
+	header {height: 300px;}
+}
+@media (max-height: 800px) {
+	#serobar {top: 12%}
+}
+@media (max-height: 650px) {
+	.playerVideo {width: 100%;}
+	#serobar {display: none;}
+}
+</style>
+
+<style>
+  /*푸터*/
+  footer{
+  text-align: center;
+  color:#47484e;
+  font-size: 16px;
+  padding-bottom:133px;
+  }
+  
+  #imgBg{
+  background-image:url("https://dje.dicia.or.kr/images/footer-bg-01.png");
+  height:101px; 
+  background-repeat:repeat-x;
+  }
+  
+  footer p{
+  display: inline-block;
+  margin-top:20px;
+  margin-bottom:40px;
+  font-size: 12px;
+  }
+  
+  .footerRow{
+  margin:0px 50px 0px 50px;
+  height:45px;
+  line-height: 40px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .footerRow img{
+  vertical-align: middle;
+  text-align: center;
+  margin:10px;
+  }
+  </style>
+
+</head>
+<body onscroll='scrollTB()'>
+
+<!--내비바(모바일)-->
+<nav id="myNav_m">
+    <div>
+        <!--로고-->
+        <div id="mainLogo_m">
+          <a href="index">
+              <img width="115px" height="43px" src="https://dje.dicia.or.kr/images/logo.png" alt="e-Sports">
+          </a>
+        </div>
+        
+        <!--메뉴 오픈-->
+        <span class="nav__open" style="cursor:default" onclick="openNav()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(233,233,233,0.9)"/>
+          </svg>
+        </span>
+  
+        <!--메뉴-->
+        <div id="menuNav_m" class="overlay">
+            <ul class="overlay-content"> 
+                <li class="nav__close">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
+                <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z" fill="rgb(233,233,233)"/>
+                </svg>
+                </a>
+                </li>
+
+                <li>
+                    <ul>
+                        <!--드림아레나-->
+                        <li class="menu_m">
+                        <a class="dropdown" href="#">드림아레나</a>
+                        <div class="dropdown-container">
+                        <a href="#">아레나 소개</a>
+                        <a href="#">시설 안내</a>
+                        <a href="#">드림 챌린지</a>
+                        <a href="#">드림 아카데미</a>
+                        </div>
+                        </li>
+
+                        <!--프로그램-->
+                        <li class="menu_m">
+                        <a class="dropdown" href="#">프로그램</a>
+                        <div class="dropdown-container">
+                        <a href="#">참가 신청</a>
+                        <a href="#">경기 관람 에티켓</a>
+                        </div>
+                        </li>
+
+                        <!--대관/투어-->
+                        <li class="menu_m">
+                        <a class="dropdown" href="#">대관/투어</a>
+                        <div class="dropdown-container">
+                        <a href="#">대관 신청</a>
+                        <a href="#">투어 신청</a>
+                        </div>
+                        </li>
+
+                        <!--커뮤니티-->
+                        <li class="menu_m">
+                        <a class="dropdown" href="#">커뮤니티</a>
+                        <div class="dropdown-container">
+                        <a href="#">공지사항</a>
+                        <a href="#">갤러리</a>
+                        <a href="#">캘린더</a>
+                        </div>
+                        </li>
+                        
+                        <!--sns링크-->
+                        <li>
+                            <span class="sns">
+                                <a href="#" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25">
+                                        <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z" fill="rgba(71,72,78,1)"/>
+                                    </svg>
+                                </a>
+
+                                <a href="#" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25">
+                                        <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z" fill="rgba(71,72,78,1)"/>
+                                    </svg>
+                                </a>
+
+                                <a href="#" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25">
+                                        <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z" fill="rgba(71,72,78,1)"/>
+                                    </svg>
+                                </a>
+
+                                <a href="#" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25">
+                                        <path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z" fill="rgba(71,72,78,1)"/>
+                                    </svg>
+                                </a>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--메뉴 열고 닫기-->
+<script>
+  function openNav() {
+    document.getElementById("menuNav_m").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("menuNav_m").style.width = "0px";
+  }
+</script>
+<!--세부 메뉴 드롭다운-->
+<!--추가할 것: 드롭다운 시 transition 적용, 다른 메뉴 눌렀을 때 display none으로 변경-->
+<script>
+  var dropdown = document.getElementsByClassName("dropdown");
+  for (var i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      }
+      else {
+      dropdownContent.style.display = "block";
+      }
+    });
+  }
+</script>
+<!--내비바(pc)-->
+<nav id="myNav">
+    <!--메인 메뉴-->
+    <div  id="menuBar">
+
+        <!--로고-->
+        <div id="mainLogo">
+            <a href="#">
+                <img src="https://dje.dicia.or.kr/images/logo.png" alt="e-Sports">
+            </a>
+        </div>
+
+        <!--메뉴-->
+        <div id="navMenu">
+            <ul>
+                <!--드림아레나-->
+                <li class="menu">
+                    <a href="javascript:void(0)" class="dropdown_pc" href="#">드림아레나</a>
+                </li>
+                <!--프로그램-->
+                <li class="menu">
+                    <a href="javascript:void(0)" class="dropdown_pc" href="#">프로그램</a>
+                </li>
+                <!--대관/투어-->
+                <li class="menu">
+                    <a href="javascript:void(0)" class="dropdown_pc" href="#">대관/투어</a>
+                </li>
+                <!--커뮤니티-->
+                <li class="menu">
+                    <a href="javascript:void(0)" class="dropdown_pc" href="#">커뮤니티</a>
+                </li>
+                <!--sns링크-->
+                <li class="menu" style="margin:0px;">
+                    <span class="sns">
+                        <a href="#"  target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                                <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z" fill="rgba(71,72,78,1)"/>
+                            </svg>
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                                <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z" fill="rgba(71,72,78,1)"/>
+                            </svg>
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                                <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z" fill="rgba(71,72,78,1)"/>
+                            </svg>
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                                <path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z" fill="rgba(71,72,78,1)"/>
+                            </svg>
+                        </a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+        <!--서브 메뉴-->
+        <div class="dropdown-container_pc">
+            <ul id="dropdown_pc">
+                <!--드림아레나-->
+                <li>
+                    <a href="#">아레나 소개</a><br>
+                    <a href="#">시설 안내</a><br>
+                    <a href="#">드림 챌린지</a><br>
+                    <a href="#">드림 아카데미</a>
+                </li>
+                <!--프로그램-->
+                <li style="margin-left:26px;">
+                    <a href="#">참가 신청</a><br>
+                    <a href="#">경기 관람 에티켓</a>
+                </li>
+                <!--대관/투어-->
+                <li style="margin-left:37px;">
+                    <a href="#">대관 신청</a><br>
+                    <a href="#">투어 신청</a>
+                </li>
+                <!--커뮤니티-->
+                <li style="margin-left:59px;">
+                    <a href="#">공지사항</a><br>
+                    <a href="#">갤러리</a><br>
+                    <a href="#">캘린더</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!--동영상-->
+<div id="blank"></div>
+	<div name="mainVideo">
+		<video  class="playerVideo" poster="https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt473edb3b5ed3b1c5/5f9496381e7a070b44d23537/homepage_header_fallback.jpg" autoplay loop muted>
+			<source src="https://files.catbox.moe/atinwh.webm" type="video/webm">
+			<source src="https://files.catbox.moe/wed551.mp4" type="video/mp4">
+		</video>
+	</div>
+
+
+<aside>
+  <!-세로바-->
+	<div name="serovar" id="sero">
+		<div id="serobar">
+			<div id="serote">
+				<div class="rowWrap">
+					<ul class="rowWrapUl">
+						<li class="rowWrapLi">
+							<div class="rowWrapDiv">
+								<a class="rowWrapA" id="rapa1" href="#">
+									<b> 아레나 소개 </b>
+								</a>
+							</div>
+						</li>
+						<li class="rowWrapLi">
+							<div class="rowWrapDiv">
+								<a class="rowWrapA" id="rapa2" href="#">
+									<b> 대관 안내 </b>
+								</a>
+							</div>
+						</li>
+						<li class="rowWrapLi">
+							<div class="rowWrapDiv">
+								<a class="rowWrapA" id="rapa3" href="#">
+									<b> 시설 안내 </b>
+								</a>
+							</div>
+						</li>
+						<li class="rowWrapLi">
+							<div class="rowWrapDiv">
+								<a class="rowWrapA" id="rapa4" href="#">
+									<b> 예매 / 참가 </b>
+								</a>
+							</div>
+						</li>
+						<li class="rowWrapLi">
+							<div class="rowWrapDiv">
+								<a class="rowWrapA" id="rapa5" href="#">
+									<b> 투어 신청 </b>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    <!--하단바-->
+		<span id="topbottom">
+			<span id="top">
+				<a class="toTB" id="toT" href="#"></a>
+			</span>
+			<span id="bottom">
+				<a class="toTB" id="toB" href="#footer"></a>
+			</span>
+		</span>
+	</div>
+</aside>
+
+<!--하단바 스크립트-->
+<script>
+  var tb=document.getElementById("topbottom")
+	function scrollTB()
+	{
+		if(document.documentElement.scrollTop > 200 || document.body.scrollTop > 200)
+		{
+			tb.style.display='block';
+		}
+		else
+		{
+			tb.style.display='none';
+		}
+    if(window.innerWidth<768)
+    {
+      tb.style.display='none';
+    }
+	}
+
+</script>
+
+<!--뉴스-->
+<div class="slideshow-container">
+	<div class="mySlides fade">
+		<div class="numbertext">1 / 3</div>
+		<img class="numberimg" src="뉴스1.png">
+
+	</div>
+	<div class="mySlides fade">
+		<div class="numbertext">2 /3</div>
+		<img class="numberimg" src="뉴스2.png">
+
+	</div>
+	<div class="mySlides fade">
+		<div class="numbertext">3 /3</div>
+		<img class="numberimg" src="뉴스3.jpg">
+ 
+	</div>
+  <div class="pointPN">
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  </div>
+  <div class="pointPN">
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>
+<br>
+<div style="text-align:center;">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "flex";  
+  dots[slideIndex-1].className += " active";
+}
+/*-----------------------------------------------------------------------------------------------------*/
+showSlides2();
+
+function showSlides2() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+
+
+    slides[slideIndex-1].style.display = "flex";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides2, 2000);
+}
+
+
+
+
+</script>
+<!--메인화면 메뉴-->
+<div id="dotsum">
+<div id="inBodyMenuDiv">
+	<ul id="inBodyMenuList">
+		<li id="inBodyMenu1" class="inBodyMenu">
+			<a href="#">
+				<span><img src="시설안내.png" width:"20px" height:"20px"></span>
+				<span class="inBodyMenuText">시설안내</span>
+			</a>
+		</li>
+		<li id="inBodyMenu2" class="inBodyMenu">
+			<a href="#">
+				<span><img src="예매참가.png" width:"20px" height:"20px"></span>
+				<span class="in1BodyMenuText">예매/참가</span>
+			</a>
+		</li>
+		<li id="inBodyMenu3" class="inBodyMenu">
+			<a href="#">
+				<span><img src="대관신청.png" width:"20px" height:"20px"></span>
+				<span class="in1BodyMenuText">대관신청</span>
+			</a>
+		</li>
+		<li id="inBodyMenu4" class="inBodyMenu">
+			<a href="#">
+				<span><img src="관람에티켓.png" width="20px" height="20px"></span>
+				<span class="in1BodyMenuText">관람 에티켓</span>
+			</a>
+		</li>
+		<li id="inBodyMenu5" class="inBodyMenu">
+			<a href="#">
+				<span><img src="투어신청.png" width:"20px" height:"20px"></span>
+			<span class="in1BodyMenuText">투어신청</span>
+			</a>
+		</li>
+	</ul>
+</div>	
+<div id="inBodyScheduleDiv">
+	<div id="schedule">
+		<h4 style="color:#f2f2f2; text-align:center; padding-bottom:10px;"> DEAJEON ARENA SCHEDULE </h4>
+
+		<div style="width:20px; height:100px; position:absolute; top:110px; left:10px;">
+			<a href=javascript:scheduleLeft();><img src="main_match_left.png" ></a>
+		</div>
+		<div style="width:20px; height:100px; position:absolute; top:110px; right:10px;">
+			<a href=javascript:scheduleRight();><img src="main_match_right.png"></a>
+		</div>
+		
+		<div id="schedule1" style="padding-top:20px;width:100%; height:200px; background-color:rgba(66,133,245,0.3); box-shadow: 9999px 200px 0px 10px rgba(66,133,245,0.3);color: #f2f2f2; display:block">
+			<div style="text-align:center; font-size:30px;">7월 9일<br>토요일</div>
+			<div style="text-align:center; font-size:20px;">2022 e스포츠 대학리그 <br>(대전, 충청, 강원 권역) <br>온라인 예선</div>
+			<div id="match"></div>
+			<div style="text-align:center;">온라인</div>
+		</div>
+		<div id="schedule2" style="padding-top:20px;width:100%; height:200px;background-color:rgba(66,133,245,0.3);box-shadow: 9999px 200px 0px 10px  rgba(66,133,245,0.3);color: #f2f2f2; display:none;">
+			<div style="text-align:center; font-size:30px;">7월 10일<br>일요일</div>
+			<div style="text-align:center; font-size:20px;">2022 e스포츠 대학리그 <br>(대전, 충청, 강원 권역) <br>오프라인 결승</div>
+			<div id="match"></div>
+			<div style="text-align:center;">대전 이스포츠경기장</div>
+		</div>
+		<div  id="schedule3" style="padding-top:20px;width:100%; height:200px; background-color:rgba(66,133,245,0.3);box-shadow: 9999px 200px 0px 10px  rgba(66,133,245,0.3);color: #f2f2f2; display:none;">
+			<div style="text-align:center; font-size:30px;">7월 23일<br>토요일</div>
+			<div style="text-align:center; font-size:20px;">대전시장배 이스포츠 <br> 한밭대전  <br>(오프라인 예선)</div>
+			<div id="match"></div>
+			<div style="text-align:center;">대전 이스포츠경기장</div>
+		</div>
+		<div  id="schedule4" style="padding-top:20px;width:100%; height:200px; background-color:rgba(66,133,245,0.3);box-shadow: 9999px 200px 0px 10px  rgba(66,133,245,0.3);color:#f2f2f2; display:none;">
+			<div style="text-align:center; font-size:30px;">7월 24일<br>일요일</div>
+			<div style="text-align:center; font-size:20px;">대전시장배 이스포츠 <br> 한밭대전 <br> (오프라인 본선)</div>
+			<div id="match"></div>
+			<div style="text-align:center;">대전 이스포츠경기장</div>
+		</div>
+
+
+		<div id="ticket" style=" padding-top:0px;text-align:center; position:relative; top:15px">
+			<span id="ticketbtn" style="background-color:rgba(66,133,245,0.5);border-radius:5px; padding:8px; font-size: 25px; letter-spacing: 0.1em;">
+				<a href="#" style="color:rgba(66,133,245,1);">티켓 예매하기</a>
+			</span>
+		</div>
+
+	</div>
+</div>
+</div>
+<!--성찬님 스크립트-->
+<script>
+  function scheduleLeft()
+  {
+  var SCD1=document.getElementById("schedule1")
+  var SCD2=document.getElementById("schedule2")
+  var SCD3=document.getElementById("schedule3")
+  var SCD4=document.getElementById("schedule4")
+  if(SCD1.style.display=="block")
+    {
+    SCD1.style.display="none"
+    SCD4.style.display="block"
+    }
+  else if(SCD2.style.display=="block")
+    {
+    SCD2.style.display="none"
+    SCD1.style.display="block"
+    }
+  else if(SCD3.style.display=="block")
+    {
+    SCD3.style.display="none"
+    SCD2.style.display="block"
+    }
+  else if(SCD4.style.display=="block")
+    {
+    SCD4.style.display="none"
+    SCD3.style.display="block"
+    }
+  
+  }
+  function scheduleRight()
+  {
+  var SCD1=document.getElementById("schedule1")
+  var SCD2=document.getElementById("schedule2")
+  var SCD3=document.getElementById("schedule3")
+  var SCD4=document.getElementById("schedule4")
+  if(SCD1.style.display=="block")
+    {
+    SCD1.style.display="none"
+    SCD2.style.display="block"
+    }
+  else if(SCD2.style.display=="block")
+    {
+    SCD2.style.display="none"
+    SCD3.style.display="block"
+    }
+  else if(SCD3.style.display=="block")
+    {
+    SCD3.style.display="none"
+    SCD4.style.display="block"
+    }
+  else if(SCD4.style.display=="block")
+    {
+    SCD4.style.display="none"
+    SCD1.style.display="block"
+    }
+  }
+  
+  </script>
+  <link rel="stylesheet" type="text/css" href="드림아레나이가영.css">
+    <div id="wrap">
+        <section>
+            <!--가영담당 인스타그램 피드 시작지점 -->
+        <div class="containerInsta">
+            <span style="position: relative; left:20px;"><img src="insta_logo.png" alt="instagram_logo" style="width:60px; height:60px"></span>
+            <span style="position: relative; left:25px; top:5px;"><h3><strong>INSTAGRAM FEEDS</strong></h3></span><br>
+            <div class="instaWrap">
+        
+            <!--<link rel="" href="">-->         
+            <ul class="instaPosts">
+                <li>
+                    <a class="instaPost" href="https://www.instagram.com/p/Cf8IHVqPjwa/" target="_blank">
+                    <figure class="instaFoto">
+                        <img class="instaImg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/292976105_749199252820311_5994503980641007613_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=Pkb-T5OlD14AX9yCYwH&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-qtvFTv47q7rY3UK5rNKJQz5An9UDciECpc9-xGwrypQ&oe=62D3D666" alt="2022 e스포츠 대학리그 충청,강원권 최종 결과">
+                    </figure></a></li>
+                <li>
+                <a class="instaPost" href="https://www.instagram.com/p/CfyrfM-vRoF/" target="_blank">
+                <figure class="instaFoto">                   
+                    <img class="instaImg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/292763411_5112548955509701_1759927052338077704_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=mgPpgbr_8swAX8xyB4w&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_SU-N5QWcxIqUikwnkv1o9ReUxc_--q8vu1WgaaLm1FQ&oe=62D33536" alt="2022 e스포츠 대학리그 (대전, 충청, 강원권역)">
+                </figure></a></li>
+                <li>
+                <a class="instaPost" href="https://www.instagram.com/p/CfsbJmvPAWl/" target="_blank">
+                <figure class="instaFoto">
+                    <img class="instaImg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/292082684_178871061222996_8039528607842464097_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=Amz4x-bh_8sAX8yDq5i&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-7pCP_cE-k5z-gfnWft9Q5hvgyGUSFcHvMJW-G44emVA&oe=62D2739E" alt="2022 e스포츠 대학리그 (대전, 충청, 강원권역) 참가신청">
+                      </figure></a></li>
+                <li>
+                    <a class="instaPost" href="https://www.instagram.com/p/CfLtkFcPgM4/" target="_blank">
+                <figure class="instaFoto">
+                    <img class="instaImg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/289347617_336329198665382_7061590049133003712_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=JD210WECPr0AX_g7wsr&_nc_oc=AQnmQwADh-HnFeEt65hQWjqbd11BTjrilweBuyFVOO5zTJNVoCf4-LWpyscKOV6ETBk&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-kLpHl7SuL75ypHD5dU6TODmfd6dNuB8oWYqYKQMB97Q&oe=62D43668" alt="발로란트 뷰잉파티 2차">
+                </figure></a></li>
+                <li>
+                <a class="instaPost" href="https://www.instagram.com/p/CfBbbuuLqu-/" target="_blank">
+                <figure class="instaFoto">
+                    <img class="instaImg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/289347617_336329198665382_7061590049133003712_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=JD210WECPr0AX_g7wsr&_nc_oc=AQnmQwADh-HnFeEt65hQWjqbd11BTjrilweBuyFVOO5zTJNVoCf4-LWpyscKOV6ETBk&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-kLpHl7SuL75ypHD5dU6TODmfd6dNuB8oWYqYKQMB97Q&oe=62D43668" alt="발로란트 챌린저스 뷰잉파티 in 대전">
+                </figure></a></li>             
+                <li>
+                <a class="instaPost" href="https://www.instagram.com/p/CexaZ1CvbXW/" target="_blank">
+                <figure class="instaFoto">
+                    <img class="instaImg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/287673138_584874559923499_5736251426049868221_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=2rYH-ZTVYbcAX_sZOPF&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_KoB3FhWGVpIA64UbKDRfrzdVKcMxEKLPGl_hBpDolxg&oe=62D2F2F9" alt="e스포츠 대학리그">
+                </figure></a></li>
+             
+                </ul>
+            </div>
+        </div>
+        
+
+    <div class="mapConteiner">
+        <div class="mapTitle">
+            <span style="position: relative; top:11px; left:3px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px" height="50px"><path fill="none" d="M0 0h24v24H0z"/><path d="M2 5l7-3 6 3 6.303-2.701a.5.5 0 0 1 .697.46V19l-7 3-6-3-6.303 2.701a.5.5 0 0 1-.697-.46V5zm14 14.395l4-1.714V5.033l-4 1.714v12.648zm-2-.131V6.736l-4-2v12.528l4 2zm-6-2.011V4.605L4 6.319v12.648l4-1.714z" fill="rgba(255,255,255,1)"/></svg></span>
+            <span> <h3><strong> ARENA LOCATION</strong></h3></span> <br>
+        </div>
+        <div class="mapBT">
+            <div class="mapboxWrap">
+                <div class="mainMap"> 
+                    
+                    <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:100%; height:392px; color:#333;">
+                    <div style="height: 360px;">
+                    <a href="https://map.kakao.com/?urlX=586898.0&amp;urlY=799885.0&amp;itemId=1663276955&amp;q=%EB%8C%80%EC%A0%84e%EC%8A%A4%ED%8F%AC%EC%B8%A0%EA%B2%BD%EA%B8%B0%EC%9E%A5%20%EB%93%9C%EB%A6%BC%EC%95%84%EB%A0%88%EB%82%98&amp;srcid=1663276955&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+                    <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/c8d7c2e3f1dddcb5dbb814e0ba0ca35f3444b3e5abc0efb74af4fe5a9b913e7f" width="100%" height="100%" style="padding:7 11px;border:1px solid #ccc;">
+                    </a></div>
+                    <div class="mapBottom" style="overflow: hidden; padding: 7px 11px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 0px 0px 2px 2px; background-color: rgb(249, 249, 249);">
+                    <a href="https://map.kakao.com" target="_blank" style="float: left;">
+                    <img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵" style="display:block;width:72px;height:16px">
+                    </a>
+                    <div style="float: right; position: relative; top: 1px; font-size: 11px;">
+                    <a target="_blank" href="https://map.kakao.com/?from=roughma
+        p&amp;eName=%EB%8C%80%EC%A0%84e%EC%8A%A4%ED%8F%AC%EC%B8%A0%EA%B2%BD%EA%B8%B0%EC%9E%A5%20%EB%93%9C%EB%A6%BC%EC%95%84%EB%A0%88%EB%82%98&amp;eX=586898.0&amp;eY=799885.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">
+        길찾기</a>
+                <span style="width: 1px;padding: 0;margin: 0 8px 0 9px;height: 11px;vertical-align: top;position: relative;top: 2px;border-left: 1px solid #d0d0d0;float: left;"></span>
+                <a target="_blank" href="https://map.kakao.com?map_type=TYPE_MAP&amp;from=roughmap&amp;srcid=1663276955&amp;itemId=1663276955&amp;q=%EB%8C%80%EC%A0%84e%EC%8A%A4%ED%8F%AC%EC%B8%A0%EA%B2%BD%EA%B8%B0%EC%9E%A5%20%EB%93%9C%EB%A6%BC%EC%95%84%EB%A0%88%EB%82%98&amp;urlX=586898.0&amp;urlY=799885.0" style="float:left;height:15px;padding-top:1px;line-height:15px;color:#000;text-decoration: none;">
+                지도 크게 보기</a>
+                </div></div></div> </div>
+            </div>
+            <div class="txt"> 
+                <br><p><strong>INFORMARTION</strong></p><br>
+                <P style="font-size: 20px;"><B>주소</B> </P>
+                <br>
+                    
+                <p class="ad"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25px" height="25px" style="color:#fff;"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 20.9l4.95-4.95a7 7 0 1 0-9.9 0L12 20.9zm0 2.828l-6.364-6.364a9 9 0 1 1 12.728 0L12 23.728zM12 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 2a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" fill="rgba(255,255,255,1)"/></svg>
+                    <a href="http://kko.to/JfuArt3qA" target="_blank">
+                대전광역시 유성구 대덕대로 480 첨단과학관(엑스포) 대전드림아레나</a></P>
+                    <br>
+                <hr>
+                <br>
+                <div class="busNum">
+                    <span style="font-size:20px; padding: 3px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25px" height="25px"><path fill="none" d="M0 0h24v24H0z"/>
+                        <path d="M17 20H7v1a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1H3v-8H2V8h1V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3h1v4h-1v8h-1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1zM5 5v9h14V5H5zm0 11v2h4v-2H5zm10 0v2h4v-2h-4z" fill="rgba(255,255,255,1)"/></svg>
+                    <b>버스</b></span>                    
+                <br>
+                <ul class="num">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" height="20px"><path fill="none" d="M0 0h24v24H0z"/><path d="M18 3v2h-1v6l2 3v2h-6v7h-2v-7H5v-2l2-3V5H6V3h12zM9 5v6.606L7.404 14h9.192L15 11.606V5H9z" fill="rgba(255,255,255,1)"/></svg>
+                    <b>대전 컨벤션 센터 / 한빛탑</b></li>    <br>
+                    <li><b>121번</b></li><br>
+                    <li><b>705번</b></li><br>
+                    <li><b>911번</b></li><br>
+                    <li><b>특구1</b></li><br>
+                </div>
+            </div>  
+        </div> 
+    </div>          
+    </div>                
+
+            
+        </div>
+            
+        </section>
+        </div> <!--wrap 마지막 div-->
+  <!----------------------------------------------------------- 푸터 ------------------------------------------------------>
+<footer id="footer">
+  <!--푸터 로고-->
+  <span class="footerRow">
+      <img width="291px" height="38px" src="https://dje.dicia.or.kr/images/footer_logo02.png" alt="대전정보문화산업진흥원">
+      <img width="263px" height="38px" src="https://dje.dicia.or.kr/images/footer_logo.png" alt="대전 드림 E스포츠 챌린지">
+  </span><br>
+  <!--copyright-->
+  <p>
+      COPYRIGHT CO)DAEJEON INFORMATION&amp;CULTURE INDUSTRY PROMOTION AGENCY
+  </p>
+  <!--사진 배경(x축 반복)-->
+  <div id="imgBg"></div>
+
+</footer>
+</body>
+</html>

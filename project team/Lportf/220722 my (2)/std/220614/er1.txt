@@ -1,0 +1,15 @@
+<div id="d1">DIV
+<p id="p1">P</p>
+</div>
+</form>
+<div onclick = "s('div2')">DIV2</div>
+<script>
+
+function s(e, text)
+{
+alert(text);
+}
+
+var d=document.getElementById("d1")
+console.log(d);
+d.addEventListener("click",s,true);

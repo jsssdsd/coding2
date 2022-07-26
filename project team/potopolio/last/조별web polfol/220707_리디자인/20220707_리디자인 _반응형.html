@@ -1,0 +1,3333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8", name="viewport" content="width=device-width, initial-scale=1">>
+
+<title>Melon::음악이필요한 순간,멜론</title>
+
+<style>
+
+body
+    {
+    margin: 0;
+    }
+
+#MainContainer
+    {
+    position : relative ;
+    }
+
+#main
+    {
+    position: relative;
+
+    background-color:gray;
+    width: 100%;
+    height: 100vh;
+
+    overflow:hidden;
+    }
+
+#needMusic
+    {
+    font-family : "S-Core Dream 9" ;
+
+    position:absolute;
+    color: white;
+    z-index: 300;
+
+    width: 50%;
+    height: 10%;
+
+    top:25%;
+    right:20%;
+
+    font-size: 100px;
+    font-weight: 500;
+    opacity: 0;
+    transition: all 5s;
+    }
+
+#melon
+    {
+    font-family : "S-Core Dream 9" ;
+
+    position:absolute;
+    color: #00CD3A;
+    z-index: 300;
+
+    width: 30%;
+    height: 20%;
+
+    top:40%;
+    right:5%;
+
+    font-size:150px;
+    font-weight: 900;
+
+    opacity: 0;
+    transition: all 5s;
+    }
+
+#mainBlur
+    {
+    position: absolute;
+
+    width:100%;
+    height:100%;
+
+    background-color:black;
+
+    opacity: 0;
+    z-index: 200;
+    }
+
+.con
+    {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    z-index : 180 ;
+    }
+
+#menu
+    {
+    position:fixed;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    z-index:100;
+    top:0;
+    text-align: center;
+
+    box-shadow : 0px 1px 30px black ; ;
+    }
+
+ul
+    {
+    display: inline-block;
+    }
+
+ul li
+    {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+li
+    {
+    float: left;
+    }
+
+li span
+    {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    }
+
+li.dropdown
+    {
+    display:inline-block
+    }
+
+.menus
+    {
+    border-right:1px solid black;
+    }
+
+.dropdown:hover .menus
+    {
+    color:lightgreen ;
+    }
+
+.dropdown-content
+    {
+    background-color : white ;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+.dropdown-content span:hover
+    {
+    color:lightgreen;
+    }
+
+.dropdown-content span
+    {
+    color: black;
+    padding: 8px 16px;
+    text-decoration:none;
+    display:block;
+    text-align:left;
+    }
+
+.dropdown:hover .dropdown-content
+    {
+    display:block;
+    }
+
+#sec1
+    {
+    width: 100% ;
+    height: 1000px ;
+    background-color: white ;
+    position : relative ;
+
+    transition : all 3s ;
+    }
+
+.Hide
+    {
+    display : inline-block ;
+    width : 100% ;
+    height : 150px ;
+
+    position : absolute ;
+    left : 0px ;
+
+    z-index : 10 ;
+
+    background-color : white ;
+    }
+
+#TopHide
+    {
+    top : 0px ;
+
+    box-shadow : 0px 1px 30px black ;
+    z-index : 10 ;
+    }
+
+#UnderHide
+    {
+    top : 850px ;
+
+    box-shadow : 0px -1px 30px black ;
+    z-index : 10 ;
+    }
+
+#Top100_Text
+    {
+    position : absolute ;
+    left : 15% ;
+    top : 35% ;
+    }
+
+#Top100_Text_A
+    {
+    font-family : "S-Core Dream 9" ;
+    font-size : 72px ;
+
+    color : #00CD3A ;
+
+    display : inline-block ;
+    }
+
+#Top100_Text_B
+    {
+    font-family : "S-Core Dream 5" ;
+    font-size : 52px ;
+
+    display : inline-block ;
+    }
+
+#TIME
+    {
+    text-align : center ;
+    font-family : "S-Core Dream 3" ;
+
+    font-size : 15px ;
+    color : gray ;
+
+    display : inline-block ;
+    position : absolute ;
+
+    left : 20% ;
+    top : 525px ;
+
+    width : 180px ;
+    height : 40px ;
+    line-height : 10px ;
+
+    background-color : white ;
+
+    border : 2px solid #00CD3A ;
+    border-radius : 50px ;
+    }
+
+.Option
+    {
+    display : inline-block ;
+    position : absolute ;
+    left : 38% ;
+
+    z-index : 10 ;
+    }
+
+#AllPlay
+    {
+    top : 323px ;
+    }
+
+#RandomPlay
+    {
+    top : 403px ;
+    }
+
+#ChoicePlay
+    {
+    top : 483px ;
+    }
+
+#Put
+    {
+    top : 563px ;
+    }
+
+#Down
+    {
+    top : 643px ;
+    }
+
+.In_Option
+    {
+    background : white ;
+    color : gray ;
+
+    font-size : 18px ;
+
+    width : 100px ;
+    height : 40px ;
+    line-height : 38px ;
+
+    text-align : center ;
+    border : 1px solid #00CD3A ;
+    border-radius : 25px ;
+
+    cursor : pointer ;
+
+    transition : all 0.5s ;
+    }
+
+#AP_btn:hover
+    {
+    color : white ;
+    background-color : #00CD3A ;
+
+    transition : all 0.5s ;
+    }
+
+#RP_btn:hover
+    {
+    color : white ;
+    background-color : #00CD3A ;
+
+    transition : all 0.5s ;
+    }
+
+#CP_btn:hover
+    {
+    color : white ;
+    background-color : #00CD3A ;
+
+    transition : all 0.5s ;
+    }
+
+#Put_btn:hover
+    {
+    color : white ;
+    background-color : #00CD3A ;
+
+    transition : all 0.5s ;
+    }
+
+#Down_btn:hover
+    {
+    color : white ;
+    background-color : #00CD3A ;
+
+    transition : all 0.5s ;
+    }
+
+.IconA
+    {
+    display : inline-block ;
+    width : 25px ;
+    height : 25px ;
+    }
+
+.IconB
+    {
+    display : inline-block ;
+    width : 20px ;
+    height : 20px ;
+    }
+
+.UD_IMG
+    {
+    width : 80px ;
+    height : 80px ;
+    }
+
+#Top100_List_Outbox
+    {
+    position : absolute ;
+    left : 45% ;
+
+    width : 50% ;
+    height : 99% ;
+    border : 1px solid white ;
+
+    z-index : 1 ;
+    overflow: hidden ;
+
+    transition : all 3s ;
+    }
+
+#Top100_List_Outbox input
+    {
+    width : 15px ;
+    height : 15px ;
+    }
+
+#Top100_Main
+    {
+    text-align : center ;
+
+    background-color : white ;
+    color : #00CD3A ;
+
+    width : 98% ;
+    position : absolute ;
+    left : 0px ;
+    top : 380px ;
+
+    z-index : 10 ;
+    }
+
+#Top100_Main > table
+    {
+    width : 100% ;
+    }
+
+#Top100_Main p
+    {
+    margin : 0 ;
+
+    height : 45px ;
+    line-height : 45px ;
+
+    text-align : center ;
+
+    border-radius : 25px ;
+    }
+
+/* 확대된 Top100 리스트 */
+#Top100_InMain
+    {
+    text-align : center ;
+
+    overflow : hidden ;
+
+    border : 5px solid #00CD3A ;
+    border-radius : 40px ;
+    background-color : #00CD3A ;
+    color : white ;
+
+    width : 98% ;
+    height : 130px ;
+    position : absolute ;
+    left : 0px ;
+    top : 430px ;
+
+    transition : all 3s ;
+    }
+
+#Top100_InMain_List
+    {
+    position : absolute ;
+    left : 0px ;
+    top : 0px ;
+
+    width : 100% ;
+    transition : all 3s ;
+    }
+
+#Top100_InMain_List button
+    {
+    border : 0px solid black ;
+    border-radius : 25px ;
+
+    width : 50px ;
+    height : 50px ;
+
+    text-align : center ;
+
+    cursor : pointer ;
+    }
+
+#Top100_InMain_List td
+    {
+    height : 130px ;
+    }
+
+.TOP_img{width : 100px ; height : 100px ; }
+.Top_check { width : 30px ; }
+.Top_rank
+    {
+    width : 60px ;
+    font-size : 28px ;
+    font-family : "S-Core Dream 5" ;
+    }
+.TT
+    {
+    font-family : "S-Core Dream 5" ;
+    }
+.Top_variance { width : 30px ; }
+.Top_IMG { width : 120px ; }
+.Top_info1 { width : 30px ; }
+.Top_info2 { width : 200px ; text-align : left ; }
+.Top_info2 p { width : 200px ; white-space:nowrap ; overflow : hidden ; text-overflow:ellipsis ; }
+.Top_album { width : 100px ; }
+.Top_album p { font-size : 14px ;  width : 100px ; white-space:nowrap ; overflow : hidden ; text-overflow:ellipsis ; }
+.Top_like { width : 100px ; }
+.Top_button { width : 50px ; }
+
+/* 확대된 Top100 아래 리스트 */
+#Top100_InMain_BA
+    {
+    text-align : center ;
+
+    overflow : hidden ;
+
+    width : 98% ;
+    height : 300px ;
+    position : absolute ;
+    left : 0px ;
+    top : 568px ;
+
+    transition : all 3s ;
+    }
+
+#Top100_InMain_List_BA
+    {
+    position : absolute ;
+    left : 2.5% ;
+    top : 0px ;
+
+    width : 96% ;
+    transition : all 3s ;
+    }
+
+#Top100_InMain_List_BA button
+    {
+    border : 0px solid black ;
+    border-radius : 25px ;
+
+    width : 30px ;
+    height : 30px ;
+
+    text-align : center ;
+
+    cursor : pointer ;
+    }
+
+/* 확대된 Top100 위 리스트 */
+#Top100_InMain_AB
+    {
+    text-align : center ;
+
+    overflow : hidden ;
+
+    width : 98% ;
+    height : 300px ;
+    position : absolute ;
+    left : 0px ;
+    top : 110px ;
+
+    transition : all 3s ;
+    }
+
+#Top100_InMain_List_AB
+    {
+    position : absolute ;
+    left : 2.5% ;
+    top : 270px ;
+
+    width : 96% ;
+    transition : all 3s ;
+    }
+
+#Top100_InMain_List_AB button
+    {
+    border : 0px solid black ;
+    border-radius : 25px ;
+
+    width : 30px ;
+    height : 30px ;
+
+    text-align : center ;
+
+    cursor : pointer ;
+    }
+
+
+
+#sec2
+    {
+    position : relative ;
+    z-index : 10 ;
+
+    width: 100%;
+    height: 700px;
+    background-color: white;
+
+    text-align : center ;
+    }
+
+#S2_MainFrame
+    {
+    position : relative ;
+
+    display : inline-block ;
+    display : inline-block ;
+    width : 70% ;
+    height : 650px ;
+
+    transition : 2s ;
+    }
+
+#S2_ULBTN
+    {
+    vertical-align : top ;
+
+    padding : 0 ;
+    margin : 0 ;
+    border : none ;
+
+    display : inline-block ;
+
+    background-color : #00CD3A ;
+
+    width : 49.7% ;
+    height : 50% ;
+
+    cursor : pointer ;
+    }
+
+#S2_ULBTN_TEXT
+    {
+    display : inline-block ;
+    cursor : pointer ;
+
+    text-align : center ;
+
+    font-family : "S-Core Dream 9" ;
+    font-size : 68px ;
+
+    position : absolute ;
+    left : 3% ;
+    top : 0.6% ;
+    background : none ;
+    color : white ;
+
+    width : 150px ;
+    height : 90px ;
+
+    z-index : 20 ;
+
+    opacity : 0 ;
+
+    transition : 2s ;
+    }
+
+#S2_URBTN
+    {
+    padding : 0 ;
+    margin : 0 ;
+    border : none ;
+
+    display : inline-block ;
+
+    background-color : white ;
+
+    width : 49.7% ;
+    height : 50% ;
+
+    cursor : pointer ;
+    }
+
+#S2_URBTN_TEXT
+    {
+    display : inline-block ;
+    cursor : pointer ;
+
+    text-align : center ;
+
+    font-family : "S-Core Dream 9" ;
+    font-size : 68px ;
+
+    position : absolute ;
+    left : 86% ;
+    top : 0.6% ;
+    background : none ;
+    color : #00CD3A ;
+
+    width : 150px ;
+    height : 90px ;
+
+    z-index : 20 ;
+
+    opacity : 0 ;
+
+    transition : 2s ;
+    }
+
+#S2_BLBTN
+    {
+    padding : 0 ;
+    margin : 0 ;
+    border : none ;
+
+    display : inline-block ;
+
+    background-color : #00CD3A ;
+
+    width : 49.7% ;
+    height : 50% ;
+
+    cursor : pointer ;
+    }
+
+#S2_BLBTN_TEXT
+    {
+    display : inline-block ;
+    cursor : pointer ;
+
+    text-align : center ;
+
+    font-family : "S-Core Dream 9" ;
+    font-size : 68px ;
+
+    position : absolute ;
+    left : 3% ;
+    top : 86% ;
+    background : none ;
+    color : white ;
+
+    width : 150px ;
+    height : 90px ;
+
+    z-index : 20 ;
+
+    opacity : 0 ;
+
+    transition : 2s ;
+    }
+
+#S2_BRBTN
+    {
+    padding : 0 ;
+    margin : 0 ;
+    border : none ;
+
+    display : inline-block ;
+
+    background-color : white ;
+
+    width : 49.7% ;
+    height : 50% ;
+
+    cursor : pointer ;
+    }
+
+#S2_BRBTN_TEXT
+    {
+    display : inline-block ;
+    cursor : pointer ;
+
+    text-align : center ;
+
+    font-family : "S-Core Dream 9" ;
+    font-size : 68px ;
+
+    position : absolute ;
+    left : 86% ;
+    top : 86% ;
+    background : none ;
+    color : #00CD3A ;
+
+    width : 150px ;
+    height : 90px ;
+
+    z-index : 20 ;
+
+    opacity : 0 ;
+
+    transition : 2s ;
+    }
+
+#S2_Main
+    {
+    display : inline-block ;
+
+    text-align : left ;
+
+    position : absolute ;
+    left : 0px ;
+    top : 100px ;
+
+    z-index : 10 ;
+
+    width : 100% ;
+    height : 70% ;
+
+    background-color : #00CD3A ;
+
+    overflow : hidden ;
+    }
+
+#S2_Main_C
+    {
+    display : inline-block ;
+
+    text-align : left ;
+
+    position : absolute ;
+    left : 0px ;
+    top : 100px ;
+
+    z-index : 11 ;
+
+    width : 49.8% ;
+    height : 3% ;
+
+    background-color : white ;
+    }
+
+#S2_Main_B
+    {
+    display : inline-block ;
+
+    text-align : left ;
+
+    position : absolute ;
+    left : 0px ;
+    top : 535px ;
+
+    z-index : 11 ;
+
+    width : 49.8% ;
+    height : 3% ;
+
+    background-color : white ;
+    }
+
+#S2_TopAlbum
+    {
+    display : inline-block ;
+    white-space : nowrap ;
+
+    position : absolute ;
+    left : 0px ;
+    top : 2% ;
+
+    width : 1000% ;
+    height : 48% ;
+
+    background-color : white ;
+
+    overflow : hidden;
+    }
+
+#S2_BottomAlbum
+    {
+    display : inline-block ;
+    white-space : nowrap ;
+
+    position : absolute ;
+    left : 0px ;
+    top : 50% ;
+
+    width : 1000% ;
+    height : 48% ;
+
+    background-color : white ;
+
+    overflow : hidden;
+    }
+
+.S2_Album
+    {
+    position : relative ;
+
+    margin : 30px ;
+
+    display : inline-block ;
+    width : 155px ;
+    height : 155px ;
+
+    border : 1px solid black ;
+    }
+
+.S2_Album:hover
+    {
+    cursor : pointer ;
+    }
+
+#S2_Text
+    {
+    font-family : "S-Core Dream 9" ;
+    font-size : 80px ;
+
+    position : absolute ;
+    left : 37% ;
+    top : -17% ;
+    }
+
+#S2_Text_KPOP
+    {
+    font-family : "S-Core Dream 9" ;
+    font-size : 80px ;
+
+    position : absolute ;
+    left : 30.4% ;
+    top : -1% ;
+
+    color : white ;
+
+    z-index : 15 ;
+
+    cursor : default ;
+    }
+
+#S2_Text_POP
+    {
+    font-family : "S-Core Dream 9" ;
+    font-size : 80px ;
+
+    position : absolute ;
+    left : 49.5% ;
+    top : 84% ;
+
+    color : #00CD3A ;
+
+    z-index : 15 ;
+
+    cursor : default ;
+    }
+
+.newAlbumImg
+    {
+    width : 100% ;
+    height : 100% ;
+    }
+
+.A
+    {
+    position : absolute ;
+    left : 0px ;
+    top : 0px ;
+
+    width : 100% ;
+    height : 100% ;
+    background-color : black ;
+    z-index : -1 ;
+
+    transition : 2s ;
+
+    opacity : 0 ;
+    }
+
+.B
+    {
+    position : absolute ;
+    left : 0px ;
+    top : 0px ;
+
+    width : 100% ;
+    height : 100% ;
+    background-color : black ;
+    z-index : -1 ;
+
+    transition : 2s ;
+
+    opacity : 0 ;
+    }
+
+#sec3
+    {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background-color: white;
+    }
+
+#title-wrap
+        {
+        position: relative;
+        left: 15%;
+        top: 10%;
+        width: 1260px;
+        font-size: 100px;
+        font-family: "S-Core Dream 7", serif;
+        color: #00CD3A;
+        }
+
+#magazine-title
+    {
+    text-align: left;
+    }
+
+#MnC
+    {
+    position: relative;
+    top: 10%;
+    height: 550px;
+    width: 100%;
+    background-color: #00CD3A;
+    }
+
+#magazine-wrapper
+    {
+    position: absolute;
+    display: inline-block;
+    left: 15%;
+    width: 896px;
+    height: 100%;
+    overflow: hidden;
+    }
+
+#magazine-container
+    {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #00CD3A;
+    }
+
+.magazine-set
+    {
+    position: absolute;
+    width: 896px;
+    height:100%;
+    transition: all 2s
+    }
+
+.magazine
+    {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 250px;
+    height: 200px;
+    z-index: 1;
+    margin: 30px 20px 15px 20px;
+    background-color: white;
+    box-shadow: 8px 10px 20px 0px rgba(0,0,0,0.9);
+    border-radius: 10px;
+    border: 2px solid rgb(0, 255, 100);
+    transition: all .5s;
+    }
+
+.magazine img
+    {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    z-index: 3;
+    filter: brightness(100%);
+    transition: all 1.5s;
+    }
+
+.magazine span
+    {
+    position: absolute;
+    display: block;
+    font-family: "S-Core Dream 5", serif;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    z-index: 5;
+    margin: 0 auto;
+    opacity: 0;
+    top: 30%; left: 20%; right: 20%; bottom: 20%;
+    transition: all 1.5s;
+    }
+
+#magazine_left
+    {
+    position: absolute;
+    display: block;
+    bottom: 2%;
+    right: 7%;
+    background: lightgreen;
+    border-radius: 25%;
+    }
+
+#magazine_right
+    {
+    position: absolute;
+    display: block;
+    bottom: 2%;
+    right: 2%;
+    background: lightgreen;
+    border-radius: 25%;
+    }
+
+#ticket-wrapper
+    {
+    position: absolute;
+    display: inline-block;
+    width: 400px;
+    height: 100%;
+    left: 70%;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-radius: 25px;
+    }
+
+#concert-container
+    {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    width:100%;
+    height: 100%;
+    background-color: #00CD3A;
+    border-radius: 25px;
+    }
+
+.concert
+    {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    background-color: rgb(0, 255, 100);
+    box-shadow: 8px 10px 20px 0px rgba(0,0,0,0.9);
+    border: 1px solid rgb(0, 255, 100);
+    transition: all .5s;
+    font-family: "S-Core Dream 3", serif;
+    }
+
+#concert1
+    {
+    width: 165px;
+    height: 235px;
+    left: -130px;
+    top: 170px;
+    z-index: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 9px;
+    }
+#concert2
+    {
+    width: 248px;
+    height: 345px;
+    left: 70px;
+    top: 80px;
+    z-index: 3;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    }
+#concert3
+    {
+    width: 165px;
+    height: 235px;
+    left: 360px;
+    top: 170px;
+    z-index: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 9px;
+    }
+
+.concert img
+    {
+    max-width: 100%;
+    max-height: 100%;
+    }
+
+.concert-span
+    {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    }
+
+#ticket_left
+    {
+    position: absolute;
+    display: block;
+    bottom: 2%;
+    right: 16%;
+    background: lightgreen;
+    border-radius: 25%;
+    }
+
+#ticket_right
+    {
+    position: absolute;
+    display: block;
+    bottom: 2%;
+    right: 5%;
+    background: lightgreen;
+    border-radius: 25%;
+    }
+
+#last
+    {
+    font-family : "S-Core Dream 3" ;
+
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #F2F2F2;
+    }
+
+footer a
+    {
+    display: inline-block;
+    margin: 20px; 20px 10px 20px;
+    color: #808080; font-size: 11px;
+
+    }
+
+footer a:visited
+    {
+    color: #808080;
+    }
+
+footer p
+    {
+    margin-top: 0; margin-bottom: 0;
+    }
+
+footer p span
+    {
+    display: inline-block;
+    margin-left: 20px;
+
+    }
+
+@media (max-width : 800px)
+    {
+    body
+        {
+        margin: 0;
+        }
+
+    #MainContainer
+        {
+        position : relative ;
+        }
+
+    #main
+        {
+        position: relative;
+
+        background-color:gray;
+        width: 100%;
+        height: 100vh;
+
+        overflow:hidden;
+        }
+
+    #needMusic
+        {
+        font-family : "S-Core Dream 9" ;
+
+        position:absolute;
+        color: white;
+        z-index: 300;
+
+        width: 50%;
+        height: 10%;
+
+        top:10%;
+        right:25%;
+
+        font-size: 100px;
+        font-weight: 500;
+        opacity: 0;
+        transition: all 5s;
+        }
+
+    #melon
+        {
+        font-family : "S-Core Dream 9" ;
+
+        position:absolute;
+        color: #00CD3A;
+        z-index: 300;
+
+        width: 30%;
+        height: 20%;
+
+        top:65%;
+        right:45.3%;
+
+        font-size:150px;
+        font-weight: 900;
+
+        opacity: 0;
+        transition: all 5s;
+        }
+
+    #mainBlur
+        {
+        position: absolute;
+
+        width:100%;
+        height:100%;
+
+        background-color:black;
+
+        opacity: 0;
+        z-index: 200;
+        }
+
+    .con
+        {
+        position: absolute;
+        width: 100%;
+        height:100%;
+        z-index : 180 ;
+        }
+
+    #menu
+        {
+        height: auto;
+        display: flex;
+        z-index: 200;
+        }
+
+    ul
+        {
+        margin: 10px 5%;
+        }
+
+    li span
+        {
+        font-size: 15px;
+        width: 150px;
+        }
+
+    #sec1
+        {
+        width: 100% ;
+        height: 1000px ;
+        background-color: white ;
+        position : relative ;
+
+        transition : all 3s ;
+        }
+
+    .Hide
+        {
+        display : inline-block ;
+        width : 100% ;
+        height : 150px ;
+
+        position : absolute ;
+        left : 0px ;
+
+        z-index : 10 ;
+
+        background-color : white ;
+        }
+
+    #TopHide
+        {
+        top : 0px ;
+
+        box-shadow : 0px 1px 30px black ;
+        z-index : 10 ;
+        }
+
+    #UnderHide
+        {
+        top : 850px ;
+
+        box-shadow : 0px -1px 30px black ;
+        z-index : 10 ;
+        }
+
+    #Top100_Text
+        {
+        position : absolute ;
+        left : 25% ;
+        top : -6% ;
+
+        z-index : 20 ;
+        }
+
+    #Top100_Text_A
+        {
+        font-family : "S-Core Dream 9" ;
+        font-size : 72px ;
+
+        color : #00CD3A ;
+
+        display : inline-block ;
+        }
+
+    #Top100_Text_B
+        {
+        font-family : "S-Core Dream 5" ;
+        font-size : 52px ;
+
+        display : inline-block ;
+        }
+
+    #TIME
+        {
+        text-align : center ;
+        font-family : "S-Core Dream 3" ;
+
+        font-size : 12px ;
+        color : gray ;
+
+        display : inline-block ;
+        position : absolute ;
+
+        left : 78% ;
+        top : 5.9% ;
+
+        z-index : 20 ;
+
+        width : 120px ;
+        height : 30px ;
+        line-height : 6px ;
+
+        background-color : white ;
+
+        border : 2px solid #00CD3A ;
+        border-radius : 50px ;
+        }
+
+    .Option
+        {
+        display : inline-block ;
+        position : absolute ;
+
+        z-index : 21 ;
+
+        }
+
+    #AllPlay
+        {
+        top : 11% ;
+        left : 38% ;
+        }
+
+    #RandomPlay
+        {
+        top : 11% ;
+        left : 50% ;
+        }
+
+    #ChoicePlay
+        {
+        top : 11% ;
+        left : 62% ;
+        }
+
+    #Put
+        {
+        top : 11% ;
+        left : 74% ;
+        }
+
+    #Down
+        {
+        top : 11% ;
+        left : 86% ;
+        }
+
+    .In_Option
+        {
+        background : white ;
+        color : gray ;
+
+        font-size : 14px ;
+
+        width : 80px ;
+        height : 30px ;
+        line-height : 28px ;
+
+        text-align : center ;
+        border : 2px solid #00CD3A ;
+        border-radius : 25px ;
+
+        cursor : pointer ;
+
+        transition : all 0.5s ;
+        }
+
+    #AP_btn:hover
+        {
+        color : white ;
+        background-color : #00CD3A ;
+
+        transition : all 0.5s ;
+        }
+
+    #RP_btn:hover
+        {
+        color : white ;
+        background-color : #00CD3A ;
+
+        transition : all 0.5s ;
+        }
+
+    #CP_btn:hover
+        {
+        color : white ;
+        background-color : #00CD3A ;
+
+        transition : all 0.5s ;
+        }
+
+    #Put_btn:hover
+        {
+        color : white ;
+        background-color : #00CD3A ;
+
+        transition : all 0.5s ;
+        }
+
+    #Down_btn:hover
+        {
+        color : white ;
+        background-color : #00CD3A ;
+
+        transition : all 0.5s ;
+        }
+
+    .IconA
+        {
+        display : inline-block ;
+        width : 20px ;
+        height : 20px ;
+        }
+
+    .IconB
+        {
+        display : inline-block ;
+        width : 15px ;
+        height : 15px ;
+        }
+
+    .UD_IMG
+        {
+        width : 80px ;
+        height : 80px ;
+        }
+
+    #Top100_List_Outbox
+        {
+        position : absolute ;
+        left : 1% ;
+
+        width : 98% ;
+        height : 99% ;
+        border : 1px solid white ;
+
+        z-index : 1 ;
+        overflow: hidden ;
+
+        transition : all 3s ;
+        }
+
+    #Top100_List_Outbox input
+        {
+        width : 15px ;
+        height : 15px ;
+        }
+
+    #Top100_Main
+        {
+        text-align : center ;
+
+        background-color : white ;
+        color : #00CD3A ;
+
+        width : 98% ;
+        position : absolute ;
+        left : 0px ;
+        top : 380px ;
+
+        z-index : 10 ;
+        }
+
+    #Top100_Main > table
+        {
+        width : 100% ;
+        }
+
+    #Top100_Main p
+        {
+        margin : 0 ;
+
+        height : 45px ;
+        line-height : 45px ;
+
+        text-align : center ;
+
+        border-radius : 25px ;
+        }
+
+    /* 확대된 Top100 리스트 */
+    #Top100_InMain
+        {
+        text-align : center ;
+
+        overflow : hidden ;
+
+        border : 5px solid #00CD3A ;
+        border-radius : 40px ;
+        background-color : #00CD3A ;
+        color : white ;
+
+        width : 98% ;
+        height : 130px ;
+        position : absolute ;
+        left : 0px ;
+        top : 430px ;
+
+        transition : all 3s ;
+        }
+
+    #Top100_InMain_List
+        {
+        position : absolute ;
+        left : 0px ;
+        top : 0px ;
+
+        width : 100% ;
+        transition : all 3s ;
+        }
+
+    #Top100_InMain_List button
+        {
+        border : 0px solid black ;
+        border-radius : 25px ;
+
+        width : 30px ;
+        height : 30px ;
+
+        text-align : center ;
+
+        cursor : pointer ;
+        }
+
+    #Top100_InMain_List td
+        {
+        height : 130px ;
+        }
+
+    .TOP_img{width : 100px ; height : 100px ; }
+    .Top_check { width : 30px ; }
+    .Top_rank
+        {
+        width : 60px ;
+        font-size : 28px ;
+        font-family : "S-Core Dream 5" ;
+        }
+    .TT
+        {
+        font-family : "S-Core Dream 5" ;
+        }
+    .Top_variance { width : 30px ; }
+    .Top_IMG { width : 120px ; }
+    .Top_info1 { width : 30px ; }
+    .Top_info2 { width : 130px ; text-align : left ; }
+    .Top_info2 p { width : 130px ; white-space:nowrap ; overflow : hidden ; text-overflow:ellipsis ; }
+    .Top_album { width : 100px ; }
+    .Top_album p { font-size : 14px ;  width : 100px ; white-space:nowrap ; overflow : hidden ; text-overflow:ellipsis ; }
+    .Top_like { width : 100px ; }
+    .Top_button { width : 50px ; }
+
+    /* 확대된 Top100 아래 리스트 */
+    #Top100_InMain_BA
+        {
+        text-align : center ;
+
+        overflow : hidden ;
+
+        width : 98% ;
+        height : 300px ;
+        position : absolute ;
+        left : 0px ;
+        top : 568px ;
+
+        transition : all 3s ;
+        }
+
+    #Top100_InMain_List_BA
+        {
+        position : absolute ;
+        left : 2.5% ;
+        top : 0px ;
+
+        width : 96% ;
+        transition : all 3s ;
+        }
+
+    #Top100_InMain_List_BA button
+        {
+        border : 0px solid black ;
+        border-radius : 25px ;
+
+        width : 25px ;
+        height : 25px ;
+
+        text-align : center ;
+
+        cursor : pointer ;
+        }
+
+    /* 확대된 Top100 위 리스트 */
+    #Top100_InMain_AB
+        {
+        text-align : center ;
+
+        overflow : hidden ;
+
+        width : 98% ;
+        height : 300px ;
+        position : absolute ;
+        left : 0px ;
+        top : 110px ;
+
+        transition : all 3s ;
+        }
+
+    #Top100_InMain_List_AB
+        {
+        position : absolute ;
+        left : 2.5% ;
+        top : 270px ;
+
+        width : 96% ;
+        transition : all 3s ;
+        }
+
+    #Top100_InMain_List_AB button
+        {
+        border : 0px solid black ;
+        border-radius : 25px ;
+
+        width : 25px ;
+        height : 25px ;
+
+        text-align : center ;
+
+        cursor : pointer ;
+        }
+
+
+
+    #sec2
+        {
+        position : relative ;
+        z-index : 10 ;
+
+        width: 100%;
+        height: 700px;
+        background-color: white;
+
+        text-align : center ;
+        }
+
+    #S2_MainFrame
+        {
+        position : relative ;
+
+        display : inline-block ;
+        display : inline-block ;
+        width : 98% ;
+        height : 650px ;
+
+        transition : 2s ;
+        }
+
+    #S2_ULBTN
+        {
+        vertical-align : top ;
+
+        padding : 0 ;
+        margin : 0 ;
+        border : none ;
+
+        display : inline-block ;
+
+        background-color : #00CD3A ;
+
+        width : 49% ;
+        height : 50% ;
+
+        cursor : pointer ;
+        }
+
+    #S2_ULBTN_TEXT
+        {
+        display : inline-block ;
+        cursor : pointer ;
+
+        text-align : center ;
+
+        font-family : "S-Core Dream 9" ;
+        font-size : 52px ;
+
+        position : absolute ;
+        left : 3% ;
+        top : 3% ;
+        background : none ;
+        color : white ;
+
+        width : 150px ;
+        height : 90px ;
+
+        z-index : 20 ;
+
+        opacity : 0 ;
+
+        transition : 2s ;
+        }
+
+    #S2_URBTN
+        {
+        padding : 0 ;
+        margin : 0 ;
+        border : none ;
+
+        display : inline-block ;
+
+        background-color : white ;
+
+        width : 49% ;
+        height : 50% ;
+
+        cursor : pointer ;
+        }
+
+    #S2_URBTN_TEXT
+        {
+        display : inline-block ;
+        cursor : pointer ;
+
+        text-align : center ;
+
+        font-family : "S-Core Dream 9" ;
+        font-size : 52px ;
+
+        position : absolute ;
+        left : 80% ;
+        top : 3% ;
+        background : none ;
+        color : #00CD3A ;
+
+        width : 150px ;
+        height : 90px ;
+
+        z-index : 20 ;
+
+        opacity : 0 ;
+
+        transition : 2s ;
+        }
+
+    #S2_BLBTN
+        {
+        padding : 0 ;
+        margin : 0 ;
+        border : none ;
+
+        display : inline-block ;
+
+        background-color : #00CD3A ;
+
+        width : 49% ;
+        height : 50% ;
+
+        cursor : pointer ;
+        }
+
+    #S2_BLBTN_TEXT
+        {
+        display : inline-block ;
+        cursor : pointer ;
+
+        text-align : center ;
+
+        font-family : "S-Core Dream 9" ;
+        font-size : 52px ;
+
+        position : absolute ;
+        left : 3% ;
+        top : 88% ;
+        background : none ;
+        color : white ;
+
+        width : 150px ;
+        height : 90px ;
+
+        z-index : 20 ;
+
+        opacity : 0 ;
+
+        transition : 2s ;
+        }
+
+    #S2_BRBTN
+        {
+        padding : 0 ;
+        margin : 0 ;
+        border : none ;
+
+        display : inline-block ;
+
+        background-color : white ;
+
+        width : 49% ;
+        height : 50% ;
+
+        cursor : pointer ;
+        }
+
+    #S2_BRBTN_TEXT
+        {
+        display : inline-block ;
+        cursor : pointer ;
+
+        text-align : center ;
+
+        font-family : "S-Core Dream 9" ;
+        font-size : 52px ;
+
+        position : absolute ;
+        left : 80% ;
+        top : 88% ;
+        background : none ;
+        color : #00CD3A ;
+
+        width : 150px ;
+        height : 90px ;
+
+        z-index : 20 ;
+
+        opacity : 0 ;
+
+        transition : 2s ;
+        }
+
+    #S2_Main
+        {
+        display : inline-block ;
+
+        text-align : left ;
+
+        position : absolute ;
+        left : 0px ;
+        top : 100px ;
+
+        z-index : 10 ;
+
+        width : 100% ;
+        height : 70% ;
+
+        background-color : #00CD3A ;
+
+        overflow : hidden ;
+        }
+
+    #S2_Main_C
+        {
+        display : inline-block ;
+
+        text-align : left ;
+
+        position : absolute ;
+        left : 0px ;
+        top : 100px ;
+
+        z-index : 11 ;
+
+        width : 49.8% ;
+        height : 3% ;
+
+        background-color : white ;
+        }
+
+    #S2_Main_B
+        {
+        display : inline-block ;
+
+        text-align : left ;
+
+        position : absolute ;
+        left : 0px ;
+        top : 535px ;
+
+        z-index : 11 ;
+
+        width : 49.8% ;
+        height : 3% ;
+
+        background-color : white ;
+        }
+
+    #S2_TopAlbum
+        {
+        display : inline-block ;
+        white-space : nowrap ;
+
+        position : absolute ;
+        left : 0px ;
+        top : 2% ;
+
+        width : 1000% ;
+        height : 48% ;
+
+        background-color : white ;
+
+        overflow : hidden;
+        }
+
+    #S2_BottomAlbum
+        {
+        display : inline-block ;
+        white-space : nowrap ;
+
+        position : absolute ;
+        left : 0px ;
+        top : 50% ;
+
+        width : 1000% ;
+        height : 48% ;
+
+        background-color : white ;
+
+        overflow : hidden;
+        }
+
+    .S2_Album
+        {
+        position : relative ;
+
+        margin : 30px ;
+
+        display : inline-block ;
+        width : 155px ;
+        height : 155px ;
+
+        border : 1px solid black ;
+        }
+
+    .S2_Album:hover
+        {
+        cursor : pointer ;
+        }
+
+    #S2_Text
+        {
+        font-family : "S-Core Dream 9" ;
+        font-size : 80px ;
+
+        position : absolute ;
+        left : 29% ;
+        top : -17% ;
+        }
+
+    #S2_Text_KPOP
+        {
+        font-family : "S-Core Dream 9" ;
+        font-size : 58px ;
+
+        position : absolute ;
+        left : 26.1% ;
+        top : 3% ;
+
+        color : white ;
+
+        z-index : 15 ;
+
+        cursor : default ;
+        }
+
+    #S2_Text_POP
+        {
+        font-family : "S-Core Dream 9" ;
+        font-size : 58px ;
+
+        position : absolute ;
+        left : 49.3% ;
+        top : 86% ;
+
+        color : #00CD3A ;
+
+        z-index : 15 ;
+
+        cursor : default ;
+        }
+
+    .newAlbumImg
+        {
+        width : 100% ;
+        height : 100% ;
+        }
+
+    .A
+        {
+        position : absolute ;
+        left : 0px ;
+        top : 0px ;
+
+        width : 100% ;
+        height : 100% ;
+        background-color : black ;
+        z-index : -1 ;
+
+        transition : 2s ;
+
+        opacity : 0 ;
+        }
+
+    .B
+        {
+        position : absolute ;
+        left : 0px ;
+        top : 0px ;
+
+        width : 100% ;
+        height : 100% ;
+        background-color : black ;
+        z-index : -1 ;
+
+        transition : 2s ;
+
+        opacity : 0 ;
+        }
+
+    #sec3
+        {
+        height: 600px;
+        }
+
+    #title-wrap
+            {
+            left: 0;
+            max-width: 100%;
+            font-size: 50px;
+            }
+
+    #MnC
+        {
+        height: 60%;
+        }
+
+    #magazine-wrapper
+        {
+        left: 0;
+        width: 65%;
+        }
+
+    .magazine-set
+        {
+        width: 100%;
+        }
+
+    .magazine
+        {
+        width: 25%;
+        height: 33%;
+        margin: 20px 10px 10px 20px;
+        }
+
+    .magazine span
+        {
+        font-size: 10px;
+        top: 20%; left: 20%; right: 20%; bottom: 20%;
+        }
+
+    #magazine_left
+        {
+        right: 13%;
+        }
+
+    #magazine_right
+        {
+        right: 5%;
+        }
+
+    #ticket-wrapper
+        {
+        width: 33%;
+        left: 65%;
+        border-left: 3px solid white;
+        border-right: 3px solid white;
+        }
+
+    #concert1
+        {
+        width: 40%;
+        height: 45%;
+        font-size: 6px;
+        }
+    #concert2
+        {
+        width: 62%;
+        height: 65%;
+        font-size: 12px;
+        padding: 3px;
+        }
+    #concert3
+        {
+        width: 40%;
+        height: 45%;
+        font-size: 6px;
+        }
+
+    #ticket_left
+        {
+        right: 22%;
+        }
+
+    #ticket_right
+        {
+        right: 6%;
+        }
+
+    #last
+        {
+        font-family : "S-Core Dream 3" ;
+
+        position: relative;
+        width: 100%;
+        height: 200px;
+        background-color: #F2F2F2;
+        }
+
+    footer a
+        {
+        display: inline-block;
+        margin: 20px; 20px 10px 20px;
+        color: #808080; font-size: 11px;
+
+        }
+
+    footer a:visited
+        {
+        color: #808080;
+        }
+
+    footer p
+        {
+        margin-top: 0; margin-bottom: 0;
+        }
+
+    footer p span
+        {
+        display: inline-block;
+        margin-left: 20px;
+
+        }
+    }
+
+
+
+</style>
+
+</head>
+<body>
+
+<div id="MainContainer">
+
+    <header id="main"> <!--홈-->
+        <div id="needMusic">At Need in Music,</div>
+        <div id="melon">Melon</div>
+
+        <div id="mainBlur"></div>
+
+        <img src="Banner/consert5.gif" id="con6" class="con">
+        <img src="Banner/consert4.gif" id="con5" class="con">
+        <img src="Banner/consert3.gif" id="con4" class="con">
+        <img src="Banner/consert2.gif" id="con3" class="con">
+        <img src="Banner/consert1.gif" id="con2" class="con">
+        <img src="Banner/consert.gif" id="con1" class="con">
+    </header>
+
+    <nav id="menu"><!--메뉴바-->
+        <ul>
+            <li class="dropdown"><span class="menus">Melon</span>
+                <div class="dropdown-content">
+                    <span>이용권 구매</span>
+                    <span>이벤트</span>
+                    <span>공지 사항</span>
+                </div>
+            </li>
+            <li class="dropdown"><span class="menus">Music</span>
+                <div class="dropdown-content">
+                    <span>멜론 차트</span>
+                    <span>장르 음악</span>
+                    <span>최신 음악</span>
+                </div>
+            </li>
+            <li class="dropdown"><span class="menus">Contents</span>
+                <div class="dropdown-content">
+                    <span>메거진</span>
+                    <span>콘서트</span>
+                    <span>멜론 DJ</span>
+                    <span>멜론 TV</span>
+                </div>
+            </li>
+            <li><span>About</span></li>
+        </ul>
+    </nav>
+
+    <section id="sec1"><!-- 탑 100 -->
+        <div id="TopHide" class="Hide"></div>
+        <div id="Top100_Text"><p id="Top100_Text_A">Melon</p><p id="Top100_Text_B">TOP 20</p></div>
+        <div id="AllPlay" class="Option">
+            <button id="AP_btn" class="In_Option">전체듣기</button>
+        </div>
+        <div id="RandomPlay" class="Option">
+            <button id="RP_btn" class="In_Option">셔플듣기</button>
+        </div>
+        <div id="ChoicePlay" class="Option">
+            <button id="CP_btn" class="In_Option">선택듣기</button>
+        </div>
+        <div id="Put" class="Option">
+            <button id="Put_btn" class="In_Option">담기</button>
+        </div>
+        <div id="Down" class="Option">
+            <button id="Down_btn" class="In_Option">다운</button>
+        </div>
+        <div id="TIME">
+            <p>2022. 07. 11 기준</p>
+        </div>
+        <div id="Top100_List_Outbox" onwheel="Main_Scroll(event)">
+            <div id="Top100_Main">
+                <table>
+                    <tr>
+                        <td class="Top_check"></td>
+                        <td class="Top_rank"><p class="TT" style="font-size : 18px ; ">순위</p></td>
+                        <td class="Top_variance"></td>
+                        <td class="Top_IMG"></td>
+                        <td class="Top_info1"></td>
+                        <td class="Top_info2"><p class="TT" style="font-size : 18px ; ">곡정보</p></td>
+                        <td class="Top_album"><p class="TT" style="font-size : 18px ; ">앨범</p></td>
+                        <td class="Top_like"><p class="TT" style="font-size : 18px ; ">좋아요</p></td>
+                        <td class="Top_button"><p class="TT" style="font-size : 18px ; ">재생</p></td>
+                        <td class="Top_button"><p class="TT" style="font-size : 18px ; ">담기</p></td>
+                        <td class="Top_button"><p class="TT" style="font-size : 18px ; ">저장</p></td>
+                        <td class="Top_button"><p class="TT" style="font-size : 18px ; ">뮤비</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="Top100_InMain">
+                <table id="Top100_InMain_List">
+
+                </table>
+            </div>
+            <div id="Top100_InMain_BA">
+                <table id="Top100_InMain_List_BA">
+                </table>
+            </div>
+            <div id="Top100_InMain_AB">
+                <table id="Top100_InMain_List_AB">
+                </table>
+            </div>
+        </div>
+
+        <div id="UnderHide" class="Hide"></div>
+    </section>
+
+    <section id="sec2"><!-- 최신음악 -->
+        <div id="S2_MainFrame">
+            <div id="S2_Text">최신 앨범</div>
+            <div id="S2_Text_KPOP">K-POP</div>
+            <div id="S2_Text_POP">GLOBAL</div>
+            <button id="S2_ULBTN" onclick="S2_ULBTN_L()" onmouseover="TextLBtn_OVER(this)" onmouseout="TextLBtn_OUT(this)"></button>
+            <div id="S2_ULBTN_TEXT"><<</div>
+            <button id="S2_URBTN" onclick="S2_URBTN_R()" onmouseover="TextRBtn_OVER(this)" onmouseout="TextRBtn_OUT(this)"></button>
+            <div id="S2_URBTN_TEXT">>></div>
+            <button id="S2_BLBTN" onclick="S2_BLBTN_L()" onmouseover="TextLBtn_OVER(this)" onmouseout="TextLBtn_OUT(this)"></button>
+            <div id="S2_BLBTN_TEXT"><<</div>
+            <button id="S2_BRBTN" onclick="S2_BRBTN_R()" onmouseover="TextRBtn_OVER(this)" onmouseout="TextRBtn_OUT(this)"></button>
+            <div id="S2_BRBTN_TEXT">>></div>
+            <div id="S2_Main_C"></div>
+            <div id="S2_Main_B"></div>
+            <div id="S2_Main">
+                <div id="S2_TopAlbum">
+                </div>
+                <div id="S2_BottomAlbum">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec3"><!-- 매거진 & 콘서트 -->
+        <div  id="title-wrap">
+            <span id="magazine-title">
+                MAGAZINE & CONCERT
+            </span>
+        </div>
+        <div id="MnC">
+            <div id="magazine-wrapper">
+                <div id="magazine-container">
+                    <div class="magazine-set" style="left: -100%; opacity: 0;">
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12687&startIndex=0&musicToday=Y">
+                                <img src="images/메거진1.jpg">
+                                <span>1</span>
+                            </a>
+                        </div>
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12683&startIndex=0&musicToday=Y">
+                                <img src="images/메거진2.jpg">
+                                <span>2</span>
+                            </a>
+                        </div>
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12680&startIndex=0&musicToday=Y">
+                                <img src="images/메거진3.jpg">
+                                <span>3</span>
+                            </a>
+                        </div>
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12699&startIndex=0&musicToday=Y">
+                                <img src="images/메거진4.jpg">
+                                <span>4</span>
+                            </a>
+                        </div>
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12694&startIndex=0&musicToday=Y">
+                                <img src="images/메거진5.jpg">
+                                <span>5</span>
+                            </a>
+                        </div>
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12692&startIndex=0&musicToday=Y">
+                                <img src="images/메거진6.jpg">
+                                <span>6</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="magazine-set" style="left: 0%">
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12687&startIndex=0&musicToday=Y">
+                                <img src="images/메거진1.jpg">
+                                <span>[비하인드 컷] 일어나라 그대여, aespa [Girls]</span>
+                            </a>
+                        </div>
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12683&startIndex=0&musicToday=Y">
+                                <img src="images/메거진2.jpg">
+                                <span>[비하인드 컷] 스스로의 아이덴티티, 그리고 도피를 탐구하다. NoSo[Stay Proud of Me]</span>
+                            </a>
+                        </div>
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12680&startIndex=0&musicToday=Y">
+                                <img src="images/메거진3.jpg">
+                                 <span>[비하인드 컷] 허성현(Hugh)의 매력을, 한껏 담은 첫번째 정규앨범, [926]</span>
+                            </a>
+                        </div>
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12699&startIndex=0&musicToday=Y">
+                                <img src="images/메거진4.jpg">
+                                <span>[매거진 이벤트] 6월 주간인기상, 그 영광의 주인공들!</span>
+                            </a>
+
+                        </div>
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12694&startIndex=0&musicToday=Y">
+                                <img src="images/메거진5.jpg">
+                                <span>[장르 인사이드] '극강 기교' 클래식, 연주자에게는 고통을 청중에게는 환희를</span>
+                            </a>
+                        </div>
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12692&startIndex=0&musicToday=Y">
+                                <img src="images/메거진6.jpg">
+                                <span>[매거진 이벤트] 시원한 'LOVEADE'로 컴백-! VIVIZ (비비지)가 만들고 싶은 TOP100은?</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="magazine-set" style="left: 100%; opacity: 0;">
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12687&startIndex=0&musicToday=Y">
+                                <img src="images/메거진1.jpg">
+                                <span>1</span>
+                            </a>
+                        </div>
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12683&startIndex=0&musicToday=Y">
+                                <img src="images/메거진2.jpg">
+                                <span>2</span>
+                            </a>
+                        </div>
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12680&startIndex=0&musicToday=Y">
+                                <img src="images/메거진3.jpg">
+                                <span>3</span>
+                            </a>
+                        </div>
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12699&startIndex=0&musicToday=Y">
+                                <img src="images/메거진4.jpg">
+                                <span>4</span>
+                            </a>
+                        </div>
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12694&startIndex=0&musicToday=Y">
+                                <img src="images/메거진5.jpg">
+                                <span>5</span>
+                            </a>
+                        </div>
+                        <div class="magazine" onmouseover="expand(this)" onmouseout="out(this)">
+                            <a href="https://www.melon.com/musicstory/inform.htm?mstorySeq=12692&startIndex=0&musicToday=Y">
+                                <img src="images/메거진6.jpg">
+                                <span>6</span>
+                            </a>
+                        </div>
+                    </div>
+                    <button type="button" id="magazine_left" onclick="magazine_left()"><img src="images/left.png"></button>
+                    <button type="button" id="magazine_right" onclick="magazine_right()"><img src="images/right.png"></button>
+                </div>
+            </div>
+            <div id="ticket-wrapper">
+                <div id="concert-container">
+                    <div class="concert" id="concert1" style="left: -32%; top: 30%" onmouseover="concert1_over(this)" onmouseout="concert1_out(this)">
+                        <a href=""><img src="images/공연.png" alt="콘서트1"></a>
+                        <div class="concert-span">
+                            <span>
+                                Wave to Earth 단독 공연<br>멜론 티켓 단독 오픈
+                            </span>
+                        </div>
+                    </div>
+                    <div class="concert" id="concert2" style="left: 17%; top: 15%" onmouseover="concert2_over(this)" onmouseout="concert2_out(this)">
+                        <a href=""><img src="images/YB-concert.png" alt="콘서트1"></a>
+                        <div class="concert-span">
+                            <span>
+                                YB 단독 콘서트 'LIGHTS : BURNS'<br>대한민국 최정상 대표 록밴드 YB
+                            </span>
+                        </div>
+                    </div>
+                    <div class="concert" id="concert3" style="left: 90%; top: 30%" onmouseover="concert3_over(this)" onmouseout="concert3_out(this)">
+                        <a href=""><img src="images/뮤지컬.png" alt="콘서트1"></a>
+                        <div class="concert-span">
+                            <span>
+                                뮤지컬 점박이<br>EBS 최고의 컨텐츠 '점박이'가 돌아왔다!
+                            </span>
+                        </div>
+                    </div>
+                    <button type="button" id="ticket_left" onclick="ticket_left()"><img src="images/left.png"></button>
+                    <button type="button" id="ticket_right" onclick="ticket_right()"><img src="images/right.png"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="last"> <!---->
+        <nav>
+            <a>Blog</a> |
+            <a>Github</a>
+        </nav>
+        <p>
+            <span>만든이 : 이경구, 조승희, 김형준</span><br/>
+            <span>이메일 : tifm7890@gmail.com | holly_o@naver.com | hjjk615@naver.com</span><br/>
+            <span>Copyright 2022. All Rights Reserved.</span>
+        </p>
+    </footer>
+
+
+<script>
+
+//////////////////////////////////////// header - JS 시작
+    let con1 = document.getElementById("con1");
+    let con2 = document.getElementById("con2");
+    let con3 = document.getElementById("con3");
+    let con4 = document.getElementById("con4");
+    let con5 = document.getElementById("con5");
+    let con6 = document.getElementById("con6");
+
+
+    let con = document.getElementsByClassName("con");
+
+    let x = 0;
+    setInterval(function()
+            {
+            setTimeout(function()
+                    {
+                    if(x==0)
+                        {
+                        con1.style.zIndex = 190;
+                        con2.style.zIndex = 180;
+                        con3.style.zIndex = 180;
+                        con4.style.zIndex = 180;
+                        con5.style.zIndex = 180;
+                        con6.style.zIndex = 180;
+
+                        x=1;
+                        }
+                    else if(x==1)
+                        {
+                        con1.style.zIndex = 180;
+                        con2.style.zIndex = 190;
+                        con3.style.zIndex = 180;
+                        con4.style.zIndex = 180;
+                        con5.style.zIndex = 180;
+                        con6.style.zIndex = 180;
+                        x=2;
+                        }
+                    else if(x==2)
+                        {
+                        con1.style.zIndex = 180;
+                        con2.style.zIndex = 180;
+                        con3.style.zIndex = 190;
+                        con4.style.zIndex = 180;
+                        con5.style.zIndex = 180;
+                        con6.style.zIndex = 180;
+                        x=3;
+                        }
+                    else if(x==3)
+                        {
+                        con1.style.zIndex = 180;
+                        con2.style.zIndex = 180;
+                        con3.style.zIndex = 180;
+                        con4.style.zIndex = 190;
+                        con5.style.zIndex = 180;
+                        con6.style.zIndex = 180;
+                        x=4;
+                        }
+                    else if(x==4)
+                        {
+                        con1.style.zIndex = 180;
+                        con2.style.zIndex = 180;
+                        con3.style.zIndex = 180;
+                        con4.style.zIndex = 180;
+                        con5.style.zIndex = 190;
+                        con6.style.zIndex = 180;
+                        x=5;
+                        }
+                    else if(x==5)
+                        {
+                        con1.style.zIndex = 180;
+                        con2.style.zIndex = 180;
+                        con3.style.zIndex = 180;
+                        con4.style.zIndex = 180;
+                        con5.style.zIndex = 180;
+                        con6.style.zIndex = 190;
+                        x=0;
+                        }
+                    }, 3000);
+            }, 3000);
+
+
+        //메인화면 텍스트 & blur 효과
+        window.onload = FadeIn;
+
+        function FadeIn()
+            {
+            var needMusic = document.getElementById("needMusic");
+            var melon = document.getElementById("melon");
+            var Blur = document.getElementById("mainBlur");
+            var opacity = 0;
+            var opacity2 = 0;
+            var opacity3 = 0;
+            var intervalID = setInterval(function()
+                {
+                if (opacity < 0.7)
+                    {
+                    opacity = opacity + 0.1;
+                    Blur.style.opacity = opacity;
+
+                    setTimeout(function()
+                        {
+                        if(opacity2 < 1)
+                            {
+                            /*opacity2 = opacity2 + 0.1;*/
+                            needMusic.style.opacity = "1";
+
+
+                            setTimeout(function()
+                                {
+                                if(opacity3 < 1)
+                                    {
+                                    /*opacity3 = opacity3 + 0.1;*/
+                                    melon.style.opacity = "1";
+                                    }
+                                }, 1800);
+                            }
+                        }, 3000);
+                    }
+                else
+                    {
+                    clearInterval(intervalID);
+                    }
+               }, 200);
+            }
+
+//////////////////////////////////////// header - JS 끝
+
+//////////////////////////////////////// sec1 - JS 시작
+
+
+let rank = [1] ;
+let album = ["st.jpg"] ;
+let title = [
+            "그때 그 순간 그대로(그그그)",
+            "보고싶었어",
+            "POP!",
+            "LOVE DIVE",
+            "Clink Clink (클링 클링)",
+            "That That (prod. & feat. SUGA of BTS)",
+            "TOMBOY",
+            "정이라고 하자 (Feat. 10CM)",
+            "사랑은 늘 도망가",
+            "우리들의 블루스",
+            "사랑인가 봐",
+            "나의 X에게",
+            "다시 만날 수 있을까",
+            "Girls",
+            "무지개",
+            "봄여름가을겨울 (Still Life)",
+            "LOVE me",
+            "Yet To Come",
+            "이제 나만 믿어요",
+            "아버지"
+            ] ;
+let singer = [
+            "WSG워너비(가야G)",
+            "WGS워너비 (4FIRE)",
+            "나연 (TWICE)",
+            "IVE(아이브)",
+            "WSG워너비 (오아시소)",
+            "싸이 (PSY)",
+            "(여자)아이들",
+            "BIG Naughty (서동현)",
+            "임영웅",
+            "임영웅",
+            "멜로망스",
+            "경서",
+            "임영웅",
+            "aespa",
+            "임영웅",
+            "BIGBANG (빅뱅)",
+            "BE'O (비오)",
+            "방탄소년단",
+            "임영웅",
+            "임영웅"
+            ] ;
+let albumName = [
+            "WSG 워너비 1집",
+            "WSG 워너비 1집",
+            "IM NAYEON",
+            "LOVE DIVE",
+            "WSG워너비 1집",
+            "싸다9",
+            "I NEVER DIE",
+            "정이라고 하자",
+            "신사와 아가씨 OST Part.2",
+            "IM HERO",
+            "사랑인가 봐 (사내맞선 OST 스페셜 트랙)",
+            "나의 X에게",
+            "IM HERO",
+            "Girls - The 2nd Mini Album",
+            "IM HERO",
+            "봄여름가을겨울 (Still Life)",
+            "LOVE me",
+            "Proof",
+            "내일은 미스터트롯 우승자 특전곡",
+            "IM HERO",
+            "내가 아니라도"
+            ] ;
+let like = [
+            "36,108",
+            "31,452",
+            "47,238",
+            "160,716",
+            "11,850",
+            "107,059",
+            "197,440",
+            "144,726",
+            "167,317",
+            "68,940",
+            "141,601",
+            "89,934",
+            "54,713",
+            "24,504",
+            "43,492",
+            "277,375",
+            "94,685",
+            "107,964",
+            "156,299",
+            "39,228"
+            ] ;
+
+List_Up() ;
+
+function List_Up()
+    {
+    let TEXT_A = "" ;
+    let TEXT_B = "" ;
+    let TEXT_C = "" ;
+
+
+    let Main = document.getElementById("Top100_InMain_List") ;
+    let Main_D = document.getElementById("Top100_InMain_List_BA") ;
+    let Main_U = document.getElementById("Top100_InMain_List_AB") ;
+
+
+    for (i=0 ; i<title.length ; i++)
+        {
+        TEXT_A = TEXT_A + "<tr>" +
+                        "<td class='Top_check'><input type='checkbox' class='check' name='" + (i+1) + "' onclick='Check(this)'></td>" +
+                        "<td class='Top_rank'><p>" + (i + rank[0]) + "</p></td>" +
+                        "<td class='Top_variance'><p>-</p></td>" +
+                        "<td class='Top_IMG'><img class='TOP_img' src='Rank/" + ((i+1) + album[0]) + "'></td>" +
+                        "<td class='Top_info1'><button><img class='IconA' src='Icon/Info.png'></button></td>" +
+                        "<td class='Top_info2'><p>" + title[i] + "</p><p>" + singer[i] + "</p></td>" +
+                        "<td class='Top_album'><p>" + albumName[i] + "</p></td>" +
+                        "<td class='Top_like'><p>" + "♥" + like[i] + "</p></td>" +
+                        "<td class='Top_button'><button><img class='IconA' src='Icon/Play.png'></button></td>" +
+                        "<td class='Top_button'><button><img class='IconA' src='Icon/Plus.png'></button></td>" +
+                        "<td class='Top_button'><button><img class='IconA' src='Icon/Save.png'></button></td>" +
+                        "<td class='Top_button'><button><img class='IconA' src='Icon/MV.png'></button></td>" +
+                        "</tr>" ;
+
+        TEXT_C = TEXT_C + "<tr>" +
+                        "<td class='Top_check'><input type='checkbox' class='check' name='" + (i+1) + "' onclick='Check(this)'></td>" +
+                        "<td class='Top_rank'><p>" + (i + rank[0]) + "</p></td>" +
+                        "<td class='Top_variance'><p>-</p></td>" +
+                        "<td class='Top_IMG'><img class='UD_IMG' src='Rank/" + ((i+1) + album[0]) + "'></td>" +
+                        "<td class='Top_info1'><button><img class='IconB' src='Icon/Info.png'></button></td>" +
+                        "<td class='Top_info2'><p>" + title[i] + "</p><p>" + singer[i] + "</p></td>" +
+                        "<td class='Top_album'><p>" + albumName[i] + "</p></td>" +
+                        "<td class='Top_like'><p>" + like[i] + "</p></td>" +
+                        "<td class='Top_button'><button><img class='IconB' src='Icon/Play.png'></button></td>" +
+                        "<td class='Top_button'><button><img class='IconB' src='Icon/Plus.png'></button></td>" +
+                        "<td class='Top_button'><button><img class='IconB' src='Icon/Save.png'></button></td>" +
+                        "<td class='Top_button'><button><img class='IconB' src='Icon/MV.png'></button></td>" +
+                        "</tr>"
+        }
+
+    for (i=0 ; i<title.length-1 ; i++)
+        {
+        TEXT_B = TEXT_B + "<tr>" +
+                        "<td class='Top_check'><input type='checkbox' class='check' name='" + (i+2) + "' onclick='Check(this)'></td>" +
+                        "<td class='Top_rank'><p>" + ((i+1) + rank[0]) + "</p></td>" +
+                        "<td class='Top_variance'><p>-</p></td>" +
+                        "<td class='Top_IMG'><img class='UD_IMG' src='Rank/" + ((i+2) + album[0]) + "'></td>" +
+                        "<td class='Top_info1'><button><img class='IconB' src='Icon/Info.png'></button></td>" +
+                        "<td class='Top_info2'><p>" + title[i+1] + "</p><p>" + singer[i+1] + "</p></td>" +
+                        "<td class='Top_album'><p>" + albumName[i+1] + "</p></td>" +
+                        "<td class='Top_like'><p>" + like[i+1] + "</p></td>" +
+                        "<td class='Top_button'><button><img class='IconB' src='Icon/Play.png'></button></td>" +
+                        "<td class='Top_button'><button><img class='IconB' src='Icon/Plus.png'></button></td>" +
+                        "<td class='Top_button'><button><img class='IconB' src='Icon/Save.png'></button></td>" +
+                        "<td class='Top_button'><button><img class='IconB' src='Icon/MV.png'></button></td>" +
+                        "</tr>"
+        }
+    Main.innerHTML = TEXT_A ;
+    Main_D.innerHTML = TEXT_B ;
+    Main_U.innerHTML = TEXT_C ;
+    }
+
+let Top100_Scroll_UD = 0 ;
+let Top100_Scroll_UD_BA = 0 ;
+let Top100_Scroll_UD_AB = 270 ;
+
+function Main_Scroll(e)
+    {
+    console.log(e.wheelDelta) ;
+    e.preventDefault();
+
+    let A = document.getElementById("Top100_InMain_List") ;
+    A.style.transition = "all 1s" ;
+
+    let B = document.getElementById("Top100_InMain_List_BA") ;
+    B.style.transition = "all 1s" ;
+
+    let C = document.getElementById("Top100_InMain_List_AB") ;
+    C.style.transition = "all 1s" ;
+
+    if (e.wheelDelta > 0 && Top100_Scroll_UD < 0)
+        {
+        Top100_Scroll_UD = Top100_Scroll_UD + 134 ;
+        A.style.top = Top100_Scroll_UD + "px" ;
+
+        Top100_Scroll_UD_BA = Top100_Scroll_UD_BA + 99 ;
+        B.style.top = Top100_Scroll_UD_BA + "px" ;
+
+        Top100_Scroll_UD_AB = Top100_Scroll_UD_AB + 99 ;
+        C.style.top = Top100_Scroll_UD_AB + "px" ;
+        }
+    else if (e.wheelDelta < 0 && Top100_Scroll_UD > -2527)
+        {
+        Top100_Scroll_UD = Top100_Scroll_UD - 134 ;
+        A.style.top = Top100_Scroll_UD + "px" ;
+
+        Top100_Scroll_UD_BA = Top100_Scroll_UD_BA - 99 ;
+        B.style.top = Top100_Scroll_UD_BA + "px" ;
+
+        Top100_Scroll_UD_AB = Top100_Scroll_UD_AB - 99 ;
+        C.style.top = Top100_Scroll_UD_AB + "px" ;
+        }
+    }
+
+function Check(obj)
+	{
+	let List = document.getElementsByClassName("check") ;
+
+	for (i=0 ; i<List.length ; i++)
+		{
+		if (obj.name == List[i].name)
+			{
+			if(List[i].checked)
+				{
+				List[i].checked = false ;
+				}
+			else
+				{
+				List[i].checked = true ;
+				}
+			}
+		}
+	if (obj.checked)
+		{
+		obj.checked = false ;
+		}
+	else
+		{
+		obj.checked = true ;
+		}
+	}
+//////////////////////////////////////// sec1 - JS 끝
+
+
+//////////////////////////////////////// sec2 - JS 시작
+
+
+let new_click_UD = 0 ;
+let new_click_UDG = 0 ;
+
+//국내 앨범 왼쪽 버튼
+function S2_ULBTN_L()
+    {
+    let A = document.getElementById("S2_TopAlbum") ;
+    A.style.transition = "all 3s" ;
+
+    //버튼 비활성화 조건
+    if (new_click_UD === -3038)
+        {
+        let target = document.getElementById('S2_ULBTN');
+        target.disabled = true;
+        target.style.cursor = "default";
+
+        let A = document.getElementById("S2_ULBTN_TEXT") ;
+        A.style.opacity = "0" ;
+        A.style.left = "3%" ;
+        }
+
+    //버튼 활성화 일 때
+    else if (new_click_UD <= 0)
+        {
+        new_click_UD = new_click_UD - 434 ;
+        A.style.left = new_click_UD + "px" ;
+
+        const target_R = document.getElementById('S2_URBTN');
+        target_R.style.cursor = "pointer";
+        target_R.disabled = false;
+        }
+    }
+
+//국내 앨범 오른쪽 버튼
+function S2_URBTN_R()
+    {
+    let A = document.getElementById("S2_TopAlbum") ;
+    A.style.transition = "all 3s" ;
+
+    //버튼 비활성화 조건
+    if (new_click_UD >= 0)
+        {
+        const target = document.getElementById('S2_URBTN');
+        target.disabled = true;
+        target.style.cursor = "default";
+
+        let A = document.getElementById("S2_URBTN_TEXT") ;
+        A.style.opacity = "0" ;
+        A.style.left = "86%" ;
+        }
+
+    //버튼 활성화 일 때
+    else if (new_click_UD < 0)
+        {
+        new_click_UD = new_click_UD + 434 ;
+        A.style.left = new_click_UD + "px" ;
+
+        const target_L = document.getElementById('S2_ULBTN');
+        target_L.style.cursor = "pointer";
+        target_L.disabled = false;
+        }
+    }
+
+//해외 앨범 왼쪽 버튼
+function S2_BLBTN_L()
+    {
+    let A = document.getElementById("S2_BottomAlbum") ;
+    A.style.transition = "all 3s" ;
+
+    //버튼 비활성화 조건
+    if (new_click_UDG === -3038)
+        {
+        let target = document.getElementById('S2_BLBTN');
+        target.disabled = true;
+        target.style.cursor = "default";
+
+        let A = document.getElementById("S2_BLBTN_TEXT") ;
+        A.style.opacity = "0" ;
+        A.style.left = "3%" ;
+        }
+
+    //버튼 활성화 일 때
+    else if (new_click_UDG <= 0)
+        {
+        new_click_UDG = new_click_UDG - 434 ;
+        A.style.left = new_click_UDG + "px" ;
+
+        const target_R = document.getElementById('S2_BRBTN');
+        target_R.style.cursor = "pointer";
+        target_R.disabled = false;
+        }
+
+    }
+
+//해외 앨범 오른쪽 버튼
+function S2_BRBTN_R()
+    {
+    let A = document.getElementById("S2_BottomAlbum") ;
+    A.style.transition = "all 3s" ;
+
+    //버튼 비활성화 조건
+    if (new_click_UDG >= 0)
+        {
+        const target = document.getElementById('S2_BRBTN');
+        target.disabled = true;
+        target.style.cursor = "default";
+
+        let A = document.getElementById("S2_BRBTN_TEXT") ;
+        A.style.opacity = "0" ;
+        A.style.left = "86%" ;
+        }
+
+    //버튼 활성화 일 때
+    else if (new_click_UDG < 0)
+        {
+        new_click_UDG = new_click_UDG + 434 ;
+        A.style.left = new_click_UDG + "px" ;
+
+        const target_L = document.getElementById('S2_BLBTN');
+        target_L.style.cursor = "pointer";
+        target_L.disabled = false;
+        }
+    }
+
+let Name = ["1CHU (원츄)", "정해일", "21학번", "최도영(CANDO)", "청하",
+              "이석훈", "seshin, M3CHVNIC (메카닉)", "빈센트블루", "버스터즈", "박근혁 SONGBOOK",
+              "SEMIN (세민)", "크루셜스타 (CRUCiAL STAR)", "에피타이저 (Appetizer)", "서로 (Suh Ro)", "JINex (지넥스)",
+               "비버 (Beaver)", "신케이", "박필규", "Cozy Groove", "KIND, 하동균, Skinny Brown"] ;
+
+let Name2 = ["DOMi & JD BECK", "NIKI", "Devon Cole", "Mabel", "Emotional Oranges",
+              "Phum Viphurit", "Boy Pablo", "Bipolar Sunshine", "IF YOU DARE", "Garrett Nash",
+              "Sofia Carson", "Russ Millions", "Mew Suppasit, 범키", "blackbear", "James Bay",
+               "Paris Texas", "King Princess", "Cuco", "AleXa (알렉사)", "Kid Cudi"] ;
+
+makeAlbum();
+
+function makeAlbum()
+    {
+    let textA = "";
+    let textB = "";
+
+    let kpop = document.getElementById("S2_TopAlbum");
+    let pop = document.getElementById("S2_BottomAlbum");
+
+    for (i=0; i<20; i++)
+        {
+        textA = textA + "<div class='S2_Album' onmouseover='NewAlbum_Over(this)' onmouseout='NewAlbum_Out(this)'><img class='newAlbumImg' src='k-pop_n/na" + (i+1) + ".jpg'><div class='A'>" + Name[i] + "</div></div>"
+        }
+
+    for (i=0; i<20; i++)
+        {
+        textB = textB + "<div class='S2_Album' onmouseover='NewAlbum_Over(this)' onmouseout='NewAlbum_Out(this)'><img class='newAlbumImg' src='pop_n/pa" + (i+1) + ".jpg'><div class='B'>" + Name2[i] + "</div></div>"
+        }
+
+    kpop.innerHTML = textA;
+    pop.innerHTML = textB;
+    }
+
+function NewAlbum_Over(obj)
+    {
+    let A = obj.childNodes ;
+
+    A[1].style.zIndex = "1" ;
+    A[1].style.opacity = "0.7" ;
+    A[1].style.transition = "1s" ;
+    A[1].style.color = "white" ;
+    A[1].style.textAlign = "center" ;
+    A[1].style.lineHeight = "155px"
+    A[1].style.verticalAlign = "middle" ;
+    }
+
+function NewAlbum_Out(obj)
+    {
+    let A = obj.childNodes ;
+
+    A[1].style.zIndex = "0" ;
+    A[1].style.opacity = "0" ;
+    A[1].style.transition = "1s" ;
+    }
+
+function TextLBtn_OVER(obj)
+    {
+    console.log(obj.style.left) ;
+    let TEXT = document.getElementById(obj.id + "_TEXT") ;
+    TEXT.style.transition = "2s" ;
+    TEXT.style.left = "1%" ;
+    TEXT.style.opacity = "1" ;
+
+    TEXT.addEventListener("mouseover", function()
+        {
+        TEXT.style.opacity = "1" ;
+        }) ;
+
+    TEXT.addEventListener("mouseout", function()
+        {
+        TEXT.style.opacity = "0" ;
+        }) ;
+    }
+
+function TextLBtn_OUT(obj)
+    {
+    console.log(obj.id) ;
+    let TEXT = document.getElementById(obj.id + "_TEXT") ;
+    TEXT.style.transition = "1s" ;
+    TEXT.style.left = "3%" ;
+    TEXT.style.opacity = "0" ;
+    }
+
+function TextRBtn_OVER(obj)
+    {
+    console.log(obj.style.left) ;
+    let TEXT = document.getElementById(obj.id + "_TEXT") ;
+    TEXT.style.transition = "2s" ;
+    TEXT.style.left = "88%" ;
+    TEXT.style.opacity = "1" ;
+
+    TEXT.addEventListener("mouseover", function()
+        {
+        TEXT.style.opacity = "1" ;
+        }) ;
+
+    TEXT.addEventListener("mouseout", function()
+        {
+        TEXT.style.opacity = "0" ;
+        }) ;
+    }
+
+function TextRBtn_OUT(obj)
+    {
+    console.log(obj.id) ;
+    let TEXT = document.getElementById(obj.id + "_TEXT") ;
+    TEXT.style.transition = "1s" ;
+    TEXT.style.left = "86%" ;
+    TEXT.style.opacity = "0" ;
+    }
+
+//////////////////////////////////////// sec2 - JS 끝
+
+
+//////////////////////////////////////// sec3 - JS 시작
+
+function expand(obj)
+        {
+        obj.style.transform = "scale(1.2)"
+        obj.style.zIndex = "5";
+        obj.childNodes[1].childNodes[1].style.filter = "brightness(30%)";
+        obj.childNodes[1].childNodes[3].style.opacity = 1;
+
+        }
+    function out(obj)
+        {
+        obj.style.transform = "scale(1)";
+        obj.style.zIndex = "1";
+        obj.childNodes[1].childNodes[1].style.filter = "brightness(100%)";
+        obj.childNodes[1].childNodes[3].style.opacity = 0;
+
+        }
+
+    function magazine_left()
+        {
+        var mSet = document.getElementsByClassName("magazine-set");
+        for(i = 0; i < mSet.length; i++)
+            {
+            var left = parseInt(mSet[i].style.left.replace("%", ""))
+            if(left == -100)
+                {
+                mSet[i].style.opacity = 0;
+                mSet[i].style.left = "100%";
+                }
+            else if(left == 0)
+                {
+                mSet[i].style.opacity = 0;
+                mSet[i].style.left = "-100%";
+                }
+            else if(left == 100)
+                {
+                mSet[i].style.opacity = 1;
+                mSet[i].style.left = "0%";
+                }
+            }
+        }
+    function magazine_right()
+        {
+        var mSet = document.getElementsByClassName("magazine-set");
+        for(i = 0; i < mSet.length; i++)
+            {
+            var left = parseInt(mSet[i].style.left.replace("%", ""))
+            if(left == -100)
+                {
+                mSet[i].style.opacity = 1;
+                mSet[i].style.left = "0%";
+                }
+            else if(left == 0)
+                {
+                mSet[i].style.opacity = 0;
+                mSet[i].style.left = "100%";
+                }
+            else if(left == 100)
+                {
+                mSet[i].style.opacity = 0;
+                mSet[i].style.left = "-100%";
+                }
+            }
+        }
+
+    function concert1_over(obj)
+        {
+        obj.style.backgroundColor = "black"
+        obj.style.color = "rgb(0, 255, 100)"
+        obj.style.border = "black"
+        var span = obj.getElementsByTagName("div")[0].getElementsByTagName("span")[0]
+        span.innerHTML = "Wave to Earth 단독 공연<br>2022.07.8 ~ 2022.07.16"
+        }
+    function concert1_out(obj)
+        {
+        obj.style.backgroundColor = "rgb(0, 255, 100)"
+        obj.style.color = "black"
+        obj.style.border = "rgb(0, 255, 100)"
+        var span = obj.getElementsByTagName("div")[0].getElementsByTagName("span")[0]
+        span.innerHTML = "Wave to Earth 단독 공연<br>멜론 티켓 단독 오픈"
+        }
+
+    function concert2_over(obj)
+        {
+        obj.style.backgroundColor = "black"
+        obj.style.color = "rgb(0, 255, 100)"
+        obj.style.border = "black"
+        var span = obj.getElementsByTagName("div")[0].getElementsByTagName("span")[0]
+        span.innerHTML = "YB 단독 콘서트 'LIGHTS : BURNS'<br>2022.07.23 ~ 2022.07.24"
+        }
+    function concert2_out(obj)
+        {
+        obj.style.backgroundColor = "rgb(0, 255, 100)"
+        obj.style.color = "black"
+        obj.style.border = "rgb(0, 255, 100)"
+        var span = obj.getElementsByTagName("div")[0].getElementsByTagName("span")[0]
+        span.innerHTML = "YB 단독 콘서트 'LIGHTS : BURNS'<br>대한민국 최정상 대표 록밴드 YB"
+        }
+
+    function concert3_over(obj)
+        {
+        obj.style.backgroundColor = "black"
+        obj.style.color = "rgb(0, 255, 100)"
+        obj.style.border = "black"
+        var span = obj.getElementsByTagName("div")[0].getElementsByTagName("span")[0]
+        span.innerHTML = "뮤지컬 <점박이><br>2022.07.16 ~ 2022.08.21"
+        }
+    function concert3_out(obj)
+        {
+        obj.style.backgroundColor = "rgb(0, 255, 100)"
+        obj.style.color = "black"
+        obj.style.border = "rgb(0, 255, 100)"
+        var span = obj.getElementsByTagName("div")[0].getElementsByTagName("span")[0]
+        span.innerHTML = "뮤지컬 <점박이><br>EBS 최고의 컨텐츠 '점박이'가 돌아왔다!"
+        }
+    function ticket_left()
+        {
+        var con = document.getElementsByClassName("concert")
+        for(i = 0; i < con.length; i++)
+            {
+            var left = con[i].style.left;
+            if(left == "-32%")
+                {
+                con[i].style.left = "90%";
+                con[i].style.padding = "1px";
+                }
+            else if(left == "17%")
+                {
+                con[i].style.cssText = "width: 40%; height: 45%; left: -32%; top: 30%; z-index: 1; font-size: 6px; padding:1px;"
+                }
+            else
+                {
+                con[i].style.cssText = "width: 62%; height: 65%; left: 17%; top: 15%; z-index: 3; font-size: 12px; padding: 5px;"
+                }
+            }
+        }
+    function ticket_right()
+        {
+        var con = document.getElementsByClassName("concert")
+        for(i = 0; i < con.length; i++)
+            {
+            var left = con[i].style.left;
+            if(left == "-32%")
+                {
+                con[i].style.cssText = "width: 62%; height: 65%; left: 17%; top: 15%; z-index: 3; font-size: 12px; padding: 5px;"
+                }
+            else if(left == "17%")
+                {
+                con[i].style.cssText = "width: 40%; height: 45%; left: 90%; top: 30%; z-index: 1; font-size: 6px; padding:1px;"
+                }
+            else
+                {
+                con[i].style.left = "-32%";
+                con[i].style.padding = "1px";
+                }
+            }
+        }
+
+//////////////////////////////////////// sec3 - JS 끝
+
+</script>
+
+</div>
+
+</body>
+</html>

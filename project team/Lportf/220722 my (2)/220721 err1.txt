@@ -1,0 +1,29 @@
+
+
+
+// obj.classList.add("circleShadow");
+// let baby = obj.parentNode.children[1];
+// baby.classList.remove("circleShadow");
+// programDiv.style.backgroundImage = "url("+slideArr[slideNum]+")";
+
+// totalDiv.style.left = - (parseInt(sampleStyle.width.split("p")[0]) + parseInt(sampleStyle.marginRight.split("p")[0]) ) * slideNum  + "px";
+
+
+// reactBG.style.backgroundColor = colorArr[slideNum];
+
+//     setTimeout(function(){
+//         obj.addEventListener('click',function() {prevSlide(this);}, {once : true});
+//     }, 800)
+
+// let inw= window.addEventListener("keydown", (e) => console.log(e));
+
+
+// let Amodal= document.querySelector(".modal-overlay");
+// let ki1= Amodal.addEventListener("keydown",  (e) => console.log(e));
+
+// function inp(){
+
+// console.loge(this.e);
+// }
+// console.log(ki1);
+// .addEventListener("keydown", myFunction);

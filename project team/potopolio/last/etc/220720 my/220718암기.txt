@@ -1,0 +1,10 @@
+시간을 중시한다 set interval
+
+그냥 시간지연이있어도 무조건 다 모든 코드를 실행하고싶으면 
+settimeout 
+
+
+
+종료하고싶으면 
+clearInterval(myVar);
+clearTimeout(); 

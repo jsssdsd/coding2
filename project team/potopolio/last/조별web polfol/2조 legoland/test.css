@@ -1,0 +1,387 @@
+/* All */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;   
+}
+
+/* body All */
+body{
+    font-family: sans-serif;
+}
+
+.manymanybuttons{
+    background-color: #d01012;
+    border: none;
+    border-radius: 8px;
+    color:white;
+    font-size:25px;
+    margin: 10px 5px;
+    padding: 9px 70px;
+    position: relative;
+}
+
+/* 최상단 div바 */
+#up-wrapper{
+    background-color: #e9ac00;
+    position: relative;
+    max-width: 1300;
+    padding: 0 195px;
+    height: 35px;
+    margin: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* 최상단 div바 內 첫 ul*/
+#up-mega-links li{
+    display:inline-block;
+}
+
+/* 최상단 li內 텍스트  */
+#up-mega-links li a{
+    color:black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 9px 11px;
+}
+
+/* 최상단 li內 텍스트 hover時 */
+#up-special-link :hover{
+    color: white;
+}
+
+
+/* 최상단 li內 언어선택 div */
+#language-mega-box{
+    position: absolute;
+    left:1650px;
+    width: 5%;
+    padding: 10 30px;
+    top: 35px;
+    background-color: #e9ac00;
+    visibility: hidden;
+    z-index: 1;
+}
+
+/* 최상단 li內 언어선택 div */
+#up-mega-links li:hover #language-mega-box {
+    top: 80 px;
+    opacity: 1;
+    visibility: visible;
+    right:20px;
+}
+
+/* nav All */
+nav{ 
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffcf00;    
+}
+
+/* 첫 flex 박스 설정 (상하좌우 위치 조정) */
+.wrapper{
+    position: relative;
+    max-width: 1300;
+    padding: 0 185px;
+    height: 75px;
+    margin: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* nav 왼쪽 상단 이미지 설정 */
+#main-img{
+    width:120px;
+    
+}
+
+#ticket{
+    display: none;
+}
+
+#menuline{
+    display: none;
+}
+
+/* 전체 이미지 설정 */
+img{
+    display: none;
+}
+
+/* nav內 글씨 이미지 flex설정 */
+.nav-links{
+    display: flex;
+}
+
+/* nav內 글자 앞에 동글뱅이 없애기 */
+.nav-links li{
+    list-style: none;
+}
+
+/* nav內 메뉴들 설정 */
+.nav-links li a{
+    color:black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 9px 20px;
+    border-radius: 10px;
+}
+
+/* nav內 메뉴들 hover */
+.nav-links li a:hover{
+    color: white;
+    font-size: 20px;
+    background: #39C1E4;
+}
+
+/* nav內 hover時 등장하는 메뉴 */
+.mega-box{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 10 30px;
+    top: 100px;
+    visibility: hidden;
+}
+
+/* nav內 최상단div */
+.nav-links li:hover .mega-box {
+    top: 75px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 더러워서 주석못달겠네 TQ */
+.content{
+    background: #006db7;
+    border: 10px;
+    padding: 25px 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.main{
+    width:25%;
+    line-height: 45px;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mega-links{
+    margin-left: -42px;
+    border-left: 1px solid #fff;
+}
+
+.mega-links li{
+    padding: 0 20px;
+}
+
+.mega-links li a{
+    padding: 0 20px;
+    color: #d9d9d9;
+    font-size: 17px;
+    display: inline-block;
+    width: 80%; 
+}
+
+#first-buy{
+    background: #0327f5;
+    border-radius: 10px;
+    height: 150px;
+    color: white;
+    font-size: 20px;
+}
+
+#buy-mega-box{
+    position: absolute;
+    z-index: -100;
+    top:75px;
+    right:100px;
+    background: #39C1E4;
+    border-radius: 20px;
+    visibility: hidden;
+}
+
+#first-buy:hover + #buy-mega-box{
+    visibility: visible;
+}
+
+.buy-flexes > p{
+    text-align: center;
+}
+
+#buy-mega-links{
+    display: grid;
+    top: 80px;
+    opacity: 1;
+    right:20px;
+    grid-template-columns: 260px 260px 260px;
+}
+
+#buy-mega-links li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+/* 토글 사이드바 버튼 아이콘 */
+.ico {
+    position:absolute;
+    top:50%;
+    right:50px;
+    width:50px;
+    height:44px;
+    transform:translatey(-50%);
+    cursor:pointer;
+    display: none;
+}
+
+.ico > div {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:20%;
+    background-color:white;
+}
+
+.ico > div:nth-child(2) {
+    top:40%;
+    transition:visibility 0s .15s;
+}
+
+.ico.active > div:nth-child(2) {
+    visibility:hidden;
+    transition:visibility 0s;
+}
+
+.ico > div:nth-child(3) {
+    top:80%;
+}
+
+.ico > div:nth-child(1), .ico > div:nth-child(3) {
+    transition:top .15s .15s, transform .15s;
+}
+
+.ico.active > div:nth-child(1), .ico.active > div:nth-child(3) {
+    top:40%;
+    transform:rotate(45deg);
+    transition:top .15s, transform .15s .15s;
+}
+
+.ico.active > div:nth-child(3) {
+    transform:rotate(-45deg);
+}
+
+/* 아이콘 색 변화 */
+.ico[data-ico-now-animating="Y"] > div {
+    background-color:white;
+}
+
+.left-side-bar-box {
+    position:fixed;
+    top:0;
+    left:0px;
+    width:640px;
+    height:100%;
+    background-color:rgba(0,0,0,0);
+    visibility:hidden;
+    transition:visibility .5s, background-color .5s;
+}
+
+.left-side-bar-box.active {
+    visibility:visible;
+}
+
+/* 좌측 사이드바 */
+.left-side-bar {
+    position:fixed;
+    top:0;
+    right:-250px;
+    width:600px;
+    height:100%;
+    background-color:#ffcf00;
+    padding-top:85px;
+    transition:right .5s;
+}
+li, a{
+    list-style: none;
+    text-decoration: none;
+}
+.left-side-bar-box.active > .left-side-bar {
+    right: 0;
+}
+
+.left-side-bar > .menu-1 ul > li > a {
+    display:block;
+    padding:20px;
+    color: black;
+    
+}
+
+.left-side-bar > .menu-1 ul > li:hover > a {
+    color: white;
+    text-decoration: underline;
+    text-underline-position : under;
+}
+
+
+
+/* 혼자가 아닌 a 에 +를 붙혀준다 */
+.left-side-bar > .menu-1 ul > li > a:not(:only-child)::after {
+    content:"+";
+    float:right;
+}
+/* 엑티브가 있는 메뉴(펼쳐진 메뉴)에 a에 - 를 붙혀준다 */
+.left-side-bar > .menu-1 ul > li.active > a:not(:only-child)::after {
+    content:"-";
+}
+
+.left-side-bar > .menu-1 > ul ul {
+    display:none;
+    background-color:#ffdb4b;
+}
+
+.left-side-bar > .menu-1 ul > li.active > ul {
+    display:block;
+}
+
+#left-ticket-bar-box-ul{
+    position: absolute;
+    background-color: #006db7;    
+    border-radius: 10px;
+    display: none;
+}
+
+#left-ticket-bar-box-ul li{
+    color: white;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+    
+
+}

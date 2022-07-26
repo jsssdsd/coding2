@@ -1,0 +1,23 @@
+배울프로그램 
+
+spring @@@@@
+
+redis   @@
+
+php  # 리퍼블리케이 선우
+
+node js
+
+reacte
+
+Mockito junit  로 고립된 단위테스트 작성.
+
+jenkins 로 테스트 자동화 ci/cd적용
+
+Java 스펙에 맞는 코드를 제작하기 위해 계속해서 코드를 리팩토링하고 있습니다. 작동하는 코드에 만족하지 않고 더
+안정적이고 좋은 코드를 만들기 위해 노력하고 있습니다. Github에 commit하는 코드의 약 절반정도는 기존 코드를
+개선하는 코드입니다. 리펙토링의 습관화.
+
+
+위치를 기반한, 주거중개 플랫폼
+: Java Fx, MariaDB, iBatis, PHP7, kakao Map, Geocoding

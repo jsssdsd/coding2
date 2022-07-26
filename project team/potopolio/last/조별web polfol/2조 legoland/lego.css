@@ -1,0 +1,42 @@
+/* 전반에 걸친 패딩과 마진 0*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 난 이미지를 자유로이 설정 할 것이다. */
+img{ 
+    position: absolute;
+    /* left: 5px; */
+    top:5px;
+    /* background-color: aqua; */
+    width: 176px;
+    height: 70px;
+}
+
+#service-menu{
+    position: absolute;
+    display:flex;
+}
+
+#service-list{
+    margin: 0;
+    padding: 0;
+    width:567px;
+}
+
+#service-list li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 15px;
+}
+
+#test{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: space-between;
+}

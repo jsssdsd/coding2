@@ -1,0 +1,58 @@
+@media (max-width: 750px) {
+    #up-wrapper {
+      display: none;
+    }
+    .wrapper{
+        height:90px;
+    }
+
+    .nav-links li a{
+        display: none;
+    }
+    
+       #main-img{
+        display: inline-block;
+        width: 140px;
+        height: 65px;
+        z-index: 1;
+        left: 50%;
+        top: -30px;
+        margin-left: 100px;
+    }
+    
+    #ticket{
+        position: relative;
+        left: -320px;
+        top:3px;
+        display: block;
+        z-index: 1;
+    }
+
+    #ticket:hover{
+        cursor: pointer;
+    }
+
+    .ico{
+        position:absolute;
+        left: calc(87%);
+        top:45px;
+        z-index: 1;
+        display: block;
+    }
+
+    .left-side-bar {
+        width:100%;
+    }
+
+    #left-ticket-bar-box-ul {
+        width: 300px;
+        position: absolute;
+        left: 0px;
+        top:90px;
+        z-index: 1;
+    }
+
+    .manymanybuttons:active{
+         background-color: #8c0008;
+    }
+}

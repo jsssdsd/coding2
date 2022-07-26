@@ -1,0 +1,1311 @@
+/* @font-face { font-family: ‘yangjin’; src: url(‘https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff’) format(‘woff’); font-weight: normal; font-style: normal; } */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+
+
+html {
+    padding: 0%;
+    /* width: 100%;
+    height: 8000px; */
+    /* background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%); */
+    /* overflow: hidden; */ 
+    
+}
+
+body {
+    margin: 0;
+    width: 1920px;
+    height: 100%;
+    
+    display: flex;
+}
+
+/* .title1{
+
+    
+
+    -webkit-text-size-adjust: 100%;
+    --vh: 880px;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bolder;
+   
+    font-size: 4em;
+   
+    font-family: normal;
+    box-sizing: border-box;
+    border: 0;
+    transition: all .5s;
+    /* height: 1px; */
+    
+
+
+.s1{
+
+    position: absolute;
+    /* text-align: center; */
+
+    position: fixed;
+    display: flex;
+    width: 100%;
+    /* height: 1150px;*/
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    
+    z-index: 5;
+    /* border-radius: 100%; */
+    
+    /* animation: rotate 600s infinite linear; */
+    
+
+}
+.canvas1{
+
+    position: relative;
+}
+
+.canvas2{
+
+    position: relative;
+}
+
+
+
+#stars {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 100%;
+    background: transparent;
+    box-shadow: shadows-small;
+    animation: animStar 10s linear infinite;
+    z-index: 1;
+}
+
+#stars:after {
+    content: " ";
+    position: absolute;
+    top: 100px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: shadows-small;
+}
+/* 
+#stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: shadows-medium;
+    animation: animStar 100s linear infinite;
+} */
+
+#stars2 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 100%;
+    background: transparent;
+    box-shadow: shadows-medium;
+    animation: animStar 100s linear infinite;
+}
+
+#stars2:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: shadows-medium;
+}
+
+#stars3 {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: shadows-big;
+    animation: animStar 150s linear infinite;
+}
+
+#stars3:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+}
+
+
+
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
+}
+
+
+
+
+/* 별 */
+
+.title1 {
+    position: relative;
+    z-index: 5;
+    
+    width: 5%;
+    text-align: center;
+    
+    top: 0%;
+    left: 42%;
+    font-weight: 100;
+    
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bolder;
+    line-height: 1;
+    
+    font-family: 'Do Hyeon', sans-serif;
+} 
+ 
+  .title1 span{
+    position: relative;
+    top: 45%;
+    left: -28%;
+    width: 10%;
+    /* font-weight: 100; */
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bolder;
+    line-height: 1  ;
+    width: 390px;
+    display: inline-block;
+    
+    font-family: 'Do Hyeon', sans-serif;
+
+  }
+  
+  .title .avatar {
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/avatar.jpg);
+    display: inline-block;
+    border-radius: 50%;
+    background-size: 100%;
+  }
+  
+ .s1 .noite {
+    background: -webkit-linear-gradient(top, rgb(0, 0, 0) 50%, rgb(25, 19, 39)80%, rgb(43, 32, 72));
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+  }
+  /* Constellation  constelacao */
+.s1 .Constellation {
+    z-index: 2;
+    position: absolute;
+    left: -20%;
+    top: 0;
+    width: 300%;
+    height: 500%;
+    animation: rotate 900s infinite linear;
+    z-index: 0;
+  }
+  
+  .estrela {
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: estrela;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 4;
+  }
+  
+  .estrela.style1 { animation-duration: 0.5s; animation-name: estrela; }
+  .estrela.style2 { animation-duration: 1s; animation-name: estrela; }
+  .estrela.style3 { animation-duration: 1.5s; animation-name: estrela; }
+  .estrela.style4 { animation-duration: 2s; animation-name: estrelaDestacada; }
+  
+
+  /* 별의 크기 종류 */
+  .estrela.tam1 { width: 1px; height: 1px; }  
+  .estrela.tam2 { width: 2px; height: 2px; }
+  .estrela.tam3 { width: 3px; height: 3px; }
+  
+  .estrela.opacity1 { opacity:  1; }
+  .estrela.opacity2 { opacity: .5; }
+  .estrela.opacity3 { opacity: .1; }
+  
+  .meteoro {
+    z-index: 4;
+    position: absolute;
+    background-color: #fff;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    transform: rotate(-35deg);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+  }
+  
+  .meteoro:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0;
+    height: 0;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 85px solid white;
+    position: absolute;
+    left: 2px;
+    top: 0;
+    z-index: 4;
+  }
+  
+  .meteoro.style1 { animation-name: meteoroStyle1; }
+  .meteoro.style2 { animation-name: meteoroStyle2; }
+  .meteoro.style3 { animation-name: meteoroStyle3; }
+  .meteoro.style4 { animation-name: meteoroStyle4; }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  .lua {
+    position: relative;
+    width: 18%;
+    height: 27%;
+    right: -40%;
+    top:0%;
+    z-index: 2;
+    border-radius: 50%;
+    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    animation-name: lua;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+  }
+  .lua1 {
+    position: relative;
+    width: 18%;
+    height: 27%;
+    right: -50%;
+    top: 15%;
+    z-index: 2;
+    
+    border-radius: 50%;
+    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    animation-name: lua;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    /* transition: all ease 3s; */
+  }
+
+  .lua2 {
+    right: -40%;
+    top: 50%;
+    position: relative;
+    width: 18%;
+    height: 27%;
+    border-radius: 50%;
+    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    /* background-color: #fff; */
+   
+    z-index: 2;
+
+    animation-name: lua;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+  }
+
+
+
+  .lua3 {
+    
+    right: 5%;
+    top: 72%;
+    position: relative;
+    width: 18%;
+    height: 25%;
+    /* background-color:transparent; */
+    border-radius: 50%;
+    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    /* background-color: #fff; */
+   
+    z-index: 2;
+
+    animation-name: lua;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+  }
+
+  .lua4 {
+    position: relative;
+    right: 53%;
+    top: 60%;
+
+    width: 18%;
+    height: 27%;
+    /* background-color:transparent; */
+    border-radius: 50%;
+    box-shadow: 0 0 160px 0px rgb(187, 159, 159), 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    background-color: rgba(255, 255, 255, 0.425);
+   
+    z-index: 2;  
+
+    animation-name: lua;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+  }
+
+  .lua5 {
+    position: relative;
+    right: 70%;
+    top: 20%;
+
+    width: 18%;
+    height: 27%;
+    background-color:transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+    /* background-color: #fff; */
+   
+    z-index: 2;
+
+    animation-name: lua;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+  }
+
+  .luah {
+    position: relative;
+    animation-name: luahov;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+  }
+
+/*   
+  .lua .textura {
+    background-image: url(https://raw.githubusercontent.com/interaminense/starry-sky/master/src/img/bgMoon.png);
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0%;
+    top: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.4;
+  } */
+.sahover{
+  transition: all ease-in 3s;
+
+}
+
+ .Mercury1{
+    position: relative;
+    background-image: url(img_src/space/mercu2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.7;
+    /* transition: all ease-in 3s; */
+    z-index: 2;
+  }
+
+   .Venus1{
+    background-image: url(img_src/space/금성.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.7;
+    z-index: 5;
+  }
+
+ .earth1{
+    background-image: url(img_src/space/지구.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.7;
+    z-index: 2  ;
+  }
+
+ .Mars1{
+    background-image: url(img_src/space/화성.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.7;
+    z-index: 111;
+  }
+
+  .Jupiter1{
+    background-image: url(img_src/space/목성.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.7;
+    z-index: 3;
+
+  }
+
+  .Saturn1{
+    background-image: url(img_src/space/토성.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.7;
+    z-index: 3;
+
+  }
+
+  .Uranus1{
+    background-image: url(img_src/space/천왕성.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 106%;
+    height: 103%;
+    position: relative;
+    left: -3%;
+    top: -2%;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.7;
+    z-index: 3;
+
+  }
+
+
+
+
+  .Neptune1{
+    background-image: url(img_src/space/해왕.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.7;
+    z-index: 3;
+
+  }
+
+
+
+
+#hover1{
+    position: absolute;
+    right: 31%;
+    top: -6%;
+    width: 33%;
+    height: 37%;
+    display: flex;
+    z-index: 1;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+
+/* #hover1:hover{
+  background-image: url(img_src/space/성운고리.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+
+  -webkit-transform: rotate(360deg);
+  transform: translate(250px,-250px) rotate(360deg);
+
+  -webkit-transition: all 1s ;
+  transition: all 1s ;
+
+} */
+
+
+/* 북동쪽에서 날라오는 transition */
+.hover11{
+  background-image: url(img_src/space/성운고리.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+
+  -webkit-transform: rotate(360deg);
+  transform: translate(250px,-250px) rotate(360deg);
+
+  -webkit-transition: all 1s ;
+  transition: all 1s ;
+
+} 
+
+
+
+#hover2{
+    position: absolute;
+    right: 6%;
+    top: 10%;
+    width: 33%;
+    height: 37%;
+    /* background-color:transparent; */
+
+    display: flex;
+    z-index: 1;
+
+
+    
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   
+  
+  }
+
+/* #hover2:hover {
+  display: flex;
+  background-image: url(img_src/space/성운고리.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  -webkit-transform: rotate(360deg);
+  transform: translate(250px,-250px) rotate(360deg);
+
+  -webkit-transition: all 1s ;
+  transition: all 1s ;
+  
+} */
+
+
+
+
+#hover3{
+    position: absolute;
+    right: 1%;
+    top: 43%;
+    width: 33%;
+    height: 37%;
+    /* background-color:transparent; */
+   
+    display: flex;
+    
+    z-index: 1;
+
+    -webkit-transition: all 0.5s ;
+    transition: all 0.5s ;
+}
+
+
+/* #hover3:hover{
+  display: flex;
+
+  background-image: url(img_src/space/성운고리.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  -webkit-transform: rotate(360deg);
+  transform: translate(250px,-250px) rotate(360deg);
+  -webkit-transition: all 1s ;
+  transition: all 1s ;
+}
+ */
+
+
+#hover4{
+    position: absolute;
+    right: 31%;
+    top: 64%;
+    width: 33%;
+    height: 37%;
+    display: flex;
+    z-index: 1;
+
+    -webkit-transition: all 0.5s ;
+  transition: all 0.5s ;
+}
+
+
+
+/* #hover4:hover{
+  
+  display: flex;
+  background-image: url(img_src/space/성운고리.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transform: rotate(360deg);
+  transform: translate(250px,-250px) rotate(360deg);
+
+  -webkit-transition: all 1s ;
+  transition: all 1s ;
+  
+  z-index: 5; 
+}*/
+
+
+
+#hover5{
+    position: absolute;
+    right: 61%;
+    top: 52%;
+    width: 33%;
+    height: 37%;
+   
+    display: flex;
+    transition: all ease 2s;
+    z-index: 1;
+    -webkit-transition: all 1s ;
+    transition: all 1s ;
+}
+
+/* #hover5:hover{
+display: flex;
+  background-image: url(img_src/space/성운고리.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  -webkit-transform: rotate(360deg);
+  transform: translate(250px,-250px) rotate(360deg);
+  -webkit-transition: all 1s ;
+  transition: all 1s ;
+} */
+
+
+#hover6{
+    position: absolute;
+    right: 62%;
+    top: 13%;
+    width: 33%;
+    height: 37%;
+   
+    display: flex;
+    transition: all ease 5s;
+    z-index: 1;
+
+    -webkit-transition: all 1s ;
+    transition: all 1s ;
+}
+
+
+.zind{
+  position: relative;
+  z-index: 100;
+}
+
+.big_P{
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  
+  transition-delay: 100s;
+  -webkit-transform: rotate(360deg);
+  transform: translate(0,+250px) rotate(360deg) scale(10);
+
+  -webkit-transition: all 2s ;
+  transition: all 3s ;
+  /* animation: FadeIn 0.5s ease-in; */
+  
+}
+.big_P1{
+
+  -webkit-transform: rotate(360deg);
+  transform: translate(0,+250px) rotate(360deg) scale(3.5);
+
+  -webkit-transition: all 5s ;
+  
+  transition: all 1s 3s ;
+  animation: FadeIn .5s ease-in;
+
+}
+
+
+
+  
+  .floresta {
+    
+    position: absolute;
+    position: fixed;
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    
+  }
+  
+  .floresta img {
+    width: 100%;
+    
+    bottom: 0;
+    left: 0;
+  }
+  
+  @keyframes escurecer {
+    0%   { top: 0; }
+    100% { top: 100%; }
+  }
+  
+  @keyframes estrela {
+    0% {
+      box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+    }
+    50% {
+      box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+    }
+  }
+  
+  @keyframes estrelaDestacada {
+    0% {
+      background-color: #FFFFFF;
+      box-shadow: 0 0 10px 0px rgba(255, 255, 255, 1);
+    }
+    20% {
+      background-color: #FFC4C4;
+      box-shadow: 0 0 10px 0px rgb(255, 196, 196, 1);
+    }
+    80% {
+      background-color: #C4CFFF;
+      box-shadow: 0 0 10px 0px rgb(196, 207, 255, 1);
+    }
+    100% {
+      background-color: #FFFFFF;
+      box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);
+    }
+  }
+  
+  @keyframes meteoroStyle1 {
+    0% { opacity: 0; right: 300px; top: 100px; }
+    30% { opacity: .3; }
+    60% { opacity: .3; }
+    100% { opacity: 0; right: 1000px; top: 600px; }
+  }
+  
+  @keyframes meteoroStyle2 {
+    0% { opacity: 0; right: 700px; top: 100px; }
+    30% { opacity: 1; }
+    60% { opacity: 1; }
+    100% { opacity: 0; right: 1400px; top: 600px; }
+  }
+  
+  @keyframes meteoroStyle3 {
+    0% { opacity: 0; right: 300px; top: 300px; }
+    30% { opacity: 1; }
+    60% { opacity: 1; }
+    100% { opacity: 0; right: 1000px; top: 800px; }
+  }
+  
+  @keyframes meteoroStyle4 {
+    0% { opacity: 0; right: 700px; top: 300px; }
+    30% { opacity: 1; }
+    60% { opacity: 1; }
+    100% { opacity: 0; right: 1400px; top: 800px; }
+  }
+  
+  /* @keyframes lua {
+    0%{
+      box-shadow: 0 0 10px 0px #fff, 0 0 1px -1px #fff, 0 0 1px 1.5px rgba(255, 255, 255, 0.26);
+    }
+    50% {
+      box-shadow: 0 0 20px 0px #fff, 0 0 5px -0px #fff, 0 0 1.5px 2px rgba(255, 255, 255, 0.26);
+    }
+    100% {
+      box-shadow: 0 0 30px 0px #fff, 0 0 10px -0px #fff, 0 0 2.5px 3px rgba(255, 255, 255, 0.26);
+    }
+  } */
+
+    @keyframes lua {
+    0%{
+      box-shadow: 0 0 10px 0px #fff, 0 0 2px -1px rgb(20, 189, 110), 0 0 1px 1.5px rgba(59, 12, 226, 0.26);
+    }
+    50% {
+      box-shadow: 0 0 25px 0px #fff, 0 0 44px -0px rgb(14, 71, 36), 0 0 1.5px 2px rgba(255, 255, 255, 0.26);
+    }
+    100% {
+      box-shadow: 0 0 4px 0px #fff, 0 0 33px -0px rgb(11, 22, 15), 0 0 2.5px 3px rgba(255, 255, 255, 0.26);
+    }
+  }
+     
+
+
+  @keyframes luahov {
+    0%{
+      box-shadow: 0 0 10px 0px rgb(236, 101, 68), 0 0 10px 5px rgb(234, 238, 4), 0 0 30px 1.5px rgba(199, 15, 138, 0.863);
+    }
+    50% {
+      box-shadow: 0 0 25px 10px rgb(212, 114, 23), 0 0 20px 20px rgb(192, 180, 12), 0 0 18px 2px rgba(236, 107, 215, 0.644);
+    }
+    100% {
+      box-shadow: 0 0 13px 20px rgb(233, 15, 15), 0 0 13px 3px rgb(233, 210, 5), 0 0 28px 3px rgba(203, 172, 204, 0.76);
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+
+
+
+  
+
+/* 모달창  */
+
+
+
+.modal-overlay {
+  position: absolute;
+  width: 70%;
+  height: 90%;
+  left: 10%;
+  top: 5%;
+  
+  flex-direction: column;
+  align-items: center;    
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 1);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  opacity: 1;   
+  animation: FadeIn .5s ease-in;
+  z-index: 5;
+  display: none;
+
+ 
+
+  /* overflow: hidden; */
+  /* display: inline-block; */
+}
+
+#inline{
+ 
+  position: relative;
+  
+   width: 850px;
+   height:750px; 
+  top: -15%;
+  display: flex;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.blur {
+  filter: blur(0.15rem);
+  opacity: 0.1;
+}
+
+#widthL{
+
+  position: absolute; 
+  width: 300%;
+  height:600px;
+  left: 0px;
+  top: 0%;
+  display: flex;
+
+  /* overflow: hidden; */
+  z-index: 5;
+  transition: all ease 1s;
+
+}
+
+
+.ModalOpen {
+  opacity: 1;   
+  animation: FadeIn .3s ease-in;
+  /* display: flex */
+}
+.ModalClose {
+  
+  opacity: 0;
+  pointer-events: none;
+  animation: FadeOut .3s ease-out;
+  display: none;
+}
+
+.modal-overlay .modal-window {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 20px ;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+/* 
+    display: flex; */
+    position: relative;
+    width: 49%;
+    height: 90%;
+    /* calc(100%-10px); */
+    
+    top: 0%;
+    padding: 10px;
+    /* display: inline-block; */
+    
+    
+
+    transition-property: background-color;
+  /*변형 완료 1초*/
+    transition-duration: 1s;
+   
+  /*빠른 시작 서서히 감속*/
+    transition-timing-function: ease-out;
+ 
+    
+    transform: translateX(0px);
+    transition: all ease 3s;
+  
+}
+
+
+/* 
+#modal .modal-window:hover {
+  /* background 컬러지정하고 투명도를 끝에 바꿀수 있다. 0~ 1 
+  background: rgba(247, 247, 247, 1.0);  
+  opacity: 1;
+  /* transition: background 3s ease-out; 
+}
+
+#modal1 .modal-window:hover {
+  background: rgba(228, 231, 15, 1);
+  opacity: 1;
+}
+
+
+#modal2 .modal-window:hover {
+  background:  rgb(36, 238, 69, 1);
+}
+
+#modal3 .modal-window:hover {
+  background:  rgb(207, 100, 100, 1);
+}
+
+#modal4 .modal-window:hover {
+  background:  rgb(172, 181, 194);
+}
+
+#modal5 .modal-window:hover {
+  background:  rgb(218, 199, 115);
+} */
+
+
+ #pg3 {
+ 
+  color: white;
+  transition: all  4s;
+}
+
+#pg4{
+  color: white;
+  transition: all  4s;
+}
+
+#pg4 img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+#pg5 img{
+  position: relative;
+  width: 100%; 
+  height: 100%;
+  transition: all  4s;
+
+}
+
+#pg6 img{
+  position: relative;
+  width: 100%; 
+  height: 100%;
+  transition: all  4s;
+
+}
+#pg7 img{
+  position: relative;
+  width: 100%; 
+  height: 100%;
+  transition: all  4s;
+
+}
+
+
+.modal-overlay .title {
+    padding-left: 10px;
+    display: inline;
+    text-shadow: 1px 1px 2px gray;
+    color: black;
+    
+}
+.modal-overlay .title h2 {
+    display: inline;
+}
+
+
+
+
+/* 
+.title h2 {
+  display: inline;
+} */
+
+
+.closearea {
+    z-index: 5;
+    position: relative;
+    left: 37%;
+    top: -18%;
+    display: inline;
+    float: right;
+    padding-right: 10px;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px gray;
+    color: white;
+    font-size: 2em;
+}
+
+.next-area{
+  position: relative;
+  top: 41%;
+  left: 35%;
+  z-index: 6;
+  display: inline;
+  
+  padding-left: 1em;
+  font-size: 4em;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px gray;
+  color: rgb(245, 241, 18);
+  
+
+}
+
+.before-area{
+  z-index: 6;
+  top: 32%;
+  left: -35%;
+  position: relative;
+  display: inline-block;
+  float: right;
+  padding-right: 1em;
+  font-size: 4em;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px gray;
+  color: rgb(245, 241, 18);
+  
+
+}
+
+.modal-overlay .content {
+    margin-top: 10px;
+    padding: 0px 10px;
+    text-shadow: 1px 1px 2px rgb(14, 2, 2, 1);
+    font-size: 1em;
+    position: relative;
+    line-height : 20px;
+    color: white;
+}
+
+
+/* .modal-overla .content img{
+  position: relative;
+  width: 10%;
+  height: 10%;
+
+  display: inline-block;
+} */
+
+
+#img2{
+  
+  width: 15%;
+  height: 15%;
+  position: relative;
+  
+  display: inline-block;
+}
+
+.modal-window .content img:nth-child(1){
+  position: relative;
+  
+  display: inline;
+
+  /* width: calc(10%);
+  height: calc(5%); */
+
+  width: 300px;
+  height: 30%;
+
+  
+}
+
+.modal-window{
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+  
+  transition: all  4s;
+}
+
+
+
+@keyframes FadeIn {
+  0% {
+      opacity: 0;
+  }
+  1%{
+      opacity: 0;
+      transform:translateY(100%)
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes FadeOut {
+  0% {
+      opacity:1
+  }
+  1% {
+      opacity:1;
+  }
+  100% {
+      opacity:0;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:830px){
+  #headNav {
+      display: none;
+  }
+  .mobile_icon1 {
+      display : inline-block;
+  }
+  .p{
+      display: none;
+  }
+  .tip{
+      display: none;
+  }   
+  .MFP{
+      display: none;
+  }
+  .benefit-list{
+      top: 10%;
+
+  }
+  .MH1{
+
+      font-size: 32px;
+      font-weight: 600;
+  }
+  .title1 span{
+
+    font-size: 2em;
+    left: -1000%;
+  }
+
+}
+
+

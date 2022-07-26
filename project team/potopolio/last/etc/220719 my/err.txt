@@ -1,0 +1,89 @@
+ <!-- <div class="modal-window" id="pg3">
+                <div class="title">
+                    <h2>Skill2</h2>
+                </div>
+                
+                    <div class="content">1. 개발가능한 language</div>
+                    <div class="content">2. 프로젝트에 사용한 language</div>
+                    <div class="content">3. 앞으로 배울 language</div>
+                    <div class="content">4. 내가 잘하는 language</div>
+               </div>
+             </div> --> -->
+
+
+
+function modalnx(e){
+
+    if (ml-2>0){
+
+    md_pg1.style.display="inline-block";
+    md_pg2.style.display="inline-block";
+    // md_pg3.style.display="inline-block";  
+    }
+}
+
+
+
+function modalbf(e){
+    if(ml-2==0){
+    md_pg1.style.display="block";
+    md_pg2.style.display="none";
+    // md_pg3.style.display="none";
+
+    }
+
+    else if(ml-2>0){
+        md_pg1.style.display="block";
+        md_pg2.style.display="none";
+        // md_pg3.style.display="none";
+    
+    }
+}
+
+
+
+
+
+pleng 구하기 
+
+// let pleng =document.getElementById('widthL');
+// let VwP =document.getElementById('inline');
+// let pRleng =pleng.children.length
+// let plengS= getComputedStyle(pleng);
+// let VwPS= getComputedStyle(VwP);
+
+// console.log('pRleng 의수',pRleng);
+// console.log('plengS style',plengS);
+// console.log(parseInt(plengS.width.split("p")[0]))
+
+
+  // End= setTimeout(modalOn, 1300); 
+        console.log("q0는",End);
+
+
+
+
+
+// // 플러스폭의 길이
+// let plengSw= parseInt(plengS.width.split("p")[0]);
+// let VwPSw= parseInt(plengS.width.split("p")[0]);
+// let plengSWM =null;
+
+// plengSWM= parseInt(plengS.width.split("p")[0])* pRleng ;
+// console.log('plengSWM의길이',plengSWM)
+
+// pg1.style.width= plengSw-20+"px";
+// pg2.style.width= plengSw-20+"px";
+// pg3.style.width=plengSw-20+"px";
+// // plus크기의 div의 길이, 위치  click 이벤트때마다 변경
+// pleng.style.width=plengSWM+"px";
+// pleng.style.left=-plengSw+ "px";
+
+
+
+
+
+
+
+
+

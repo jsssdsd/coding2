@@ -1,0 +1,247 @@
+    body {background: #000; color:#fff}
+    #wrap {margin: 0 auto; margin-left: 100px;} 
+    /* header {width: 100%; height: 150px;} */
+    section {padding-top:134px; padding-bottom: 134px; width: 90%;}
+    /* footer {clear: both; width: 100%; height: 100px;} */
+          
+       
+
+    .containerInsta{                
+            width:90vw;            
+            /* margin:1%; */
+            padding-top:10px;            
+            overflow: hidden;
+            margin-bottom: 30px;
+            /* background-color: green; */            
+        }
+
+        .containerInsta h3{
+            display: inline-block;
+            font-size: 34px;     
+            padding-left: 10px;    
+            word-wrap: break-word;
+            word-break: keep-all;       
+        }
+
+        .containerInsta>span{
+            text-align: center;
+            vertical-align: baseline;
+        }
+        
+        .instaWrap{
+            /* position: relative; */
+            width:100%;
+            height:100%;        
+            margin-bottom: 50px;
+        }
+
+        .instaPosts{
+            position:relative;
+            display: inline-flex;            
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            left: 0;
+            z-index: 10;            
+            }
+            
+        .instaPosts li{
+            top: 10;            
+            vertical-align: baseline;            
+            margin:0.62%;
+            overflow: hidden;
+            list-style: none;
+            z-index: 11;
+        }
+
+        .instaPosts a{
+            display: inline-block;
+            width: 100%;
+            height:100%;
+            align-items:center; 
+        }
+
+        figure.instaFoto{
+            display: inline-block;
+        }
+
+        .instaFoto img{        
+            width: 30vw;
+            height: 50vh;          
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;            
+        }
+
+        .instaFoto img:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        /* 화면 너비 0 ~ 1200px */
+        @media (max-width: 1280px){
+            #wrap {width: 100%;}
+            .instaPosts {width:120%; justify-content: center;}
+            .instaFoto img {width: 35vw;}
+            .instaWrap {width: 72.5%;}
+        }
+
+        /* 화면 너비 0 ~ 1000px */
+        @media (max-width: 1000px){
+            #wrap { margin: 0;  transition: 1s;}
+            .instaPosts > li:nth-child(5) {display: block;}
+            .instaFoto img{width:40vw; height:40vh;}
+            .instaWrap {width: 80%;}
+        }
+
+        /* 화면 너비 0 ~ 480px */
+        @media (max-width: 480px){
+            #wrap {width: 100%; margin: 0;}
+            header {height: 300px;}
+            section {float: none; width: 100%; height: 300px;}
+            .instaPosts > li:nth-child(5n) {display: block;}
+            .instaFoto img{width:80vw; height:80vh;}
+        }
+
+        /*-------------------지도부분 ----------------*/
+    
+        .mapConteiner{
+            margin: 1%;
+            margin-bottom: 50px;
+            padding: 10px;
+            width:91.5vw;
+            height:80vh;
+            /* background-color:rgb(204, 170, 173) */
+        }
+
+        .mapTitle span{
+            margin-right: 4px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .mapConteiner h3{            
+            font-size: 34px;
+            padding-left: 10px;
+        }
+
+        .mapBT{
+            margin-left: 15%;
+        }
+
+        .mapboxWrap{
+            position: relative;
+            display: inline-block;         
+        }
+
+        @media (max-width: 1280px){
+            .mapboxWrap .map, .mapBottom{width: 100%;}
+        }
+        
+
+        .mainMap{
+            display: inline-block;
+            position: relative;        
+            left: 30px;
+            top: 0;
+            left:10px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #fff; 
+            border-radius: 2px;
+            margin-bottom: 50px;
+        }
+
+        
+        .txt{
+            position: relative;
+            top:20px;
+            display: inline-block;
+            /* margin-top:5px;  */
+            margin-left: 50px;            
+            right:0;
+            
+        }
+
+        .txt strong{            
+            font-size:28px;
+            
+           
+        }
+        .txt .ad{
+            padding-left:5px;
+            word-wrap: break-word;
+            word-break: keep-all;
+            color:#fff;
+        }
+
+        .ad a{
+            color: rgb(252, 250, 250);
+            text-decoration: none;
+        }
+
+        .busNum{
+            margin-bottom: 50px;
+        }
+
+        .busNum span{
+            margin-right: 4px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+    
+        .num{
+            margin-right:0;
+            font-size: 16px;
+            padding-left: 5px;
+            list-style: none;
+        }
+        .num li{
+            padding-left: 20px;
+        }
+        @media (max-width: 1605px){
+            .mainMap{
+                width: 150%;
+                height: 150%;
+                transition: 1s;
+            }
+            .txt{
+                font-size: 25px;
+                letter-spacing: 0.1em;
+                margin-left: 30px;
+            }
+            .mapBT{
+                margin-left: 5%;
+            }
+            .mapConteiner{
+                height: 110vh;
+            }
+        }
+        @media (max-width: 1320px){
+            .mainMap{
+                width: 140%;
+                transition: 1s;
+            }
+        }
+        @media (max-width: 1240px){
+            .mainMap{
+                width: 125%;
+                transition: 1s;
+            }
+        }
+        @media (max-width: 1160px){
+            .mainMap{
+                width: 110%;
+                transition: 1s;
+            }
+        }
+        @media (max-width: 1080px){
+            .mainMap{
+                width: 100%;
+                transition: 1s;
+            }
+        }
+        @media (max-width: 900px){
+            .mapBT{
+                transition: 1s;
+                margin-left: 0%;
+            }
+        }

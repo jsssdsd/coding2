@@ -5,144 +5,469 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51cafdc5-b3aa-4dfb-ab6f-f0f69359a0d9" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/langauge/pandas/220609/re1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220506/html기본구조 - 복사본.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220506/html기본구조 p94.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220506/html기본구조.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220506/html기본구조2-19 p86.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220506/html기본구조2-20 p88.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220506/html기본구조2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220506/html기본구조2std1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220506/html기본구조basic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220506/p94/html기본구조 p94.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220506/p94/leftframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220506/p94/rightframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/220509 틀테이블.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/220510std.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/css/css개념.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/css/p162.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/css/p168.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/css/st.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/css/st1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/css/기본틀.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/css/새 텍스트 문서.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/css개념.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/data/bear.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/data/오디오.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/left.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/p108 4-2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/p108 4st.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/p109.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/p122.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/p151colq1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/right.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/survey151.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/기본틀.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220510/정성민.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/1.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/3.cur" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/css개념.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/ex1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/o1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/p175.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/p179.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/p183.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/p189.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/p193.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/p196.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/p198.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/p200.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220511/q1CSS 220511.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/220509ex1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/220509ex1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/220509ex2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/HTML 220509 (1).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/HTML 220509.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/b4.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/docu.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/docu2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/ex1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/front1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/grp.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/h1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/headA.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/hetc.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/hisc.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/hma.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/hsc.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/jsm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/kimseung.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/ksw.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/love.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/p2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/picture.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/practice2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/q1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/sar.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/sec1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/sec2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/sh1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/u1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/wikila_files/100px-Flag_of_Japan.svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/wikila_files/100px-Friedrich_der_Grosse_und_der_Feldscher.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/wikila_files/Adolf_Eichmann,_1942.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/wikila_files/Prosecutor_General_Yoon_Seokyoul_official_portrait.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/wikila_files/h1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/wikila_files/sec1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/wikila_files/sec2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/새 폴더/ch windowsize.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/새 폴더/practice2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/새 폴더/wiki2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/새 폴더/wikiF.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/새 폴더/wikiff.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/새 폴더/틀.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/새 폴더/해상도3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/새 폴더/해상도크기 맞추기2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220513/새 폴더/해상도크기맞추기1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220515/std1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/11.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/220.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/220520cssh1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/221.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/223.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/231.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/clo A.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/dia6.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/heart2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/p216.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/p216.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/p219.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/space 2..JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/space A1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/trumph C/card-deck-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/trumph C/dia6.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/trumph C/heart2.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/trumph C/space 2..JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/trumph C/space A.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/trumph C/space A1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220520 (1)/틀.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220523web/220523 q1 err.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220523web/220523js1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220523web/220523q1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220523web/220523q1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220523web/220523std1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220523web/245.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220523web/p240.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220523web/p243.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220523web/p247.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/220523web/p260.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/BMW 2시리즈.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/f6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/naver.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/langauge/web/이론1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/game 1jo ja/220630/js 220630/er1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/last sel P220521/element.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project team/last sel P220521/element.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/last sel P220521/문제.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project team/last sel P220521/문제.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/1조_반응형웹만들기.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/220707_17시 백업.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/cjazit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/img_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/img_company_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/maxresdefault.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/membership-1-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/membership-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/membership-2-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/membership-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/membership-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/membership-4-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/membership-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/movie-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/movie-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/movie-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/movie-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/music-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/music-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/music-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/music-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/musical-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/musical-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/musical-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/musical-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/program-bg-1-tune-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/program-bg-2-stage-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/program-bg-3-story-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/program-bg-4-learnfare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/program-bg-5-film-festival.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/program-bg-6-yoojaeha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/qk171552330ie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/img_src/videoplayback.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/svg_src/line-four-horizontal-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/svg_src/menu-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/svg_src/search-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/svg_src/ticket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/svg_src/user-6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220707_반응형웹/svg_src/user-male-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/220707_17시 백업.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/cjazit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/img_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/img_company_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/maxresdefault.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/membership-1-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/membership-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/membership-2-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/membership-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/membership-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/membership-4-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/membership-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/movie-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/movie-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/movie-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/movie-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/music-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/music-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/music-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/music-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/musical-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/musical-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/musical-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/musical-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/program-bg-1-tune-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/program-bg-2-stage-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/program-bg-3-story-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/program-bg-4-learnfare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/program-bg-5-film-festival.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/program-bg-6-yoojaeha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/qk171552330ie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/img_src/videoplayback.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/svg_src/line-four-horizontal-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/svg_src/menu-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/svg_src/search-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/svg_src/ticket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/svg_src/user-6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220707_반응형웹/svg_src/user-male-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/220708수업.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/220708수업메모.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/HTML기본구조.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/cjazit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/icons8-엑스-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/img_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/img_company_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/maxresdefault.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/membership-1-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/membership-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/membership-2-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/membership-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/membership-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/membership-4-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/membership-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/movie-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/movie-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/movie-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/movie-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/music-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/music-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/music-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/music-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/musical-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/musical-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/musical-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/musical-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/program-bg-1-tune-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/program-bg-2-stage-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/program-bg-3-story-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/program-bg-4-learnfare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/program-bg-5-film-festival.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/program-bg-6-yoojaeha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/qk171552330ie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/img_src/videoplayback.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/svg_src/line-four-horizontal-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/svg_src/menu-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/svg_src/search-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/svg_src/ticket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/svg_src/user-6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/220708/220708_kjc/svg_src/user-male-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/220710.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/220710css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/220710e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/icons8-엑스-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/img_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/img_company_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/maxresdefault.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/membership-1-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/membership-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/membership-2-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/membership-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/membership-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/membership-4-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/membership-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/movie-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/movie-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/movie-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/movie-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/music-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/music-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/music-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/music-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/musical-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/musical-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/musical-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/musical-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/program-bg-1-tune-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/program-bg-2-stage-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/program-bg-3-story-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/program-bg-4-learnfare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/program-bg-5-film-festival.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/program-bg-6-yoojaeha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/qk171552330ie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/img_src/videoplayback.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/std1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/std1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/svg_src/line-four-horizontal-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/svg_src/menu-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/svg_src/search-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/svg_src/ticket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/svg_src/user-6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/js220708 (2)/svg_src/user-male-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/스프라이트/움직이는 이미지.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220708/스프라이트/이미지 스프라이트 - 아이콘.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/HTML기본구조.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/cjazit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/icons8-엑스-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/img_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/img_company_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/maxresdefault.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/membership-1-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/membership-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/membership-2-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/membership-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/membership-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/membership-4-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/membership-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/movie-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/movie-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/movie-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/movie-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/music-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/music-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/music-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/music-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/musical-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/musical-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/musical-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/musical-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/program-bg-1-tune-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/program-bg-2-stage-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/program-bg-3-story-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/program-bg-4-learnfare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/program-bg-5-film-festival.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/program-bg-6-yoojaeha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/qk171552330ie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/img_src/videoplayback.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/svg_src/line-four-horizontal-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/svg_src/menu-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/svg_src/search-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/svg_src/ticket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/svg_src/user-6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/220711_kjc/svg_src/user-male-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/220708수업.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/220708수업메모.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/HTML기본구조.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/cjazit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/icons8-엑스-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/img_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/img_company_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/maxresdefault.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/membership-1-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/membership-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/membership-2-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/membership-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/membership-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/membership-4-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/membership-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/movie-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/movie-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/movie-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/movie-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/music-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/music-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/music-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/music-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/musical-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/musical-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/musical-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/musical-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/program-bg-1-tune-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/program-bg-2-stage-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/program-bg-3-story-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/program-bg-4-learnfare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/program-bg-5-film-festival.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/program-bg-6-yoojaeha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/qk171552330ie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/img_src/videoplayback.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/svg_src/line-four-horizontal-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/svg_src/menu-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/svg_src/search-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/svg_src/ticket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/svg_src/user-6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/220708_kjc/svg_src/user-male-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/220708std1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/220707_17시 백업.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/cjazit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/img_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/img_company_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/maxresdefault.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/membership-1-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/membership-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/membership-2-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/membership-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/membership-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/membership-4-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/membership-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/movie-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/movie-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/movie-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/movie-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/music-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/music-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/music-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/music-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/musical-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/musical-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/musical-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/musical-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/program-bg-1-tune-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/program-bg-2-stage-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/program-bg-3-story-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/program-bg-4-learnfare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/program-bg-5-film-festival.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/program-bg-6-yoojaeha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/qk171552330ie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/img_src/videoplayback.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/svg_src/line-four-horizontal-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/svg_src/menu-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/svg_src/search-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/svg_src/ticket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/svg_src/user-6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/bup/svg_src/user-male-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/cjazit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/im1/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/im1/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/im1/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/im1/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/im1/nature.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/im1/space.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/img_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/img_company_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/maxresdefault.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/membership-1-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/membership-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/membership-2-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/membership-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/membership-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/membership-4-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/membership-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/movie-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/movie-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/movie-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/movie-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/music-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/music-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/music-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/music-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/musical-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/musical-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/musical-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/musical-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/program-bg-1-tune-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/program-bg-2-stage-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/program-bg-3-story-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/program-bg-4-learnfare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/program-bg-5-film-festival.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/program-bg-6-yoojaeha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/qk171552330ie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/img_src/videoplayback.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/maxresdefault.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/svg_src/line-four-horizontal-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/svg_src/maxresdefault.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/svg_src/menu-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/svg_src/search-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/svg_src/ticket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/svg_src/user-6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/jsm0711/svg_src/user-male-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/슬라이드/-web-Infinite__slide-master/CSS/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/슬라이드/-web-Infinite__slide-master/JS/slideShow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/슬라이드/-web-Infinite__slide-master/image/flower.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/슬라이드/-web-Infinite__slide-master/image/fox.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/슬라이드/-web-Infinite__slide-master/image/lightning.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/슬라이드/-web-Infinite__slide-master/image/moon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/슬라이드/-web-Infinite__slide-master/image/nature.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/슬라이드/-web-Infinite__slide-master/image/space.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/슬라이드/-web-Infinite__slide-master/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/자동슬/1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/자동슬/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/자동슬/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/자동슬/11.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/자동슬/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/자동슬/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/220711/js112207_changable/자동슬/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/HTML기본구조.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/cjazit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/by171552345sv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/icons8-엑스-25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/img_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/img_company_ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/maxresdefault.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/membership-1-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/membership-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/membership-2-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/membership-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/membership-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/membership-4-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/membership-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/movie-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/movie-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/movie-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/movie-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/music-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/music-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/music-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/music-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/musical-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/musical-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/musical-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/musical-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/program-bg-1-tune-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/program-bg-2-stage-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/program-bg-3-story-up.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/program-bg-4-learnfare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/program-bg-5-film-festival.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/program-bg-6-yoojaeha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/qk171552330ie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/img_src/videoplayback.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/svg_src/line-four-horizontal-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/svg_src/menu-lined.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/svg_src/search-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/svg_src/ticket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/svg_src/user-6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/potopolio/2207131조_반응형웹만들기/svg_src/user-male-thin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/Backimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/Check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/CheckBox.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/Effect1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/Effect2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/Image_py_Logo.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/MainBack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/NoCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/Pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/Play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/Setting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/Team4_RandomTowerDefense_All (1).html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/Team4_RandomTowerDefense_All.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/Title.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/TitleLine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri11-Bold.bdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri11-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri11-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri11.bdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri11.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri11.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri11Bitmap-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri11Bitmap.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri7.bdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri7.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri7.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri7Bitmap.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri9.bdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri9.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri9.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/Galmuri9Bitmap.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/g11_mod.bdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/g11b_mod.bdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/g7_mod.bdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/g9_mod.bdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/dist/galmuri.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/extn01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/extn02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/extn03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/extn04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/extn05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/extn06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/extn07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/extn08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/extn09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/porsche.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/tile0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/220627_팀프로젝트_Team4/tile1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/Team4_기능 설명서_역할분담.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/Team4_기능구현일지_통합.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/Team4_손스케치.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/Team4_스케치.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project team/최종게임/4조/4조/Team4_시퀀스다이어그램.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,20 +515,20 @@
       <recent name="D:\pycharm\coding\midlec\sel mecro2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.220609w1">
-    <configuration name="220609 2020" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.laselM">
+    <configuration name="이름이 지정되지 않았습니다" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="coding" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/langauge/pandas/220609" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="C:\python\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/langauge/pandas/220609/220609 2020.py" />
+      <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -212,7 +537,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="220609 2021" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="11" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="coding" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -220,11 +545,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/langauge/pandas/220609" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project team/last sel P220521" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/langauge/pandas/220609/220609 2021.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project team/last sel P220521/11.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -233,7 +558,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="220609 melon 2021" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="UI_CarRecommend" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="coding" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -241,11 +566,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/langauge/pandas/220609/[데이터시각화]김승완" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project team/car recommend/3jo2 (2)" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/langauge/pandas/220609/[데이터시각화]김승완/220609 melon 2021.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project team/car recommend/3jo2 (2)/UI_CarRecommend.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,7 +579,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="220609 project" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="UI_Finished" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="coding" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -262,11 +587,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/langauge/pandas/220609/[데이터시각화]김승완" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project team/car recommend/3jo2 (2)" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/langauge/pandas/220609/[데이터시각화]김승완/220609 project.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project team/car recommend/3jo2 (2)/UI_Finished.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -275,7 +600,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="220609w1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="laselM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="coding" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -283,11 +608,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/langauge/pandas/220609" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project team/last sel P220521" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/langauge/pandas/220609/220609w1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project team/last sel P220521/laselM.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -296,13 +621,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="lastUI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="coding" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project team/car recommend/3jo2 (2)" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project team/car recommend/3jo2 (2)/lastUI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.이름이 지정되지 않았습니다" />
+      <item itemvalue="Python.lastUI" />
+      <item itemvalue="Python.UI_Finished" />
+      <item itemvalue="Python.UI_CarRecommend" />
+      <item itemvalue="Python.laselM" />
+      <item itemvalue="Python.11" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.220609w1" />
-        <item itemvalue="Python.220609 2021" />
-        <item itemvalue="Python.220609 2020" />
-        <item itemvalue="Python.220609 project" />
-        <item itemvalue="Python.220609 melon 2021" />
+        <item itemvalue="Python.laselM" />
+        <item itemvalue="Python.UI_Finished" />
+        <item itemvalue="Python.11" />
+        <item itemvalue="Python.lastUI" />
+        <item itemvalue="Python.UI_CarRecommend" />
       </list>
     </recent_temporary>
   </component>
