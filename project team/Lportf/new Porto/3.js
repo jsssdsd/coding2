@@ -162,11 +162,11 @@ dayNight.addEventListener('click',nightMod,{once:true});
 function nightMod()
 {
     // 배경 색 변경
-    wrap.style.background = "linear-gradient(to bottom right, #0F2027, #203A43, #2C5364 )";
+    wrap.style.background = "linear-gradient(to bottom right, #2f535f, #203A43, #02030a )";
     // 나이트모드 속성 변경 칸!
     // 토글 변경
     dayNight.children[0].style.left = "15px";
-    dayNight.children[0].style.backgroundColor = "gray";
+    dayNight.children[0].style.backgroundColor = "BLACK";
     dayNight.children[0].style.boxShadow = "1px 1px 8px 3px white";
     dayNight.style.backgroundColor = "white";
 
@@ -227,7 +227,7 @@ function dayMod()
 {
     // 데이모드 속성 변경 칸!
     // 배경 색 변경
-    wrap.style.background = "linear-gradient(to bottom right, #FFFDE4, #005AA7)";
+    wrap.style.background = "linear-gradient(to bottom right, #f0e98d, #ffffffb6)";
     // 토글 변경
     dayNight.children[0].style.left = "0px";
     dayNight.children[0].style.backgroundColor = "white";
@@ -292,6 +292,7 @@ function scrollToWhere(where) {
     if (where == "Main")
     {
         window.scrollTo({left : 0, top : section1.offsetTop, behavior: "smooth"})
+        window
     }
     else if (where == "Skills")
     {

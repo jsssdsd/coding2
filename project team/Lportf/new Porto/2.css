@@ -18,7 +18,7 @@ h2{
     display: block;
     position: relative;
     transition: 1s;
-    background: linear-gradient(to bottom right, #FFFDE4, #02060a );
+    background: linear-gradient(to bottom right, #f0e98d, #ffffffb6 );
 }
 #headNav {
     position: fixed;
@@ -73,7 +73,7 @@ h2{
     display: flex;
     right:25px;
     top: 20px;
-    background-color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
     border-radius: 7.5px 7.5px 7.5px 7.5px;
     width: 30px;
     height: 15px;
@@ -86,7 +86,7 @@ h2{
     height: 15px;
     width: 15px;
     border-radius: 7.5px 7.5px 7.5px 7.5px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(253, 253, 253);
     box-shadow: 1px 1px 8px 3px rgb(156, 156, 156);
     left: 0px;
     transition: 1s;
@@ -98,32 +98,43 @@ h2{
     left: 0;
 }
 .anchor {
+    overflow: hidden;
     position: relative;
     left: -30px;
     top: 80px;
-    height: 30px;
-    width: 30px;
+    height: 200px;
+    width: 150px;
     margin-bottom: 10px;
     transition: 0.5s;
     border-radius: 75px 75px 75px 75px;
+    z-index: 1;
+    
+    
     background-color: #fffde4;
     cursor: pointer;
     box-shadow: 3px 3px 0px 0px #033c6e;
-    overflow: hidden;
+    
+    
     text-align: center;
 }
 .anchor:hover {
     width: 120px;
+    background-image: url(img_src/1/myAvatar.png);
 }
 .anchor span {
+    
     position: absolute;
-    display: flex;
+    
+    display: inline-flex;
+    
     white-space:nowrap;
     color: #033c6e;
-    bottom: 7px;
+    bottom: 15px;
     right: 30px;
+    
+
     font-family: 'Roboto', sans-serif;
-    font-size: small;
+    font-size: 17px;
 }
 
 #section1 {
@@ -155,6 +166,18 @@ h2{
     height: 230px;
     left: calc(-5%);
 }
+
+
+#myImage1 {
+    display: flex;
+    position: absolute;
+    width: 100px;
+    height: 230px;
+    
+    left: calc(4%);
+}
+
+
 #frameImage {
     overflow: hidden;
     display: inline-block;
@@ -188,10 +211,11 @@ h2{
     align-content: flex-start;
     position: absolute;
     bottom: calc(5%);
-    left: calc(25%);
-    width: calc(50%);
-    height: calc(60%);
+    left: calc(10%);
+    width: calc(80%);
+    height: calc(70%);
     overflow: hidden;
+    border-radius: 50%;
 }
 .aabcc {
     display: inline-block;
@@ -656,7 +680,7 @@ h2{
     justify-content: center;
     width: calc(100%);
     height: 150px;
-    background-color: #164b77;
+    background-color: #10471cce;
     text-align: center;
 
 }
